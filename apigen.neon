@@ -7,3 +7,5 @@ source:
 title: Puli API
 
 baseUrl: http://api.puli.io
+
+googleAnalytics: UA-8282807-3

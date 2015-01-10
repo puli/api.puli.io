@@ -1578,12 +1578,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/discovery.git",
-                "reference": "5aa322bdc01397e23c6cb7f153549d5bea9989f7"
+                "reference": "e3a13b2dfa917be3d0d8997043d0e1909a1777aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/discovery/zipball/5aa322bdc01397e23c6cb7f153549d5bea9989f7",
-                "reference": "5aa322bdc01397e23c6cb7f153549d5bea9989f7",
+                "url": "https://api.github.com/repos/puli/discovery/zipball/e3a13b2dfa917be3d0d8997043d0e1909a1777aa",
+                "reference": "e3a13b2dfa917be3d0d8997043d0e1909a1777aa",
                 "shasum": ""
             },
             "require": {
@@ -1619,7 +1619,7 @@
             ],
             "description": "Discovers Puli resources bound to predefined types.",
             "homepage": "http://puli.io",
-            "time": "2015-01-08 12:43:07"
+            "time": "2015-01-10 18:39:56"
         },
         {
             "name": "puli/factory",
@@ -1627,12 +1627,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/factory.git",
-                "reference": "d1428346fcdf8a4337c09a11be1a38ec0a6169f1"
+                "reference": "d753c98e5cd954c9d31ef874caa450f502419af7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/factory/zipball/d1428346fcdf8a4337c09a11be1a38ec0a6169f1",
-                "reference": "d1428346fcdf8a4337c09a11be1a38ec0a6169f1",
+                "url": "https://api.github.com/repos/puli/factory/zipball/d753c98e5cd954c9d31ef874caa450f502419af7",
+                "reference": "d753c98e5cd954c9d31ef874caa450f502419af7",
                 "shasum": ""
             },
             "require": {
@@ -1663,7 +1663,7 @@
             ],
             "description": "A factory API for Puli's core services.",
             "homepage": "http://puli.io",
-            "time": "2015-01-08 08:40:44"
+            "time": "2015-01-10 18:38:46"
         },
         {
             "name": "puli/repository",
@@ -1671,12 +1671,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/repository.git",
-                "reference": "73f812cbd8c42fa96214dc256985fd456103a076"
+                "reference": "6dc47460c6cae70f7951c03d69433f90994cea7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/repository/zipball/73f812cbd8c42fa96214dc256985fd456103a076",
-                "reference": "73f812cbd8c42fa96214dc256985fd456103a076",
+                "url": "https://api.github.com/repos/puli/repository/zipball/6dc47460c6cae70f7951c03d69433f90994cea7c",
+                "reference": "6dc47460c6cae70f7951c03d69433f90994cea7c",
                 "shasum": ""
             },
             "require": {
@@ -1709,7 +1709,7 @@
             ],
             "description": "A file system-like repository for storing arbitrary resources.",
             "homepage": "http://puli.io",
-            "time": "2015-01-10 09:28:44"
+            "time": "2015-01-10 18:29:23"
         },
         {
             "name": "puli/repository-manager",
@@ -1717,12 +1717,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/repository-manager.git",
-                "reference": "89570f0bac9a1d5cb94e438d8ff720d27f707676"
+                "reference": "7aa2bf848ad878c48b165c5abbf944e83efd4e3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/repository-manager/zipball/89570f0bac9a1d5cb94e438d8ff720d27f707676",
-                "reference": "89570f0bac9a1d5cb94e438d8ff720d27f707676",
+                "url": "https://api.github.com/repos/puli/repository-manager/zipball/7aa2bf848ad878c48b165c5abbf944e83efd4e3c",
+                "reference": "7aa2bf848ad878c48b165c5abbf944e83efd4e3c",
                 "shasum": ""
             },
             "require": {
@@ -1761,7 +1761,7 @@
             ],
             "description": "Generates Puli repositories from configured packages.",
             "homepage": "http://puli.io",
-            "time": "2015-01-09 22:19:57"
+            "time": "2015-01-10 18:34:26"
         },
         {
             "name": "rhumsaa/uuid",
