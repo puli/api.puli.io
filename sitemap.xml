@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>http://api.puli.io/index.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Discovery.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Discovery.Api.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Discovery.Api.Binding.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Discovery.Api.Validation.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Discovery.Assert.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Discovery.Binding.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Discovery.Validation.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Factory.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Repository.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Repository.Api.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Repository.Api.Resource.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Repository.Assert.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Repository.Resource.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Repository.Resource.Collection.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Repository.Resource.Iterator.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Repository.Resource.Metadata.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Repository.StreamWrapper.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.Repository.Uri.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Assert.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Config.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Config.ConfigFile.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Config.ConfigFile.Reader.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Config.ConfigFile.Writer.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Conflict.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Discovery.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Discovery.Store.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Environment.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Event.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Generator.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Generator.Discovery.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Generator.KeyValueStore.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Generator.Repository.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Package.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Package.PackageFile.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Package.PackageFile.Reader.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Package.PackageFile.Writer.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Plugin.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Repository.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Repository.Iterator.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Util.html</loc>
+</url>
+
+
+<url>
+	<loc>http://api.puli.io/class-Puli.RepositoryManager.Util.DistinguishedName.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/class-Puli.RepositoryManager.Util.System.html</loc>
+</url>
+</urlset>

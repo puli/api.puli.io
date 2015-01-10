@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://api.puli.io/sitemap.xml
