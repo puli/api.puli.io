@@ -2,20 +2,25 @@ CLASS_FILES = $(shell find vendor/puli/*/src/ -type f -name '*.php')
 
 BUILD_DIR = build
 
-CP ?= cp -r
+CP ?= cp -f
 RM ?= rm -f
 APIGEN ?= bin/apigen
 APIGEN_GENERATE = $(APIGEN) generate
 COMPOSER ?= composer
+COMPOSER_UPDATE = $(COMPOSER) update
+COMPOSER_INSTALL = $(COMPOSER) install
 
 all: html
 
-html: $(CLASS_FILES) $(APIGEN)
+html: $(CLASS_FILES) $(APIGEN) update
 	$(APIGEN_GENERATE) && \
-	$(CP) $(BUILD_DIR)/* ./
+	$(CP) -r $(BUILD_DIR)/* ./
+
+update: FORCE
+	$(COMPOSER_UPDATE)
 
 $(APIGEN):
-	$(COMPOSER) install
+	$(COMPOSER_INSTALL)
 
 clean:
 	$(RM) -r *.html resources robots.txt sitemap.xml elementlist.js $(BUILD_DIR)
