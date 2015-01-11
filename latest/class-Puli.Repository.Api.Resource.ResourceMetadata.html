@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Interface Puli\Repository\Api\Resource\ResourceMetadata | Puli API</title>
+	<title>Class Puli\Repository\Api\Resource\ResourceMetadata | Puli API</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -271,6 +271,10 @@
 
 
 		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Puli.Repository.Api.Resource.ResourceMetadata.html">ResourceMetadata</a></li>
+			</ul>
 
 			<h3>Interfaces</h3>
 			<ul>
@@ -278,7 +282,6 @@
 				<li><a href="class-Puli.Repository.Api.Resource.DetachedException.html">DetachedException</a></li>
 				<li><a href="class-Puli.Repository.Api.Resource.FilesystemResource.html">FilesystemResource</a></li>
 				<li><a href="class-Puli.Repository.Api.Resource.Resource.html">Resource</a></li>
-				<li class="active"><a href="class-Puli.Repository.Api.Resource.ResourceMetadata.html">ResourceMetadata</a></li>
 			</ul>
 
 
@@ -316,7 +319,7 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Interface ResourceMetadata</h1>
+	<h1>Class ResourceMetadata</h1>
 
 
 	<div class="description">
@@ -325,13 +328,12 @@
 
 
 
-
-
 	<div>
-		<h4>Direct known implementers</h4>
-			<a href="class-Puli.Repository.Resource.Metadata.EmptyMetadata.html">Puli\Repository\Resource\Metadata\EmptyMetadata</a>, 
+		<h4>Direct known subclasses</h4>
 			<a href="class-Puli.Repository.Resource.Metadata.FilesystemMetadata.html">Puli\Repository\Resource\Metadata\FilesystemMetadata</a>
 	</div>
+
+
 
 
 
@@ -346,7 +348,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Repository.Api.Resource.ResourceMetadata.html#14-48" title="Go to source code">Api/Resource/ResourceMetadata.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Repository.Api.Resource.ResourceMetadata.html#14-69" title="Go to source code">Api/Resource/ResourceMetadata.php</a>
 		<br>
 	</div>
 
@@ -366,7 +368,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCreationTime">#</a>
-		<code><a href="source-class-Puli.Repository.Api.Resource.ResourceMetadata.html#22-29" title="Go to source code">getCreationTime</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Api.Resource.ResourceMetadata.html#22-32" title="Go to source code">getCreationTime</a>( )</code>
 
 		<div class="description short">
 			<p>Returns when the resource was created.</p>
@@ -402,7 +404,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAccessTime">#</a>
-		<code><a href="source-class-Puli.Repository.Api.Resource.ResourceMetadata.html#31-38" title="Go to source code">getAccessTime</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Api.Resource.ResourceMetadata.html#34-44" title="Go to source code">getAccessTime</a>( )</code>
 
 		<div class="description short">
 			<p>Returns when the resource was last accessed.</p>
@@ -438,7 +440,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getModificationTime">#</a>
-		<code><a href="source-class-Puli.Repository.Api.Resource.ResourceMetadata.html#40-47" title="Go to source code">getModificationTime</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Api.Resource.ResourceMetadata.html#46-56" title="Go to source code">getModificationTime</a>( )</code>
 
 		<div class="description short">
 			<p>Returns when the resource was last modified.</p>
@@ -454,6 +456,42 @@
 				<h4>Returns</h4>
 				<div class="list">
 					integer<br>A UNIX timestamp.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSize" id="_getSize">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSize">#</a>
+		<code><a href="source-class-Puli.Repository.Api.Resource.ResourceMetadata.html#58-68" title="Go to source code">getSize</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the size of the body in bytes.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the size of the body in bytes.</p>
+
+<p>If this information is not available, the method returns 0.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer<br>The body size in bytes.
 				</div>
 
 

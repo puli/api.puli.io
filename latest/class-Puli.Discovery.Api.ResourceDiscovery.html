@@ -326,7 +326,7 @@
 
 <pre><span class="php-var">$bindings</span> = <span class="php-var">$binder</span>-&gt;find(<span class="php-quote">'acme/xliff-messages'</span>);
 
-<span class="php-keyword1">foreach</span> (<span class="php-var">$bindings</span> <span class="php-keyword1">as</span> <span class="php-var">$binding</span>) { <span class="php-keyword1">foreach</span> (<span class="php-var">$binding</span>-&gt;getResources() <span class="php-keyword1">as</span> <span class="php-var">$resource</span>) { <span class="php-var">$translator</span>-&gt;addXlfCatalog( <span class="php-var">$resource</span>-&gt;getLocalPath(), <span class="php-var">$binding</span>-&gt;getParameter(<span class="php-quote">'translationDomain'</span>) ); }
+<span class="php-keyword1">foreach</span> (<span class="php-var">$bindings</span> <span class="php-keyword1">as</span> <span class="php-var">$binding</span>) { <span class="php-keyword1">foreach</span> (<span class="php-var">$binding</span>-&gt;getResources() <span class="php-keyword1">as</span> <span class="php-var">$resource</span>) { <span class="php-var">$translator</span>-&gt;addXlfCatalog( <span class="php-var">$resource</span>-&gt;getFilesystemPath(), <span class="php-var">$binding</span>-&gt;getParameter(<span class="php-quote">'translationDomain'</span>) ); }
 }</pre>
 
 <p>Use <code><a href="class-Puli.Discovery.Api.ResourceDiscovery.html#_getBindings">Puli\Discovery\Api\ResourceDiscovery::getBindings()</a></code> if you want to retrieve all bindings for a

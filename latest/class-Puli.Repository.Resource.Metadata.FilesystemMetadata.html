@@ -273,7 +273,6 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Puli.Repository.Resource.Metadata.EmptyMetadata.html">EmptyMetadata</a></li>
 				<li class="active"><a href="class-Puli.Repository.Resource.Metadata.FilesystemMetadata.html">FilesystemMetadata</a></li>
 			</ul>
 
@@ -322,9 +321,14 @@
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
+			<a href="class-Puli.Repository.Api.Resource.ResourceMetadata.html"><span>Puli\Repository\Api\Resource\ResourceMetadata</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
 <b><span>Puli\Repository\Resource\Metadata\FilesystemMetadata</span></b>			
-			 implements 
-				<a href="class-Puli.Repository.Api.Resource.ResourceMetadata.html"><span>Puli\Repository\Api\Resource\ResourceMetadata</span></a>
 			
 			
 		</dd>
@@ -347,7 +351,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Repository.Resource.Metadata.FilesystemMetadata.html#16-60" title="Go to source code">Resource/Metadata/FilesystemMetadata.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Repository.Resource.Metadata.FilesystemMetadata.html#16-76" title="Go to source code">Resource/Metadata/FilesystemMetadata.php</a>
 		<br>
 	</div>
 
@@ -397,7 +401,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCreationTime">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Metadata.FilesystemMetadata.html#31-43" title="Go to source code">getCreationTime</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Metadata.FilesystemMetadata.html#31-45" title="Go to source code">getCreationTime</a>( )</code>
 
 		<div class="description short">
 			<p>Returns when the resource was created.</p>
@@ -415,9 +419,9 @@
 
 
 
-
-				<h4>Implementation of</h4>
+				<h4>Overrides</h4>
 				<div class="list"><code><a href="class-Puli.Repository.Api.Resource.ResourceMetadata.html#_getCreationTime">Puli\Repository\Api\Resource\ResourceMetadata::getCreationTime()</a></code></div>
+
 		</div>
 		</div></td>
 	</tr>
@@ -433,7 +437,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAccessTime">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Metadata.FilesystemMetadata.html#45-51" title="Go to source code">getAccessTime</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Metadata.FilesystemMetadata.html#47-55" title="Go to source code">getAccessTime</a>( )</code>
 
 		<div class="description short">
 			<p>Returns when the resource was last accessed.</p>
@@ -451,9 +455,9 @@
 
 
 
-
-				<h4>Implementation of</h4>
+				<h4>Overrides</h4>
 				<div class="list"><code><a href="class-Puli.Repository.Api.Resource.ResourceMetadata.html#_getAccessTime">Puli\Repository\Api\Resource\ResourceMetadata::getAccessTime()</a></code></div>
+
 		</div>
 		</div></td>
 	</tr>
@@ -469,7 +473,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getModificationTime">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Metadata.FilesystemMetadata.html#53-59" title="Go to source code">getModificationTime</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Metadata.FilesystemMetadata.html#57-65" title="Go to source code">getModificationTime</a>( )</code>
 
 		<div class="description short">
 			<p>Returns when the resource was last modified.</p>
@@ -487,9 +491,45 @@
 
 
 
-
-				<h4>Implementation of</h4>
+				<h4>Overrides</h4>
 				<div class="list"><code><a href="class-Puli.Repository.Api.Resource.ResourceMetadata.html#_getModificationTime">Puli\Repository\Api\Resource\ResourceMetadata::getModificationTime()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSize" id="_getSize">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSize">#</a>
+		<code><a href="source-class-Puli.Repository.Resource.Metadata.FilesystemMetadata.html#67-75" title="Go to source code">getSize</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the size of the body in bytes.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the size of the body in bytes.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer<br>The body size in bytes.
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Puli.Repository.Api.Resource.ResourceMetadata.html#_getSize">Puli\Repository\Api\Resource\ResourceMetadata::getSize()</a></code></div>
+
 		</div>
 		</div></td>
 	</tr>

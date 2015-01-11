@@ -1578,12 +1578,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/discovery.git",
-                "reference": "e3a13b2dfa917be3d0d8997043d0e1909a1777aa"
+                "reference": "7ac307fee71333b0df917f90c4df856152310c6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/discovery/zipball/e3a13b2dfa917be3d0d8997043d0e1909a1777aa",
-                "reference": "e3a13b2dfa917be3d0d8997043d0e1909a1777aa",
+                "url": "https://api.github.com/repos/puli/discovery/zipball/7ac307fee71333b0df917f90c4df856152310c6f",
+                "reference": "7ac307fee71333b0df917f90c4df856152310c6f",
                 "shasum": ""
             },
             "require": {
@@ -1619,7 +1619,7 @@
             ],
             "description": "Discovers Puli resources bound to predefined types.",
             "homepage": "http://puli.io",
-            "time": "2015-01-10 18:39:56"
+            "time": "2015-01-11 13:10:24"
         },
         {
             "name": "puli/factory",
@@ -1671,12 +1671,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/repository.git",
-                "reference": "6dc47460c6cae70f7951c03d69433f90994cea7c"
+                "reference": "dd3ed10fa36144b5a71d4a2393fbf8633e39eb3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/repository/zipball/6dc47460c6cae70f7951c03d69433f90994cea7c",
-                "reference": "6dc47460c6cae70f7951c03d69433f90994cea7c",
+                "url": "https://api.github.com/repos/puli/repository/zipball/dd3ed10fa36144b5a71d4a2393fbf8633e39eb3e",
+                "reference": "dd3ed10fa36144b5a71d4a2393fbf8633e39eb3e",
                 "shasum": ""
             },
             "require": {
@@ -1709,7 +1709,7 @@
             ],
             "description": "A file system-like repository for storing arbitrary resources.",
             "homepage": "http://puli.io",
-            "time": "2015-01-10 18:29:23"
+            "time": "2015-01-11 13:03:06"
         },
         {
             "name": "puli/repository-manager",
@@ -2241,12 +2241,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/key-value-store.git",
-                "reference": "87c3260cf14700525b5b176839f0aee74d2b0409"
+                "reference": "b6181db7721590d2f03e7ff09c1616750d7e0725"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/key-value-store/zipball/87c3260cf14700525b5b176839f0aee74d2b0409",
-                "reference": "87c3260cf14700525b5b176839f0aee74d2b0409",
+                "url": "https://api.github.com/repos/webmozart/key-value-store/zipball/b6181db7721590d2f03e7ff09c1616750d7e0725",
+                "reference": "b6181db7721590d2f03e7ff09c1616750d7e0725",
                 "shasum": ""
             },
             "require": {
@@ -2279,7 +2279,7 @@
                 }
             ],
             "description": "A key-value store with support for different backends.",
-            "time": "2015-01-09 22:26:19"
+            "time": "2015-01-11 13:13:12"
         },
         {
             "name": "webmozart/path-util",
