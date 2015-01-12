@@ -61,80 +61,20 @@
 	<loc>http://api.puli.io/namespace-Puli.Repository.Uri.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.html</loc>
+	<loc>http://api.puli.io/namespace-Webmozart.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Assert.html</loc>
+	<loc>http://api.puli.io/namespace-Webmozart.KeyValueStore.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Config.html</loc>
+	<loc>http://api.puli.io/namespace-Webmozart.KeyValueStore.Api.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Config.ConfigFile.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Config.ConfigFile.Reader.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Config.ConfigFile.Writer.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Conflict.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Discovery.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Discovery.Store.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Environment.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Event.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Generator.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Generator.Discovery.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Generator.KeyValueStore.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Generator.Repository.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Package.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Package.PackageFile.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Package.PackageFile.Reader.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Package.PackageFile.Writer.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Plugin.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Repository.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Repository.Iterator.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/namespace-Puli.RepositoryManager.Util.html</loc>
+	<loc>http://api.puli.io/namespace-Webmozart.KeyValueStore.Assert.html</loc>
 </url>
 
 
 <url>
-	<loc>http://api.puli.io/class-Puli.RepositoryManager.Util.DistinguishedName.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/class-Puli.RepositoryManager.Util.System.html</loc>
+	<loc>http://api.puli.io/class-Webmozart.KeyValueStore.Assert.Assert.html</loc>
 </url>
 </urlset>
