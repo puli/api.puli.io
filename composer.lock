@@ -556,12 +556,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/latte.git",
-                "reference": "35876cd9a31adfebe6c6264cf69463a4c29dd9cd"
+                "reference": "6d4a81b5113052c79c8e1518c8a8c1f156631422"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/latte/zipball/35876cd9a31adfebe6c6264cf69463a4c29dd9cd",
-                "reference": "35876cd9a31adfebe6c6264cf69463a4c29dd9cd",
+                "url": "https://api.github.com/repos/nette/latte/zipball/6d4a81b5113052c79c8e1518c8a8c1f156631422",
+                "reference": "6d4a81b5113052c79c8e1518c8a8c1f156631422",
                 "shasum": ""
             },
             "require": {
@@ -608,7 +608,7 @@
                 "templating",
                 "twig"
             ],
-            "time": "2015-01-07 00:28:39"
+            "time": "2015-01-12 10:33:14"
         },
         {
             "name": "michelf/php-markdown",
@@ -1027,12 +1027,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/http.git",
-                "reference": "fcc73d12f70862b4e20076a8b523d58b55bff5eb"
+                "reference": "cac4e7d3e4f06b21945840ffc897068cdbff8648"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/http/zipball/fcc73d12f70862b4e20076a8b523d58b55bff5eb",
-                "reference": "fcc73d12f70862b4e20076a8b523d58b55bff5eb",
+                "url": "https://api.github.com/repos/nette/http/zipball/cac4e7d3e4f06b21945840ffc897068cdbff8648",
+                "reference": "cac4e7d3e4f06b21945840ffc897068cdbff8648",
                 "shasum": ""
             },
             "require": {
@@ -1077,7 +1077,7 @@
             ],
             "description": "Nette HTTP Component",
             "homepage": "http://nette.org",
-            "time": "2015-01-07 00:53:57"
+            "time": "2015-01-12 10:32:05"
         },
         {
             "name": "nette/mail",
@@ -1578,12 +1578,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/discovery.git",
-                "reference": "7ac307fee71333b0df917f90c4df856152310c6f"
+                "reference": "6ad5f3cf8c306f6f818a5d5c76fb01b0c96ffcc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/discovery/zipball/7ac307fee71333b0df917f90c4df856152310c6f",
-                "reference": "7ac307fee71333b0df917f90c4df856152310c6f",
+                "url": "https://api.github.com/repos/puli/discovery/zipball/6ad5f3cf8c306f6f818a5d5c76fb01b0c96ffcc6",
+                "reference": "6ad5f3cf8c306f6f818a5d5c76fb01b0c96ffcc6",
                 "shasum": ""
             },
             "require": {
@@ -1619,7 +1619,7 @@
             ],
             "description": "Discovers Puli resources bound to predefined types.",
             "homepage": "http://puli.io",
-            "time": "2015-01-11 13:10:24"
+            "time": "2015-01-12 14:36:06"
         },
         {
             "name": "puli/factory",
@@ -1627,12 +1627,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/factory.git",
-                "reference": "d753c98e5cd954c9d31ef874caa450f502419af7"
+                "reference": "12a831ab4b8090b3ff0ed686d0470e8bcdcb6139"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/factory/zipball/d753c98e5cd954c9d31ef874caa450f502419af7",
-                "reference": "d753c98e5cd954c9d31ef874caa450f502419af7",
+                "url": "https://api.github.com/repos/puli/factory/zipball/12a831ab4b8090b3ff0ed686d0470e8bcdcb6139",
+                "reference": "12a831ab4b8090b3ff0ed686d0470e8bcdcb6139",
                 "shasum": ""
             },
             "require": {
@@ -1663,7 +1663,7 @@
             ],
             "description": "A factory API for Puli's core services.",
             "homepage": "http://puli.io",
-            "time": "2015-01-10 18:38:46"
+            "time": "2015-01-12 14:46:05"
         },
         {
             "name": "puli/repository",
@@ -1671,12 +1671,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/repository.git",
-                "reference": "dd3ed10fa36144b5a71d4a2393fbf8633e39eb3e"
+                "reference": "99d0c680e66c33c7664e0635089050bac1d36101"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/repository/zipball/dd3ed10fa36144b5a71d4a2393fbf8633e39eb3e",
-                "reference": "dd3ed10fa36144b5a71d4a2393fbf8633e39eb3e",
+                "url": "https://api.github.com/repos/puli/repository/zipball/99d0c680e66c33c7664e0635089050bac1d36101",
+                "reference": "99d0c680e66c33c7664e0635089050bac1d36101",
                 "shasum": ""
             },
             "require": {
@@ -1689,7 +1689,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -1707,9 +1707,9 @@
                     "email": "bschussek@gmail.com"
                 }
             ],
-            "description": "A file system-like repository for storing arbitrary resources.",
+            "description": "A filesystem-like repository for storing arbitrary resources.",
             "homepage": "http://puli.io",
-            "time": "2015-01-11 13:03:06"
+            "time": "2015-01-12 13:27:47"
         },
         {
             "name": "puli/repository-manager",
@@ -1717,12 +1717,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/repository-manager.git",
-                "reference": "7aa2bf848ad878c48b165c5abbf944e83efd4e3c"
+                "reference": "fd805743ef8bb7463ece49ba3a4dc072a7be3412"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/repository-manager/zipball/7aa2bf848ad878c48b165c5abbf944e83efd4e3c",
-                "reference": "7aa2bf848ad878c48b165c5abbf944e83efd4e3c",
+                "url": "https://api.github.com/repos/puli/repository-manager/zipball/fd805743ef8bb7463ece49ba3a4dc072a7be3412",
+                "reference": "fd805743ef8bb7463ece49ba3a4dc072a7be3412",
                 "shasum": ""
             },
             "require": {
@@ -1761,7 +1761,7 @@
             ],
             "description": "Generates Puli repositories from configured packages.",
             "homepage": "http://puli.io",
-            "time": "2015-01-10 18:34:26"
+            "time": "2015-01-12 15:31:22"
         },
         {
             "name": "rhumsaa/uuid",
@@ -2154,12 +2154,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/glob.git",
-                "reference": "bdb16d196435d3713913cc29c82a0f32261cbee5"
+                "reference": "5073ec350b3310c5142b644a27ad0cb12cc881cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/glob/zipball/bdb16d196435d3713913cc29c82a0f32261cbee5",
-                "reference": "bdb16d196435d3713913cc29c82a0f32261cbee5",
+                "url": "https://api.github.com/repos/webmozart/glob/zipball/5073ec350b3310c5142b644a27ad0cb12cc881cf",
+                "reference": "5073ec350b3310c5142b644a27ad0cb12cc881cf",
                 "shasum": ""
             },
             "require": {
@@ -2190,7 +2190,7 @@
                 }
             ],
             "description": "A PHP implementation of Git's glob.",
-            "time": "2015-01-09 22:08:30"
+            "time": "2015-01-12 11:26:13"
         },
         {
             "name": "webmozart/json",
@@ -2198,12 +2198,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/json.git",
-                "reference": "a0f8f730db43360da2267cbd8ab2f6f198f9a723"
+                "reference": "c5581d06e95b44824448b62762511c876749936b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/json/zipball/a0f8f730db43360da2267cbd8ab2f6f198f9a723",
-                "reference": "a0f8f730db43360da2267cbd8ab2f6f198f9a723",
+                "url": "https://api.github.com/repos/webmozart/json/zipball/c5581d06e95b44824448b62762511c876749936b",
+                "reference": "c5581d06e95b44824448b62762511c876749936b",
                 "shasum": ""
             },
             "require": {
@@ -2232,8 +2232,8 @@
                     "email": "bschussek@gmail.com"
                 }
             ],
-            "description": "A JSON decoder/encoder with support for schema validation and in-place manipulation.",
-            "time": "2015-01-09 20:50:30"
+            "description": "A robust JSON decoder/encoder with support for schema validation.",
+            "time": "2015-01-12 12:32:11"
         },
         {
             "name": "webmozart/key-value-store",
@@ -2287,12 +2287,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/path-util.git",
-                "reference": "4e4136ad61434214bb9508990587ef28a5202c3a"
+                "reference": "b2161d465cbddcb8f3283e14d05db7d6ecf36be1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/path-util/zipball/4e4136ad61434214bb9508990587ef28a5202c3a",
-                "reference": "4e4136ad61434214bb9508990587ef28a5202c3a",
+                "url": "https://api.github.com/repos/webmozart/path-util/zipball/b2161d465cbddcb8f3283e14d05db7d6ecf36be1",
+                "reference": "b2161d465cbddcb8f3283e14d05db7d6ecf36be1",
                 "shasum": ""
             },
             "require": {
@@ -2320,7 +2320,7 @@
                 }
             ],
             "description": "A robust cross-platform utility for normalizing, comparing and modifying file paths.",
-            "time": "2015-01-12 10:29:05"
+            "time": "2015-01-12 11:21:31"
         }
     ],
     "packages-dev": [],

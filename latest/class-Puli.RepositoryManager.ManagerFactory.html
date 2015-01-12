@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Puli\RepositoryManager\ManagerFactory | Puli API</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-8282807-3"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Puli.html">
+						Puli<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.html">
+						Discovery<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Validation.html">
+						Validation					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Discovery.Assert.html">
+						Assert					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Discovery.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Discovery.Validation.html">
+						Validation					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Factory.html">
+						Factory					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.html">
+						Repository<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Api.Resource.html">
+						Resource					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Repository.Assert.html">
+						Assert					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.html">
+						Resource<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Collection.html">
+						Collection					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Iterator.html">
+						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Metadata.html">
+						Metadata					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Repository.StreamWrapper.html">
+						StreamWrapper					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Uri.html">
+						Uri					</a>
+
+						</li>
+							</ul></li>
+				<li class="active">
+					<a href="namespace-Puli.RepositoryManager.html">
+						RepositoryManager<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Assert.html">
+						Assert					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Config.html">
+						Config<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Config.ConfigFile.html">
+						ConfigFile<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Config.ConfigFile.Reader.html">
+						Reader					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Config.ConfigFile.Writer.html">
+						Writer					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Conflict.html">
+						Conflict					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Discovery.html">
+						Discovery<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Discovery.Store.html">
+						Store					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Environment.html">
+						Environment					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Event.html">
+						Event					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Generator.html">
+						Generator<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Generator.Discovery.html">
+						Discovery					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Generator.KeyValueStore.html">
+						KeyValueStore					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Generator.Repository.html">
+						Repository					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Package.html">
+						Package<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Package.PackageFile.html">
+						PackageFile<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Package.PackageFile.Reader.html">
+						Reader					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Package.PackageFile.Writer.html">
+						Writer					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Plugin.html">
+						Plugin					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.html">
+						Repository<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
+						Iterator					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Util.html">
+						Util					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
+					<a href="namespace-Webmozart.html">
+						Webmozart<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.html">
+						KeyValueStore<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.Api.html">
+						Api					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.Assert.html">
+						Assert					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Puli.RepositoryManager.ManagerEvents.html">ManagerEvents</a></li>
+				<li class="active"><a href="class-Puli.RepositoryManager.ManagerFactory.html">ManagerFactory</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Puli.RepositoryManager.FileNotFoundException.html">FileNotFoundException</a></li>
+				<li><a href="class-Puli.RepositoryManager.InvalidConfigException.html">InvalidConfigException</a></li>
+				<li><a href="class-Puli.RepositoryManager.IOException.html">IOException</a></li>
+				<li><a href="class-Puli.RepositoryManager.NoDirectoryException.html">NoDirectoryException</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Puli.RepositoryManager.html" title="Summary of Puli\RepositoryManager"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ManagerFactory</h1>
+
+
+	<div class="description">
+	<p>Creates environment and manager instances.</p>
+
+<p>Use this class to bootstrap the managers provided by this package:</p>
+
+<pre><span class="php-var">$factory</span> = <span class="php-keyword1">new</span> ManagerFactory();
+<span class="php-var">$environment</span> = <span class="php-var">$factory</span>-&gt;createProjectEnvironment(<span class="php-keyword2">getcwd</span>());
+<span class="php-var">$packageManager</span> = <span class="php-var">$factory</span>-&gt;createPackageManager(<span class="php-var">$environment</span>);</pre>
+
+<p>To create one of the managers, you first need to create the environment that
+the manager will work with. There are two kinds of environments:
+ * The "global environment" is not tied to a specific root package. A global environment only loads the settings of the "config.json" file in the home directory. Global environments are created with <code><a href="class-Puli.RepositoryManager.ManagerFactory.html#_createGlobalEnvironment">Puli\RepositoryManager\ManagerFactory::createGlobalEnvironment()</a></code>.
+ * The "project environment" is tied to a specific Puli project. You need to pass the path to the project to the factory. The local environment will then give access to both global settings set in "config.json" in the home directory and local settings stored in "puli.json" of the project. Local environments are created with <code><a href="class-Puli.RepositoryManager.ManagerFactory.html#_createProjectEnvironment">Puli\RepositoryManager\ManagerFactory::createProjectEnvironment()</a></code>.</p>
+
+<p>The factory creates four kinds of managers:
+ * The "config file manager" allows you to modify entries of the "config.json" file in the home directory. Config file managers are created with <code><a href="class-Puli.RepositoryManager.ManagerFactory.html#_createConfigFileManager">Puli\RepositoryManager\ManagerFactory::createConfigFileManager()</a></code>.
+ * The "package file manager" manages modifications to the "puli.json" file of a Puli project. Use <code><a href="class-Puli.RepositoryManager.ManagerFactory.html#_createRootPackageFileManager">Puli\RepositoryManager\ManagerFactory::createRootPackageFileManager()</a></code> to create it.
+ * The "package manager" manages the package repository of a Puli project. A package manager can be created with <code><a href="class-Puli.RepositoryManager.ManagerFactory.html#_createPackageManager">Puli\RepositoryManager\ManagerFactory::createPackageManager()</a></code>.
+ * The "repository manager" manages the resource repository of a Puli project. It can be created with <code><a href="class-Puli.RepositoryManager.ManagerFactory.html#_createRepositoryManager">Puli\RepositoryManager\ManagerFactory::createRepositoryManager()</a></code>.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.RepositoryManager.html">RepositoryManager</a><br>
+		
+
+				<b>Author:</b>
+				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
+				<b>Since:</b>
+				1.0<br>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.ManagerFactory.html#34-308" title="Go to source code">ManagerFactory.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="createGlobalEnvironment" id="_createGlobalEnvironment">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.RepositoryManager.Environment.GlobalEnvironment.html">Puli\RepositoryManager\Environment\GlobalEnvironment</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createGlobalEnvironment">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.ManagerFactory.html#111-140" title="Go to source code">createGlobalEnvironment</a>( )</code>
+
+		<div class="description short">
+			<p>Creates the global environment.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates the global environment.</p>
+
+<p>The home directory is read from the environment variable "PULI_HOME".
+If this variable is not set, the home directory defaults to:
+ * <code>$HOME/.puli</code> on Linux, where <code>$HOME</code> is the environment variable "HOME". * <code>$APPDATA/Puli</code> on Windows, where <code>$APPDATA</code> is the environment variable "APPDATA".</p>
+
+<p>If none of these variables can be found, an exception is thrown.</p>
+
+<p>A .htaccess file is put into the home directory to protect it from web
+access.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.RepositoryManager.Environment.GlobalEnvironment.html">Puli\RepositoryManager\Environment\GlobalEnvironment</a></code><br>The global environment.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createProjectEnvironment" id="_createProjectEnvironment">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.RepositoryManager.Environment.ProjectEnvironment.html">Puli\RepositoryManager\Environment\ProjectEnvironment</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createProjectEnvironment">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.ManagerFactory.html#142-178" title="Go to source code">createProjectEnvironment</a>( <span>string <var>$rootDir</var></span> )</code>
+
+		<div class="description short">
+			<p>Creates the environment of a Puli project.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates the environment of a Puli project.</p>
+
+<p>The home directory is read from the environment variable "PULI_HOME".
+If this variable is not set, the home directory defaults to:
+ * <code>$HOME/.puli</code> on Linux, where <code>$HOME</code> is the environment variable "HOME". * <code>$APPDATA/Puli</code> on Windows, where <code>$APPDATA</code> is the environment variable "APPDATA".</p>
+
+<p>If none of these variables can be found, an exception is thrown.</p>
+
+<p>A .htaccess file is put into the home directory to protect it from web
+access.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$rootDir</var></dt>
+					<dd>The path to the project.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.RepositoryManager.Environment.ProjectEnvironment.html">Puli\RepositoryManager\Environment\ProjectEnvironment</a></code><br>The project environment.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Puli.RepositoryManager.FileNotFoundException.html">Puli\RepositoryManager\FileNotFoundException</a></code><br>If the path does not exist.<br>
+					<code><a href="class-Puli.RepositoryManager.NoDirectoryException.html">Puli\RepositoryManager\NoDirectoryException</a></code><br>If the path points to a file.
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createConfigFileManager" id="_createConfigFileManager">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.RepositoryManager.Config.ConfigFile.ConfigFileManager.html">Puli\RepositoryManager\Config\ConfigFile\ConfigFileManager</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createConfigFileManager">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.ManagerFactory.html#180-193" title="Go to source code">createConfigFileManager</a>( <span><code><a href="class-Puli.RepositoryManager.Environment.GlobalEnvironment.html">Puli\RepositoryManager\Environment\GlobalEnvironment</a></code> <var>$environment</var></span> )</code>
+
+		<div class="description short">
+			<p>Creates a configuration file manager.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a configuration file manager.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$environment</var></dt>
+					<dd>The global environment.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.RepositoryManager.Config.ConfigFile.ConfigFileManager.html">Puli\RepositoryManager\Config\ConfigFile\ConfigFileManager</a></code><br>The created configuration file manager.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createRootPackageFileManager" id="_createRootPackageFileManager">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.RepositoryManager.Package.PackageFile.RootPackageFileManager.html">Puli\RepositoryManager\Package\PackageFile\RootPackageFileManager</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createRootPackageFileManager">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.ManagerFactory.html#195-209" title="Go to source code">createRootPackageFileManager</a>( <span><code><a href="class-Puli.RepositoryManager.Environment.ProjectEnvironment.html">Puli\RepositoryManager\Environment\ProjectEnvironment</a></code> <var>$environment</var></span> )</code>
+
+		<div class="description short">
+			<p>Creates a package file manager.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a package file manager.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$environment</var></dt>
+					<dd>The project environment.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.RepositoryManager.Package.PackageFile.RootPackageFileManager.html">Puli\RepositoryManager\Package\PackageFile\RootPackageFileManager</a></code><br>The created package file manager.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createPackageManager" id="_createPackageManager">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.RepositoryManager.Package.PackageManager.html">Puli\RepositoryManager\Package\PackageManager</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createPackageManager">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.ManagerFactory.html#211-226" title="Go to source code">createPackageManager</a>( <span><code><a href="class-Puli.RepositoryManager.Environment.ProjectEnvironment.html">Puli\RepositoryManager\Environment\ProjectEnvironment</a></code> <var>$environment</var></span>, <span>Psr\Log\LoggerInterface <var>$logger</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Creates a package manager.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a package manager.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$environment</var></dt>
+					<dd>The project environment.</dd>
+					<dt><var>$logger</var></dt>
+					<dd>The logger. Optional.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.RepositoryManager.Package.PackageManager.html">Puli\RepositoryManager\Package\PackageManager</a></code><br>The package manager.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createRepositoryManager" id="_createRepositoryManager">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.RepositoryManager.Repository.RepositoryManager.html">Puli\RepositoryManager\Repository\RepositoryManager</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createRepositoryManager">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.ManagerFactory.html#228-245" title="Go to source code">createRepositoryManager</a>( <span><code><a href="class-Puli.RepositoryManager.Environment.ProjectEnvironment.html">Puli\RepositoryManager\Environment\ProjectEnvironment</a></code> <var>$environment</var></span>, <span><code><a href="class-Puli.RepositoryManager.Package.PackageManager.html">Puli\RepositoryManager\Package\PackageManager</a></code> <var>$packageManager</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Creates a resource repository manager.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a resource repository manager.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$environment</var></dt>
+					<dd>The project environment.</dd>
+					<dt><var>$packageManager</var></dt>
+					<dd>The package manager. Optional.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.RepositoryManager.Repository.RepositoryManager.html">Puli\RepositoryManager\Repository\RepositoryManager</a></code><br>The repository manager.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createDiscoveryManager" id="_createDiscoveryManager">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.RepositoryManager.Discovery.DiscoveryManager.html">Puli\RepositoryManager\Discovery\DiscoveryManager</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createDiscoveryManager">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.ManagerFactory.html#247-266" title="Go to source code">createDiscoveryManager</a>( <span><code><a href="class-Puli.RepositoryManager.Environment.ProjectEnvironment.html">Puli\RepositoryManager\Environment\ProjectEnvironment</a></code> <var>$environment</var></span>, <span><code><a href="class-Puli.RepositoryManager.Package.PackageManager.html">Puli\RepositoryManager\Package\PackageManager</a></code> <var>$packageManager</var> = <span class="php-keyword1">null</span></span>, <span>Psr\Log\LoggerInterface <var>$logger</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Creates a resource discovery manager.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a resource discovery manager.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$environment</var></dt>
+					<dd>The project environment.</dd>
+					<dt><var>$packageManager</var></dt>
+					<dd>The package manager. Optional.</dd>
+					<dt><var>$logger</var></dt>
+					<dd>The logger. Optional.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.RepositoryManager.Discovery.DiscoveryManager.html">Puli\RepositoryManager\Discovery\DiscoveryManager</a></code><br>The discovery manager.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Puli API API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -135,6 +135,135 @@
 						Uri					</a>
 
 						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.html">
+						RepositoryManager<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Assert.html">
+						Assert					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Config.html">
+						Config<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Config.ConfigFile.html">
+						ConfigFile<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Config.ConfigFile.Reader.html">
+						Reader					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Config.ConfigFile.Writer.html">
+						Writer					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Conflict.html">
+						Conflict					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Discovery.html">
+						Discovery<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Discovery.Store.html">
+						Store					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Environment.html">
+						Environment					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Event.html">
+						Event					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Generator.html">
+						Generator<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Generator.Discovery.html">
+						Discovery					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Generator.KeyValueStore.html">
+						KeyValueStore					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Generator.Repository.html">
+						Repository					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Package.html">
+						Package<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Package.PackageFile.html">
+						PackageFile<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Package.PackageFile.Reader.html">
+						Reader					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Package.PackageFile.Writer.html">
+						Writer					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Plugin.html">
+						Plugin					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.html">
+						Repository<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
+						Iterator					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Util.html">
+						Util					</a>
+
+						</li>
 							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Webmozart.html">
@@ -420,105 +549,102 @@
 </span></span><span id="212" class="l"><a href="#212">212: </a><span class="php-comment">     * Recursively creates a directory for a path.
 </span></span><span id="213" class="l"><a href="#213">213: </a><span class="php-comment">     *
 </span></span><span id="214" class="l"><a href="#214">214: </a><span class="php-comment">     * @param string $path A directory path.
-</span></span><span id="215" class="l"><a href="#215">215: </a><span class="php-comment">     *
-</span></span><span id="216" class="l"><a href="#216">216: </a><span class="php-comment">     * @throws NoDirectoryException If a resource with that path exists, but is
-</span></span><span id="217" class="l"><a href="#217">217: </a><span class="php-comment">     *                              no directory.
-</span></span><span id="218" class="l"><a href="#218">218: </a><span class="php-comment">     */</span>
-</span><span id="219" class="l"><a href="#219">219: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> ensureDirectoryExists(<span class="php-var">$path</span>)
-</span><span id="220" class="l"><a href="#220">220: </a>    {
-</span><span id="221" class="l"><a href="#221">221: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;resources[<span class="php-var">$path</span>])) {
-</span><span id="222" class="l"><a href="#222">222: </a>            <span class="php-comment">// Recursively initialize parent directories</span>
-</span><span id="223" class="l"><a href="#223">223: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$path</span> !== <span class="php-quote">'/'</span>) {
-</span><span id="224" class="l"><a href="#224">224: </a>                <span class="php-var">$this</span>-&gt;ensureDirectoryExists(Path::getDirectory(<span class="php-var">$path</span>));
-</span><span id="225" class="l"><a href="#225">225: </a>            }
+</span></span><span id="215" class="l"><a href="#215">215: </a><span class="php-comment">     */</span>
+</span><span id="216" class="l"><a href="#216">216: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> ensureDirectoryExists(<span class="php-var">$path</span>)
+</span><span id="217" class="l"><a href="#217">217: </a>    {
+</span><span id="218" class="l"><a href="#218">218: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;resources[<span class="php-var">$path</span>])) {
+</span><span id="219" class="l"><a href="#219">219: </a>            <span class="php-comment">// Recursively initialize parent directories</span>
+</span><span id="220" class="l"><a href="#220">220: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$path</span> !== <span class="php-quote">'/'</span>) {
+</span><span id="221" class="l"><a href="#221">221: </a>                <span class="php-var">$this</span>-&gt;ensureDirectoryExists(Path::getDirectory(<span class="php-var">$path</span>));
+</span><span id="222" class="l"><a href="#222">222: </a>            }
+</span><span id="223" class="l"><a href="#223">223: </a>
+</span><span id="224" class="l"><a href="#224">224: </a>            <span class="php-var">$this</span>-&gt;resources[<span class="php-var">$path</span>] = <span class="php-keyword1">new</span> GenericResource(<span class="php-var">$path</span>);
+</span><span id="225" class="l"><a href="#225">225: </a>            <span class="php-var">$this</span>-&gt;resources[<span class="php-var">$path</span>]-&gt;attachTo(<span class="php-var">$this</span>);
 </span><span id="226" class="l"><a href="#226">226: </a>
-</span><span id="227" class="l"><a href="#227">227: </a>            <span class="php-var">$this</span>-&gt;resources[<span class="php-var">$path</span>] = <span class="php-keyword1">new</span> GenericResource(<span class="php-var">$path</span>);
-</span><span id="228" class="l"><a href="#228">228: </a>            <span class="php-var">$this</span>-&gt;resources[<span class="php-var">$path</span>]-&gt;attachTo(<span class="php-var">$this</span>);
-</span><span id="229" class="l"><a href="#229">229: </a>
-</span><span id="230" class="l"><a href="#230">230: </a>            <span class="php-keyword1">return</span>;
-</span><span id="231" class="l"><a href="#231">231: </a>        }
-</span><span id="232" class="l"><a href="#232">232: </a>    }
-</span><span id="233" class="l"><a href="#233">233: </a>
-</span><span id="234" class="l"><a href="#234">234: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> addResource(<span class="php-var">$path</span>, Resource <span class="php-var">$resource</span>)
-</span><span id="235" class="l"><a href="#235">235: </a>    {
-</span><span id="236" class="l"><a href="#236">236: </a>        <span class="php-comment">// Don't modify resources attached to other repositories</span>
-</span><span id="237" class="l"><a href="#237">237: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$resource</span>-&gt;isAttached()) {
-</span><span id="238" class="l"><a href="#238">238: </a>            <span class="php-var">$resource</span> = <span class="php-keyword1">clone</span> <span class="php-var">$resource</span>;
-</span><span id="239" class="l"><a href="#239">239: </a>        }
-</span><span id="240" class="l"><a href="#240">240: </a>
-</span><span id="241" class="l"><a href="#241">241: </a>        <span class="php-var">$basePath</span> = <span class="php-quote">'/'</span> === <span class="php-var">$path</span> ? <span class="php-var">$path</span> : <span class="php-var">$path</span>.<span class="php-quote">'/'</span>;
+</span><span id="227" class="l"><a href="#227">227: </a>            <span class="php-keyword1">return</span>;
+</span><span id="228" class="l"><a href="#228">228: </a>        }
+</span><span id="229" class="l"><a href="#229">229: </a>    }
+</span><span id="230" class="l"><a href="#230">230: </a>
+</span><span id="231" class="l"><a href="#231">231: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> addResource(<span class="php-var">$path</span>, Resource <span class="php-var">$resource</span>)
+</span><span id="232" class="l"><a href="#232">232: </a>    {
+</span><span id="233" class="l"><a href="#233">233: </a>        <span class="php-comment">// Don't modify resources attached to other repositories</span>
+</span><span id="234" class="l"><a href="#234">234: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$resource</span>-&gt;isAttached()) {
+</span><span id="235" class="l"><a href="#235">235: </a>            <span class="php-var">$resource</span> = <span class="php-keyword1">clone</span> <span class="php-var">$resource</span>;
+</span><span id="236" class="l"><a href="#236">236: </a>        }
+</span><span id="237" class="l"><a href="#237">237: </a>
+</span><span id="238" class="l"><a href="#238">238: </a>        <span class="php-var">$basePath</span> = <span class="php-quote">'/'</span> === <span class="php-var">$path</span> ? <span class="php-var">$path</span> : <span class="php-var">$path</span>.<span class="php-quote">'/'</span>;
+</span><span id="239" class="l"><a href="#239">239: </a>
+</span><span id="240" class="l"><a href="#240">240: </a>        <span class="php-comment">// Read children before attaching the resource to this repository</span>
+</span><span id="241" class="l"><a href="#241">241: </a>        <span class="php-var">$children</span> = <span class="php-var">$resource</span>-&gt;listChildren();
 </span><span id="242" class="l"><a href="#242">242: </a>
-</span><span id="243" class="l"><a href="#243">243: </a>        <span class="php-comment">// Read children before attaching the resource to this repository</span>
-</span><span id="244" class="l"><a href="#244">244: </a>        <span class="php-var">$children</span> = <span class="php-var">$resource</span>-&gt;listChildren();
-</span><span id="245" class="l"><a href="#245">245: </a>
-</span><span id="246" class="l"><a href="#246">246: </a>        <span class="php-var">$resource</span>-&gt;attachTo(<span class="php-var">$this</span>, <span class="php-var">$path</span>);
-</span><span id="247" class="l"><a href="#247">247: </a>
-</span><span id="248" class="l"><a href="#248">248: </a>        <span class="php-comment">// Add the resource before adding its children, so that the array</span>
-</span><span id="249" class="l"><a href="#249">249: </a>        <span class="php-comment">// stays sorted</span>
-</span><span id="250" class="l"><a href="#250">250: </a>        <span class="php-var">$this</span>-&gt;resources[<span class="php-var">$path</span>] = <span class="php-var">$resource</span>;
-</span><span id="251" class="l"><a href="#251">251: </a>
-</span><span id="252" class="l"><a href="#252">252: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$children</span> <span class="php-keyword1">as</span> <span class="php-var">$name</span> =&gt; <span class="php-var">$child</span>) {
-</span><span id="253" class="l"><a href="#253">253: </a>            <span class="php-var">$this</span>-&gt;addResource(<span class="php-var">$basePath</span>.<span class="php-var">$name</span>, <span class="php-var">$child</span>);
-</span><span id="254" class="l"><a href="#254">254: </a>        }
-</span><span id="255" class="l"><a href="#255">255: </a>    }
-</span><span id="256" class="l"><a href="#256">256: </a>
-</span><span id="257" class="l"><a href="#257">257: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> removeResource(Resource <span class="php-var">$resource</span>)
-</span><span id="258" class="l"><a href="#258">258: </a>    {
-</span><span id="259" class="l"><a href="#259">259: </a>        <span class="php-var">$path</span> = <span class="php-var">$resource</span>-&gt;getPath();
-</span><span id="260" class="l"><a href="#260">260: </a>
-</span><span id="261" class="l"><a href="#261">261: </a>        <span class="php-comment">// Ignore non-existing resources</span>
-</span><span id="262" class="l"><a href="#262">262: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;resources[<span class="php-var">$path</span>])) {
-</span><span id="263" class="l"><a href="#263">263: </a>            <span class="php-keyword1">return</span>;
-</span><span id="264" class="l"><a href="#264">264: </a>        }
-</span><span id="265" class="l"><a href="#265">265: </a>
-</span><span id="266" class="l"><a href="#266">266: </a>        <span class="php-comment">// Recursively register directory contents</span>
-</span><span id="267" class="l"><a href="#267">267: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;getChildIterator(<span class="php-var">$resource</span>) <span class="php-keyword1">as</span> <span class="php-var">$child</span>) {
-</span><span id="268" class="l"><a href="#268">268: </a>            <span class="php-var">$this</span>-&gt;removeResource(<span class="php-var">$child</span>);
-</span><span id="269" class="l"><a href="#269">269: </a>        }
-</span><span id="270" class="l"><a href="#270">270: </a>
-</span><span id="271" class="l"><a href="#271">271: </a>        <span class="php-keyword1">unset</span>(<span class="php-var">$this</span>-&gt;resources[<span class="php-var">$path</span>]);
-</span><span id="272" class="l"><a href="#272">272: </a>
-</span><span id="273" class="l"><a href="#273">273: </a>        <span class="php-comment">// Detach from locator</span>
-</span><span id="274" class="l"><a href="#274">274: </a>        <span class="php-var">$resource</span>-&gt;detach(<span class="php-var">$this</span>);
-</span><span id="275" class="l"><a href="#275">275: </a>    }
-</span><span id="276" class="l"><a href="#276">276: </a>
-</span><span id="277" class="l"><a href="#277">277: </a>    <span class="php-comment">/**
-</span></span><span id="278" class="l"><a href="#278">278: </a><span class="php-comment">     * Returns an iterator for the children of a resource.
-</span></span><span id="279" class="l"><a href="#279">279: </a><span class="php-comment">     *
-</span></span><span id="280" class="l"><a href="#280">280: </a><span class="php-comment">     * @param Resource $resource The resource.
-</span></span><span id="281" class="l"><a href="#281">281: </a><span class="php-comment">     *
-</span></span><span id="282" class="l"><a href="#282">282: </a><span class="php-comment">     * @return RegexFilterIterator|Resource[] The iterator.
-</span></span><span id="283" class="l"><a href="#283">283: </a><span class="php-comment">     */</span>
-</span><span id="284" class="l"><a href="#284">284: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> getChildIterator(Resource <span class="php-var">$resource</span>)
-</span><span id="285" class="l"><a href="#285">285: </a>    {
-</span><span id="286" class="l"><a href="#286">286: </a>        <span class="php-var">$staticPrefix</span> = <span class="php-keyword2">rtrim</span>(<span class="php-var">$resource</span>-&gt;getPath(), <span class="php-quote">'/'</span>).<span class="php-quote">'/'</span>;
-</span><span id="287" class="l"><a href="#287">287: </a>        <span class="php-var">$regExp</span> = <span class="php-quote">'~^'</span>.<span class="php-keyword2">preg_quote</span>(<span class="php-var">$staticPrefix</span>, <span class="php-quote">'~'</span>).<span class="php-quote">'[^/]+$~'</span>;
-</span><span id="288" class="l"><a href="#288">288: </a>
-</span><span id="289" class="l"><a href="#289">289: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">new</span> RegexFilterIterator(
-</span><span id="290" class="l"><a href="#290">290: </a>            <span class="php-var">$regExp</span>,
-</span><span id="291" class="l"><a href="#291">291: </a>            <span class="php-var">$staticPrefix</span>,
-</span><span id="292" class="l"><a href="#292">292: </a>            <span class="php-keyword1">new</span> ArrayIterator(<span class="php-var">$this</span>-&gt;resources),
-</span><span id="293" class="l"><a href="#293">293: </a>            RegexFilterIterator::FILTER_KEY
-</span><span id="294" class="l"><a href="#294">294: </a>        );
-</span><span id="295" class="l"><a href="#295">295: </a>    }
-</span><span id="296" class="l"><a href="#296">296: </a>
-</span><span id="297" class="l"><a href="#297">297: </a>    <span class="php-comment">/**
-</span></span><span id="298" class="l"><a href="#298">298: </a><span class="php-comment">     * Returns an iterator for a glob.
-</span></span><span id="299" class="l"><a href="#299">299: </a><span class="php-comment">     *
-</span></span><span id="300" class="l"><a href="#300">300: </a><span class="php-comment">     * @param string $glob The glob.
-</span></span><span id="301" class="l"><a href="#301">301: </a><span class="php-comment">     *
-</span></span><span id="302" class="l"><a href="#302">302: </a><span class="php-comment">     * @return GlobFilterIterator|Resource[] The iterator.
-</span></span><span id="303" class="l"><a href="#303">303: </a><span class="php-comment">     */</span>
-</span><span id="304" class="l"><a href="#304">304: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> getGlobIterator(<span class="php-var">$glob</span>)
-</span><span id="305" class="l"><a href="#305">305: </a>    {
-</span><span id="306" class="l"><a href="#306">306: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">new</span> GlobFilterIterator(
-</span><span id="307" class="l"><a href="#307">307: </a>            <span class="php-var">$glob</span>,
-</span><span id="308" class="l"><a href="#308">308: </a>            <span class="php-keyword1">new</span> ArrayIterator(<span class="php-var">$this</span>-&gt;resources),
-</span><span id="309" class="l"><a href="#309">309: </a>            GlobFilterIterator::FILTER_KEY
-</span><span id="310" class="l"><a href="#310">310: </a>        );
-</span><span id="311" class="l"><a href="#311">311: </a>    }
-</span><span id="312" class="l"><a href="#312">312: </a>}
-</span><span id="313" class="l"><a href="#313">313: </a></span></code></pre>
+</span><span id="243" class="l"><a href="#243">243: </a>        <span class="php-var">$resource</span>-&gt;attachTo(<span class="php-var">$this</span>, <span class="php-var">$path</span>);
+</span><span id="244" class="l"><a href="#244">244: </a>
+</span><span id="245" class="l"><a href="#245">245: </a>        <span class="php-comment">// Add the resource before adding its children, so that the array</span>
+</span><span id="246" class="l"><a href="#246">246: </a>        <span class="php-comment">// stays sorted</span>
+</span><span id="247" class="l"><a href="#247">247: </a>        <span class="php-var">$this</span>-&gt;resources[<span class="php-var">$path</span>] = <span class="php-var">$resource</span>;
+</span><span id="248" class="l"><a href="#248">248: </a>
+</span><span id="249" class="l"><a href="#249">249: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$children</span> <span class="php-keyword1">as</span> <span class="php-var">$name</span> =&gt; <span class="php-var">$child</span>) {
+</span><span id="250" class="l"><a href="#250">250: </a>            <span class="php-var">$this</span>-&gt;addResource(<span class="php-var">$basePath</span>.<span class="php-var">$name</span>, <span class="php-var">$child</span>);
+</span><span id="251" class="l"><a href="#251">251: </a>        }
+</span><span id="252" class="l"><a href="#252">252: </a>    }
+</span><span id="253" class="l"><a href="#253">253: </a>
+</span><span id="254" class="l"><a href="#254">254: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> removeResource(Resource <span class="php-var">$resource</span>)
+</span><span id="255" class="l"><a href="#255">255: </a>    {
+</span><span id="256" class="l"><a href="#256">256: </a>        <span class="php-var">$path</span> = <span class="php-var">$resource</span>-&gt;getPath();
+</span><span id="257" class="l"><a href="#257">257: </a>
+</span><span id="258" class="l"><a href="#258">258: </a>        <span class="php-comment">// Ignore non-existing resources</span>
+</span><span id="259" class="l"><a href="#259">259: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;resources[<span class="php-var">$path</span>])) {
+</span><span id="260" class="l"><a href="#260">260: </a>            <span class="php-keyword1">return</span>;
+</span><span id="261" class="l"><a href="#261">261: </a>        }
+</span><span id="262" class="l"><a href="#262">262: </a>
+</span><span id="263" class="l"><a href="#263">263: </a>        <span class="php-comment">// Recursively register directory contents</span>
+</span><span id="264" class="l"><a href="#264">264: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;getChildIterator(<span class="php-var">$resource</span>) <span class="php-keyword1">as</span> <span class="php-var">$child</span>) {
+</span><span id="265" class="l"><a href="#265">265: </a>            <span class="php-var">$this</span>-&gt;removeResource(<span class="php-var">$child</span>);
+</span><span id="266" class="l"><a href="#266">266: </a>        }
+</span><span id="267" class="l"><a href="#267">267: </a>
+</span><span id="268" class="l"><a href="#268">268: </a>        <span class="php-keyword1">unset</span>(<span class="php-var">$this</span>-&gt;resources[<span class="php-var">$path</span>]);
+</span><span id="269" class="l"><a href="#269">269: </a>
+</span><span id="270" class="l"><a href="#270">270: </a>        <span class="php-comment">// Detach from locator</span>
+</span><span id="271" class="l"><a href="#271">271: </a>        <span class="php-var">$resource</span>-&gt;detach(<span class="php-var">$this</span>);
+</span><span id="272" class="l"><a href="#272">272: </a>    }
+</span><span id="273" class="l"><a href="#273">273: </a>
+</span><span id="274" class="l"><a href="#274">274: </a>    <span class="php-comment">/**
+</span></span><span id="275" class="l"><a href="#275">275: </a><span class="php-comment">     * Returns an iterator for the children of a resource.
+</span></span><span id="276" class="l"><a href="#276">276: </a><span class="php-comment">     *
+</span></span><span id="277" class="l"><a href="#277">277: </a><span class="php-comment">     * @param Resource $resource The resource.
+</span></span><span id="278" class="l"><a href="#278">278: </a><span class="php-comment">     *
+</span></span><span id="279" class="l"><a href="#279">279: </a><span class="php-comment">     * @return RegexFilterIterator|Resource[] The iterator.
+</span></span><span id="280" class="l"><a href="#280">280: </a><span class="php-comment">     */</span>
+</span><span id="281" class="l"><a href="#281">281: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> getChildIterator(Resource <span class="php-var">$resource</span>)
+</span><span id="282" class="l"><a href="#282">282: </a>    {
+</span><span id="283" class="l"><a href="#283">283: </a>        <span class="php-var">$staticPrefix</span> = <span class="php-keyword2">rtrim</span>(<span class="php-var">$resource</span>-&gt;getPath(), <span class="php-quote">'/'</span>).<span class="php-quote">'/'</span>;
+</span><span id="284" class="l"><a href="#284">284: </a>        <span class="php-var">$regExp</span> = <span class="php-quote">'~^'</span>.<span class="php-keyword2">preg_quote</span>(<span class="php-var">$staticPrefix</span>, <span class="php-quote">'~'</span>).<span class="php-quote">'[^/]+$~'</span>;
+</span><span id="285" class="l"><a href="#285">285: </a>
+</span><span id="286" class="l"><a href="#286">286: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">new</span> RegexFilterIterator(
+</span><span id="287" class="l"><a href="#287">287: </a>            <span class="php-var">$regExp</span>,
+</span><span id="288" class="l"><a href="#288">288: </a>            <span class="php-var">$staticPrefix</span>,
+</span><span id="289" class="l"><a href="#289">289: </a>            <span class="php-keyword1">new</span> ArrayIterator(<span class="php-var">$this</span>-&gt;resources),
+</span><span id="290" class="l"><a href="#290">290: </a>            RegexFilterIterator::FILTER_KEY
+</span><span id="291" class="l"><a href="#291">291: </a>        );
+</span><span id="292" class="l"><a href="#292">292: </a>    }
+</span><span id="293" class="l"><a href="#293">293: </a>
+</span><span id="294" class="l"><a href="#294">294: </a>    <span class="php-comment">/**
+</span></span><span id="295" class="l"><a href="#295">295: </a><span class="php-comment">     * Returns an iterator for a glob.
+</span></span><span id="296" class="l"><a href="#296">296: </a><span class="php-comment">     *
+</span></span><span id="297" class="l"><a href="#297">297: </a><span class="php-comment">     * @param string $glob The glob.
+</span></span><span id="298" class="l"><a href="#298">298: </a><span class="php-comment">     *
+</span></span><span id="299" class="l"><a href="#299">299: </a><span class="php-comment">     * @return GlobFilterIterator|Resource[] The iterator.
+</span></span><span id="300" class="l"><a href="#300">300: </a><span class="php-comment">     */</span>
+</span><span id="301" class="l"><a href="#301">301: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> getGlobIterator(<span class="php-var">$glob</span>)
+</span><span id="302" class="l"><a href="#302">302: </a>    {
+</span><span id="303" class="l"><a href="#303">303: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">new</span> GlobFilterIterator(
+</span><span id="304" class="l"><a href="#304">304: </a>            <span class="php-var">$glob</span>,
+</span><span id="305" class="l"><a href="#305">305: </a>            <span class="php-keyword1">new</span> ArrayIterator(<span class="php-var">$this</span>-&gt;resources),
+</span><span id="306" class="l"><a href="#306">306: </a>            GlobFilterIterator::FILTER_KEY
+</span><span id="307" class="l"><a href="#307">307: </a>        );
+</span><span id="308" class="l"><a href="#308">308: </a>    }
+</span><span id="309" class="l"><a href="#309">309: </a>}
+</span><span id="310" class="l"><a href="#310">310: </a></span></code></pre>
 
 	<div id="footer">
 		Puli API API documentation generated by <a href="http://apigen.org">ApiGen</a>
@@ -526,6 +652,6 @@
 </div>
 </div>
 <script src="resources/combined.js?de92956e949966c1f12d45243b45d71770188b0c"></script>
-<script src="elementlist.js?ba021027bb0c01a1a6760606f00bef49adb56838"></script>
+<script src="elementlist.js?cd81efb079cf05f08b75eda624d80903c5fd7d53"></script>
 </body>
 </html>

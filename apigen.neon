@@ -2,6 +2,7 @@ source:
     - vendor/puli/repository/src
     - vendor/puli/discovery/src
     - vendor/puli/factory/src
+    - vendor/puli/repository-manager/src
     - vendor/webmozart/key-value-store/src
 
 title: Puli API
