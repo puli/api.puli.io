@@ -247,7 +247,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#22-243" title="Go to source code">JsonFileStore.php</a>
+			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#23-252" title="Go to source code">JsonFileStore.php</a>
 		<br>
 	</div>
 
@@ -267,7 +267,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#39-50" title="Go to source code">__construct</a>( <span> <var>$path</var></span>, <span> <var>$cache</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#40-51" title="Go to source code">__construct</a>( <span> <var>$path</var></span>, <span> <var>$cache</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			
@@ -297,7 +297,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#52-80" title="Go to source code">set</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#53-85" title="Go to source code">set</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the value for a key in the store.</p>
@@ -318,9 +318,11 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidKeyException<br>If the key is invalid.<br>
+					<code><a href="class-Webmozart.KeyValueStore.Api.WriteException.html">Webmozart\KeyValueStore\Api\WriteException</a></code><br>If the store cannot be written.<br>
+					InvalidKeyException<br>If the key is not a string or integer.<br>
 					<code><a href="class-Webmozart.KeyValueStore.Api.SerializationFailedException.html">Webmozart\KeyValueStore\Api\SerializationFailedException</a></code><br>If the value cannot be serialized.<br>
-					<code><a href="class-Webmozart.KeyValueStore.Api.StorageException.html">Webmozart\KeyValueStore\Api\StorageException</a></code><br>If the storage of the key failed.
+					<code><a href="class-Webmozart.KeyValueStore.Api.UnsupportedValueException.html">Webmozart\KeyValueStore\Api\UnsupportedValueException</a></code><br><p>If the value is not supported by the
+                                  implementation.</p>
 				</div>
 
 
@@ -342,7 +344,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#82-110" title="Go to source code">get</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#87-115" title="Go to source code">get</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the value of a key in the store.</p>
@@ -368,8 +370,8 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidKeyException<br>If the key is invalid.<br>
-					<code><a href="class-Webmozart.KeyValueStore.Api.StorageException.html">Webmozart\KeyValueStore\Api\StorageException</a></code><br>If the retrieval of the key failed.
+					<code><a href="class-Webmozart.KeyValueStore.Api.ReadException.html">Webmozart\KeyValueStore\Api\ReadException</a></code><br>If the store cannot be read.<br>
+					InvalidKeyException<br>If the key is not a string or integer.
 				</div>
 
 
@@ -391,7 +393,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#112-134" title="Go to source code">remove</a>( <span>integer|string <var>$key</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#117-139" title="Go to source code">remove</a>( <span>integer|string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a key from the store.</p>
@@ -409,13 +411,13 @@
 
 				<h4>Returns</h4>
 				<div class="list">
-					boolean<br>Whether a key was removed.
+					boolean<br>Returns <code>true</code> if a key was removed from the store.
 				</div>
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidKeyException<br>If the key is invalid.<br>
-					<code><a href="class-Webmozart.KeyValueStore.Api.StorageException.html">Webmozart\KeyValueStore\Api\StorageException</a></code><br>If the removal of the key failed.
+					<code><a href="class-Webmozart.KeyValueStore.Api.WriteException.html">Webmozart\KeyValueStore\Api\WriteException</a></code><br>If the store cannot be written.<br>
+					InvalidKeyException<br>If the key is not a string or integer.
 				</div>
 
 
@@ -437,7 +439,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_has">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#136-150" title="Go to source code">has</a>( <span>integer|string <var>$key</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#141-155" title="Go to source code">has</a>( <span>integer|string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the store contains a key.</p>
@@ -460,8 +462,8 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidKeyException<br>If the key is invalid.<br>
-					<code><a href="class-Webmozart.KeyValueStore.Api.StorageException.html">Webmozart\KeyValueStore\Api\StorageException</a></code><br>If the query of the key failed.
+					<code><a href="class-Webmozart.KeyValueStore.Api.ReadException.html">Webmozart\KeyValueStore\Api\ReadException</a></code><br>If the store cannot be read.<br>
+					InvalidKeyException<br>If the key is not a string or integer.
 				</div>
 
 
@@ -483,7 +485,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#152-162" title="Go to source code">clear</a>( )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#157-167" title="Go to source code">clear</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all keys from the store.</p>
@@ -497,7 +499,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><a href="class-Webmozart.KeyValueStore.Api.StorageException.html">Webmozart\KeyValueStore\Api\StorageException</a></code><br>If the removal failed.
+					<code><a href="class-Webmozart.KeyValueStore.Api.WriteException.html">Webmozart\KeyValueStore\Api\WriteException</a></code><br>If the store cannot be written.
 				</div>
 
 
@@ -523,7 +525,7 @@
 		<td class="attributes"><code>float</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#30-33" title="Go to source code"><b>MAX_FLOAT</b></a>
+				<a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#31-34" title="Go to source code"><b>MAX_FLOAT</b></a>
 			</code>
 
 			<div class="description short">

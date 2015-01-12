@@ -2,8 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
 
-	<title>Class Webmozart\KeyValueStore\Api\StorageException | Puli API</title>
+	<title>File Api/ReadException.php | Puli API</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -135,19 +136,19 @@
 
 						</li>
 							</ul></li></ul></li>
-				<li class="active">
+				<li>
 					<a href="namespace-Webmozart.html">
 						Webmozart<span></span>
 					</a>
 
 						<ul>
-				<li class="active">
+				<li>
 					<a href="namespace-Webmozart.KeyValueStore.html">
 						KeyValueStore<span></span>
 					</a>
 
 						<ul>
-				<li class="active">
+				<li>
 					<a href="namespace-Webmozart.KeyValueStore.Api.html">
 						Api					</a>
 
@@ -165,14 +166,11 @@
 
 
 		<div id="elements">
-
-			<h3>Interfaces</h3>
+			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Webmozart.KeyValueStore.Api.InvalidKeyException.html">InvalidKeyException</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.Api.KeyValueStore.html">KeyValueStore</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.Api.SerializationFailedException.html">SerializationFailedException</a></li>
-				<li class="active"><a href="class-Webmozart.KeyValueStore.Api.StorageException.html">StorageException</a></li>
+				<li><a href="class-Webmozart.KeyValueStore.Assert.Assert.html">Webmozart\KeyValueStore\Assert\Assert</a></li>
 			</ul>
+
 
 
 
@@ -197,10 +195,10 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-Webmozart.KeyValueStore.Api.html" title="Summary of Webmozart\KeyValueStore\Api"><span>Namespace</span></a>
+<span>Namespace</span>			</li>
+			<li>
+				<a href="class-Webmozart.KeyValueStore.Api.WriteException.html" title="Summary of Webmozart\KeyValueStore\Api\WriteException"><span>Class</span></a>
 			</li>
-			<li class="active">
-<span>Class</span>			</li>
 		</ul>
 		<ul>
 		</ul>
@@ -208,110 +206,38 @@
 		</ul>
 	</div>
 
-<div id="content" class="class">
-	<h1>Class StorageException</h1>
-
-
-	<div class="description">
-	<p>Thrown when the storage or retrieval of a key failed.</p>
-	</div>
-
-	<dl class="tree">
-		<dd style="padding-left:0px">
-Exception
-			
-			
-		</dd>
-		<dd style="padding-left:30px">
-			<img src="resources/inherit.png" alt="Extended by">
-RuntimeException
-			
-			
-		</dd>
-		<dd style="padding-left:60px">
-			<img src="resources/inherit.png" alt="Extended by">
-<b><span>Webmozart\KeyValueStore\Api\StorageException</span></b>			
-			
-			
-		</dd>
-	</dl>
-
-
-
-
-
-
-
-
-	<div class="info">
-		
-		
-		<b>Namespace:</b> <a href="namespace-Webmozart.html">Webmozart</a>\<a href="namespace-Webmozart.KeyValueStore.html">KeyValueStore</a>\<a href="namespace-Webmozart.KeyValueStore.Api.html">Api</a><br>
-		
-
-				<b>Author:</b>
-				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
-				<b>Since:</b>
-				1.0<br>
-			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.Api.StorageException.html#16-24" title="Go to source code">Api/StorageException.php</a>
-		<br>
-	</div>
-
-
-
-
-	<table class="summary inherited">
-	<caption>Methods inherited from Exception</caption>
-	<tr>
-		<td><code>
-__construct(), 
-__toString(), 
-getCode(), 
-getFile(), 
-getLine(), 
-getMessage(), 
-getPrevious(), 
-getTrace(), 
-getTraceAsString()
-		</code></td>
-	</tr>
-	</table>
-
-
-
-
-
-
-
-
-
-
-
-
-	<table class="summary inherited">
-	<caption>Properties inherited from Exception</caption>
-	<tr>
-		<td><code>
-<var>$code</var>, 
-<var>$file</var>, 
-<var>$line</var>, 
-<var>$message</var>
-		</code></td>
-	</tr>
-	</table>
-
-
-
-
-
-</div>
+<pre><code><span id="1" class="l"><a href="#1"> 1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a href="#2"> 2: </a>
+</span><span id="3" class="l"><a href="#3"> 3: </a><span class="php-comment">/*
+</span></span><span id="4" class="l"><a href="#4"> 4: </a><span class="php-comment"> * This file is part of the webmozart/key-value-store package.
+</span></span><span id="5" class="l"><a href="#5"> 5: </a><span class="php-comment"> *
+</span></span><span id="6" class="l"><a href="#6"> 6: </a><span class="php-comment"> * (c) Bernhard Schussek &lt;bschussek@gmail.com&gt;
+</span></span><span id="7" class="l"><a href="#7"> 7: </a><span class="php-comment"> *
+</span></span><span id="8" class="l"><a href="#8"> 8: </a><span class="php-comment"> * For the full copyright and license information, please view the LICENSE
+</span></span><span id="9" class="l"><a href="#9"> 9: </a><span class="php-comment"> * file that was distributed with this source code.
+</span></span><span id="10" class="l"><a href="#10">10: </a><span class="php-comment"> */</span>
+</span><span id="11" class="l"><a href="#11">11: </a>
+</span><span id="12" class="l"><a href="#12">12: </a><span class="php-keyword1">namespace</span> Webmozart\KeyValueStore\Api;
+</span><span id="13" class="l"><a href="#13">13: </a>
+</span><span id="14" class="l"><a href="#14">14: </a><span class="php-keyword1">use</span> RuntimeException;
+</span><span id="15" class="l"><a href="#15">15: </a>
+</span><span id="16" class="l"><a href="#16">16: </a><span class="php-comment">/**
+</span></span><span id="17" class="l"><a href="#17">17: </a><span class="php-comment"> * Thrown when a value store cannot be read.
+</span></span><span id="18" class="l"><a href="#18">18: </a><span class="php-comment"> *
+</span></span><span id="19" class="l"><a href="#19">19: </a><span class="php-comment"> * @since  1.0
+</span></span><span id="20" class="l"><a href="#20">20: </a><span class="php-comment"> * @author Bernhard Schussek &lt;bschussek@gmail.com&gt;
+</span></span><span id="21" class="l"><a href="#21">21: </a><span class="php-comment"> */</span>
+</span><span id="22" class="l"><a href="#22">22: </a><span class="php-keyword1">class</span> ReadException <span class="php-keyword1">extends</span> RuntimeException
+</span><span id="23" class="l"><a href="#23">23: </a>{
+</span><span id="24" class="l"><a href="#24">24: </a>}
+</span><span id="25" class="l"><a href="#25">25: </a></span></code></pre>
 
 	<div id="footer">
 		Puli API API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 </div>
-<script src="resources/combined.js"></script>
-<script src="elementlist.js"></script>
+<script src="resources/combined.js?de92956e949966c1f12d45243b45d71770188b0c"></script>
+<script src="elementlist.js?ba021027bb0c01a1a6760606f00bef49adb56838"></script>
 </body>
 </html>

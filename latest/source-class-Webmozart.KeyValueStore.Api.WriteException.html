@@ -2,8 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
 
-	<title>Namespace Puli\Repository | Puli API</title>
+	<title>File Api/WriteException.php | Puli API</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -29,7 +30,7 @@
 		<div id="groups">
 				<h3>Namespaces</h3>
 			<ul>
-				<li class="active">
+				<li>
 					<a href="namespace-Puli.html">
 						Puli<span></span>
 					</a>
@@ -79,7 +80,7 @@
 						Factory					</a>
 
 						</li>
-				<li class="active">
+				<li>
 					<a href="namespace-Puli.Repository.html">
 						Repository<span></span>
 					</a>
@@ -167,17 +168,9 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Puli.Repository.CompositeRepository.html">CompositeRepository</a></li>
-				<li><a href="class-Puli.Repository.FilesystemRepository.html">FilesystemRepository</a></li>
-				<li><a href="class-Puli.Repository.InMemoryRepository.html">InMemoryRepository</a></li>
+				<li><a href="class-Webmozart.KeyValueStore.Assert.Assert.html">Webmozart\KeyValueStore\Assert\Assert</a></li>
 			</ul>
 
-			<h3>Interfaces</h3>
-			<ul>
-				<li><a href="class-Puli.Repository.NoDirectoryException.html">NoDirectoryException</a></li>
-				<li><a href="class-Puli.Repository.RepositoryFactoryException.html">RepositoryFactoryException</a></li>
-				<li><a href="class-Puli.Repository.UnsupportedOperationException.html">UnsupportedOperationException</a></li>
-			</ul>
 
 
 
@@ -201,7 +194,7 @@
 			<li>
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
-			<li class="active">
+			<li>
 <span>Namespace</span>			</li>
 			<li>
 				<a href="class-Webmozart.KeyValueStore.Api.WriteException.html" title="Summary of Webmozart\KeyValueStore\Api\WriteException"><span>Class</span></a>
@@ -213,65 +206,31 @@
 		</ul>
 	</div>
 
-<div id="content" class="namespace">
-	<h1>Namespace <a href="namespace-Puli.html">Puli</a>\Repository</h1>
-
-	<table class="summary" id="namespaces">
-	<caption>Namespaces summary</caption>
-	<tr>
-		<td class="name"><a href="namespace-Puli.Repository.Api.html">Puli\Repository\Api</a></td>
-	</tr>
-	<tr>
-		<td class="name"><a href="namespace-Puli.Repository.Assert.html">Puli\Repository\Assert</a></td>
-	</tr>
-	<tr>
-		<td class="name"><a href="namespace-Puli.Repository.Resource.html">Puli\Repository\Resource</a></td>
-	</tr>
-	<tr>
-		<td class="name"><a href="namespace-Puli.Repository.StreamWrapper.html">Puli\Repository\StreamWrapper</a></td>
-	</tr>
-	<tr>
-		<td class="name"><a href="namespace-Puli.Repository.Uri.html">Puli\Repository\Uri</a></td>
-	</tr>
-	</table>
-
-
-<table class="summary" id="classes">
-<caption>Classes summary</caption>
-<tr>
-	<td class="name"><a href="class-Puli.Repository.CompositeRepository.html">CompositeRepository</a></td>
-	<td>A repository combining multiple other repository instances.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-Puli.Repository.FilesystemRepository.html">FilesystemRepository</a></td>
-	<td>A repository reading from the file system.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-Puli.Repository.InMemoryRepository.html">InMemoryRepository</a></td>
-	<td>An in-memory resource repository.</td>
-</tr>
-</table>
-
-<table class="summary" id="interfaces">
-<caption>Interfaces summary</caption>
-<tr>
-	<td class="name"><a href="class-Puli.Repository.NoDirectoryException.html">NoDirectoryException</a></td>
-	<td>Thrown when a resource was expected to be a directory, but is none.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-Puli.Repository.RepositoryFactoryException.html">RepositoryFactoryException</a></td>
-	<td>Thrown if a factory closure did not create valid repository.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-Puli.Repository.UnsupportedOperationException.html">UnsupportedOperationException</a></td>
-	<td>Thrown when the requested operation is not supported by the repository.</td>
-</tr>
-</table>
-
-
-
-
-</div>
+<pre><code><span id="1" class="l"><a href="#1"> 1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a href="#2"> 2: </a>
+</span><span id="3" class="l"><a href="#3"> 3: </a><span class="php-comment">/*
+</span></span><span id="4" class="l"><a href="#4"> 4: </a><span class="php-comment"> * This file is part of the webmozart/key-value-store package.
+</span></span><span id="5" class="l"><a href="#5"> 5: </a><span class="php-comment"> *
+</span></span><span id="6" class="l"><a href="#6"> 6: </a><span class="php-comment"> * (c) Bernhard Schussek &lt;bschussek@gmail.com&gt;
+</span></span><span id="7" class="l"><a href="#7"> 7: </a><span class="php-comment"> *
+</span></span><span id="8" class="l"><a href="#8"> 8: </a><span class="php-comment"> * For the full copyright and license information, please view the LICENSE
+</span></span><span id="9" class="l"><a href="#9"> 9: </a><span class="php-comment"> * file that was distributed with this source code.
+</span></span><span id="10" class="l"><a href="#10">10: </a><span class="php-comment"> */</span>
+</span><span id="11" class="l"><a href="#11">11: </a>
+</span><span id="12" class="l"><a href="#12">12: </a><span class="php-keyword1">namespace</span> Webmozart\KeyValueStore\Api;
+</span><span id="13" class="l"><a href="#13">13: </a>
+</span><span id="14" class="l"><a href="#14">14: </a><span class="php-keyword1">use</span> RuntimeException;
+</span><span id="15" class="l"><a href="#15">15: </a>
+</span><span id="16" class="l"><a href="#16">16: </a><span class="php-comment">/**
+</span></span><span id="17" class="l"><a href="#17">17: </a><span class="php-comment"> * Thrown when a value store cannot be written.
+</span></span><span id="18" class="l"><a href="#18">18: </a><span class="php-comment"> *
+</span></span><span id="19" class="l"><a href="#19">19: </a><span class="php-comment"> * @since  1.0
+</span></span><span id="20" class="l"><a href="#20">20: </a><span class="php-comment"> * @author Bernhard Schussek &lt;bschussek@gmail.com&gt;
+</span></span><span id="21" class="l"><a href="#21">21: </a><span class="php-comment"> */</span>
+</span><span id="22" class="l"><a href="#22">22: </a><span class="php-keyword1">class</span> WriteException <span class="php-keyword1">extends</span> RuntimeException
+</span><span id="23" class="l"><a href="#23">23: </a>{
+</span><span id="24" class="l"><a href="#24">24: </a>}
+</span><span id="25" class="l"><a href="#25">25: </a></span></code></pre>
 
 	<div id="footer">
 		Puli API API documentation generated by <a href="http://apigen.org">ApiGen</a>

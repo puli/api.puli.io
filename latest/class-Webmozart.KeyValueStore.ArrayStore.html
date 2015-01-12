@@ -325,9 +325,11 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidKeyException<br>If the key is invalid.<br>
+					WriteException<br>If the store cannot be written.<br>
+					InvalidKeyException<br>If the key is not a string or integer.<br>
 					SerializationFailedException<br>If the value cannot be serialized.<br>
-					StorageException<br>If the storage of the key failed.
+					UnsupportedValueException<br><p>If the value is not supported by the
+                                  implementation.</p>
 				</div>
 
 
@@ -375,8 +377,8 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidKeyException<br>If the key is invalid.<br>
-					StorageException<br>If the retrieval of the key failed.
+					ReadException<br>If the store cannot be read.<br>
+					InvalidKeyException<br>If the key is not a string or integer.
 				</div>
 
 
@@ -416,13 +418,13 @@
 
 				<h4>Returns</h4>
 				<div class="list">
-					boolean<br>Whether a key was removed.
+					boolean<br>Returns <code>true</code> if a key was removed from the store.
 				</div>
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidKeyException<br>If the key is invalid.<br>
-					StorageException<br>If the removal of the key failed.
+					WriteException<br>If the store cannot be written.<br>
+					InvalidKeyException<br>If the key is not a string or integer.
 				</div>
 
 
@@ -467,8 +469,8 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidKeyException<br>If the key is invalid.<br>
-					StorageException<br>If the query of the key failed.
+					ReadException<br>If the store cannot be read.<br>
+					InvalidKeyException<br>If the key is not a string or integer.
 				</div>
 
 
@@ -504,7 +506,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					StorageException<br>If the removal failed.
+					WriteException<br>If the store cannot be written.
 				</div>
 
 

@@ -170,8 +170,10 @@
 			<ul>
 				<li><a href="class-Webmozart.KeyValueStore.Api.InvalidKeyException.html">InvalidKeyException</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.Api.KeyValueStore.html">KeyValueStore</a></li>
+				<li><a href="class-Webmozart.KeyValueStore.Api.ReadException.html">ReadException</a></li>
 				<li class="active"><a href="class-Webmozart.KeyValueStore.Api.SerializationFailedException.html">SerializationFailedException</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.Api.StorageException.html">StorageException</a></li>
+				<li><a href="class-Webmozart.KeyValueStore.Api.UnsupportedValueException.html">UnsupportedValueException</a></li>
+				<li><a href="class-Webmozart.KeyValueStore.Api.WriteException.html">WriteException</a></li>
 			</ul>
 
 
@@ -213,7 +215,7 @@
 
 
 	<div class="description">
-	<p>Thrown when a value is invalid.</p>
+	<p>Thrown when a value cannot be serialized.</p>
 	</div>
 
 	<dl class="tree">
@@ -253,7 +255,7 @@ RuntimeException
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.Api.SerializationFailedException.html#17-36" title="Go to source code">Api/SerializationFailedException.php</a>
+			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.Api.SerializationFailedException.html#17-55" title="Go to source code">Api/SerializationFailedException.php</a>
 		<br>
 	</div>
 
@@ -261,7 +263,7 @@ RuntimeException
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="forException" id="_forException">
+	<tr data-order="forValue" id="_forValue">
 
 		<td class="attributes"><code>
 			 public static
@@ -272,21 +274,68 @@ RuntimeException
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_forException">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.Api.SerializationFailedException.html#25-35" title="Go to source code">forException</a>( <span>Exception <var>$e</var></span> )</code>
+		<a class="anchor" href="#_forValue">#</a>
+		<code><a href="source-class-Webmozart.KeyValueStore.Api.SerializationFailedException.html#25-37" title="Go to source code">forValue</a>( <span>mixed <var>$value</var></span>, <span>integer <var>$code</var> = <span class="php-num">0</span></span>, <span>Exception <var>$cause</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
-			<p>Creates a new exception for the given exception.</p>
+			<p>Creates a new exception for the given value.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Creates a new exception for the given exception.</p>
+			<p>Creates a new exception for the given value.</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$e</var></dt>
-					<dd>The exception that occurred.</dd>
+					<dt><var>$value</var></dt>
+					<dd>The value that could not be serialized.</dd>
+					<dt><var>$code</var></dt>
+					<dd>The exception code.</dd>
+					<dt><var>$cause</var></dt>
+					<dd>The exception that caused this exception.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static<br>The new exception.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="forType" id="_forType">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_forType">#</a>
+		<code><a href="source-class-Webmozart.KeyValueStore.Api.SerializationFailedException.html#39-54" title="Go to source code">forType</a>( <span>string <var>$type</var></span>, <span>integer <var>$code</var> = <span class="php-num">0</span></span>, <span>Exception <var>$cause</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Creates a new exception for the given value type.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a new exception for the given value type.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd>The type that could not be serialized.</dd>
+					<dt><var>$code</var></dt>
+					<dd>The exception code.</dd>
+					<dt><var>$cause</var></dt>
+					<dd>The exception that caused this exception.</dd>
 				</dl></div>
 
 				<h4>Returns</h4>

@@ -247,7 +247,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#22-114" title="Go to source code">MemcachedStore.php</a>
+			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#22-118" title="Go to source code">MemcachedStore.php</a>
 		<br>
 	</div>
 
@@ -305,7 +305,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#53-67" title="Go to source code">set</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#53-71" title="Go to source code">set</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the value for a key in the store.</p>
@@ -326,9 +326,11 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidKeyException<br>If the key is invalid.<br>
+					WriteException<br>If the store cannot be written.<br>
+					InvalidKeyException<br>If the key is not a string or integer.<br>
 					<code><a href="class-Webmozart.KeyValueStore.Api.SerializationFailedException.html">Webmozart\KeyValueStore\Api\SerializationFailedException</a></code><br>If the value cannot be serialized.<br>
-					StorageException<br>If the storage of the key failed.
+					UnsupportedValueException<br><p>If the value is not supported by the
+                                  implementation.</p>
 				</div>
 
 
@@ -350,7 +352,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#69-85" title="Go to source code">get</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#73-89" title="Go to source code">get</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the value of a key in the store.</p>
@@ -376,8 +378,8 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidKeyException<br>If the key is invalid.<br>
-					StorageException<br>If the retrieval of the key failed.
+					ReadException<br>If the store cannot be read.<br>
+					InvalidKeyException<br>If the key is not a string or integer.
 				</div>
 
 
@@ -399,7 +401,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#87-95" title="Go to source code">remove</a>( <span>integer|string <var>$key</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#91-99" title="Go to source code">remove</a>( <span>integer|string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a key from the store.</p>
@@ -417,13 +419,13 @@
 
 				<h4>Returns</h4>
 				<div class="list">
-					boolean<br>Whether a key was removed.
+					boolean<br>Returns <code>true</code> if a key was removed from the store.
 				</div>
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidKeyException<br>If the key is invalid.<br>
-					StorageException<br>If the removal of the key failed.
+					WriteException<br>If the store cannot be written.<br>
+					InvalidKeyException<br>If the key is not a string or integer.
 				</div>
 
 
@@ -445,7 +447,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_has">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#97-105" title="Go to source code">has</a>( <span>integer|string <var>$key</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#101-109" title="Go to source code">has</a>( <span>integer|string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the store contains a key.</p>
@@ -468,8 +470,8 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidKeyException<br>If the key is invalid.<br>
-					StorageException<br>If the query of the key failed.
+					ReadException<br>If the store cannot be read.<br>
+					InvalidKeyException<br>If the key is not a string or integer.
 				</div>
 
 
@@ -491,7 +493,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#107-113" title="Go to source code">clear</a>( )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#111-117" title="Go to source code">clear</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all keys from the store.</p>
@@ -505,7 +507,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					StorageException<br>If the removal failed.
+					WriteException<br>If the store cannot be written.
 				</div>
 
 
