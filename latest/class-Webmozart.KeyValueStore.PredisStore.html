@@ -286,6 +286,11 @@
 						Assert					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.Util.html">
+						Util					</a>
+
+						</li>
 							</ul></li></ul></li>
 			</ul>
 		</div>
@@ -297,13 +302,12 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-Webmozart.KeyValueStore.ArrayStore.html">ArrayStore</a></li>
+				<li><a href="class-Webmozart.KeyValueStore.CachedStore.html">CachedStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.JsonFileStore.html">JsonFileStore</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.MemcachedStore.html">MemcachedStore</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.MemcacheStore.html">MemcacheStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.NullStore.html">NullStore</a></li>
+				<li><a href="class-Webmozart.KeyValueStore.PhpRedisStore.html">PhpRedisStore</a></li>
 				<li class="active"><a href="class-Webmozart.KeyValueStore.PredisStore.html">PredisStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.RiakStore.html">RiakStore</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.SharedMemoryStore.html">SharedMemoryStore</a></li>
 			</ul>
 
 
@@ -376,7 +380,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.PredisStore.html#21-106" title="Go to source code">PredisStore.php</a>
+			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.PredisStore.html#23-124" title="Go to source code">PredisStore.php</a>
 		<br>
 	</div>
 
@@ -396,7 +400,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.PredisStore.html#34-45" title="Go to source code">__construct</a>( <span>Predis\ClientInterface <var>$client</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.PredisStore.html#36-47" title="Go to source code">__construct</a>( <span>Predis\ClientInterface <var>$client</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Creates a store backed by a Predis client.</p>
@@ -434,7 +438,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.PredisStore.html#47-65" title="Go to source code">set</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.PredisStore.html#49-63" title="Go to source code">set</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the value for a key in the store.</p>
@@ -455,9 +459,9 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					WriteException<br>If the store cannot be written.<br>
+					<code><a href="class-Webmozart.KeyValueStore.Api.WriteException.html">Webmozart\KeyValueStore\Api\WriteException</a></code><br>If the store cannot be written.<br>
 					InvalidKeyException<br>If the key is not a string or integer.<br>
-					<code><a href="class-Webmozart.KeyValueStore.Api.SerializationFailedException.html">Webmozart\KeyValueStore\Api\SerializationFailedException</a></code><br>If the value cannot be serialized.<br>
+					SerializationFailedException<br>If the value cannot be serialized.<br>
 					UnsupportedValueException<br><p>If the value is not supported by the
                                   implementation.</p>
 				</div>
@@ -481,7 +485,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.PredisStore.html#67-77" title="Go to source code">get</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.PredisStore.html#65-83" title="Go to source code">get</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the value of a key in the store.</p>
@@ -507,8 +511,10 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					ReadException<br>If the store cannot be read.<br>
-					InvalidKeyException<br>If the key is not a string or integer.
+					<code><a href="class-Webmozart.KeyValueStore.Api.ReadException.html">Webmozart\KeyValueStore\Api\ReadException</a></code><br>If the store cannot be read.<br>
+					InvalidKeyException<br>If the key is not a string or integer.<br>
+					UnserializationFailedException<br><p>If the stored value cannot be
+                                       unserialized.</p>
 				</div>
 
 
@@ -530,7 +536,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.PredisStore.html#79-87" title="Go to source code">remove</a>( <span>integer|string <var>$key</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.PredisStore.html#85-97" title="Go to source code">remove</a>( <span>integer|string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a key from the store.</p>
@@ -553,7 +559,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					WriteException<br>If the store cannot be written.<br>
+					<code><a href="class-Webmozart.KeyValueStore.Api.WriteException.html">Webmozart\KeyValueStore\Api\WriteException</a></code><br>If the store cannot be written.<br>
 					InvalidKeyException<br>If the key is not a string or integer.
 				</div>
 
@@ -576,7 +582,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_has">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.PredisStore.html#89-97" title="Go to source code">has</a>( <span>integer|string <var>$key</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.PredisStore.html#99-111" title="Go to source code">has</a>( <span>integer|string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the store contains a key.</p>
@@ -599,7 +605,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					ReadException<br>If the store cannot be read.<br>
+					<code><a href="class-Webmozart.KeyValueStore.Api.ReadException.html">Webmozart\KeyValueStore\Api\ReadException</a></code><br>If the store cannot be read.<br>
 					InvalidKeyException<br>If the key is not a string or integer.
 				</div>
 
@@ -622,7 +628,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.PredisStore.html#99-105" title="Go to source code">clear</a>( )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.PredisStore.html#113-123" title="Go to source code">clear</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all keys from the store.</p>
@@ -636,7 +642,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					WriteException<br>If the store cannot be written.
+					<code><a href="class-Webmozart.KeyValueStore.Api.WriteException.html">Webmozart\KeyValueStore\Api\WriteException</a></code><br>If the store cannot be written.
 				</div>
 
 

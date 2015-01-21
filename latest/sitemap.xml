@@ -141,9 +141,12 @@
 <url>
 	<loc>http://api.puli.io/namespace-Webmozart.KeyValueStore.Assert.html</loc>
 </url>
+<url>
+	<loc>http://api.puli.io/namespace-Webmozart.KeyValueStore.Util.html</loc>
+</url>
 
 
 <url>
-	<loc>http://api.puli.io/class-Webmozart.KeyValueStore.Assert.Assert.html</loc>
+	<loc>http://api.puli.io/class-Webmozart.KeyValueStore.Util.Serializer.html</loc>
 </url>
 </urlset>

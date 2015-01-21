@@ -286,6 +286,11 @@
 						Assert					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.Util.html">
+						Util					</a>
+
+						</li>
 							</ul></li></ul></li>
 			</ul>
 		</div>
@@ -301,6 +306,7 @@
 				<li><a href="class-Webmozart.KeyValueStore.Api.KeyValueStore.html">KeyValueStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.Api.ReadException.html">ReadException</a></li>
 				<li class="active"><a href="class-Webmozart.KeyValueStore.Api.SerializationFailedException.html">SerializationFailedException</a></li>
+				<li><a href="class-Webmozart.KeyValueStore.Api.UnserializationFailedException.html">UnserializationFailedException</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.Api.UnsupportedValueException.html">UnsupportedValueException</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.Api.WriteException.html">WriteException</a></li>
 			</ul>
@@ -384,7 +390,7 @@ RuntimeException
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.Api.SerializationFailedException.html#17-55" title="Go to source code">Api/SerializationFailedException.php</a>
+			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.Api.SerializationFailedException.html#17-60" title="Go to source code">Api/SerializationFailedException.php</a>
 		<br>
 	</div>
 
@@ -404,7 +410,7 @@ RuntimeException
 
 		<td class="name"><div>
 		<a class="anchor" href="#_forValue">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.Api.SerializationFailedException.html#25-37" title="Go to source code">forValue</a>( <span>mixed <var>$value</var></span>, <span>integer <var>$code</var> = <span class="php-num">0</span></span>, <span>Exception <var>$cause</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.Api.SerializationFailedException.html#25-39" title="Go to source code">forValue</a>( <span>mixed <var>$value</var></span>, <span>string <var>$reason</var> = <span class="php-quote">''</span></span>, <span>integer <var>$code</var> = <span class="php-num">0</span></span>, <span>Exception <var>$cause</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Creates a new exception for the given value.</p>
@@ -418,6 +424,9 @@ RuntimeException
 				<div class="list"><dl>
 					<dt><var>$value</var></dt>
 					<dd>The value that could not be serialized.</dd>
+					<dt><var>$reason</var></dt>
+					<dd><p>The reason why the value could not be
+                         unserialized.</p></dd>
 					<dt><var>$code</var></dt>
 					<dd>The exception code.</dd>
 					<dt><var>$cause</var></dt>
@@ -447,7 +456,7 @@ RuntimeException
 
 		<td class="name"><div>
 		<a class="anchor" href="#_forType">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.Api.SerializationFailedException.html#39-54" title="Go to source code">forType</a>( <span>string <var>$type</var></span>, <span>integer <var>$code</var> = <span class="php-num">0</span></span>, <span>Exception <var>$cause</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.Api.SerializationFailedException.html#41-59" title="Go to source code">forType</a>( <span>string <var>$type</var></span>, <span>string <var>$reason</var> = <span class="php-quote">''</span></span>, <span>integer <var>$code</var> = <span class="php-num">0</span></span>, <span>Exception <var>$cause</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Creates a new exception for the given value type.</p>
@@ -461,6 +470,9 @@ RuntimeException
 				<div class="list"><dl>
 					<dt><var>$type</var></dt>
 					<dd>The type that could not be serialized.</dd>
+					<dt><var>$reason</var></dt>
+					<dd><p>The reason why the value could not be
+                         unserialized.</p></dd>
 					<dt><var>$code</var></dt>
 					<dd>The exception code.</dd>
 					<dt><var>$cause</var></dt>

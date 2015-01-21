@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class Webmozart\KeyValueStore\SharedMemoryStore | Puli API</title>
+	<title>Class Webmozart\KeyValueStore\PhpRedisStore | Puli API</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -286,6 +286,11 @@
 						Assert					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.Util.html">
+						Util					</a>
+
+						</li>
 							</ul></li></ul></li>
 			</ul>
 		</div>
@@ -297,13 +302,12 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-Webmozart.KeyValueStore.ArrayStore.html">ArrayStore</a></li>
+				<li><a href="class-Webmozart.KeyValueStore.CachedStore.html">CachedStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.JsonFileStore.html">JsonFileStore</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.MemcachedStore.html">MemcachedStore</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.MemcacheStore.html">MemcacheStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.NullStore.html">NullStore</a></li>
+				<li class="active"><a href="class-Webmozart.KeyValueStore.PhpRedisStore.html">PhpRedisStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.PredisStore.html">PredisStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.RiakStore.html">RiakStore</a></li>
-				<li class="active"><a href="class-Webmozart.KeyValueStore.SharedMemoryStore.html">SharedMemoryStore</a></li>
 			</ul>
 
 
@@ -342,16 +346,16 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class SharedMemoryStore</h1>
+	<h1>Class PhpRedisStore</h1>
 
 
 	<div class="description">
-	<p>A key-value store backed by a shared memory.</p>
+	<p>A key-value store that uses the PhpRedis extension to connect to a Redis instance.</p>
 	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
-<b><span>Webmozart\KeyValueStore\SharedMemoryStore</span></b>			
+<b><span>Webmozart\KeyValueStore\PhpRedisStore</span></b>			
 			 implements 
 				<a href="class-Webmozart.KeyValueStore.Api.KeyValueStore.html"><span>Webmozart\KeyValueStore\Api\KeyValueStore</span></a>
 			
@@ -374,9 +378,13 @@
 
 				<b>Author:</b>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
+				<b>Author:</b>
+				Philipp Wahala <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x70;&#x68;&#x69;&#x6c;&#x69;&#x70;&#x70;&#46;&#119;&#97;&#104;&#97;&#108;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;m">&#x70;&#x68;&#x69;&#x6c;&#x69;&#x70;&#x70;&#46;&#119;&#97;&#104;&#97;&#108;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;m</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.SharedMemoryStore.html#20-187" title="Go to source code">SharedMemoryStore.php</a>
+				<b>Link:</b>
+				<a href="https://github.com/phpredis/phpredis">https://github.com/phpredis/phpredis</a><br>
+			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.PhpRedisStore.html#23-131" title="Go to source code">PhpRedisStore.php</a>
 		<br>
 	</div>
 
@@ -396,59 +404,24 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.SharedMemoryStore.html#48-65" title="Go to source code">__construct</a>( <span>string <var>$path</var></span>, <span>integer|null <var>$size</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$permissions</var> = <span class="php-num">0666</span></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.PhpRedisStore.html#38-54" title="Go to source code">__construct</a>( <span>Redis <var>$client</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
-			<p>Creates a store using the shared memory at the given path.</p>
+			<p>Creates a store backed by a PhpRedis client.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Creates a store using the shared memory at the given path.</p>
+			<p>Creates a store backed by a PhpRedis client.</p>
+
+<p>If no client is passed, a new one is created using the default server
+"127.0.0.1" and the default port 6379.</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$path</var></dt>
-					<dd>The path to the shared memory.</dd>
-					<dt><var>$size</var></dt>
-					<dd><p>The size of the memory, if it needs to be
-                             created. Defaults to the value of the
-                             "sysvshm.init_mem" setting in php.ini or
-                             to 10000 bytes if not set.</p></dd>
-					<dt><var>$permissions</var></dt>
-					<dd><p>The permissions for the shared memory, if
-                             it needs to be created.</p></dd>
+					<dt><var>$client</var></dt>
+					<dd>The client used to connect to Redis.</dd>
 				</dl></div>
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="__destruct" id="___destruct">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#___destruct">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.SharedMemoryStore.html#67-75" title="Go to source code">__destruct</a>( )</code>
-
-		<div class="description short">
-			<p>Detaches from the shared memory.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Detaches from the shared memory.</p>
-
-
 
 
 
@@ -469,7 +442,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.SharedMemoryStore.html#77-97" title="Go to source code">set</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.PhpRedisStore.html#56-70" title="Go to source code">set</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the value for a key in the store.</p>
@@ -516,7 +489,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.SharedMemoryStore.html#99-115" title="Go to source code">get</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.PhpRedisStore.html#72-90" title="Go to source code">get</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the value of a key in the store.</p>
@@ -542,8 +515,10 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					ReadException<br>If the store cannot be read.<br>
-					InvalidKeyException<br>If the key is not a string or integer.
+					<code><a href="class-Webmozart.KeyValueStore.Api.ReadException.html">Webmozart\KeyValueStore\Api\ReadException</a></code><br>If the store cannot be read.<br>
+					InvalidKeyException<br>If the key is not a string or integer.<br>
+					UnserializationFailedException<br><p>If the stored value cannot be
+                                       unserialized.</p>
 				</div>
 
 
@@ -565,7 +540,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.SharedMemoryStore.html#117-129" title="Go to source code">remove</a>( <span>integer|string <var>$key</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.PhpRedisStore.html#92-104" title="Go to source code">remove</a>( <span>integer|string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a key from the store.</p>
@@ -611,7 +586,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_has">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.SharedMemoryStore.html#131-143" title="Go to source code">has</a>( <span>integer|string <var>$key</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.PhpRedisStore.html#106-118" title="Go to source code">has</a>( <span>integer|string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the store contains a key.</p>
@@ -634,7 +609,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					ReadException<br>If the store cannot be read.<br>
+					<code><a href="class-Webmozart.KeyValueStore.Api.ReadException.html">Webmozart\KeyValueStore\Api\ReadException</a></code><br>If the store cannot be read.<br>
 					InvalidKeyException<br>If the key is not a string or integer.
 				</div>
 
@@ -657,7 +632,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.SharedMemoryStore.html#145-159" title="Go to source code">clear</a>( )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.PhpRedisStore.html#120-130" title="Go to source code">clear</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all keys from the store.</p>

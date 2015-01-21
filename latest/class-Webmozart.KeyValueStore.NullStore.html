@@ -286,6 +286,11 @@
 						Assert					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.Util.html">
+						Util					</a>
+
+						</li>
 							</ul></li></ul></li>
 			</ul>
 		</div>
@@ -297,13 +302,12 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-Webmozart.KeyValueStore.ArrayStore.html">ArrayStore</a></li>
+				<li><a href="class-Webmozart.KeyValueStore.CachedStore.html">CachedStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.JsonFileStore.html">JsonFileStore</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.MemcachedStore.html">MemcachedStore</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.MemcacheStore.html">MemcacheStore</a></li>
 				<li class="active"><a href="class-Webmozart.KeyValueStore.NullStore.html">NullStore</a></li>
+				<li><a href="class-Webmozart.KeyValueStore.PhpRedisStore.html">PhpRedisStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.PredisStore.html">PredisStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.RiakStore.html">RiakStore</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.SharedMemoryStore.html">SharedMemoryStore</a></li>
 			</ul>
 
 
@@ -470,7 +474,9 @@
 				<h4>Throws</h4>
 				<div class="list">
 					ReadException<br>If the store cannot be read.<br>
-					InvalidKeyException<br>If the key is not a string or integer.
+					InvalidKeyException<br>If the key is not a string or integer.<br>
+					UnserializationFailedException<br><p>If the stored value cannot be
+                                       unserialized.</p>
 				</div>
 
 

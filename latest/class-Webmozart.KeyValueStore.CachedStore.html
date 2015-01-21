@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class Webmozart\KeyValueStore\MemcachedStore | Puli API</title>
+	<title>Class Webmozart\KeyValueStore\CachedStore | Puli API</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -286,6 +286,11 @@
 						Assert					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.Util.html">
+						Util					</a>
+
+						</li>
 							</ul></li></ul></li>
 			</ul>
 		</div>
@@ -297,13 +302,12 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-Webmozart.KeyValueStore.ArrayStore.html">ArrayStore</a></li>
+				<li class="active"><a href="class-Webmozart.KeyValueStore.CachedStore.html">CachedStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.JsonFileStore.html">JsonFileStore</a></li>
-				<li class="active"><a href="class-Webmozart.KeyValueStore.MemcachedStore.html">MemcachedStore</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.MemcacheStore.html">MemcacheStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.NullStore.html">NullStore</a></li>
+				<li><a href="class-Webmozart.KeyValueStore.PhpRedisStore.html">PhpRedisStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.PredisStore.html">PredisStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.RiakStore.html">RiakStore</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.SharedMemoryStore.html">SharedMemoryStore</a></li>
 			</ul>
 
 
@@ -342,16 +346,16 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class MemcachedStore</h1>
+	<h1>Class CachedStore</h1>
 
 
 	<div class="description">
-	<p>A key-value store backed by a Memcached instance.</p>
+	<p>A key-value store replicated in a cache.</p>
 	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
-<b><span>Webmozart\KeyValueStore\MemcachedStore</span></b>			
+<b><span>Webmozart\KeyValueStore\CachedStore</span></b>			
 			 implements 
 				<a href="class-Webmozart.KeyValueStore.Api.KeyValueStore.html"><span>Webmozart\KeyValueStore\Api\KeyValueStore</span></a>
 			
@@ -376,7 +380,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#22-118" title="Go to source code">MemcachedStore.php</a>
+			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.CachedStore.html#20-126" title="Go to source code">CachedStore.php</a>
 		<br>
 	</div>
 
@@ -396,23 +400,25 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#35-51" title="Go to source code">__construct</a>( <span>Memcached <var>$client</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.CachedStore.html#40-61" title="Go to source code">__construct</a>( <span><code><a href="class-Webmozart.KeyValueStore.Api.KeyValueStore.html">Webmozart\KeyValueStore\Api\KeyValueStore</a></code> <var>$store</var></span>, <span>Doctrine\Common\Cache\Cache <var>$cache</var></span>, <span>integer <var>$ttl</var> = <span class="php-num">0</span></span> )</code>
 
 		<div class="description short">
-			<p>Creates the store using the given Memcached instance.</p>
+			<p>Creates the store.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Creates the store using the given Memcached instance.</p>
-
-<p>If no instance is passed, a new instance is created connecting to
-"127.0.0.1" and the default port 11211.</p>
+			<p>Creates the store.</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$client</var></dt>
-					<dd>The Memcached client.</dd>
+					<dt><var>$store</var></dt>
+					<dd>The cached store.</dd>
+					<dt><var>$cache</var></dt>
+					<dd>The cache.</dd>
+					<dt><var>$ttl</var></dt>
+					<dd><p>The time-to-live for cache entries. If set to
+                            0, cache entries never expire.</p></dd>
 				</dl></div>
 
 
@@ -434,7 +440,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#53-71" title="Go to source code">set</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.CachedStore.html#63-70" title="Go to source code">set</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the value for a key in the store.</p>
@@ -457,7 +463,7 @@
 				<div class="list">
 					WriteException<br>If the store cannot be written.<br>
 					InvalidKeyException<br>If the key is not a string or integer.<br>
-					<code><a href="class-Webmozart.KeyValueStore.Api.SerializationFailedException.html">Webmozart\KeyValueStore\Api\SerializationFailedException</a></code><br>If the value cannot be serialized.<br>
+					SerializationFailedException<br>If the value cannot be serialized.<br>
 					UnsupportedValueException<br><p>If the value is not supported by the
                                   implementation.</p>
 				</div>
@@ -481,7 +487,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#73-89" title="Go to source code">get</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.CachedStore.html#72-90" title="Go to source code">get</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the value of a key in the store.</p>
@@ -508,7 +514,9 @@
 				<h4>Throws</h4>
 				<div class="list">
 					ReadException<br>If the store cannot be read.<br>
-					InvalidKeyException<br>If the key is not a string or integer.
+					InvalidKeyException<br>If the key is not a string or integer.<br>
+					UnserializationFailedException<br><p>If the stored value cannot be
+                                       unserialized.</p>
 				</div>
 
 
@@ -530,7 +538,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#91-99" title="Go to source code">remove</a>( <span>integer|string <var>$key</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.CachedStore.html#92-99" title="Go to source code">remove</a>( <span>integer|string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a key from the store.</p>
@@ -576,7 +584,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_has">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#101-109" title="Go to source code">has</a>( <span>integer|string <var>$key</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.CachedStore.html#101-111" title="Go to source code">has</a>( <span>integer|string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the store contains a key.</p>
@@ -622,7 +630,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.MemcachedStore.html#111-117" title="Go to source code">clear</a>( )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.CachedStore.html#113-125" title="Go to source code">clear</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all keys from the store.</p>

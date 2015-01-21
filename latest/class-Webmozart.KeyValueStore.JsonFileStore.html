@@ -286,6 +286,11 @@
 						Assert					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.Util.html">
+						Util					</a>
+
+						</li>
 							</ul></li></ul></li>
 			</ul>
 		</div>
@@ -297,13 +302,12 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-Webmozart.KeyValueStore.ArrayStore.html">ArrayStore</a></li>
+				<li><a href="class-Webmozart.KeyValueStore.CachedStore.html">CachedStore</a></li>
 				<li class="active"><a href="class-Webmozart.KeyValueStore.JsonFileStore.html">JsonFileStore</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.MemcachedStore.html">MemcachedStore</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.MemcacheStore.html">MemcacheStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.NullStore.html">NullStore</a></li>
+				<li><a href="class-Webmozart.KeyValueStore.PhpRedisStore.html">PhpRedisStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.PredisStore.html">PredisStore</a></li>
 				<li><a href="class-Webmozart.KeyValueStore.RiakStore.html">RiakStore</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.SharedMemoryStore.html">SharedMemoryStore</a></li>
 			</ul>
 
 
@@ -376,7 +380,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#23-252" title="Go to source code">JsonFileStore.php</a>
+			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#24-273" title="Go to source code">JsonFileStore.php</a>
 		<br>
 	</div>
 
@@ -396,7 +400,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#40-51" title="Go to source code">__construct</a>( <span> <var>$path</var></span>, <span> <var>$cache</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#39-45" title="Go to source code">__construct</a>( <span> <var>$path</var></span> )</code>
 
 		<div class="description short">
 			
@@ -426,7 +430,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#53-85" title="Go to source code">set</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#47-66" title="Go to source code">set</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the value for a key in the store.</p>
@@ -473,7 +477,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#87-115" title="Go to source code">get</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#68-88" title="Go to source code">get</a>( <span>integer|string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the value of a key in the store.</p>
@@ -500,7 +504,9 @@
 				<h4>Throws</h4>
 				<div class="list">
 					<code><a href="class-Webmozart.KeyValueStore.Api.ReadException.html">Webmozart\KeyValueStore\Api\ReadException</a></code><br>If the store cannot be read.<br>
-					InvalidKeyException<br>If the key is not a string or integer.
+					InvalidKeyException<br>If the key is not a string or integer.<br>
+					UnserializationFailedException<br><p>If the stored value cannot be
+                                       unserialized.</p>
 				</div>
 
 
@@ -522,7 +528,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#117-139" title="Go to source code">remove</a>( <span>integer|string <var>$key</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#90-108" title="Go to source code">remove</a>( <span>integer|string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a key from the store.</p>
@@ -568,7 +574,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_has">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#141-155" title="Go to source code">has</a>( <span>integer|string <var>$key</var></span> )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#110-120" title="Go to source code">has</a>( <span>integer|string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the store contains a key.</p>
@@ -614,7 +620,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#157-167" title="Go to source code">clear</a>( )</code>
+		<code><a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#122-128" title="Go to source code">clear</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all keys from the store.</p>
@@ -654,7 +660,7 @@
 		<td class="attributes"><code>float</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#31-34" title="Go to source code"><b>MAX_FLOAT</b></a>
+				<a href="source-class-Webmozart.KeyValueStore.JsonFileStore.html#32-35" title="Go to source code"><b>MAX_FLOAT</b></a>
 			</code>
 
 			<div class="description short">
