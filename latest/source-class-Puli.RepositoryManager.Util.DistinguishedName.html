@@ -143,33 +143,57 @@
 
 						<ul>
 				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Discovery.html">
+						Discovery					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Environment.html">
+						Environment					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Event.html">
+						Event					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Package.html">
+						Package					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
+						Plugin					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
+						Repository					</a>
+
+						</li>
+							</ul></li>
+				<li>
 					<a href="namespace-Puli.RepositoryManager.Assert.html">
 						Assert					</a>
 
 						</li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Config.html">
-						Config<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Config.ConfigFile.html">
-						ConfigFile<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Config.ConfigFile.Reader.html">
-						Reader					</a>
+						Config					</a>
 
 						</li>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Config.ConfigFile.Writer.html">
-						Writer					</a>
-
-						</li>
-							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Conflict.html">
 						Conflict					</a>
@@ -182,19 +206,19 @@
 
 						<ul>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Discovery.Store.html">
-						Store					</a>
+					<a href="namespace-Puli.RepositoryManager.Discovery.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Discovery.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Environment.html">
 						Environment					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Event.html">
-						Event					</a>
 
 						</li>
 				<li>
@@ -221,30 +245,7 @@
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Package.html">
-						Package<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Package.PackageFile.html">
-						PackageFile<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Package.PackageFile.Reader.html">
-						Reader					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Package.PackageFile.Writer.html">
-						Writer					</a>
-
-						</li>
-							</ul></li></ul></li>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Plugin.html">
-						Plugin					</a>
+						Package					</a>
 
 						</li>
 				<li>
@@ -259,6 +260,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Transaction.html">
+						Transaction					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Util.html">
 						Util					</a>
@@ -393,14 +399,14 @@
 </span></span><span id="51" class="l"><a href="#51"> 51: </a><span class="php-comment">     */</span>
 </span><span id="52" class="l"><a href="#52"> 52: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> add(<span class="php-var">$name</span>, <span class="php-var">$value</span>)
 </span><span id="53" class="l"><a href="#53"> 53: </a>    {
-</span><span id="54" class="l"><a href="#54"> 54: </a>        <span class="php-keyword2">Assert</span>::string(<span class="php-var">$name</span>, <span class="php-quote">'The attribute name must be a string. Got: %2$s'</span>);
+</span><span id="54" class="l"><a href="#54"> 54: </a>        <span class="php-keyword2">Assert</span>::string(<span class="php-var">$name</span>, <span class="php-quote">'The attribute name must be a string. Got: %s'</span>);
 </span><span id="55" class="l"><a href="#55"> 55: </a>        <span class="php-keyword2">Assert</span>::notEmpty(<span class="php-var">$name</span>, <span class="php-quote">'The attribute name must not be empty.'</span>);
-</span><span id="56" class="l"><a href="#56"> 56: </a>        <span class="php-keyword2">Assert</span>::<span class="php-keyword1">true</span>((bool) <span class="php-keyword2">preg_match</span>(<span class="php-quote">'~^[a-zA-Z][a-zA-Z0-9\-]*$~'</span>, <span class="php-var">$name</span>), <span class="php-keyword2">sprintf</span>(
-</span><span id="57" class="l"><a href="#57"> 57: </a>            <span class="php-quote">'The attribute name must start with a letter and consist of '</span>.
-</span><span id="58" class="l"><a href="#58"> 58: </a>            <span class="php-quote">'letters, numbers and hyphens only. Got: &quot;%s&quot;'</span>,
+</span><span id="56" class="l"><a href="#56"> 56: </a>        <span class="php-keyword2">Assert</span>::startsWithLetter(<span class="php-var">$name</span>, <span class="php-quote">'The attribute name %s must start with a letter.'</span>);
+</span><span id="57" class="l"><a href="#57"> 57: </a>        <span class="php-keyword2">Assert</span>::<span class="php-keyword1">true</span>((bool) <span class="php-keyword2">preg_match</span>(<span class="php-quote">'~^[a-zA-Z][a-zA-Z0-9\-]*$~'</span>, <span class="php-var">$name</span>), <span class="php-keyword2">sprintf</span>(
+</span><span id="58" class="l"><a href="#58"> 58: </a>            <span class="php-quote">'The attribute name must contain letters, numbers and hyphens only. Got: &quot;%s&quot;'</span>,
 </span><span id="59" class="l"><a href="#59"> 59: </a>            <span class="php-var">$name</span>
 </span><span id="60" class="l"><a href="#60"> 60: </a>        ));
-</span><span id="61" class="l"><a href="#61"> 61: </a>        <span class="php-keyword2">Assert</span>::string(<span class="php-var">$value</span>, <span class="php-quote">'The attribute value must be a string. Got: %2$s'</span>);
+</span><span id="61" class="l"><a href="#61"> 61: </a>        <span class="php-keyword2">Assert</span>::string(<span class="php-var">$value</span>, <span class="php-quote">'The attribute value must be a string. Got: %s'</span>);
 </span><span id="62" class="l"><a href="#62"> 62: </a>
 </span><span id="63" class="l"><a href="#63"> 63: </a>        <span class="php-var">$this</span>-&gt;attributes[<span class="php-var">$name</span>] = <span class="php-var">$value</span>;
 </span><span id="64" class="l"><a href="#64"> 64: </a>    }
@@ -528,6 +534,6 @@
 </div>
 </div>
 <script src="resources/combined.js?de92956e949966c1f12d45243b45d71770188b0c"></script>
-<script src="elementlist.js?82976ee76e3c995e2e09e370b665c24ec3021d01"></script>
+<script src="elementlist.js?d0ce0e748bb05385a0f789b2b5cacae543fee94b"></script>
 </body>
 </html>

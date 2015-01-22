@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Puli\RepositoryManager\Api\Package\InstallInfo | Puli API</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-8282807-3"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Puli.html">
+						Puli<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.html">
+						Discovery<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Validation.html">
+						Validation					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Discovery.Assert.html">
+						Assert					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Discovery.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Discovery.Validation.html">
+						Validation					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Factory.html">
+						Factory					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.html">
+						Repository<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Api.Resource.html">
+						Resource					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Repository.Assert.html">
+						Assert					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.html">
+						Resource<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Collection.html">
+						Collection					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Iterator.html">
+						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Metadata.html">
+						Metadata					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Repository.StreamWrapper.html">
+						StreamWrapper					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Uri.html">
+						Uri					</a>
+
+						</li>
+							</ul></li>
+				<li class="active">
+					<a href="namespace-Puli.RepositoryManager.html">
+						RepositoryManager<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Puli.RepositoryManager.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Discovery.html">
+						Discovery					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Environment.html">
+						Environment					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Event.html">
+						Event					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-Puli.RepositoryManager.Api.Package.html">
+						Package					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
+						Plugin					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
+						Repository					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Assert.html">
+						Assert					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Conflict.html">
+						Conflict					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Discovery.html">
+						Discovery<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Discovery.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Discovery.Type.html">
+						Type					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Environment.html">
+						Environment					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Generator.html">
+						Generator<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Generator.Discovery.html">
+						Discovery					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Generator.KeyValueStore.html">
+						KeyValueStore					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Generator.Repository.html">
+						Repository					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Package.html">
+						Package					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.html">
+						Repository<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
+						Iterator					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Transaction.html">
+						Transaction					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Util.html">
+						Util					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
+					<a href="namespace-Webmozart.html">
+						Webmozart<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.html">
+						KeyValueStore<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.Api.html">
+						Api					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.Assert.html">
+						Assert					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.Util.html">
+						Util					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Puli.RepositoryManager.Api.Package.InstallInfo.html">InstallInfo</a></li>
+				<li><a href="class-Puli.RepositoryManager.Api.Package.Package.html">Package</a></li>
+				<li><a href="class-Puli.RepositoryManager.Api.Package.PackageCollection.html">PackageCollection</a></li>
+				<li><a href="class-Puli.RepositoryManager.Api.Package.PackageFile.html">PackageFile</a></li>
+				<li><a href="class-Puli.RepositoryManager.Api.Package.PackageState.html">PackageState</a></li>
+				<li><a href="class-Puli.RepositoryManager.Api.Package.RootPackage.html">RootPackage</a></li>
+				<li><a href="class-Puli.RepositoryManager.Api.Package.RootPackageFile.html">RootPackageFile</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Puli.RepositoryManager.Api.Package.NameConflictException.html">NameConflictException</a></li>
+				<li><a href="class-Puli.RepositoryManager.Api.Package.NoSuchPackageException.html">NoSuchPackageException</a></li>
+				<li><a href="class-Puli.RepositoryManager.Api.Package.PackageFileReader.html">PackageFileReader</a></li>
+				<li><a href="class-Puli.RepositoryManager.Api.Package.PackageFileWriter.html">PackageFileWriter</a></li>
+				<li><a href="class-Puli.RepositoryManager.Api.Package.PackageManager.html">PackageManager</a></li>
+				<li><a href="class-Puli.RepositoryManager.Api.Package.RootPackageFileManager.html">RootPackageFileManager</a></li>
+				<li><a href="class-Puli.RepositoryManager.Api.Package.UnsupportedVersionException.html">UnsupportedVersionException</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Puli.RepositoryManager.Api.Package.html" title="Summary of Puli\RepositoryManager\Api\Package"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class InstallInfo</h1>
+
+
+	<div class="description">
+	<p>Contains information about a package installation.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.RepositoryManager.html">RepositoryManager</a>\<a href="namespace-Puli.RepositoryManager.Api.html">Api</a>\<a href="namespace-Puli.RepositoryManager.Api.Package.html">Package</a><br>
+		
+
+				<b>Author:</b>
+				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
+				<b>Since:</b>
+				1.0<br>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#19-231" title="Go to source code">Api/Package/InstallInfo.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#57-75" title="Go to source code">__construct</a>( <span>string <var>$packageName</var></span>, <span>string <var>$installPath</var></span> )</code>
+
+		<div class="description short">
+			<p>Creates a new install info.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a new install info.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$packageName</var></dt>
+					<dd>The package name. Must be a non-empty string.</dd>
+					<dt><var>$installPath</var></dt>
+					<dd><p>The path where the package is installed.
+                           If a relative path is given, the path is
+                           assumed to be relative to the install path
+                           of the root package.</p></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					InvalidArgumentException<br>If any of the arguments is invalid.
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getInstallPath" id="_getInstallPath">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInstallPath">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#77-87" title="Go to source code">getInstallPath</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the path where the package is installed.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the path where the package is installed.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>The path where the package is installed. The path is
+               either absolute or relative to the install path of the
+               root package.</p>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPackageName" id="_getPackageName">
+
+		<td class="attributes"><code>
+			 public 
+
+			null|string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPackageName">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#89-98" title="Go to source code">getPackageName</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the package name.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the package name.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					null|string<br><p>Returns the package name or <code>null</code> if the name is
+                    read from the package's puli.json file.</p>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getInstallerName" id="_getInstallerName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInstallerName">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#100-108" title="Go to source code">getInstallerName</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the name of the installer of the package.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the name of the installer of the package.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>The package's installer name.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setInstallerName" id="_setInstallerName">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setInstallerName">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#110-118" title="Go to source code">setInstallerName</a>( <span>string <var>$installerName</var></span> )</code>
+
+		<div class="description short">
+			<p>Sets the name of the installer of the package.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets the name of the installer of the package.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$installerName</var></dt>
+					<dd>The package's installer name.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEnabledBindingUuids" id="_getEnabledBindingUuids">
+
+		<td class="attributes"><code>
+			 public 
+
+			Rhumsaa\Uuid\Uuid
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEnabledBindingUuids">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#120-128" title="Go to source code">getEnabledBindingUuids</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the enabled resource bindings of the package.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the enabled resource bindings of the package.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					Rhumsaa\Uuid\Uuid<br>The UUIDs of the enabled resource bindings.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addEnabledBindingUuid" id="_addEnabledBindingUuid">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addEnabledBindingUuid">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#130-140" title="Go to source code">addEnabledBindingUuid</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+
+		<div class="description short">
+			<p>Adds an enabled resource binding for the package.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adds an enabled resource binding for the package.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uuid</var></dt>
+					<dd>The UUID of the enabled resource binding.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeEnabledBindingUuid" id="_removeEnabledBindingUuid">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeEnabledBindingUuid">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#142-152" title="Go to source code">removeEnabledBindingUuid</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+
+		<div class="description short">
+			<p>Removes an enabled resource binding.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes an enabled resource binding.</p>
+
+<p>If the resource binding is not enabled, this method does nothing.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uuid</var></dt>
+					<dd>The UUID of the resource binding to remove.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasEnabledBindingUuid" id="_hasEnabledBindingUuid">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasEnabledBindingUuid">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#154-164" title="Go to source code">hasEnabledBindingUuid</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns whether the resource binding is enabled.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether the resource binding is enabled.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uuid</var></dt>
+					<dd>The UUID of the resource binding.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>Whether the resource binding is enabled.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasEnabledBindingUuids" id="_hasEnabledBindingUuids">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasEnabledBindingUuids">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#166-174" title="Go to source code">hasEnabledBindingUuids</a>( )</code>
+
+		<div class="description short">
+			<p>Returns whether the install info contains enabled bindings.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether the install info contains enabled bindings.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>Whether any bindings are enabled.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisabledBindingUuids" id="_getDisabledBindingUuids">
+
+		<td class="attributes"><code>
+			 public 
+
+			Rhumsaa\Uuid\Uuid
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisabledBindingUuids">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#176-184" title="Go to source code">getDisabledBindingUuids</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the disabled resource bindings of the package.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the disabled resource bindings of the package.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					Rhumsaa\Uuid\Uuid<br>The UUIDs of the disabled resource bindings.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addDisabledBindingUuid" id="_addDisabledBindingUuid">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addDisabledBindingUuid">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#186-196" title="Go to source code">addDisabledBindingUuid</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+
+		<div class="description short">
+			<p>Adds a disabled resource binding for the package.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adds a disabled resource binding for the package.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uuid</var></dt>
+					<dd>The UUID of the disabled resource binding.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeDisabledBindingUuid" id="_removeDisabledBindingUuid">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeDisabledBindingUuid">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#198-208" title="Go to source code">removeDisabledBindingUuid</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+
+		<div class="description short">
+			<p>Removes a disabled resource binding.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes a disabled resource binding.</p>
+
+<p>If the resource binding is not disabled, this method does nothing.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uuid</var></dt>
+					<dd>The UUID of the resource binding to remove.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasDisabledBindingUuid" id="_hasDisabledBindingUuid">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasDisabledBindingUuid">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#210-220" title="Go to source code">hasDisabledBindingUuid</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns whether the resource binding is disabled.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether the resource binding is disabled.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uuid</var></dt>
+					<dd>The UUID of the resource binding.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>Whether the resource binding is disabled.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasDisabledBindingUuids" id="_hasDisabledBindingUuids">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasDisabledBindingUuids">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#222-230" title="Go to source code">hasDisabledBindingUuids</a>( )</code>
+
+		<div class="description short">
+			<p>Returns whether the install info contains disabled bindings.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether the install info contains disabled bindings.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>Whether any bindings are disabled.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="DEFAULT_INSTALLER_NAME" id="DEFAULT_INSTALLER_NAME">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Puli.RepositoryManager.Api.Package.InstallInfo.html#27-30" title="Go to source code"><b>DEFAULT_INSTALLER_NAME</b></a>
+			</code>
+
+			<div class="description short">
+				<p>The default installer of packages.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The default installer of packages.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#DEFAULT_INSTALLER_NAME" class="anchor">#</a>
+				<code><span class="php-quote">'user'</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Puli API API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

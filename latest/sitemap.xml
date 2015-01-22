@@ -64,19 +64,34 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.Config.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.Discovery.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.Environment.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.Event.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.Package.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.Plugin.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.Repository.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Assert.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Config.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Config.ConfigFile.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Config.ConfigFile.Reader.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Config.ConfigFile.Writer.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Conflict.html</loc>
@@ -85,13 +100,13 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Discovery.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Discovery.Store.html</loc>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Discovery.Binding.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Discovery.Type.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Environment.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Event.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Generator.html</loc>
@@ -109,22 +124,13 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Package.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Package.PackageFile.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Package.PackageFile.Reader.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Package.PackageFile.Writer.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Plugin.html</loc>
-</url>
-<url>
 	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Repository.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Repository.Iterator.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Transaction.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Util.html</loc>

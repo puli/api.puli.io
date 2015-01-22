@@ -142,33 +142,57 @@
 
 						<ul>
 				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Discovery.html">
+						Discovery					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Environment.html">
+						Environment					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Event.html">
+						Event					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Package.html">
+						Package					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
+						Plugin					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
+						Repository					</a>
+
+						</li>
+							</ul></li>
+				<li>
 					<a href="namespace-Puli.RepositoryManager.Assert.html">
 						Assert					</a>
 
 						</li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Config.html">
-						Config<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Config.ConfigFile.html">
-						ConfigFile<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Config.ConfigFile.Reader.html">
-						Reader					</a>
+						Config					</a>
 
 						</li>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Config.ConfigFile.Writer.html">
-						Writer					</a>
-
-						</li>
-							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Conflict.html">
 						Conflict					</a>
@@ -181,19 +205,19 @@
 
 						<ul>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Discovery.Store.html">
-						Store					</a>
+					<a href="namespace-Puli.RepositoryManager.Discovery.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Discovery.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Environment.html">
 						Environment					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Event.html">
-						Event					</a>
 
 						</li>
 				<li>
@@ -220,30 +244,7 @@
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Package.html">
-						Package<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Package.PackageFile.html">
-						PackageFile<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Package.PackageFile.Reader.html">
-						Reader					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Package.PackageFile.Writer.html">
-						Writer					</a>
-
-						</li>
-							</ul></li></ul></li>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Plugin.html">
-						Plugin					</a>
+						Package					</a>
 
 						</li>
 				<li class="active">
@@ -258,6 +259,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Transaction.html">
+						Transaction					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Util.html">
 						Util					</a>
@@ -301,17 +307,11 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Puli.RepositoryManager.Repository.RepositoryManager.html">RepositoryManager</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.RepositoryManagerImpl.html">RepositoryManagerImpl</a></li>
 				<li class="active"><a href="class-Puli.RepositoryManager.Repository.RepositoryUpdater.html">RepositoryUpdater</a></li>
-				<li><a href="class-Puli.RepositoryManager.Repository.ResourceMapping.html">ResourceMapping</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.ResourceMappingStore.html">ResourceMappingStore</a></li>
 			</ul>
 
-			<h3>Interfaces</h3>
-			<ul>
-				<li><a href="class-Puli.RepositoryManager.Repository.NoSuchMappingException.html">NoSuchMappingException</a></li>
-				<li><a href="class-Puli.RepositoryManager.Repository.RepositoryNotEmptyException.html">RepositoryNotEmptyException</a></li>
-				<li><a href="class-Puli.RepositoryManager.Repository.ResourceDefinitionException.html">ResourceDefinitionException</a></li>
-			</ul>
 
 
 
@@ -356,7 +356,7 @@
 
 <p>You can register resource mappings for insertion by calling <code><a href="class-Puli.RepositoryManager.Repository.RepositoryUpdater.html#_add">Puli\RepositoryManager\Repository\RepositoryUpdater::add()</a></code>.
 All registered mappings will be inserted into the repository when you
-call <code><a href="class-Puli.RepositoryManager.Repository.RepositoryUpdater.html#_commit">Puli\RepositoryManager\Repository\RepositoryUpdater::commit()</a></code>. This method respects the package order specified
+call commit(). This method respects the package order specified
 in the package graph passed to the constructor.</p>
 	</div>
 
@@ -378,7 +378,7 @@ in the package graph passed to the constructor.</p>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Repository.RepositoryUpdater.html#19-119" title="Go to source code">Repository/RepositoryUpdater.php</a>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Repository.RepositoryUpdater.html#20-106" title="Go to source code">Repository/RepositoryUpdater.php</a>
 		<br>
 	</div>
 
@@ -398,7 +398,7 @@ in the package graph passed to the constructor.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Repository.RepositoryUpdater.html#47-59" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Repository.Api.EditableRepository.html">Puli\Repository\Api\EditableRepository</a></code> <var>$repo</var></span>, <span><code><a href="class-Puli.RepositoryManager.Conflict.OverrideGraph.html">Puli\RepositoryManager\Conflict\OverrideGraph</a></code> <var>$overrideGraph</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.RepositoryUpdater.html#43-52" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.RepositoryManager.Conflict.OverrideGraph.html">Puli\RepositoryManager\Conflict\OverrideGraph</a></code> <var>$overrideGraph</var></span> )</code>
 
 		<div class="description short">
 			<p>Creates a new updater.</p>
@@ -410,12 +410,9 @@ in the package graph passed to the constructor.</p>
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$repo</var></dt>
-					<dd>The repository to update.</dd>
 					<dt><var>$overrideGraph</var></dt>
-					<dd><p>The graph determining which
-                                         the order in which to process
-                                         the packages.</p></dd>
+					<dd><p>The graph determining which the order
+                                    in which to process the packages.</p></dd>
 				</dl></div>
 
 
@@ -437,7 +434,7 @@ in the package graph passed to the constructor.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Repository.RepositoryUpdater.html#61-78" title="Go to source code">add</a>( <span><code><a href="class-Puli.RepositoryManager.Repository.ResourceMapping.html">Puli\RepositoryManager\Repository\ResourceMapping</a></code> <var>$mapping</var></span>, <span>string <var>$packageName</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.RepositoryUpdater.html#54-71" title="Go to source code">add</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html">Puli\RepositoryManager\Api\Repository\ResourceMapping</a></code> <var>$mapping</var></span>, <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a resource mapping to be inserted for a given package.</p>
@@ -466,7 +463,7 @@ absolute paths.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="clear" id="_clear">
+	<tr data-order="updateRepository" id="_updateRepository">
 
 		<td class="attributes"><code>
 			 public 
@@ -477,38 +474,8 @@ absolute paths.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Repository.RepositoryUpdater.html#80-86" title="Go to source code">clear</a>( )</code>
-
-		<div class="description short">
-			<p>Clears all pending additions.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Clears all pending additions.</p>
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="commit" id="_commit">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_commit">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Repository.RepositoryUpdater.html#88-118" title="Go to source code">commit</a>( )</code>
+		<a class="anchor" href="#_updateRepository">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.RepositoryUpdater.html#73-105" title="Go to source code">updateRepository</a>( <span><code><a href="class-Puli.Repository.Api.EditableRepository.html">Puli\Repository\Api\EditableRepository</a></code> <var>$repo</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds all pending additions to the repository.</p>
@@ -523,6 +490,11 @@ packages are added to the repository before the resources of the
 overriding packages.</p>
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$repo</var></dt>
+					<dd>The repository to update.</dd>
+				</dl></div>
 
 
 

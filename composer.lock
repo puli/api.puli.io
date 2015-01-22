@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8b7d014e776785693ae79bd5b03fdd34",
+    "hash": "aced3f1b2cb5a3db1af6fa63295d62d3",
     "packages": [
         {
             "name": "andrewsville/php-token-reflection",
@@ -141,55 +141,6 @@
                 "phpdoc"
             ],
             "time": "2015-01-12 14:18:58"
-        },
-        {
-            "name": "beberlei/assert",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/beberlei/assert.git",
-                "reference": "160eba4d1fbe692e42b3cf8a20b92ab23e3a8759"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/beberlei/assert/zipball/160eba4d1fbe692e42b3cf8a20b92ab23e3a8759",
-                "reference": "160eba4d1fbe692e42b3cf8a20b92ab23e3a8759",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Assert": "lib/"
-                },
-                "files": [
-                    "lib/Assert/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                }
-            ],
-            "description": "Thin assertion library for input validation in business models.",
-            "keywords": [
-                "assert",
-                "assertion",
-                "validation"
-            ],
-            "time": "2014-12-18 19:12:40"
         },
         {
             "name": "herrera-io/json",
@@ -1581,22 +1532,21 @@
         },
         {
             "name": "puli/discovery",
-            "version": "1.0.0-beta",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/discovery.git",
-                "reference": "ea3661d7e4393d14b10a5730783011a9dc4a1623"
+                "reference": "38a576ea95be659790e05c56d27e1a0276ba53a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/discovery/zipball/ea3661d7e4393d14b10a5730783011a9dc4a1623",
-                "reference": "ea3661d7e4393d14b10a5730783011a9dc4a1623",
+                "url": "https://api.github.com/repos/puli/discovery/zipball/38a576ea95be659790e05c56d27e1a0276ba53a6",
+                "reference": "38a576ea95be659790e05c56d27e1a0276ba53a6",
                 "shasum": ""
             },
             "require": {
-                "beberlei/assert": "~2.3",
                 "php": ">=5.3.9",
-                "puli/repository": "~1.0",
+                "puli/repository": "1.0.*",
                 "webmozart/glob": "~1.0",
                 "webmozart/key-value-store": "~1.0"
             },
@@ -1626,7 +1576,7 @@
             ],
             "description": "Discovers Puli resources bound to predefined types.",
             "homepage": "http://puli.io",
-            "time": "2015-01-12 14:35:24"
+            "time": "2015-01-13 10:02:04"
         },
         {
             "name": "puli/factory",
@@ -1674,16 +1624,16 @@
         },
         {
             "name": "puli/repository",
-            "version": "dev-master",
+            "version": "1.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/repository.git",
-                "reference": "3bb06888b2cc751459c16f38b59fdfbc625d6f86"
+                "reference": "38b833006f29c1aaf279a45a4e950171a253e917"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/repository/zipball/3bb06888b2cc751459c16f38b59fdfbc625d6f86",
-                "reference": "3bb06888b2cc751459c16f38b59fdfbc625d6f86",
+                "url": "https://api.github.com/repos/puli/repository/zipball/38b833006f29c1aaf279a45a4e950171a253e917",
+                "reference": "38b833006f29c1aaf279a45a4e950171a253e917",
                 "shasum": ""
             },
             "require": {
@@ -1700,7 +1650,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.0-dev"
                 }
             },
             "autoload": {
@@ -1720,29 +1670,28 @@
             ],
             "description": "A filesystem-like repository for storing arbitrary resources.",
             "homepage": "http://puli.io",
-            "time": "2015-01-16 10:00:48"
+            "time": "2015-01-13 10:08:02"
         },
         {
             "name": "puli/repository-manager",
-            "version": "1.0.0-beta",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/repository-manager.git",
-                "reference": "92e6a7e8beb8a56f97f1ac69667d35d8e1feca80"
+                "reference": "c2fd651e614455cd90d10f3f49bf5a41c38d297c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/repository-manager/zipball/92e6a7e8beb8a56f97f1ac69667d35d8e1feca80",
-                "reference": "92e6a7e8beb8a56f97f1ac69667d35d8e1feca80",
+                "url": "https://api.github.com/repos/puli/repository-manager/zipball/c2fd651e614455cd90d10f3f49bf5a41c38d297c",
+                "reference": "c2fd651e614455cd90d10f3f49bf5a41c38d297c",
                 "shasum": ""
             },
             "require": {
-                "beberlei/assert": "~2.3",
                 "php": ">=5.3.9",
                 "psr/log": "~1.0",
                 "puli/discovery": "~1.0",
                 "puli/factory": "~1.0",
-                "puli/repository": "~1.0",
+                "puli/repository": "1.0.*",
                 "rhumsaa/uuid": "~2.8",
                 "symfony/event-dispatcher": "~2.3",
                 "symfony/filesystem": "~2.3",
@@ -1772,7 +1721,7 @@
             ],
             "description": "Generates Puli repositories from configured packages.",
             "homepage": "http://puli.io",
-            "time": "2015-01-12 16:09:23"
+            "time": "2015-01-22 21:02:03"
         },
         {
             "name": "rhumsaa/uuid",
@@ -2166,16 +2115,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/glob.git",
-                "reference": "5073ec350b3310c5142b644a27ad0cb12cc881cf"
+                "reference": "a33f4b86c8b58663f06a07d4e812e73bf5aff315"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/glob/zipball/5073ec350b3310c5142b644a27ad0cb12cc881cf",
-                "reference": "5073ec350b3310c5142b644a27ad0cb12cc881cf",
+                "url": "https://api.github.com/repos/webmozart/glob/zipball/a33f4b86c8b58663f06a07d4e812e73bf5aff315",
+                "reference": "a33f4b86c8b58663f06a07d4e812e73bf5aff315",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=5.3.3",
+                "webmozart/path-util": "~1.0"
             },
             "require-dev": {
                 "symfony/filesystem": "~2.5"
@@ -2202,7 +2152,7 @@
                 }
             ],
             "description": "A PHP implementation of Git's glob.",
-            "time": "2015-01-12 11:26:13"
+            "time": "2015-01-22 14:25:59"
         },
         {
             "name": "webmozart/json",
@@ -2253,12 +2203,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/key-value-store.git",
-                "reference": "5db15d75716d2ed3420d56c9d44defde5707167e"
+                "reference": "662bef0b8c7e411636ab4e18537a0678e361dc78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/key-value-store/zipball/5db15d75716d2ed3420d56c9d44defde5707167e",
-                "reference": "5db15d75716d2ed3420d56c9d44defde5707167e",
+                "url": "https://api.github.com/repos/webmozart/key-value-store/zipball/662bef0b8c7e411636ab4e18537a0678e361dc78",
+                "reference": "662bef0b8c7e411636ab4e18537a0678e361dc78",
                 "shasum": ""
             },
             "require": {
@@ -2297,7 +2247,7 @@
                 }
             ],
             "description": "A key-value store API with implementations for different backends.",
-            "time": "2015-01-21 15:50:35"
+            "time": "2015-01-22 14:36:01"
         },
         {
             "name": "webmozart/path-util",
@@ -2305,12 +2255,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/path-util.git",
-                "reference": "b2161d465cbddcb8f3283e14d05db7d6ecf36be1"
+                "reference": "1853dc725cdefde90a0cf14ae50b0237f90ffc14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/path-util/zipball/b2161d465cbddcb8f3283e14d05db7d6ecf36be1",
-                "reference": "b2161d465cbddcb8f3283e14d05db7d6ecf36be1",
+                "url": "https://api.github.com/repos/webmozart/path-util/zipball/1853dc725cdefde90a0cf14ae50b0237f90ffc14",
+                "reference": "1853dc725cdefde90a0cf14ae50b0237f90ffc14",
                 "shasum": ""
             },
             "require": {
@@ -2338,7 +2288,7 @@
                 }
             ],
             "description": "A robust cross-platform utility for normalizing, comparing and modifying file paths.",
-            "time": "2015-01-12 11:21:31"
+            "time": "2015-01-22 11:55:37"
         }
     ],
     "packages-dev": [],

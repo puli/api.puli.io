@@ -142,33 +142,57 @@
 
 						<ul>
 				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Discovery.html">
+						Discovery					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Environment.html">
+						Environment					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Event.html">
+						Event					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Package.html">
+						Package					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
+						Plugin					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
+						Repository					</a>
+
+						</li>
+							</ul></li>
+				<li>
 					<a href="namespace-Puli.RepositoryManager.Assert.html">
 						Assert					</a>
 
 						</li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Config.html">
-						Config<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Config.ConfigFile.html">
-						ConfigFile<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Config.ConfigFile.Reader.html">
-						Reader					</a>
+						Config					</a>
 
 						</li>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Config.ConfigFile.Writer.html">
-						Writer					</a>
-
-						</li>
-							</ul></li></ul></li>
 				<li class="active">
 					<a href="namespace-Puli.RepositoryManager.Conflict.html">
 						Conflict					</a>
@@ -181,19 +205,19 @@
 
 						<ul>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Discovery.Store.html">
-						Store					</a>
+					<a href="namespace-Puli.RepositoryManager.Discovery.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Discovery.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Environment.html">
 						Environment					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Event.html">
-						Event					</a>
 
 						</li>
 				<li>
@@ -220,30 +244,7 @@
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Package.html">
-						Package<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Package.PackageFile.html">
-						PackageFile<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Package.PackageFile.Reader.html">
-						Reader					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Package.PackageFile.Writer.html">
-						Writer					</a>
-
-						</li>
-							</ul></li></ul></li>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Plugin.html">
-						Plugin					</a>
+						Package					</a>
 
 						</li>
 				<li>
@@ -258,6 +259,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Transaction.html">
+						Transaction					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Util.html">
 						Util					</a>
@@ -363,13 +369,13 @@ raised:</p>
 <span class="php-var">$detector</span>-&gt;claim(<span class="php-quote">'/app/config'</span>, <span class="php-quote">'package1'</span>);
 <span class="php-var">$detector</span>-&gt;claim(<span class="php-quote">'/app/views'</span>, <span class="php-quote">'package2'</span>);
 
-<span class="php-var">$conflict</span> = <span class="php-var">$detector</span>-&gt;detectConflict();
-<span class="php-comment">// =&gt; null</span>
+<span class="php-var">$conflicts</span> = <span class="php-var">$detector</span>-&gt;detectConflicts(<span class="php-keyword1">array</span>(<span class="php-quote">'/app/config'</span>, <span class="php-quote">'/app/views'</span>));
+<span class="php-comment">// =&gt; array()</span>
 
 <span class="php-var">$detector</span>-&gt;claim(<span class="php-quote">'/app/config'</span>, <span class="php-quote">'package2'</span>);
 
-<span class="php-var">$conflict</span> = <span class="php-var">$detector</span>-&gt;detectConflict();
-<span class="php-comment">// =&gt; PackageConflict</span></pre>
+<span class="php-var">$conflicts</span> = <span class="php-var">$detector</span>-&gt;detectConflicts(<span class="php-keyword1">array</span>(<span class="php-quote">'/app/config'</span>, <span class="php-quote">'/app/views'</span>));
+<span class="php-comment">// =&gt; array(PackageConflict)</span></pre>
 
 <p>You can resolve conflicts by passing an <code><a href="class-Puli.RepositoryManager.Conflict.OverrideGraph.html">Puli\RepositoryManager\Conflict\OverrideGraph</a></code> to the
 detector. The override graph has package names as nodes. When the conflict
@@ -392,8 +398,8 @@ not result in conflicts for these packages:</p>
 <span class="php-var">$detector</span>-&gt;claim(<span class="php-quote">'/app/config'</span>, <span class="php-quote">'package2'</span>);
 
 <span class="php-comment">// The conflict has been resolved</span>
-<span class="php-var">$conflict</span> = <span class="php-var">$detector</span>-&gt;detectConflict();
-<span class="php-comment">// =&gt; null</span></pre>
+<span class="php-var">$conflict</span> s= <span class="php-var">$detector</span>-&gt;detectConflict(<span class="php-keyword1">array</span>(<span class="php-quote">'/app/config'</span>));
+<span class="php-comment">// =&gt; array()</span></pre>
 	</div>
 
 
@@ -414,7 +420,7 @@ not result in conflicts for these packages:</p>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Conflict.PackageConflictDetector.html#14-173" title="Go to source code">Conflict/PackageConflictDetector.php</a>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Conflict.PackageConflictDetector.html#14-174" title="Go to source code">Conflict/PackageConflictDetector.php</a>
 		<br>
 	</div>
 
@@ -434,7 +440,7 @@ not result in conflicts for these packages:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Conflict.PackageConflictDetector.html#83-92" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.RepositoryManager.Conflict.OverrideGraph.html">Puli\RepositoryManager\Conflict\OverrideGraph</a></code> <var>$overrideGraph</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Conflict.PackageConflictDetector.html#78-87" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.RepositoryManager.Conflict.OverrideGraph.html">Puli\RepositoryManager\Conflict\OverrideGraph</a></code> <var>$overrideGraph</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Creates a new conflict detector.</p>
@@ -470,7 +476,7 @@ not result in conflicts for these packages:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_claim">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Conflict.PackageConflictDetector.html#94-111" title="Go to source code">claim</a>( <span>integer|string <var>$token</var></span>, <span>string <var>$packageName</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Conflict.PackageConflictDetector.html#89-103" title="Go to source code">claim</a>( <span>integer|string <var>$token</var></span>, <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Claims a token for a package.</p>
@@ -508,7 +514,7 @@ not result in conflicts for these packages:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_release">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Conflict.PackageConflictDetector.html#113-123" title="Go to source code">release</a>( <span>integer|string <var>$token</var></span>, <span>string <var>$packageName</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Conflict.PackageConflictDetector.html#105-115" title="Go to source code">release</a>( <span>integer|string <var>$token</var></span>, <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Releases a package's claim for a token.</p>
@@ -534,39 +540,49 @@ not result in conflicts for these packages:</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="detectConflict" id="_detectConflict">
+	<tr data-order="detectConflicts" id="_detectConflicts">
 
 		<td class="attributes"><code>
 			 public 
 
-			<code><a href="class-Puli.RepositoryManager.Conflict.PackageConflict.html">Puli\RepositoryManager\Conflict\PackageConflict</a></code>
+			<code><a href="class-Puli.RepositoryManager.Conflict.PackageConflict.html">Puli\RepositoryManager\Conflict\PackageConflict</a>[]</code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_detectConflict">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Conflict.PackageConflictDetector.html#125-171" title="Go to source code">detectConflict</a>( )</code>
+		<a class="anchor" href="#_detectConflicts">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Conflict.PackageConflictDetector.html#117-172" title="Go to source code">detectConflicts</a>( <span>array <var>$tokens</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
-			<p>Checks the claimed tokens for conflicts.</p>
+			<p>Checks the passed tokens for conflicts.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Checks the claimed tokens for conflicts.</p>
+			<p>Checks the passed tokens for conflicts.</p>
+
+<p>If no tokens are passed, all tokens are checked.</p>
 
 <p>A conflict is returned for every token that is claimed by two packages
-that have no edge in the override graph. In other words, if two packages
-A and B claim the same token, an edge must exist from A to B (A is
-overridden by B) or from B to A (B is overridden by A). Otherwise a
-conflict is returned.</p>
+that are not connected by an edge in the override graph. In other words,
+if two packages A and B claim the same token, an edge must exist from A
+to B (A is overridden by B) or from B to A (B is overridden by A).
+Otherwise a conflict is returned.</p>
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tokens</var></dt>
+					<dd><p>The tokens to check. If <code>null</code>, all claimed
+                              tokens are checked for conflicts. You are
+                              advised to pass tokens if possible to
+                              improve the performance of the conflict
+                              detection.</p></dd>
+				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><a href="class-Puli.RepositoryManager.Conflict.PackageConflict.html">Puli\RepositoryManager\Conflict\PackageConflict</a></code><br><p>Returns the detected conflict or <code>null</code> if no
-                        conflict was found.</p>
+					<code><a href="class-Puli.RepositoryManager.Conflict.PackageConflict.html">Puli\RepositoryManager\Conflict\PackageConflict</a>[]</code><br>The detected conflicts.
 				</div>
 
 

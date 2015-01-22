@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Interface Puli\RepositoryManager\Transaction\OperationInterceptor | Puli API</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-8282807-3"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Puli.html">
+						Puli<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.html">
+						Discovery<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Validation.html">
+						Validation					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Discovery.Assert.html">
+						Assert					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Discovery.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Discovery.Validation.html">
+						Validation					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Factory.html">
+						Factory					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.html">
+						Repository<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Api.Resource.html">
+						Resource					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Repository.Assert.html">
+						Assert					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.html">
+						Resource<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Collection.html">
+						Collection					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Iterator.html">
+						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Metadata.html">
+						Metadata					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Repository.StreamWrapper.html">
+						StreamWrapper					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Uri.html">
+						Uri					</a>
+
+						</li>
+							</ul></li>
+				<li class="active">
+					<a href="namespace-Puli.RepositoryManager.html">
+						RepositoryManager<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Discovery.html">
+						Discovery					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Environment.html">
+						Environment					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Event.html">
+						Event					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Package.html">
+						Package					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
+						Plugin					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
+						Repository					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Assert.html">
+						Assert					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Conflict.html">
+						Conflict					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Discovery.html">
+						Discovery<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Discovery.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Discovery.Type.html">
+						Type					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Environment.html">
+						Environment					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Generator.html">
+						Generator<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Generator.Discovery.html">
+						Discovery					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Generator.KeyValueStore.html">
+						KeyValueStore					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Generator.Repository.html">
+						Repository					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Package.html">
+						Package					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.html">
+						Repository<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
+						Iterator					</a>
+
+						</li>
+							</ul></li>
+				<li class="active">
+					<a href="namespace-Puli.RepositoryManager.Transaction.html">
+						Transaction					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Util.html">
+						Util					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
+					<a href="namespace-Webmozart.html">
+						Webmozart<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.html">
+						KeyValueStore<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.Api.html">
+						Api					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.Assert.html">
+						Assert					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.Util.html">
+						Util					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Puli.RepositoryManager.Transaction.InterceptedOperation.html">InterceptedOperation</a></li>
+				<li><a href="class-Puli.RepositoryManager.Transaction.Transaction.html">Transaction</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Puli.RepositoryManager.Transaction.AtomicOperation.html">AtomicOperation</a></li>
+				<li class="active"><a href="class-Puli.RepositoryManager.Transaction.OperationInterceptor.html">OperationInterceptor</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Puli.RepositoryManager.Transaction.html" title="Summary of Puli\RepositoryManager\Transaction"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface OperationInterceptor</h1>
+
+
+	<div class="description">
+	<p>An interceptor for an atomic operation.</p>
+
+<p>See <code><a href="class-Puli.RepositoryManager.Transaction.InterceptedOperation.html">Puli\RepositoryManager\Transaction\InterceptedOperation</a></code> for a description of interceptors.</p>
+	</div>
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-Puli.RepositoryManager.Discovery.Binding.AbstractReloadBindingDescriptors.html">Puli\RepositoryManager\Discovery\Binding\AbstractReloadBindingDescriptors</a>, 
+			<a href="class-Puli.RepositoryManager.Discovery.Binding.UpdateDuplicateMarksForUuid.html">Puli\RepositoryManager\Discovery\Binding\UpdateDuplicateMarksForUuid</a>, 
+			<a href="class-Puli.RepositoryManager.Discovery.Type.UpdateDuplicateMarksForTypeName.html">Puli\RepositoryManager\Discovery\Type\UpdateDuplicateMarksForTypeName</a>
+	</div>
+
+	<div>
+		<h4>Indirect known implementers</h4>
+			<a href="class-Puli.RepositoryManager.Discovery.Binding.ReloadBindingDescriptorsByTypeName.html">Puli\RepositoryManager\Discovery\Binding\ReloadBindingDescriptorsByTypeName</a>, 
+			<a href="class-Puli.RepositoryManager.Discovery.Binding.ReloadBindingDescriptorsByUuid.html">Puli\RepositoryManager\Discovery\Binding\ReloadBindingDescriptorsByUuid</a>
+	</div>
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.RepositoryManager.html">RepositoryManager</a>\<a href="namespace-Puli.RepositoryManager.Transaction.html">Transaction</a><br>
+		
+
+				<b>Author:</b>
+				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
+				<b>Since:</b>
+				1.0<br>
+				<b>See:</b>
+				<code><a href="class-Puli.RepositoryManager.Transaction.InterceptedOperation.html">Puli\RepositoryManager\Transaction\InterceptedOperation</a></code><br>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Transaction.OperationInterceptor.html#14-41" title="Go to source code">Transaction/OperationInterceptor.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="postExecute" id="_postExecute">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_postExecute">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Transaction.OperationInterceptor.html#25-32" title="Go to source code">postExecute</a>( )</code>
+
+		<div class="description short">
+			<p>Invoked after executing the operation.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Invoked after executing the operation.</p>
+
+<p>If this method fails, the operation is rolled back.
+<code><a href="class-Puli.RepositoryManager.Transaction.OperationInterceptor.html#_postRollback">Puli\RepositoryManager\Transaction\OperationInterceptor::postRollback()</a></code> will be called after the rollback and can be used
+for cleaning up side effects.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="postRollback" id="_postRollback">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_postRollback">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Transaction.OperationInterceptor.html#34-40" title="Go to source code">postRollback</a>( )</code>
+
+		<div class="description short">
+			<p>Invoked after rolling back the operation.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Invoked after rolling back the operation.</p>
+
+<p>Use this method to revert the side effects of <code><a href="class-Puli.RepositoryManager.Transaction.OperationInterceptor.html#_postExecute">Puli\RepositoryManager\Transaction\OperationInterceptor::postExecute()</a></code> in
+case the operation needs to be rolled back.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Puli API API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
