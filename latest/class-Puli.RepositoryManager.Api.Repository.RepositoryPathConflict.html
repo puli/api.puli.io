@@ -172,11 +172,6 @@
 						Package					</a>
 
 						</li>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
 				<li class="active">
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
@@ -256,6 +251,11 @@
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
 						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
 
 						</li>
 							</ul></li>
@@ -379,7 +379,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Api.Repository.RepositoryPathConflict.html#17-155" title="Go to source code">Api/Repository/RepositoryPathConflict.php</a>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Api.Repository.RepositoryPathConflict.html#17-169" title="Go to source code">Api/Repository/RepositoryPathConflict.php</a>
 		<br>
 	</div>
 
@@ -495,6 +495,45 @@
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="addMappings" id="_addMappings">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addMappings">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.RepositoryPathConflict.html#85-97" title="Go to source code">addMappings</a>( <span>array <var>$mappings</var></span> )</code>
+
+		<div class="description short">
+			<p>Adds resource mappings involved in the conflict.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adds resource mappings involved in the conflict.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mappings</var></dt>
+					<dd>The resource mappings to add.</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Puli.RepositoryManager.Api.NotLoadedException.html">Puli\RepositoryManager\Api\NotLoadedException</a></code><br>If a passed mapping is not loaded.
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="removeMapping" id="_removeMapping">
 
 		<td class="attributes"><code>
@@ -507,7 +546,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeMapping">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.RepositoryPathConflict.html#85-119" title="Go to source code">removeMapping</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html">Puli\RepositoryManager\Api\Repository\ResourceMapping</a></code> <var>$mapping</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.RepositoryPathConflict.html#99-133" title="Go to source code">removeMapping</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html">Puli\RepositoryManager\Api\Repository\ResourceMapping</a></code> <var>$mapping</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a resource mapping from the conflict.</p>
@@ -549,7 +588,7 @@ mapping is removed as well. The conflict is then resolved.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMappings">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.RepositoryPathConflict.html#121-129" title="Go to source code">getMappings</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.RepositoryPathConflict.html#135-143" title="Go to source code">getMappings</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the resource mappings involved in the conflict.</p>
@@ -583,7 +622,7 @@ mapping is removed as well. The conflict is then resolved.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_resolve">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.RepositoryPathConflict.html#131-144" title="Go to source code">resolve</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.RepositoryPathConflict.html#145-158" title="Go to source code">resolve</a>( )</code>
 
 		<div class="description short">
 			<p>Resolves the conflict.</p>
@@ -616,7 +655,7 @@ method, <code><a href="class-Puli.RepositoryManager.Api.Repository.RepositoryPat
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isResolved">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.RepositoryPathConflict.html#146-154" title="Go to source code">isResolved</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.RepositoryPathConflict.html#160-168" title="Go to source code">isResolved</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the conflict is resolved.</p>

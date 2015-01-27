@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Namespace Puli\RepositoryManager\Api\Plugin | Puli API</title>
+	<title>Class Puli\RepositoryManager\Repository\Mapping\LoadMapping | Puli API</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -141,7 +141,7 @@
 					</a>
 
 						<ul>
-				<li class="active">
+				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.html">
 						Api<span></span>
 					</a>
@@ -170,11 +170,6 @@
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Package.html">
 						Package					</a>
-
-						</li>
-				<li class="active">
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
 
 						</li>
 				<li>
@@ -247,7 +242,7 @@
 						Package					</a>
 
 						</li>
-				<li>
+				<li class="active">
 					<a href="namespace-Puli.RepositoryManager.Repository.html">
 						Repository<span></span>
 					</a>
@@ -256,6 +251,11 @@
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
 						Iterator					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
 
 						</li>
 							</ul></li>
@@ -305,11 +305,20 @@
 
 
 		<div id="elements">
-
-			<h3>Interfaces</h3>
+			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Puli.RepositoryManager.Api.Plugin.ManagerPlugin.html">ManagerPlugin</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.AddMappingToPackageFile.html">AddMappingToPackageFile</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.ConflictCollection.html">ConflictCollection</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.InsertAll.html">InsertAll</a></li>
+				<li class="active"><a href="class-Puli.RepositoryManager.Repository.Mapping.LoadMapping.html">LoadMapping</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.OverrideConflictingPackages.html">OverrideConflictingPackages</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.RemoveMappingFromPackageFile.html">RemoveMappingFromPackageFile</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html">ResourceMappingCollection</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.SyncRepositoryPath.html">SyncRepositoryPath</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.UnloadMapping.html">UnloadMapping</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.UpdateConflicts.html">UpdateConflicts</a></li>
 			</ul>
+
 
 
 
@@ -333,11 +342,11 @@
 			<li>
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
-			<li class="active">
-<span>Namespace</span>			</li>
 			<li>
-				<a href="class-Webmozart.KeyValueStore.Api.WriteException.html" title="Summary of Webmozart\KeyValueStore\Api\WriteException"><span>Class</span></a>
+				<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html" title="Summary of Puli\RepositoryManager\Repository\Mapping"><span>Namespace</span></a>
 			</li>
+			<li class="active">
+<span>Class</span>			</li>
 		</ul>
 		<ul>
 		</ul>
@@ -345,19 +354,158 @@
 		</ul>
 	</div>
 
-<div id="content" class="namespace">
-	<h1>Namespace <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.RepositoryManager.html">RepositoryManager</a>\<a href="namespace-Puli.RepositoryManager.Api.html">Api</a>\Plugin</h1>
+<div id="content" class="class">
+	<h1>Class LoadMapping</h1>
+
+
+	<div class="description">
+	<p>Loads a resource mapping.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Puli\RepositoryManager\Repository\Mapping\LoadMapping</span></b>			
+			 implements 
+				<a href="class-Puli.RepositoryManager.Transaction.AtomicOperation.html"><span>Puli\RepositoryManager\Transaction\AtomicOperation</span></a>
+			
+			
+		</dd>
+	</dl>
 
 
 
 
-<table class="summary" id="interfaces">
-<caption>Interfaces summary</caption>
-<tr>
-	<td class="name"><a href="class-Puli.RepositoryManager.Api.Plugin.ManagerPlugin.html">ManagerPlugin</a></td>
-	<td>A plugin for the repository manager.</td>
-</tr>
-</table>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.RepositoryManager.html">RepositoryManager</a>\<a href="namespace-Puli.RepositoryManager.Repository.html">Repository</a>\<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">Mapping</a><br>
+		
+
+				<b>Author:</b>
+				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
+				<b>Since:</b>
+				1.0<br>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Repository.Mapping.LoadMapping.html#20-100" title="Go to source code">Repository/Mapping/LoadMapping.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.LoadMapping.html#53-60" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html">Puli\RepositoryManager\Api\Repository\ResourceMapping</a></code> <var>$mapping</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.Package.html">Puli\RepositoryManager\Api\Package\Package</a></code> <var>$containingPackage</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.PackageCollection.html">Puli\RepositoryManager\Api\Package\PackageCollection</a></code> <var>$packages</var></span>, <span><code><a href="class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html">Puli\RepositoryManager\Repository\Mapping\ResourceMappingCollection</a></code> <var>$mappings</var></span>, <span><code><a href="class-Puli.RepositoryManager.Conflict.PackageConflictDetector.html">Puli\RepositoryManager\Conflict\PackageConflictDetector</a></code> <var>$conflictDetector</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="execute" id="_execute">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_execute">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.LoadMapping.html#62-79" title="Go to source code">execute</a>( )</code>
+
+		<div class="description short">
+			<p>Executes the operation.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Executes the operation.</p>
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.RepositoryManager.Transaction.AtomicOperation.html#_execute">Puli\RepositoryManager\Transaction\AtomicOperation::execute()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="rollback" id="_rollback">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_rollback">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.LoadMapping.html#81-99" title="Go to source code">rollback</a>( )</code>
+
+		<div class="description short">
+			<p>Undoes the side effects of the operation.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Undoes the side effects of the operation.</p>
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.RepositoryManager.Transaction.AtomicOperation.html#_rollback">Puli\RepositoryManager\Transaction\AtomicOperation::rollback()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -369,7 +517,7 @@
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?de92956e949966c1f12d45243b45d71770188b0c"></script>
-<script src="elementlist.js?d0ce0e748bb05385a0f789b2b5cacae543fee94b"></script>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
 </body>
 </html>

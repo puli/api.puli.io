@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class Puli\RepositoryManager\Repository\ResourceMappingStore | Puli API</title>
+	<title>Class Puli\RepositoryManager\Repository\Mapping\ResourceMappingCollection | Puli API</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -173,11 +173,6 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
 
@@ -258,6 +253,11 @@
 						Iterator					</a>
 
 						</li>
+				<li class="active">
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Transaction.html">
@@ -307,9 +307,16 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Puli.RepositoryManager.Repository.RepositoryManagerImpl.html">RepositoryManagerImpl</a></li>
-				<li><a href="class-Puli.RepositoryManager.Repository.RepositoryUpdater.html">RepositoryUpdater</a></li>
-				<li class="active"><a href="class-Puli.RepositoryManager.Repository.ResourceMappingStore.html">ResourceMappingStore</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.AddMappingToPackageFile.html">AddMappingToPackageFile</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.ConflictCollection.html">ConflictCollection</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.InsertAll.html">InsertAll</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.LoadMapping.html">LoadMapping</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.OverrideConflictingPackages.html">OverrideConflictingPackages</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.RemoveMappingFromPackageFile.html">RemoveMappingFromPackageFile</a></li>
+				<li class="active"><a href="class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html">ResourceMappingCollection</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.SyncRepositoryPath.html">SyncRepositoryPath</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.UnloadMapping.html">UnloadMapping</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.UpdateConflicts.html">UpdateConflicts</a></li>
 			</ul>
 
 
@@ -336,7 +343,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-Puli.RepositoryManager.Repository.html" title="Summary of Puli\RepositoryManager\Repository"><span>Namespace</span></a>
+				<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html" title="Summary of Puli\RepositoryManager\Repository\Mapping"><span>Namespace</span></a>
 			</li>
 			<li class="active">
 <span>Class</span>			</li>
@@ -348,19 +355,14 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class ResourceMappingStore</h1>
+	<h1>Class ResourceMappingCollection</h1>
 
 
 	<div class="description">
-	<p>A store for resource mappings.</p>
+	<p>A collection of resource mappings.</p>
 
 <p>Each mapping has a composite key:
  * The repository path of the mapping. * The package that defines the mapping.</p>
-
-<p>The store implements transparent merging of mappings defined within different
-packages, but with the same repository path. If a mapping is requested for a
-repository path without giving a package name, the last mapping set for that
-repository path is returned by <code><a href="class-Puli.RepositoryManager.Repository.ResourceMappingStore.html#_get">Puli\RepositoryManager\Repository\ResourceMappingStore::get()</a></code>.</p>
 	</div>
 
 
@@ -374,14 +376,14 @@ repository path is returned by <code><a href="class-Puli.RepositoryManager.Repos
 	<div class="info">
 		
 		
-		<b>Namespace:</b> <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.RepositoryManager.html">RepositoryManager</a>\<a href="namespace-Puli.RepositoryManager.Repository.html">Repository</a><br>
+		<b>Namespace:</b> <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.RepositoryManager.html">RepositoryManager</a>\<a href="namespace-Puli.RepositoryManager.Repository.html">Repository</a>\<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">Mapping</a><br>
 		
 
 				<b>Author:</b>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Repository.ResourceMappingStore.html#19-172" title="Go to source code">Repository/ResourceMappingStore.php</a>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html#18-171" title="Go to source code">Repository/Mapping/ResourceMappingCollection.php</a>
 		<br>
 	</div>
 
@@ -401,7 +403,7 @@ repository path is returned by <code><a href="class-Puli.RepositoryManager.Repos
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Repository.ResourceMappingStore.html#42-48" title="Go to source code">__construct</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html#36-42" title="Go to source code">__construct</a>( )</code>
 
 		<div class="description short">
 			<p>Creates the store.</p>
@@ -431,7 +433,7 @@ repository path is returned by <code><a href="class-Puli.RepositoryManager.Repos
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Repository.ResourceMappingStore.html#50-65" title="Go to source code">add</a>( <span>string <var>$repositoryPath</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.Package.html">Puli\RepositoryManager\Api\Package\Package</a></code> <var>$package</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html">Puli\RepositoryManager\Api\Repository\ResourceMapping</a></code> <var>$mapping</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html#44-53" title="Go to source code">add</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html">Puli\RepositoryManager\Api\Repository\ResourceMapping</a></code> <var>$mapping</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a resource mapping.</p>
@@ -440,18 +442,46 @@ repository path is returned by <code><a href="class-Puli.RepositoryManager.Repos
 		<div class="description detailed hidden">
 			<p>Adds a resource mapping.</p>
 
-<p>The repository path has to be passed explicitly. This way you can store
-the same mapping under different repository paths (e.g. nested paths
-of the original path).</p>
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mapping</var></dt>
+					<dd>The resource mapping.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set" id="_set">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html#55-65" title="Go to source code">set</a>( <span>string <var>$repositoryPath</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html">Puli\RepositoryManager\Api\Repository\ResourceMapping</a></code> <var>$mapping</var></span> )</code>
+
+		<div class="description short">
+			<p>Sets a resource mapping for a specific repository path.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets a resource mapping for a specific repository path.</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$repositoryPath</var></dt>
-					<dd>The repository path of the mapping.</dd>
-					<dt><var>$package</var></dt>
-					<dd><p>The package defining the resource
-                                       mapping.</p></dd>
+					<dd>The repository path.</dd>
 					<dt><var>$mapping</var></dt>
 					<dd>The resource mapping.</dd>
 				</dl></div>
@@ -475,7 +505,7 @@ of the original path).</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Repository.ResourceMappingStore.html#67-78" title="Go to source code">remove</a>( <span>string <var>$repositoryPath</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.Package.html">Puli\RepositoryManager\Api\Package\Package</a></code> <var>$package</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html#67-78" title="Go to source code">remove</a>( <span>string <var>$repositoryPath</var></span>, <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a resource mapping.</p>
@@ -491,7 +521,7 @@ of the original path).</p>
 				<div class="list"><dl>
 					<dt><var>$repositoryPath</var></dt>
 					<dd>The repository path of the mapping.</dd>
-					<dt><var>$package</var></dt>
+					<dt><var>$packageName</var></dt>
 					<dd>The package containing the mapping.</dd>
 				</dl></div>
 
@@ -514,7 +544,7 @@ of the original path).</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Repository.ResourceMappingStore.html#80-101" title="Go to source code">get</a>( <span>string <var>$repositoryPath</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.Package.html">Puli\RepositoryManager\Api\Package\Package</a></code> <var>$package</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html#80-94" title="Go to source code">get</a>( <span>string <var>$repositoryPath</var></span>, <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns a resource mapping.</p>
@@ -523,15 +553,12 @@ of the original path).</p>
 		<div class="description detailed hidden">
 			<p>Returns a resource mapping.</p>
 
-<p>If no package is passed, the first mapping set for the repository path is
-returned.</p>
-
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$repositoryPath</var></dt>
 					<dd>The repository path of the mapping.</dd>
-					<dt><var>$package</var></dt>
+					<dt><var>$packageName</var></dt>
 					<dd>The package containing the mapping.</dd>
 				</dl></div>
 
@@ -551,7 +578,51 @@ returned.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getAll" id="_getAll">
+	<tr data-order="contains" id="_contains">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_contains">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html#96-109" title="Go to source code">contains</a>( <span>string <var>$repositoryPath</var></span>, <span>string <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns whether a resource mapping was set for the given repository
+path/package.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether a resource mapping was set for the given repository
+path/package.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$repositoryPath</var></dt>
+					<dd>The repository path of the mapping.</dd>
+					<dt><var>$packageName</var></dt>
+					<dd>The package containing the mapping.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br><p>Returns <code>true</code> if a resource mapping was set for the given
+             repository path/package.</p>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="listByRepositoryPath" id="_listByRepositoryPath">
 
 		<td class="attributes"><code>
 			 public 
@@ -562,8 +633,8 @@ returned.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getAll">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Repository.ResourceMappingStore.html#103-116" title="Go to source code">getAll</a>( <span>string <var>$repositoryPath</var></span> )</code>
+		<a class="anchor" href="#_listByRepositoryPath">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html#111-124" title="Go to source code">listByRepositoryPath</a>( <span>string <var>$repositoryPath</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns all resource mappings set for the given repository path.</p>
@@ -595,93 +666,51 @@ returned.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="exists" id="_exists">
+	<tr data-order="listByPackageName" id="_listByPackageName">
 
 		<td class="attributes"><code>
 			 public 
 
-			boolean
+			<code><a href="class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html">Puli\RepositoryManager\Api\Repository\ResourceMapping</a>[]</code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_exists">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Repository.ResourceMappingStore.html#118-131" title="Go to source code">exists</a>( <span>string <var>$repositoryPath</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.Package.html">Puli\RepositoryManager\Api\Package\Package</a></code> <var>$package</var></span> )</code>
+		<a class="anchor" href="#_listByPackageName">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html#126-139" title="Go to source code">listByPackageName</a>( <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
-			<p>Returns whether a resource mapping was set for the given repository
-path/package.</p>
+			<p>Returns all resource mappings set for the given package name.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Returns whether a resource mapping was set for the given repository
-path/package.</p>
+			<p>Returns all resource mappings set for the given package name.</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$repositoryPath</var></dt>
-					<dd>The repository path of the mapping.</dd>
-					<dt><var>$package</var></dt>
-					<dd>The package containing the mapping.</dd>
+					<dt><var>$packageName</var></dt>
+					<dd>The package name.</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					boolean<br><p>Returns <code>true</code> if a resource mapping was set for the given
-             repository path/package.</p>
+					<code><a href="class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html">Puli\RepositoryManager\Api\Repository\ResourceMapping</a>[]</code><br>The resource mappings.
 				</div>
 
+				<h4>Throws</h4>
+				<div class="list">
+					OutOfBoundsException<br><p>If no resource mapping was set for the
+                             given package name.</p>
+				</div>
 
 
 
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="existsAny" id="_existsAny">
-
-		<td class="attributes"><code>
-			 public 
-
-			boolean
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_existsAny">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Repository.ResourceMappingStore.html#133-145" title="Go to source code">existsAny</a>( <span>string <var>$repositoryPath</var></span> )</code>
-
-		<div class="description short">
-			<p>Returns whether a resource mapping was set for the given repository path
-in any package.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Returns whether a resource mapping was set for the given repository path
-in any package.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$repositoryPath</var></dt>
-					<dd>The repository path of the mapping.</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					boolean<br><p>Returns <code>true</code> if a resource mapping was set for the given
-             repository path.</p>
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getDefiningPackageNames" id="_getDefiningPackageNames">
+	<tr data-order="getPackageNames" id="_getPackageNames">
 
 		<td class="attributes"><code>
 			 public 
@@ -692,8 +721,8 @@ in any package.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getDefiningPackageNames">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Repository.ResourceMappingStore.html#147-161" title="Go to source code">getDefiningPackageNames</a>( <span>string <var>$repositoryPath</var></span> )</code>
+		<a class="anchor" href="#_getPackageNames">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html#141-155" title="Go to source code">getPackageNames</a>( <span>string <var>$repositoryPath</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the names of the packages defining mappings with the given
@@ -739,7 +768,7 @@ repository path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRepositoryPaths">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Repository.ResourceMappingStore.html#163-171" title="Go to source code">getRepositoryPaths</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html#157-165" title="Go to source code">getRepositoryPaths</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the repository paths of all resource mappings.</p>
@@ -754,6 +783,36 @@ repository path.</p>
 				<div class="list">
 					string[]<br>The repository paths of the stored mappings.
 				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="toArray" id="_toArray">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_toArray">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html#167-170" title="Go to source code">toArray</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
 
 
 

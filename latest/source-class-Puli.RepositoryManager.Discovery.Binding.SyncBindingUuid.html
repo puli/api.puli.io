@@ -174,11 +174,6 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
 
@@ -257,6 +252,11 @@
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
 						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
 
 						</li>
 							</ul></li>
@@ -402,20 +402,20 @@
 </span><span id="54" class="l"><a href="#54"> 54: </a>    <span class="php-keyword1">private</span> <span class="php-var">$enabledBindingAfter</span>;
 </span><span id="55" class="l"><a href="#55"> 55: </a>
 </span><span id="56" class="l"><a href="#56"> 56: </a>    <span class="php-comment">/**
-</span></span><span id="57" class="l"><a href="#57"> 57: </a><span class="php-comment">     * @var BindingDescriptorStore
+</span></span><span id="57" class="l"><a href="#57"> 57: </a><span class="php-comment">     * @var BindingDescriptorCollection
 </span></span><span id="58" class="l"><a href="#58"> 58: </a><span class="php-comment">     */</span>
-</span><span id="59" class="l"><a href="#59"> 59: </a>    <span class="php-keyword1">private</span> <span class="php-var">$bindingStore</span>;
+</span><span id="59" class="l"><a href="#59"> 59: </a>    <span class="php-keyword1">private</span> <span class="php-var">$bindingDescriptors</span>;
 </span><span id="60" class="l"><a href="#60"> 60: </a>
 </span><span id="61" class="l"><a href="#61"> 61: </a>    <span class="php-comment">/**
 </span></span><span id="62" class="l"><a href="#62"> 62: </a><span class="php-comment">     * @var bool
 </span></span><span id="63" class="l"><a href="#63"> 63: </a><span class="php-comment">     */</span>
 </span><span id="64" class="l"><a href="#64"> 64: </a>    <span class="php-keyword1">private</span> <span class="php-var">$snapshotTaken</span> = <span class="php-keyword1">false</span>;
 </span><span id="65" class="l"><a href="#65"> 65: </a>
-</span><span id="66" class="l"><a href="#66"> 66: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(Uuid <span class="php-var">$uuid</span>, EditableDiscovery <span class="php-var">$discovery</span>, BindingDescriptorStore <span class="php-var">$bindingStore</span>)
+</span><span id="66" class="l"><a href="#66"> 66: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(Uuid <span class="php-var">$uuid</span>, EditableDiscovery <span class="php-var">$discovery</span>, BindingDescriptorCollection <span class="php-var">$bindingDescriptors</span>)
 </span><span id="67" class="l"><a href="#67"> 67: </a>    {
 </span><span id="68" class="l"><a href="#68"> 68: </a>        <span class="php-var">$this</span>-&gt;uuid = <span class="php-var">$uuid</span>;
 </span><span id="69" class="l"><a href="#69"> 69: </a>        <span class="php-var">$this</span>-&gt;discovery = <span class="php-var">$discovery</span>;
-</span><span id="70" class="l"><a href="#70"> 70: </a>        <span class="php-var">$this</span>-&gt;bindingStore = <span class="php-var">$bindingStore</span>;
+</span><span id="70" class="l"><a href="#70"> 70: </a>        <span class="php-var">$this</span>-&gt;bindingDescriptors = <span class="php-var">$bindingDescriptors</span>;
 </span><span id="71" class="l"><a href="#71"> 71: </a>    }
 </span><span id="72" class="l"><a href="#72"> 72: </a>
 </span><span id="73" class="l"><a href="#73"> 73: </a>    <span class="php-comment">/**
@@ -423,7 +423,7 @@
 </span></span><span id="75" class="l"><a href="#75"> 75: </a><span class="php-comment">     */</span>
 </span><span id="76" class="l"><a href="#76"> 76: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> takeSnapshot()
 </span><span id="77" class="l"><a href="#77"> 77: </a>    {
-</span><span id="78" class="l"><a href="#78"> 78: </a>        <span class="php-var">$bindingDescriptor</span> = <span class="php-var">$this</span>-&gt;bindingStore-&gt;getEnabled(<span class="php-var">$this</span>-&gt;uuid);
+</span><span id="78" class="l"><a href="#78"> 78: </a>        <span class="php-var">$bindingDescriptor</span> = <span class="php-var">$this</span>-&gt;bindingDescriptors-&gt;getEnabled(<span class="php-var">$this</span>-&gt;uuid);
 </span><span id="79" class="l"><a href="#79"> 79: </a>
 </span><span id="80" class="l"><a href="#80"> 80: </a>        <span class="php-comment">// Clone so that rollback() works if the binding is unloaded</span>
 </span><span id="81" class="l"><a href="#81"> 81: </a>        <span class="php-var">$this</span>-&gt;enabledBindingBefore = <span class="php-var">$bindingDescriptor</span> ? <span class="php-keyword1">clone</span> <span class="php-var">$bindingDescriptor</span> : <span class="php-keyword1">null</span>;
@@ -440,7 +440,7 @@
 </span><span id="92" class="l"><a href="#92"> 92: </a>        }
 </span><span id="93" class="l"><a href="#93"> 93: </a>
 </span><span id="94" class="l"><a href="#94"> 94: </a>        <span class="php-comment">// Remember for rollback()</span>
-</span><span id="95" class="l"><a href="#95"> 95: </a>        <span class="php-var">$bindingDescriptor</span> = <span class="php-var">$this</span>-&gt;bindingStore-&gt;getEnabled(<span class="php-var">$this</span>-&gt;uuid);
+</span><span id="95" class="l"><a href="#95"> 95: </a>        <span class="php-var">$bindingDescriptor</span> = <span class="php-var">$this</span>-&gt;bindingDescriptors-&gt;getEnabled(<span class="php-var">$this</span>-&gt;uuid);
 </span><span id="96" class="l"><a href="#96"> 96: </a>
 </span><span id="97" class="l"><a href="#97"> 97: </a>        <span class="php-comment">// Clone so that rollback() works if the binding is unloaded</span>
 </span><span id="98" class="l"><a href="#98"> 98: </a>        <span class="php-var">$this</span>-&gt;enabledBindingAfter = <span class="php-var">$bindingDescriptor</span> ? <span class="php-keyword1">clone</span> <span class="php-var">$bindingDescriptor</span> : <span class="php-keyword1">null</span>;
@@ -483,6 +483,6 @@
 </div>
 </div>
 <script src="resources/combined.js?de92956e949966c1f12d45243b45d71770188b0c"></script>
-<script src="elementlist.js?d0ce0e748bb05385a0f789b2b5cacae543fee94b"></script>
+<script src="elementlist.js?9f6b7f92a31699e137ec348f7d751b7ac68c0256"></script>
 </body>
 </html>

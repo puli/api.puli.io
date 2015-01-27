@@ -172,11 +172,6 @@
 						Package					</a>
 
 						</li>
-				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
 				<li class="active">
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
@@ -256,6 +251,11 @@
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
 						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
 
 						</li>
 							</ul></li>
@@ -387,7 +387,7 @@ where "vendor/package" is the name of the referenced package.</p>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#28-657" title="Go to source code">Api/Repository/ResourceMapping.php</a>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#28-645" title="Go to source code">Api/Repository/ResourceMapping.php</a>
 		<br>
 	</div>
 
@@ -448,7 +448,7 @@ where "vendor/package" is the name of the referenced package.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_load">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#111-197" title="Go to source code">load</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Package.Package.html">Puli\RepositoryManager\Api\Package\Package</a></code> <var>$containingPackage</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.PackageCollection.html">Puli\RepositoryManager\Api\Package\PackageCollection</a></code> <var>$packages</var></span>, <span>boolean <var>$failIfNotFound</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#111-185" title="Go to source code">load</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Package.Package.html">Puli\RepositoryManager\Api\Package\Package</a></code> <var>$containingPackage</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.PackageCollection.html">Puli\RepositoryManager\Api\Package\PackageCollection</a></code> <var>$packages</var></span> )</code>
 
 		<div class="description short">
 			<p>Loads the mapping.</p>
@@ -468,13 +468,6 @@ where "vendor/package" is the name of the referenced package.</p>
                                             be referenced using
                                             <code>@vendor/package:</code> prefixes
                                             in the path references.</p></dd>
-					<dt><var>$failIfNotFound</var></dt>
-					<dd><p>Whether to fail when a path
-                                            or package is not found. By
-                                            default, errors are stored
-                                            in the mapping and can be
-                                            accessed by calling
-                                            <code><a href="class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#_getLoadErrors">Puli\RepositoryManager\Api\Repository\ResourceMapping::getLoadErrors()</a></code>.</p></dd>
 				</dl></div>
 
 
@@ -500,7 +493,7 @@ where "vendor/package" is the name of the referenced package.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_unload">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#199-227" title="Go to source code">unload</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#187-215" title="Go to source code">unload</a>( )</code>
 
 		<div class="description short">
 			<p>Unloads the mapping.</p>
@@ -537,7 +530,7 @@ associated conflicts are dereferenced.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isLoaded">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#229-237" title="Go to source code">isLoaded</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#217-225" title="Go to source code">isLoaded</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the mapping is loaded.</p>
@@ -571,7 +564,7 @@ associated conflicts are dereferenced.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRepositoryPath">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#239-247" title="Go to source code">getRepositoryPath</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#227-235" title="Go to source code">getRepositoryPath</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the repository path.</p>
@@ -605,7 +598,7 @@ associated conflicts are dereferenced.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPathReferences">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#249-265" title="Go to source code">getPathReferences</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#237-253" title="Go to source code">getPathReferences</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the path references.</p>
@@ -643,7 +636,7 @@ either:
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFilesystemPaths">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#267-284" title="Go to source code">getFilesystemPaths</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#255-272" title="Go to source code">getFilesystemPaths</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the referenced filesystem paths.</p>
@@ -684,7 +677,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_listPathMappings">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#286-301" title="Go to source code">listPathMappings</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#274-289" title="Go to source code">listPathMappings</a>( )</code>
 
 		<div class="description short">
 			<p>Lists all filesystem path to repository path mappings of this mapping.</p>
@@ -721,7 +714,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_listRepositoryPaths">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#303-318" title="Go to source code">listRepositoryPaths</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#291-306" title="Go to source code">listRepositoryPaths</a>( )</code>
 
 		<div class="description short">
 			<p>Lists all mapped repository paths.</p>
@@ -758,7 +751,7 @@ nested repository paths that are mapped by this mapping.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getContainingPackage">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#320-338" title="Go to source code">getContainingPackage</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#308-326" title="Go to source code">getContainingPackage</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the package that contains the mapping.</p>
@@ -800,7 +793,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getLoadErrors">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#340-359" title="Go to source code">getLoadErrors</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#328-347" title="Go to source code">getLoadErrors</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the errors that occurred during loading of the mapping.</p>
@@ -843,7 +836,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addConflict">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#361-414" title="Go to source code">addConflict</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Repository.RepositoryPathConflict.html">Puli\RepositoryManager\Api\Repository\RepositoryPathConflict</a></code> <var>$conflict</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#349-402" title="Go to source code">addConflict</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Repository.RepositoryPathConflict.html">Puli\RepositoryManager\Api\Repository\RepositoryPathConflict</a></code> <var>$conflict</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a conflict to the mapping.</p>
@@ -898,7 +891,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeConflict">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#416-442" title="Go to source code">removeConflict</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Repository.RepositoryPathConflict.html">Puli\RepositoryManager\Api\Repository\RepositoryPathConflict</a></code> <var>$conflict</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#404-430" title="Go to source code">removeConflict</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Repository.RepositoryPathConflict.html">Puli\RepositoryManager\Api\Repository\RepositoryPathConflict</a></code> <var>$conflict</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a conflict from the mapping.</p>
@@ -940,7 +933,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getConflicts">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#444-461" title="Go to source code">getConflicts</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#432-449" title="Go to source code">getConflicts</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the conflicts of the mapping.</p>
@@ -981,7 +974,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getConflictingPackages">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#463-492" title="Go to source code">getConflictingPackages</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#451-480" title="Go to source code">getConflictingPackages</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all packages with conflicting resource mappings.</p>
@@ -1022,7 +1015,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getConflictingMappings">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#494-523" title="Go to source code">getConflictingMappings</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#482-511" title="Go to source code">getConflictingMappings</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all conflicting resource mappings.</p>
@@ -1063,7 +1056,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getState">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#525-542" title="Go to source code">getState</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#513-530" title="Go to source code">getState</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the state of the mapping.</p>
@@ -1104,7 +1097,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isEnabled">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#544-566" title="Go to source code">isEnabled</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#532-554" title="Go to source code">isEnabled</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the mapping is enabled.</p>
@@ -1151,7 +1144,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isNotFound">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#568-588" title="Go to source code">isNotFound</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#556-576" title="Go to source code">isNotFound</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the path referenced by the mapping was not found.</p>
@@ -1197,7 +1190,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isConflicting">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#590-610" title="Go to source code">isConflicting</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html#578-598" title="Go to source code">isConflicting</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the mapping conflicts with a mapping in another package.</p>

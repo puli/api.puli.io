@@ -173,11 +173,6 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
 
@@ -256,6 +251,11 @@
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
 						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
 
 						</li>
 							</ul></li>
@@ -857,7 +857,7 @@ mark one of the packages to override the other one.</p>
 			<p>Sets the plugin classes.</p>
 
 <p>The plugin classes must be fully-qualified class names that implement
-<code><a href="class-Puli.RepositoryManager.Api.Plugin.ManagerPlugin.html">Puli\RepositoryManager\Api\Plugin\ManagerPlugin</a></code>. If a class is not
+<code><a href="class-Puli.RepositoryManager.Api.PuliPlugin.html">Puli\RepositoryManager\Api\PuliPlugin</a></code>. If a class is not
 found or does not implement that interface, an exception is thrown.</p>
 
 <p>The plugin classes must not have required parameters in their constructor
@@ -877,7 +877,7 @@ required parameters, an exception is thrown.</p>
 				<h4>Throws</h4>
 				<div class="list">
 					<code><a href="class-Puli.RepositoryManager.Api.InvalidConfigException.html">Puli\RepositoryManager\Api\InvalidConfigException</a></code><br><p>If the class is not found, is not a class,
-                               does not implement ManagerPlugin
+                               does not implement PuliPlugin
                                or has required constructor parameters.</p>
 				</div>
 
@@ -908,7 +908,7 @@ required parameters, an exception is thrown.</p>
 			<p>Adds a plugin class.</p>
 
 <p>The plugin class must be a fully-qualified class name that implements
-ManagerPlugin. If the class is not found or does not implement
+PuliPlugin. If the class is not found or does not implement
 that interface, an exception is thrown.</p>
 
 <p>The plugin class must not have required parameters in its constructor
@@ -928,7 +928,7 @@ required parameters, an exception is thrown.</p>
 				<h4>Throws</h4>
 				<div class="list">
 					<code><a href="class-Puli.RepositoryManager.Api.InvalidConfigException.html">Puli\RepositoryManager\Api\InvalidConfigException</a></code><br><p>If the class is not found, is not a class,
-                               does not implement ManagerPlugin
+                               does not implement PuliPlugin
                                or has required constructor parameters.</p>
 				</div>
 
@@ -1039,9 +1039,11 @@ plugin class.</p>
 			<a href="class-Puli.RepositoryManager.Api.Package.PackageFile.html#_getTypeDescriptor">getTypeDescriptor()</a>, 
 			<a href="class-Puli.RepositoryManager.Api.Package.PackageFile.html#_getTypeDescriptors">getTypeDescriptors()</a>, 
 			<a href="class-Puli.RepositoryManager.Api.Package.PackageFile.html#_hasBindingDescriptor">hasBindingDescriptor()</a>, 
+			<a href="class-Puli.RepositoryManager.Api.Package.PackageFile.html#_hasOverriddenPackage">hasOverriddenPackage()</a>, 
 			<a href="class-Puli.RepositoryManager.Api.Package.PackageFile.html#_hasResourceMapping">hasResourceMapping()</a>, 
 			<a href="class-Puli.RepositoryManager.Api.Package.PackageFile.html#_hasTypeDescriptor">hasTypeDescriptor()</a>, 
 			<a href="class-Puli.RepositoryManager.Api.Package.PackageFile.html#_removeBindingDescriptor">removeBindingDescriptor()</a>, 
+			<a href="class-Puli.RepositoryManager.Api.Package.PackageFile.html#_removeOverriddenPackage">removeOverriddenPackage()</a>, 
 			<a href="class-Puli.RepositoryManager.Api.Package.PackageFile.html#_removeResourceMapping">removeResourceMapping()</a>, 
 			<a href="class-Puli.RepositoryManager.Api.Package.PackageFile.html#_removeTypeDescriptor">removeTypeDescriptor()</a>, 
 			<a href="class-Puli.RepositoryManager.Api.Package.PackageFile.html#_setOverriddenPackages">setOverriddenPackages()</a>, 

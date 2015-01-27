@@ -82,9 +82,6 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.Package.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.Plugin.html</loc>
-</url>
-<url>
 	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.Repository.html</loc>
 </url>
 <url>
@@ -128,6 +125,9 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Repository.Iterator.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Repository.Mapping.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Transaction.html</loc>

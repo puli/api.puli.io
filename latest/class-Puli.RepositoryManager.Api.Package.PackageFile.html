@@ -173,11 +173,6 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
 
@@ -256,6 +251,11 @@
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
 						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
 
 						</li>
 							</ul></li>
@@ -391,7 +391,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#23-335" title="Go to source code">Api/Package/PackageFile.php</a>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#23-360" title="Go to source code">Api/Package/PackageFile.php</a>
 		<br>
 	</div>
 
@@ -596,7 +596,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setOverriddenPackages">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#125-133" title="Go to source code">setOverriddenPackages</a>( <span>string|string[] <var>$overriddenPackages</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#125-137" title="Go to source code">setOverriddenPackages</a>( <span>array <var>$packageNames</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the names of the packages this package overrides.</p>
@@ -608,7 +608,7 @@
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$overriddenPackages</var></dt>
+					<dt><var>$packageNames</var></dt>
 					<dd>The names of the overridden packages.</dd>
 				</dl></div>
 
@@ -631,7 +631,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addOverriddenPackage">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#135-145" title="Go to source code">addOverriddenPackage</a>( <span>string <var>$overriddenPackage</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#139-147" title="Go to source code">addOverriddenPackage</a>( <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds an overridden package.</p>
@@ -643,10 +643,85 @@
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$overriddenPackage</var></dt>
+					<dt><var>$packageName</var></dt>
 					<dd>The name of the overridden package.</dd>
 				</dl></div>
 
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeOverriddenPackage" id="_removeOverriddenPackage">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeOverriddenPackage">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#149-157" title="Go to source code">removeOverriddenPackage</a>( <span>string <var>$packageName</var></span> )</code>
+
+		<div class="description short">
+			<p>Adds an overridden package.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adds an overridden package.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$packageName</var></dt>
+					<dd>The name of the overridden package.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasOverriddenPackage" id="_hasOverriddenPackage">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasOverriddenPackage">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#159-170" title="Go to source code">hasOverriddenPackage</a>( <span>string <var>$packageName</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns whether a package is overridden.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether a package is overridden.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$packageName</var></dt>
+					<dd>The name of the package.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br><p>Returns <code>true</code> if the package is overridden in the package
+             file.</p>
+				</div>
 
 
 
@@ -666,7 +741,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getResourceMappings">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#147-155" title="Go to source code">getResourceMappings</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#172-180" title="Go to source code">getResourceMappings</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the resource mappings.</p>
@@ -700,7 +775,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getResourceMapping">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#157-173" title="Go to source code">getResourceMapping</a>( <span>string <var>$repositoryPath</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#182-198" title="Go to source code">getResourceMapping</a>( <span>string <var>$repositoryPath</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the resource mapping for a repository path.</p>
@@ -743,7 +818,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasResourceMapping">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#175-186" title="Go to source code">hasResourceMapping</a>( <span>string <var>$repositoryPath</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#200-211" title="Go to source code">hasResourceMapping</a>( <span>string <var>$repositoryPath</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the file contains a resource mapping for a repository
@@ -784,7 +859,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addResourceMapping">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#188-198" title="Go to source code">addResourceMapping</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html">Puli\RepositoryManager\Api\Repository\ResourceMapping</a></code> <var>$mapping</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#213-223" title="Go to source code">addResourceMapping</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html">Puli\RepositoryManager\Api\Repository\ResourceMapping</a></code> <var>$mapping</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a resource mapping.</p>
@@ -819,7 +894,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeResourceMapping">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#200-208" title="Go to source code">removeResourceMapping</a>( <span>string <var>$repositoryPath</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#225-233" title="Go to source code">removeResourceMapping</a>( <span>string <var>$repositoryPath</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes the resource mapping for a repository path.</p>
@@ -854,7 +929,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBindingDescriptors">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#210-218" title="Go to source code">getBindingDescriptors</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#235-243" title="Go to source code">getBindingDescriptors</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the binding descriptors.</p>
@@ -888,7 +963,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBindingDescriptor">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#220-238" title="Go to source code">getBindingDescriptor</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#245-263" title="Go to source code">getBindingDescriptor</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the binding descriptor with the given UUID.</p>
@@ -931,7 +1006,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addBindingDescriptor">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#240-248" title="Go to source code">addBindingDescriptor</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Discovery.BindingDescriptor.html">Puli\RepositoryManager\Api\Discovery\BindingDescriptor</a></code> <var>$descriptor</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#265-273" title="Go to source code">addBindingDescriptor</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Discovery.BindingDescriptor.html">Puli\RepositoryManager\Api\Discovery\BindingDescriptor</a></code> <var>$descriptor</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a binding descriptor.</p>
@@ -966,7 +1041,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeBindingDescriptor">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#250-258" title="Go to source code">removeBindingDescriptor</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#275-283" title="Go to source code">removeBindingDescriptor</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a binding descriptor.</p>
@@ -1001,7 +1076,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clearBindingDescriptors">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#260-266" title="Go to source code">clearBindingDescriptors</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#285-291" title="Go to source code">clearBindingDescriptors</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all binding descriptors.</p>
@@ -1031,7 +1106,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasBindingDescriptor">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#268-278" title="Go to source code">hasBindingDescriptor</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#293-303" title="Go to source code">hasBindingDescriptor</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the binding descriptor exists in this file.</p>
@@ -1070,7 +1145,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTypeDescriptors">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#280-289" title="Go to source code">getTypeDescriptors</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#305-314" title="Go to source code">getTypeDescriptors</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the type descriptors.</p>
@@ -1104,7 +1179,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addTypeDescriptor">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#291-299" title="Go to source code">addTypeDescriptor</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Discovery.BindingTypeDescriptor.html">Puli\RepositoryManager\Api\Discovery\BindingTypeDescriptor</a></code> <var>$descriptor</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#316-324" title="Go to source code">addTypeDescriptor</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Discovery.BindingTypeDescriptor.html">Puli\RepositoryManager\Api\Discovery\BindingTypeDescriptor</a></code> <var>$descriptor</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a type descriptor.</p>
@@ -1139,7 +1214,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeTypeDescriptor">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#301-309" title="Go to source code">removeTypeDescriptor</a>( <span>string <var>$typeName</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#326-334" title="Go to source code">removeTypeDescriptor</a>( <span>string <var>$typeName</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a type descriptor.</p>
@@ -1174,7 +1249,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clearTypeDescriptors">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#311-317" title="Go to source code">clearTypeDescriptors</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#336-342" title="Go to source code">clearTypeDescriptors</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all type descriptors.</p>
@@ -1204,7 +1279,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTypeDescriptor">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#319-322" title="Go to source code">getTypeDescriptor</a>( <span> <var>$typeName</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#344-347" title="Go to source code">getTypeDescriptor</a>( <span> <var>$typeName</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1234,7 +1309,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasTypeDescriptor">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#324-334" title="Go to source code">hasTypeDescriptor</a>( <span>string <var>$typeName</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.PackageFile.html#349-359" title="Go to source code">hasTypeDescriptor</a>( <span>string <var>$typeName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether a type is defined in this file.</p>

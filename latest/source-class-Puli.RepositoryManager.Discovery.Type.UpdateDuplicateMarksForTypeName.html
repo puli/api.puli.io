@@ -174,11 +174,6 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
 
@@ -257,6 +252,11 @@
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
 						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
 
 						</li>
 							</ul></li>
@@ -379,14 +379,14 @@
 </span><span id="31" class="l"><a href="#31">31: </a>    <span class="php-keyword1">private</span> <span class="php-var">$typeName</span>;
 </span><span id="32" class="l"><a href="#32">32: </a>
 </span><span id="33" class="l"><a href="#33">33: </a>    <span class="php-comment">/**
-</span></span><span id="34" class="l"><a href="#34">34: </a><span class="php-comment">     * @var BindingTypeDescriptorStore
+</span></span><span id="34" class="l"><a href="#34">34: </a><span class="php-comment">     * @var BindingTypeDescriptorCollection
 </span></span><span id="35" class="l"><a href="#35">35: </a><span class="php-comment">     */</span>
-</span><span id="36" class="l"><a href="#36">36: </a>    <span class="php-keyword1">private</span> <span class="php-var">$typeStore</span>;
+</span><span id="36" class="l"><a href="#36">36: </a>    <span class="php-keyword1">private</span> <span class="php-var">$typeDescriptors</span>;
 </span><span id="37" class="l"><a href="#37">37: </a>
-</span><span id="38" class="l"><a href="#38">38: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(<span class="php-var">$typeName</span>, BindingTypeDescriptorStore <span class="php-var">$bindingStore</span>)
+</span><span id="38" class="l"><a href="#38">38: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(<span class="php-var">$typeName</span>, BindingTypeDescriptorCollection <span class="php-var">$typeDescriptors</span>)
 </span><span id="39" class="l"><a href="#39">39: </a>    {
 </span><span id="40" class="l"><a href="#40">40: </a>        <span class="php-var">$this</span>-&gt;typeName = <span class="php-var">$typeName</span>;
-</span><span id="41" class="l"><a href="#41">41: </a>        <span class="php-var">$this</span>-&gt;typeStore = <span class="php-var">$bindingStore</span>;
+</span><span id="41" class="l"><a href="#41">41: </a>        <span class="php-var">$this</span>-&gt;typeDescriptors = <span class="php-var">$typeDescriptors</span>;
 </span><span id="42" class="l"><a href="#42">42: </a>    }
 </span><span id="43" class="l"><a href="#43">43: </a>
 </span><span id="44" class="l"><a href="#44">44: </a>    <span class="php-comment">/**
@@ -407,15 +407,15 @@
 </span><span id="59" class="l"><a href="#59">59: </a>
 </span><span id="60" class="l"><a href="#60">60: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> updateDuplicateMarksForTypeName(<span class="php-var">$typeName</span>)
 </span><span id="61" class="l"><a href="#61">61: </a>    {
-</span><span id="62" class="l"><a href="#62">62: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$this</span>-&gt;typeStore-&gt;existsAny(<span class="php-var">$typeName</span>)) {
+</span><span id="62" class="l"><a href="#62">62: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$this</span>-&gt;typeDescriptors-&gt;contains(<span class="php-var">$typeName</span>)) {
 </span><span id="63" class="l"><a href="#63">63: </a>            <span class="php-keyword1">return</span>;
 </span><span id="64" class="l"><a href="#64">64: </a>        }
 </span><span id="65" class="l"><a href="#65">65: </a>
-</span><span id="66" class="l"><a href="#66">66: </a>        <span class="php-var">$types</span> = <span class="php-var">$this</span>-&gt;typeStore-&gt;getAll(<span class="php-var">$typeName</span>);
-</span><span id="67" class="l"><a href="#67">67: </a>        <span class="php-var">$duplicate</span> = <span class="php-keyword2">count</span>(<span class="php-var">$types</span>) &gt; <span class="php-num">1</span>;
+</span><span id="66" class="l"><a href="#66">66: </a>        <span class="php-var">$typeDescriptors</span> = <span class="php-var">$this</span>-&gt;typeDescriptors-&gt;listByTypeName(<span class="php-var">$typeName</span>);
+</span><span id="67" class="l"><a href="#67">67: </a>        <span class="php-var">$duplicate</span> = <span class="php-keyword2">count</span>(<span class="php-var">$typeDescriptors</span>) &gt; <span class="php-num">1</span>;
 </span><span id="68" class="l"><a href="#68">68: </a>
-</span><span id="69" class="l"><a href="#69">69: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$types</span> <span class="php-keyword1">as</span> <span class="php-var">$type</span>) {
-</span><span id="70" class="l"><a href="#70">70: </a>            <span class="php-var">$type</span>-&gt;markDuplicate(<span class="php-var">$duplicate</span>);
+</span><span id="69" class="l"><a href="#69">69: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$typeDescriptors</span> <span class="php-keyword1">as</span> <span class="php-var">$typeDescriptor</span>) {
+</span><span id="70" class="l"><a href="#70">70: </a>            <span class="php-var">$typeDescriptor</span>-&gt;markDuplicate(<span class="php-var">$duplicate</span>);
 </span><span id="71" class="l"><a href="#71">71: </a>        }
 </span><span id="72" class="l"><a href="#72">72: </a>    }
 </span><span id="73" class="l"><a href="#73">73: </a>}
@@ -427,6 +427,6 @@
 </div>
 </div>
 <script src="resources/combined.js?de92956e949966c1f12d45243b45d71770188b0c"></script>
-<script src="elementlist.js?d0ce0e748bb05385a0f789b2b5cacae543fee94b"></script>
+<script src="elementlist.js?9f6b7f92a31699e137ec348f7d751b7ac68c0256"></script>
 </body>
 </html>

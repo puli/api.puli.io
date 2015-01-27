@@ -174,11 +174,6 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
 
@@ -257,6 +252,11 @@
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
 						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
 
 						</li>
 							</ul></li>
@@ -549,7 +549,7 @@
 </span></span><span id="201" class="l"><a href="#201">201: </a><span class="php-comment">     * Sets the plugin classes.
 </span></span><span id="202" class="l"><a href="#202">202: </a><span class="php-comment">     *
 </span></span><span id="203" class="l"><a href="#203">203: </a><span class="php-comment">     * The plugin classes must be fully-qualified class names that implement
-</span></span><span id="204" class="l"><a href="#204">204: </a><span class="php-comment">     * {@link Puli\RepositoryManager\Api\Plugin\ManagerPlugin}. If a class is not
+</span></span><span id="204" class="l"><a href="#204">204: </a><span class="php-comment">     * {@link Puli\RepositoryManager\Api\PuliPlugin}. If a class is not
 </span></span><span id="205" class="l"><a href="#205">205: </a><span class="php-comment">     * found or does not implement that interface, an exception is thrown.
 </span></span><span id="206" class="l"><a href="#206">206: </a><span class="php-comment">     *
 </span></span><span id="207" class="l"><a href="#207">207: </a><span class="php-comment">     * The plugin classes must not have required parameters in their constructor
@@ -561,7 +561,7 @@
 </span></span><span id="213" class="l"><a href="#213">213: </a><span class="php-comment">     * @param string[] $pluginClasses The fully qualified plugin class names.
 </span></span><span id="214" class="l"><a href="#214">214: </a><span class="php-comment">     *
 </span></span><span id="215" class="l"><a href="#215">215: </a><span class="php-comment">     * @throws InvalidConfigException If the class is not found, is not a class,
-</span></span><span id="216" class="l"><a href="#216">216: </a><span class="php-comment">     *                                does not implement {@link ManagerPlugin}
+</span></span><span id="216" class="l"><a href="#216">216: </a><span class="php-comment">     *                                does not implement {@link PuliPlugin}
 </span></span><span id="217" class="l"><a href="#217">217: </a><span class="php-comment">     *                                or has required constructor parameters.
 </span></span><span id="218" class="l"><a href="#218">218: </a><span class="php-comment">     */</span>
 </span><span id="219" class="l"><a href="#219">219: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> setPluginClasses(<span class="php-keyword1">array</span> <span class="php-var">$pluginClasses</span>)
@@ -577,7 +577,7 @@
 </span></span><span id="229" class="l"><a href="#229">229: </a><span class="php-comment">     * Adds a plugin class.
 </span></span><span id="230" class="l"><a href="#230">230: </a><span class="php-comment">     *
 </span></span><span id="231" class="l"><a href="#231">231: </a><span class="php-comment">     * The plugin class must be a fully-qualified class name that implements
-</span></span><span id="232" class="l"><a href="#232">232: </a><span class="php-comment">     * {@link ManagerPlugin}. If the class is not found or does not implement
+</span></span><span id="232" class="l"><a href="#232">232: </a><span class="php-comment">     * {@link PuliPlugin}. If the class is not found or does not implement
 </span></span><span id="233" class="l"><a href="#233">233: </a><span class="php-comment">     * that interface, an exception is thrown.
 </span></span><span id="234" class="l"><a href="#234">234: </a><span class="php-comment">     *
 </span></span><span id="235" class="l"><a href="#235">235: </a><span class="php-comment">     * The plugin class must not have required parameters in its constructor
@@ -589,7 +589,7 @@
 </span></span><span id="241" class="l"><a href="#241">241: </a><span class="php-comment">     * @param string $pluginClass The fully qualified plugin class name.
 </span></span><span id="242" class="l"><a href="#242">242: </a><span class="php-comment">     *
 </span></span><span id="243" class="l"><a href="#243">243: </a><span class="php-comment">     * @throws InvalidConfigException If the class is not found, is not a class,
-</span></span><span id="244" class="l"><a href="#244">244: </a><span class="php-comment">     *                                does not implement {@link ManagerPlugin}
+</span></span><span id="244" class="l"><a href="#244">244: </a><span class="php-comment">     *                                does not implement {@link PuliPlugin}
 </span></span><span id="245" class="l"><a href="#245">245: </a><span class="php-comment">     *                                or has required constructor parameters.
 </span></span><span id="246" class="l"><a href="#246">246: </a><span class="php-comment">     */</span>
 </span><span id="247" class="l"><a href="#247">247: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> addPluginClass(<span class="php-var">$pluginClass</span>)
@@ -617,9 +617,9 @@
 </span><span id="269" class="l"><a href="#269">269: </a>            ));
 </span><span id="270" class="l"><a href="#270">270: </a>        }
 </span><span id="271" class="l"><a href="#271">271: </a>
-</span><span id="272" class="l"><a href="#272">272: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$reflClass</span>-&gt;implementsInterface(<span class="php-quote">'\Puli\RepositoryManager\Api\Plugin\ManagerPlugin'</span>)) {
+</span><span id="272" class="l"><a href="#272">272: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$reflClass</span>-&gt;implementsInterface(<span class="php-quote">'\Puli\RepositoryManager\Api\PuliPlugin'</span>)) {
 </span><span id="273" class="l"><a href="#273">273: </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> InvalidConfigException(<span class="php-keyword2">sprintf</span>(
-</span><span id="274" class="l"><a href="#274">274: </a>                <span class="php-quote">'The plugin class %s must implement ManagerPlugin.'</span>,
+</span><span id="274" class="l"><a href="#274">274: </a>                <span class="php-quote">'The plugin class %s must implement PuliPlugin.'</span>,
 </span><span id="275" class="l"><a href="#275">275: </a>                <span class="php-var">$pluginClass</span>
 </span><span id="276" class="l"><a href="#276">276: </a>            ));
 </span><span id="277" class="l"><a href="#277">277: </a>        }
@@ -673,6 +673,6 @@
 </div>
 </div>
 <script src="resources/combined.js?de92956e949966c1f12d45243b45d71770188b0c"></script>
-<script src="elementlist.js?d0ce0e748bb05385a0f789b2b5cacae543fee94b"></script>
+<script src="elementlist.js?9f6b7f92a31699e137ec348f7d751b7ac68c0256"></script>
 </body>
 </html>

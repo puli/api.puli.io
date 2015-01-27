@@ -173,11 +173,6 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
 
@@ -256,6 +251,11 @@
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
 						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
 
 						</li>
 							</ul></li>
@@ -572,7 +572,7 @@ Whenever you call methods in this class, the changes will be written to disk.</p
 			<p>Installs a plugin class.</p>
 
 <p>The plugin class must be passed as fully-qualified name of a class that
-implements ManagerPlugin. Plugin constructors must not have
+implements PuliPlugin. Plugin constructors must not have
 mandatory parameters.</p>
 
 
@@ -586,7 +586,7 @@ mandatory parameters.</p>
 				<h4>Throws</h4>
 				<div class="list">
 					<code><a href="class-Puli.RepositoryManager.Api.InvalidConfigException.html">Puli\RepositoryManager\Api\InvalidConfigException</a></code><br><p>If a class is not found, is not a class,
-                               does not implement ManagerPlugin
+                               does not implement PuliPlugin
                                or has required constructor parameters.</p>
 				</div>
 

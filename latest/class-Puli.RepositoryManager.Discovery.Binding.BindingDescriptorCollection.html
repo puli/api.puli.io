@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class Puli\RepositoryManager\Discovery\Binding\BindingDescriptorStore | Puli API</title>
+	<title>Class Puli\RepositoryManager\Discovery\Binding\BindingDescriptorCollection | Puli API</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -173,11 +173,6 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
 
@@ -258,6 +253,11 @@
 						Iterator					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Transaction.html">
@@ -310,7 +310,7 @@
 				<li><a href="class-Puli.RepositoryManager.Discovery.Binding.AbstractReloadBindingDescriptors.html">AbstractReloadBindingDescriptors</a></li>
 				<li><a href="class-Puli.RepositoryManager.Discovery.Binding.AddBindingDescriptorToPackageFile.html">AddBindingDescriptorToPackageFile</a></li>
 				<li><a href="class-Puli.RepositoryManager.Discovery.Binding.Bind.html">Bind</a></li>
-				<li class="active"><a href="class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorStore.html">BindingDescriptorStore</a></li>
+				<li class="active"><a href="class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorCollection.html">BindingDescriptorCollection</a></li>
 				<li><a href="class-Puli.RepositoryManager.Discovery.Binding.DisableBindingUuid.html">DisableBindingUuid</a></li>
 				<li><a href="class-Puli.RepositoryManager.Discovery.Binding.EnableBindingUuid.html">EnableBindingUuid</a></li>
 				<li><a href="class-Puli.RepositoryManager.Discovery.Binding.LoadBindingDescriptor.html">LoadBindingDescriptor</a></li>
@@ -358,19 +358,14 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class BindingDescriptorStore</h1>
+	<h1>Class BindingDescriptorCollection</h1>
 
 
 	<div class="description">
-	<p>A store for binding descriptors.</p>
+	<p>A collection of binding descriptors.</p>
 
 <p>Each descriptor has a composite key:
  * The UUID of the binding descriptor. * The package that defines the binding.</p>
-
-<p>The store implements transparent merging of bindings defined within different
-packages, but with the same UUID. If a binding is requested for a UUID
-without giving a package name, the first binding set for that UUID is
-returned by <code><a href="class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorStore.html#_get">Puli\RepositoryManager\Discovery\Binding\BindingDescriptorStore::get()</a></code>.</p>
 	</div>
 
 
@@ -391,7 +386,7 @@ returned by <code><a href="class-Puli.RepositoryManager.Discovery.Binding.Bindin
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorStore.html#20-220" title="Go to source code">Discovery/Binding/BindingDescriptorStore.php</a>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorCollection.html#19-175" title="Go to source code">Discovery/Binding/BindingDescriptorCollection.php</a>
 		<br>
 	</div>
 
@@ -411,7 +406,7 @@ returned by <code><a href="class-Puli.RepositoryManager.Discovery.Binding.Bindin
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorStore.html#43-49" title="Go to source code">__construct</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorCollection.html#37-43" title="Go to source code">__construct</a>( )</code>
 
 		<div class="description short">
 			<p>Creates the store.</p>
@@ -441,7 +436,7 @@ returned by <code><a href="class-Puli.RepositoryManager.Discovery.Binding.Bindin
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorStore.html#51-61" title="Go to source code">add</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Discovery.BindingDescriptor.html">Puli\RepositoryManager\Api\Discovery\BindingDescriptor</a></code> <var>$bindingDescriptor</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.Package.html">Puli\RepositoryManager\Api\Package\Package</a></code> <var>$package</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorCollection.html#45-53" title="Go to source code">add</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Discovery.BindingDescriptor.html">Puli\RepositoryManager\Api\Discovery\BindingDescriptor</a></code> <var>$bindingDescriptor</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a binding descriptor.</p>
@@ -455,9 +450,6 @@ returned by <code><a href="class-Puli.RepositoryManager.Discovery.Binding.Bindin
 				<div class="list"><dl>
 					<dt><var>$bindingDescriptor</var></dt>
 					<dd>The binding descriptor.</dd>
-					<dt><var>$package</var></dt>
-					<dd><p>The package defining the
-                                            binding descriptor.</p></dd>
 				</dl></div>
 
 
@@ -479,7 +471,7 @@ returned by <code><a href="class-Puli.RepositoryManager.Discovery.Binding.Bindin
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorStore.html#63-74" title="Go to source code">remove</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.Package.html">Puli\RepositoryManager\Api\Package\Package</a></code> <var>$package</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorCollection.html#55-66" title="Go to source code">remove</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span>, <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a binding descriptor.</p>
@@ -495,8 +487,8 @@ returned by <code><a href="class-Puli.RepositoryManager.Discovery.Binding.Bindin
 				<div class="list"><dl>
 					<dt><var>$uuid</var></dt>
 					<dd>The UUID of the binding descriptor.</dd>
-					<dt><var>$package</var></dt>
-					<dd>The package containing the descriptor.</dd>
+					<dt><var>$packageName</var></dt>
+					<dd>The name of the package containing the descriptor.</dd>
 				</dl></div>
 
 
@@ -518,7 +510,7 @@ returned by <code><a href="class-Puli.RepositoryManager.Discovery.Binding.Bindin
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorStore.html#76-97" title="Go to source code">get</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.Package.html">Puli\RepositoryManager\Api\Package\Package</a></code> <var>$package</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorCollection.html#68-89" title="Go to source code">get</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span>, <span>string <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns a binding descriptor.</p>
@@ -535,8 +527,8 @@ returned.</p>
 				<div class="list"><dl>
 					<dt><var>$uuid</var></dt>
 					<dd>The UUID of the binding descriptor.</dd>
-					<dt><var>$package</var></dt>
-					<dd>The package containing the descriptor.</dd>
+					<dt><var>$packageName</var></dt>
+					<dd>The name of the package containing the descriptor.</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -567,7 +559,7 @@ returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEnabled">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorStore.html#99-122" title="Go to source code">getEnabled</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorCollection.html#91-114" title="Go to source code">getEnabled</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the enabled binding descriptor for a given UUID.</p>
@@ -597,7 +589,7 @@ returned.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getAll" id="_getAll">
+	<tr data-order="listByUuid" id="_listByUuid">
 
 		<td class="attributes"><code>
 			 public 
@@ -608,8 +600,8 @@ returned.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getAll">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorStore.html#124-137" title="Go to source code">getAll</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<a class="anchor" href="#_listByUuid">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorCollection.html#116-129" title="Go to source code">listByUuid</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns all binding descriptors set for the given UUID.</p>
@@ -641,7 +633,7 @@ returned.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="exists" id="_exists">
+	<tr data-order="contains" id="_contains">
 
 		<td class="attributes"><code>
 			 public 
@@ -652,8 +644,8 @@ returned.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_exists">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorStore.html#139-151" title="Go to source code">exists</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.Package.html">Puli\RepositoryManager\Api\Package\Package</a></code> <var>$package</var></span> )</code>
+		<a class="anchor" href="#_contains">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorCollection.html#131-143" title="Go to source code">contains</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span>, <span>string <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether a binding descriptor was set for the given UUID/package.</p>
@@ -667,8 +659,8 @@ returned.</p>
 				<div class="list"><dl>
 					<dt><var>$uuid</var></dt>
 					<dd>The UUID of the binding descriptor.</dd>
-					<dt><var>$package</var></dt>
-					<dd>The package containing the descriptor.</dd>
+					<dt><var>$packageName</var></dt>
+					<dd>The name of the package containing the descriptor.</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -683,91 +675,7 @@ returned.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="existsAny" id="_existsAny">
-
-		<td class="attributes"><code>
-			 public 
-
-			boolean
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_existsAny">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorStore.html#153-165" title="Go to source code">existsAny</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
-
-		<div class="description short">
-			<p>Returns whether a binding descriptor was set for the given UUID in any
-package.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Returns whether a binding descriptor was set for the given UUID in any
-package.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$uuid</var></dt>
-					<dd>The UUID of the binding descriptor.</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					boolean<br><p>Returns <code>true</code> if a binding descriptor was set for the given
-             UUID.</p>
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="existsEnabled" id="_existsEnabled">
-
-		<td class="attributes"><code>
-			 public 
-
-			boolean
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_existsEnabled">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorStore.html#167-188" title="Go to source code">existsEnabled</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
-
-		<div class="description short">
-			<p>Returns whether an enabled binding descriptor was set for the given UUID
-in any package.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Returns whether an enabled binding descriptor was set for the given UUID
-in any package.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$uuid</var></dt>
-					<dd>The UUID of the binding descriptor.</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					boolean<br><p>Returns <code>true</code> if an enabled binding descriptor was set for
-             the given UUID.</p>
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getDefiningPackageNames" id="_getDefiningPackageNames">
+	<tr data-order="getPackageNames" id="_getPackageNames">
 
 		<td class="attributes"><code>
 			 public 
@@ -778,8 +686,8 @@ in any package.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getDefiningPackageNames">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorStore.html#190-203" title="Go to source code">getDefiningPackageNames</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<a class="anchor" href="#_getPackageNames">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorCollection.html#145-158" title="Go to source code">getPackageNames</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the names of the packages defining bindings with the given UUID.</p>
@@ -823,7 +731,7 @@ in any package.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getUuids">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorStore.html#205-219" title="Go to source code">getUuids</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Binding.BindingDescriptorCollection.html#160-174" title="Go to source code">getUuids</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the UUIDs of all binding descriptors.</p>

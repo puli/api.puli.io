@@ -174,11 +174,6 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
 
@@ -257,6 +252,11 @@
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
 						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
 
 						</li>
 							</ul></li>
@@ -440,12 +440,12 @@
 </span><span id="92" class="l"><a href="#92"> 92: </a>    <span class="php-comment">/**
 </span></span><span id="93" class="l"><a href="#93"> 93: </a><span class="php-comment">     * Returns all packages installed by the given installer.
 </span></span><span id="94" class="l"><a href="#94"> 94: </a><span class="php-comment">     *
-</span></span><span id="95" class="l"><a href="#95"> 95: </a><span class="php-comment">     * @param string $installer The installer name.
+</span></span><span id="95" class="l"><a href="#95"> 95: </a><span class="php-comment">     * @param string $installerName The installer name.
 </span></span><span id="96" class="l"><a href="#96"> 96: </a><span class="php-comment">     * @param int    $state     The state of the packages to return.
 </span></span><span id="97" class="l"><a href="#97"> 97: </a><span class="php-comment">     *
 </span></span><span id="98" class="l"><a href="#98"> 98: </a><span class="php-comment">     * @return PackageCollection The packages.
 </span></span><span id="99" class="l"><a href="#99"> 99: </a><span class="php-comment">     */</span>
-</span><span id="100" class="l"><a href="#100">100: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getPackagesByInstaller(<span class="php-var">$installer</span>, <span class="php-var">$state</span> = PackageState::ENABLED);
+</span><span id="100" class="l"><a href="#100">100: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getPackagesByInstaller(<span class="php-var">$installerName</span>, <span class="php-var">$state</span> = <span class="php-keyword1">null</span>);
 </span><span id="101" class="l"><a href="#101">101: </a>
 </span><span id="102" class="l"><a href="#102">102: </a>    <span class="php-comment">/**
 </span></span><span id="103" class="l"><a href="#103">103: </a><span class="php-comment">     * Returns the manager's environment.
@@ -462,6 +462,6 @@
 </div>
 </div>
 <script src="resources/combined.js?de92956e949966c1f12d45243b45d71770188b0c"></script>
-<script src="elementlist.js?d0ce0e748bb05385a0f789b2b5cacae543fee94b"></script>
+<script src="elementlist.js?9f6b7f92a31699e137ec348f7d751b7ac68c0256"></script>
 </body>
 </html>

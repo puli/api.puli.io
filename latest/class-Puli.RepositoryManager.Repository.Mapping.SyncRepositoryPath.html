@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class Puli\RepositoryManager\Repository\RepositoryUpdater | Puli API</title>
+	<title>Class Puli\RepositoryManager\Repository\Mapping\SyncRepositoryPath | Puli API</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -173,11 +173,6 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
 
@@ -258,6 +253,11 @@
 						Iterator					</a>
 
 						</li>
+				<li class="active">
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Transaction.html">
@@ -307,9 +307,16 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Puli.RepositoryManager.Repository.RepositoryManagerImpl.html">RepositoryManagerImpl</a></li>
-				<li class="active"><a href="class-Puli.RepositoryManager.Repository.RepositoryUpdater.html">RepositoryUpdater</a></li>
-				<li><a href="class-Puli.RepositoryManager.Repository.ResourceMappingStore.html">ResourceMappingStore</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.AddMappingToPackageFile.html">AddMappingToPackageFile</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.ConflictCollection.html">ConflictCollection</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.InsertAll.html">InsertAll</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.LoadMapping.html">LoadMapping</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.OverrideConflictingPackages.html">OverrideConflictingPackages</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.RemoveMappingFromPackageFile.html">RemoveMappingFromPackageFile</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html">ResourceMappingCollection</a></li>
+				<li class="active"><a href="class-Puli.RepositoryManager.Repository.Mapping.SyncRepositoryPath.html">SyncRepositoryPath</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.UnloadMapping.html">UnloadMapping</a></li>
+				<li><a href="class-Puli.RepositoryManager.Repository.Mapping.UpdateConflicts.html">UpdateConflicts</a></li>
 			</ul>
 
 
@@ -336,7 +343,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-Puli.RepositoryManager.Repository.html" title="Summary of Puli\RepositoryManager\Repository"><span>Namespace</span></a>
+				<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html" title="Summary of Puli\RepositoryManager\Repository\Mapping"><span>Namespace</span></a>
 			</li>
 			<li class="active">
 <span>Class</span>			</li>
@@ -348,18 +355,22 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class RepositoryUpdater</h1>
+	<h1>Class SyncRepositoryPath</h1>
 
 
 	<div class="description">
-	<p>Adds new resources to a resource repository.</p>
-
-<p>You can register resource mappings for insertion by calling <code><a href="class-Puli.RepositoryManager.Repository.RepositoryUpdater.html#_add">Puli\RepositoryManager\Repository\RepositoryUpdater::add()</a></code>.
-All registered mappings will be inserted into the repository when you
-call commit(). This method respects the package order specified
-in the package graph passed to the constructor.</p>
+	<p>Synchronizes all mappings for a repository path with the repository.</p>
 	</div>
 
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Puli\RepositoryManager\Repository\Mapping\SyncRepositoryPath</span></b>			
+			 implements 
+				<a href="class-Puli.RepositoryManager.Transaction.AtomicOperation.html"><span>Puli\RepositoryManager\Transaction\AtomicOperation</span></a>
+			
+			
+		</dd>
+	</dl>
 
 
 
@@ -371,14 +382,14 @@ in the package graph passed to the constructor.</p>
 	<div class="info">
 		
 		
-		<b>Namespace:</b> <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.RepositoryManager.html">RepositoryManager</a>\<a href="namespace-Puli.RepositoryManager.Repository.html">Repository</a><br>
+		<b>Namespace:</b> <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.RepositoryManager.html">RepositoryManager</a>\<a href="namespace-Puli.RepositoryManager.Repository.html">Repository</a>\<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">Mapping</a><br>
 		
 
 				<b>Author:</b>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Repository.RepositoryUpdater.html#20-106" title="Go to source code">Repository/RepositoryUpdater.php</a>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Repository.Mapping.SyncRepositoryPath.html#23-279" title="Go to source code">Repository/Mapping/SyncRepositoryPath.php</a>
 		<br>
 	</div>
 
@@ -398,108 +409,126 @@ in the package graph passed to the constructor.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Repository.RepositoryUpdater.html#43-52" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.RepositoryManager.Conflict.OverrideGraph.html">Puli\RepositoryManager\Conflict\OverrideGraph</a></code> <var>$overrideGraph</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.SyncRepositoryPath.html#61-73" title="Go to source code">__construct</a>( <span>string <var>$repositoryPath</var></span>, <span><code><a href="class-Puli.Repository.Api.EditableRepository.html">Puli\Repository\Api\EditableRepository</a></code> <var>$repo</var></span>, <span><code><a href="class-Puli.RepositoryManager.Repository.Mapping.ResourceMappingCollection.html">Puli\RepositoryManager\Repository\Mapping\ResourceMappingCollection</a></code> <var>$mappings</var></span>, <span><code><a href="class-Puli.RepositoryManager.Conflict.OverrideGraph.html">Puli\RepositoryManager\Conflict\OverrideGraph</a></code> <var>$overrideGraph</var></span> )</code>
 
 		<div class="description short">
-			<p>Creates a new updater.</p>
+			
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Creates a new updater.</p>
+			
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$overrideGraph</var></dt>
-					<dd><p>The graph determining which the order
-                                    in which to process the packages.</p></dd>
-				</dl></div>
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="add" id="_add">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Repository.RepositoryUpdater.html#54-71" title="Go to source code">add</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Repository.ResourceMapping.html">Puli\RepositoryManager\Api\Repository\ResourceMapping</a></code> <var>$mapping</var></span>, <span>string <var>$packageName</var></span> )</code>
-
-		<div class="description short">
-			<p>Adds a resource mapping to be inserted for a given package.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Adds a resource mapping to be inserted for a given package.</p>
-
-<p>The filesystem paths of the mapping need to have been converted to
-absolute paths.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$mapping</var></dt>
-					<dd>The resource mapping.</dd>
-					<dt><var>$packageName</var></dt>
-					<dd><p>The package name that defines the
-                                    mapping.</p></dd>
-				</dl></div>
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="updateRepository" id="_updateRepository">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_updateRepository">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Repository.RepositoryUpdater.html#73-105" title="Go to source code">updateRepository</a>( <span><code><a href="class-Puli.Repository.Api.EditableRepository.html">Puli\Repository\Api\EditableRepository</a></code> <var>$repo</var></span> )</code>
-
-		<div class="description short">
-			<p>Adds all pending additions to the repository.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Adds all pending additions to the repository.</p>
-
-<p>The resources are added to the repository in the order determined by the
-package graph passed to the constructor. Resources of overridden
-packages are added to the repository before the resources of the
-overriding packages.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
+					<dt><var>$repositoryPath</var></dt>
+					<dd></dd>
 					<dt><var>$repo</var></dt>
-					<dd>The repository to update.</dd>
+					<dd></dd>
+					<dt><var>$mappings</var></dt>
+					<dd></dd>
+					<dt><var>$overrideGraph</var></dt>
+					<dd></dd>
 				</dl></div>
 
 
 
 
 
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="takeSnapshot" id="_takeSnapshot">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_takeSnapshot">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.SyncRepositoryPath.html#75-81" title="Go to source code">takeSnapshot</a>( )</code>
+
+		<div class="description short">
+			<p>Records which mappings are currently enabled for the repository path.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Records which mappings are currently enabled for the repository path.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="execute" id="_execute">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_execute">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.SyncRepositoryPath.html#83-95" title="Go to source code">execute</a>( )</code>
+
+		<div class="description short">
+			<p>Executes the operation.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Executes the operation.</p>
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.RepositoryManager.Transaction.AtomicOperation.html#_execute">Puli\RepositoryManager\Transaction\AtomicOperation::execute()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="rollback" id="_rollback">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_rollback">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Repository.Mapping.SyncRepositoryPath.html#97-103" title="Go to source code">rollback</a>( )</code>
+
+		<div class="description short">
+			<p>Undoes the side effects of the operation.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Undoes the side effects of the operation.</p>
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.RepositoryManager.Transaction.AtomicOperation.html#_rollback">Puli\RepositoryManager\Transaction\AtomicOperation::rollback()</a></code></div>
 		</div>
 		</div></td>
 	</tr>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class Puli\RepositoryManager\Util\CompositeKeyStore | Puli API</title>
+	<title>Class Puli\RepositoryManager\Util\TwoDimensionalHashMap | Puli API</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -173,11 +173,6 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
 
@@ -258,6 +253,11 @@
 						Iterator					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Transaction.html">
@@ -307,9 +307,9 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li class="active"><a href="class-Puli.RepositoryManager.Util.CompositeKeyStore.html">CompositeKeyStore</a></li>
 				<li><a href="class-Puli.RepositoryManager.Util.DistinguishedName.html">DistinguishedName</a></li>
 				<li><a href="class-Puli.RepositoryManager.Util.System.html">System</a></li>
+				<li class="active"><a href="class-Puli.RepositoryManager.Util.TwoDimensionalHashMap.html">TwoDimensionalHashMap</a></li>
 			</ul>
 
 
@@ -348,11 +348,11 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class CompositeKeyStore</h1>
+	<h1>Class TwoDimensionalHashMap</h1>
 
 
 	<div class="description">
-	<p>An in-memory store for values identified by a composite key.</p>
+	<p>An hash-map for values identified by a two-dimensional key.</p>
 
 <p>Every value in the store has a primary key and a secondary key. When adding
 values to the store, both keys need to be defined. When retrieving values
@@ -378,7 +378,7 @@ values for the primary key indexed by their secondary keys.</p>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Util.CompositeKeyStore.html#16-248" title="Go to source code">Util/CompositeKeyStore.php</a>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Util.TwoDimensionalHashMap.html#16-294" title="Go to source code">Util/TwoDimensionalHashMap.php</a>
 		<br>
 	</div>
 
@@ -398,7 +398,7 @@ values for the primary key indexed by their secondary keys.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Util.CompositeKeyStore.html#34-48" title="Go to source code">set</a>( <span>integer|string <var>$primaryKey</var></span>, <span>integer|string <var>$secondaryKey</var></span>, <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Util.TwoDimensionalHashMap.html#34-48" title="Go to source code">set</a>( <span>integer|string <var>$primaryKey</var></span>, <span>integer|string <var>$secondaryKey</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets a value in the store.</p>
@@ -437,7 +437,7 @@ values for the primary key indexed by their secondary keys.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Util.CompositeKeyStore.html#50-65" title="Go to source code">remove</a>( <span>integer|string <var>$primaryKey</var></span>, <span>integer|string <var>$secondaryKey</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Util.TwoDimensionalHashMap.html#50-65" title="Go to source code">remove</a>( <span>integer|string <var>$primaryKey</var></span>, <span>integer|string <var>$secondaryKey</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a value from the store.</p>
@@ -476,7 +476,7 @@ values for the primary key indexed by their secondary keys.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeAll">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Util.CompositeKeyStore.html#67-77" title="Go to source code">removeAll</a>( <span>integer|string <var>$primaryKey</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Util.TwoDimensionalHashMap.html#67-77" title="Go to source code">removeAll</a>( <span>integer|string <var>$primaryKey</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes all values for the given primary key.</p>
@@ -513,7 +513,7 @@ values for the primary key indexed by their secondary keys.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Util.CompositeKeyStore.html#79-100" title="Go to source code">get</a>( <span>integer|string <var>$primaryKey</var></span>, <span>integer|string <var>$secondaryKey</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Util.TwoDimensionalHashMap.html#79-100" title="Go to source code">get</a>( <span>integer|string <var>$primaryKey</var></span>, <span>integer|string <var>$secondaryKey</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns a value from the store.</p>
@@ -558,7 +558,7 @@ values for the primary key indexed by their secondary keys.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_contains">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Util.CompositeKeyStore.html#102-121" title="Go to source code">contains</a>( <span>integer|string <var>$primaryKey</var></span>, <span>integer|string|null <var>$secondaryKey</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Util.TwoDimensionalHashMap.html#102-121" title="Go to source code">contains</a>( <span>integer|string <var>$primaryKey</var></span>, <span>integer|string|null <var>$secondaryKey</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the store contains the given key(s).</p>
@@ -603,7 +603,7 @@ key.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFirst">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Util.CompositeKeyStore.html#123-142" title="Go to source code">getFirst</a>( <span>integer|string <var>$primaryKey</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Util.TwoDimensionalHashMap.html#123-142" title="Go to source code">getFirst</a>( <span>integer|string <var>$primaryKey</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the first value set for the given primary key.</p>
@@ -646,7 +646,7 @@ key.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getLast">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Util.CompositeKeyStore.html#144-163" title="Go to source code">getLast</a>( <span>integer|string <var>$primaryKey</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Util.TwoDimensionalHashMap.html#144-163" title="Go to source code">getLast</a>( <span>integer|string <var>$primaryKey</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the last value set for the given primary key.</p>
@@ -677,49 +677,6 @@ key.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getAll" id="_getAll">
-
-		<td class="attributes"><code>
-			 public 
-
-			array
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_getAll">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Util.CompositeKeyStore.html#165-184" title="Go to source code">getAll</a>( <span>integer|string <var>$primaryKey</var></span> )</code>
-
-		<div class="description short">
-			<p>Returns all values set for the given primary key.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Returns all values set for the given primary key.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$primaryKey</var></dt>
-					<dd>The primary key.</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					array<br>The values indexed by their secondary keys.
-				</div>
-
-				<h4>Throws</h4>
-				<div class="list">
-					OutOfBoundsException<br>If the primary key does not exist.
-				</div>
-
-
-
-		</div>
-		</div></td>
-	</tr>
 	<tr data-order="getCount" id="_getCount">
 
 		<td class="attributes"><code>
@@ -732,7 +689,7 @@ key.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCount">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Util.CompositeKeyStore.html#186-205" title="Go to source code">getCount</a>( <span>integer|string <var>$primaryKey</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Util.TwoDimensionalHashMap.html#165-184" title="Go to source code">getCount</a>( <span>integer|string <var>$primaryKey</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the number of secondary keys set for the given primary key.</p>
@@ -763,6 +720,92 @@ key.</p>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="listByPrimaryKey" id="_listByPrimaryKey">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_listByPrimaryKey">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Util.TwoDimensionalHashMap.html#186-205" title="Go to source code">listByPrimaryKey</a>( <span>integer|string <var>$primaryKey</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns all values set for the given primary key.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all values set for the given primary key.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$primaryKey</var></dt>
+					<dd>The primary key.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>The values indexed by their secondary keys.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					OutOfBoundsException<br>If the primary key does not exist.
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="listBySecondaryKey" id="_listBySecondaryKey">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_listBySecondaryKey">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Util.TwoDimensionalHashMap.html#207-234" title="Go to source code">listBySecondaryKey</a>( <span>integer|string <var>$secondaryKey</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns all values set for the given secondary key.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all values set for the given secondary key.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$secondaryKey</var></dt>
+					<dd>The secondary key.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>The values indexed by their primary keys.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					OutOfBoundsException<br>If the secondary key does not exist.
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="getSecondaryKeys" id="_getSecondaryKeys">
 
 		<td class="attributes"><code>
@@ -775,7 +818,7 @@ key.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getSecondaryKeys">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Util.CompositeKeyStore.html#207-226" title="Go to source code">getSecondaryKeys</a>( <span>integer|string <var>$primaryKey</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Util.TwoDimensionalHashMap.html#236-267" title="Go to source code">getSecondaryKeys</a>( <span>integer|string <var>$primaryKey</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the secondary keys for the given primary key.</p>
@@ -818,7 +861,7 @@ key.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPrimaryKeys">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Util.CompositeKeyStore.html#228-236" title="Go to source code">getPrimaryKeys</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Util.TwoDimensionalHashMap.html#269-277" title="Go to source code">getPrimaryKeys</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all primary keys.</p>
@@ -852,7 +895,7 @@ key.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_toArray">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Util.CompositeKeyStore.html#238-247" title="Go to source code">toArray</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Util.TwoDimensionalHashMap.html#279-288" title="Go to source code">toArray</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the contents of the store as array.</p>
@@ -868,6 +911,36 @@ key.</p>
 					array[]<br><p>A multi-dimensional array containing all values by
                 their primary and secondary keys.</p>
 				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sortByPrimaryKeys" id="_sortByPrimaryKeys">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sortByPrimaryKeys">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Util.TwoDimensionalHashMap.html#290-293" title="Go to source code">sortByPrimaryKeys</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
 
 
 

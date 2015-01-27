@@ -173,11 +173,6 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
 
@@ -256,6 +251,11 @@
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
 						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
 
 						</li>
 							</ul></li>
@@ -391,7 +391,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#17-200" title="Go to source code">Api/Package/Package.php</a>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#17-201" title="Go to source code">Api/Package/Package.php</a>
 		<br>
 	</div>
 
@@ -411,7 +411,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#60-101" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Package.PackageFile.html">Puli\RepositoryManager\Api\Package\PackageFile</a></code> <var>$packageFile</var></span>, <span>string <var>$installPath</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.InstallInfo.html">Puli\RepositoryManager\Api\Package\InstallInfo</a></code> <var>$installInfo</var> = <span class="php-keyword1">null</span></span>, <span>Exception <var>$loadError</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#60-102" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Package.PackageFile.html">Puli\RepositoryManager\Api\Package\PackageFile</a></code> <var>$packageFile</var></span>, <span>string <var>$installPath</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.InstallInfo.html">Puli\RepositoryManager\Api\Package\InstallInfo</a></code> <var>$installInfo</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$loadErrors</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>Creates a new package.</p>
@@ -430,8 +430,8 @@
 					<dd>The absolute install path.</dd>
 					<dt><var>$installInfo</var></dt>
 					<dd>The install info of this package.</dd>
-					<dt><var>$loadError</var></dt>
-					<dd><p>The error that happened during
+					<dt><var>$loadErrors</var></dt>
+					<dd><p>The errors that happened during
                                      loading of the package, if any.</p></dd>
 				</dl></div>
 
@@ -454,7 +454,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getName">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#103-111" title="Go to source code">getName</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#104-112" title="Go to source code">getName</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the name of the package.</p>
@@ -488,7 +488,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInstallPath">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#113-121" title="Go to source code">getInstallPath</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#114-122" title="Go to source code">getInstallPath</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the absolute path at which the package is installed.</p>
@@ -522,7 +522,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPackageFile">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#123-132" title="Go to source code">getPackageFile</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#124-133" title="Go to source code">getPackageFile</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the package file of the package.</p>
@@ -557,7 +557,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInstallInfo">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#134-142" title="Go to source code">getInstallInfo</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#135-143" title="Go to source code">getInstallInfo</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the package's install info.</p>
@@ -579,19 +579,19 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getLoadError" id="_getLoadError">
+	<tr data-order="getLoadErrors" id="_getLoadErrors">
 
 		<td class="attributes"><code>
 			 public 
 
-			Exception|null
+			Exception[]
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getLoadError">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#144-153" title="Go to source code">getLoadError</a>( )</code>
+		<a class="anchor" href="#_getLoadErrors">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#145-154" title="Go to source code">getLoadErrors</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the error that occurred during loading of the package.</p>
@@ -604,8 +604,8 @@
 
 				<h4>Returns</h4>
 				<div class="list">
-					Exception|null<br><p>The exception or <code>null</code> if the package was loaded
-                       successfully.</p>
+					Exception[]<br><p>The errors or an empty array if the package was
+                    loaded successfully.</p>
 				</div>
 
 
@@ -626,7 +626,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getState">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#155-163" title="Go to source code">getState</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#156-164" title="Go to source code">getState</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the state of the package.</p>
@@ -660,7 +660,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isEnabled">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#165-175" title="Go to source code">isEnabled</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#166-176" title="Go to source code">isEnabled</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the package is enabled.</p>
@@ -698,7 +698,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isNotFound">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#177-187" title="Go to source code">isNotFound</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#178-188" title="Go to source code">isNotFound</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the package was not found.</p>
@@ -736,7 +736,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isNotLoadable">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#189-199" title="Go to source code">isNotLoadable</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Package.Package.html#190-200" title="Go to source code">isNotLoadable</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the package was not loadable.</p>

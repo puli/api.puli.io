@@ -174,11 +174,6 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
 
@@ -257,6 +252,11 @@
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
 						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
 
 						</li>
 							</ul></li>
@@ -431,77 +431,91 @@
 </span><span id="83" class="l"><a href="#83"> 83: </a>    }
 </span><span id="84" class="l"><a href="#84"> 84: </a>
 </span><span id="85" class="l"><a href="#85"> 85: </a>    <span class="php-comment">/**
-</span></span><span id="86" class="l"><a href="#86"> 86: </a><span class="php-comment">     * Removes a resource mapping from the conflict.
+</span></span><span id="86" class="l"><a href="#86"> 86: </a><span class="php-comment">     * Adds resource mappings involved in the conflict.
 </span></span><span id="87" class="l"><a href="#87"> 87: </a><span class="php-comment">     *
-</span></span><span id="88" class="l"><a href="#88"> 88: </a><span class="php-comment">     * If only one resource mapping is left after removing this mapping, that
-</span></span><span id="89" class="l"><a href="#89"> 89: </a><span class="php-comment">     * mapping is removed as well. The conflict is then resolved.
-</span></span><span id="90" class="l"><a href="#90"> 90: </a><span class="php-comment">     *
-</span></span><span id="91" class="l"><a href="#91"> 91: </a><span class="php-comment">     * @param ResourceMapping $mapping The resource mapping to remove.
-</span></span><span id="92" class="l"><a href="#92"> 92: </a><span class="php-comment">     *
-</span></span><span id="93" class="l"><a href="#93"> 93: </a><span class="php-comment">     * @throws NotLoadedException If the passed mapping is not loaded.
-</span></span><span id="94" class="l"><a href="#94"> 94: </a><span class="php-comment">     */</span>
-</span><span id="95" class="l"><a href="#95"> 95: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> removeMapping(ResourceMapping <span class="php-var">$mapping</span>)
-</span><span id="96" class="l"><a href="#96"> 96: </a>    {
-</span><span id="97" class="l"><a href="#97"> 97: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$mapping</span>-&gt;isLoaded()) {
-</span><span id="98" class="l"><a href="#98"> 98: </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> NotLoadedException(<span class="php-quote">'The passed mapping must be loaded.'</span>);
-</span><span id="99" class="l"><a href="#99"> 99: </a>        }
-</span><span id="100" class="l"><a href="#100">100: </a>
-</span><span id="101" class="l"><a href="#101">101: </a>        <span class="php-var">$packageName</span> = <span class="php-var">$mapping</span>-&gt;getContainingPackage()-&gt;getName();
-</span><span id="102" class="l"><a href="#102">102: </a>
-</span><span id="103" class="l"><a href="#103">103: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;mappings[<span class="php-var">$packageName</span>]) || <span class="php-var">$mapping</span> !== <span class="php-var">$this</span>-&gt;mappings[<span class="php-var">$packageName</span>]) {
-</span><span id="104" class="l"><a href="#104">104: </a>            <span class="php-keyword1">return</span>;
-</span><span id="105" class="l"><a href="#105">105: </a>        }
-</span><span id="106" class="l"><a href="#106">106: </a>
-</span><span id="107" class="l"><a href="#107">107: </a>        <span class="php-keyword1">unset</span>(<span class="php-var">$this</span>-&gt;mappings[<span class="php-var">$packageName</span>]);
-</span><span id="108" class="l"><a href="#108">108: </a>        <span class="php-var">$mapping</span>-&gt;removeConflict(<span class="php-var">$this</span>);
-</span><span id="109" class="l"><a href="#109">109: </a>
-</span><span id="110" class="l"><a href="#110">110: </a>        <span class="php-comment">// Conflict was resolved</span>
-</span><span id="111" class="l"><a href="#111">111: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">count</span>(<span class="php-var">$this</span>-&gt;mappings) &lt; <span class="php-num">2</span>) {
-</span><span id="112" class="l"><a href="#112">112: </a>            <span class="php-var">$resolvedMappings</span> = <span class="php-var">$this</span>-&gt;mappings;
-</span><span id="113" class="l"><a href="#113">113: </a>            <span class="php-var">$this</span>-&gt;mappings = <span class="php-keyword1">array</span>();
+</span></span><span id="88" class="l"><a href="#88"> 88: </a><span class="php-comment">     * @param ResourceMapping[] $mappings The resource mappings to add.
+</span></span><span id="89" class="l"><a href="#89"> 89: </a><span class="php-comment">     *
+</span></span><span id="90" class="l"><a href="#90"> 90: </a><span class="php-comment">     * @throws NotLoadedException If a passed mapping is not loaded.
+</span></span><span id="91" class="l"><a href="#91"> 91: </a><span class="php-comment">     */</span>
+</span><span id="92" class="l"><a href="#92"> 92: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> addMappings(<span class="php-keyword1">array</span> <span class="php-var">$mappings</span>)
+</span><span id="93" class="l"><a href="#93"> 93: </a>    {
+</span><span id="94" class="l"><a href="#94"> 94: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$mappings</span> <span class="php-keyword1">as</span> <span class="php-var">$mapping</span>) {
+</span><span id="95" class="l"><a href="#95"> 95: </a>            <span class="php-var">$this</span>-&gt;addMapping(<span class="php-var">$mapping</span>);
+</span><span id="96" class="l"><a href="#96"> 96: </a>        }
+</span><span id="97" class="l"><a href="#97"> 97: </a>    }
+</span><span id="98" class="l"><a href="#98"> 98: </a>
+</span><span id="99" class="l"><a href="#99"> 99: </a>    <span class="php-comment">/**
+</span></span><span id="100" class="l"><a href="#100">100: </a><span class="php-comment">     * Removes a resource mapping from the conflict.
+</span></span><span id="101" class="l"><a href="#101">101: </a><span class="php-comment">     *
+</span></span><span id="102" class="l"><a href="#102">102: </a><span class="php-comment">     * If only one resource mapping is left after removing this mapping, that
+</span></span><span id="103" class="l"><a href="#103">103: </a><span class="php-comment">     * mapping is removed as well. The conflict is then resolved.
+</span></span><span id="104" class="l"><a href="#104">104: </a><span class="php-comment">     *
+</span></span><span id="105" class="l"><a href="#105">105: </a><span class="php-comment">     * @param ResourceMapping $mapping The resource mapping to remove.
+</span></span><span id="106" class="l"><a href="#106">106: </a><span class="php-comment">     *
+</span></span><span id="107" class="l"><a href="#107">107: </a><span class="php-comment">     * @throws NotLoadedException If the passed mapping is not loaded.
+</span></span><span id="108" class="l"><a href="#108">108: </a><span class="php-comment">     */</span>
+</span><span id="109" class="l"><a href="#109">109: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> removeMapping(ResourceMapping <span class="php-var">$mapping</span>)
+</span><span id="110" class="l"><a href="#110">110: </a>    {
+</span><span id="111" class="l"><a href="#111">111: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$mapping</span>-&gt;isLoaded()) {
+</span><span id="112" class="l"><a href="#112">112: </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> NotLoadedException(<span class="php-quote">'The passed mapping must be loaded.'</span>);
+</span><span id="113" class="l"><a href="#113">113: </a>        }
 </span><span id="114" class="l"><a href="#114">114: </a>
-</span><span id="115" class="l"><a href="#115">115: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$resolvedMappings</span> <span class="php-keyword1">as</span> <span class="php-var">$resolvedMapping</span>) {
-</span><span id="116" class="l"><a href="#116">116: </a>                <span class="php-var">$resolvedMapping</span>-&gt;removeConflict(<span class="php-var">$this</span>);
-</span><span id="117" class="l"><a href="#117">117: </a>            }
-</span><span id="118" class="l"><a href="#118">118: </a>        }
-</span><span id="119" class="l"><a href="#119">119: </a>    }
+</span><span id="115" class="l"><a href="#115">115: </a>        <span class="php-var">$packageName</span> = <span class="php-var">$mapping</span>-&gt;getContainingPackage()-&gt;getName();
+</span><span id="116" class="l"><a href="#116">116: </a>
+</span><span id="117" class="l"><a href="#117">117: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;mappings[<span class="php-var">$packageName</span>]) || <span class="php-var">$mapping</span> !== <span class="php-var">$this</span>-&gt;mappings[<span class="php-var">$packageName</span>]) {
+</span><span id="118" class="l"><a href="#118">118: </a>            <span class="php-keyword1">return</span>;
+</span><span id="119" class="l"><a href="#119">119: </a>        }
 </span><span id="120" class="l"><a href="#120">120: </a>
-</span><span id="121" class="l"><a href="#121">121: </a>    <span class="php-comment">/**
-</span></span><span id="122" class="l"><a href="#122">122: </a><span class="php-comment">     * Returns the resource mappings involved in the conflict.
-</span></span><span id="123" class="l"><a href="#123">123: </a><span class="php-comment">     *
-</span></span><span id="124" class="l"><a href="#124">124: </a><span class="php-comment">     * @return ResourceMapping[]
-</span></span><span id="125" class="l"><a href="#125">125: </a><span class="php-comment">     */</span>
-</span><span id="126" class="l"><a href="#126">126: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getMappings()
-</span><span id="127" class="l"><a href="#127">127: </a>    {
-</span><span id="128" class="l"><a href="#128">128: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;mappings;
-</span><span id="129" class="l"><a href="#129">129: </a>    }
-</span><span id="130" class="l"><a href="#130">130: </a>
-</span><span id="131" class="l"><a href="#131">131: </a>    <span class="php-comment">/**
-</span></span><span id="132" class="l"><a href="#132">132: </a><span class="php-comment">     * Resolves the conflict.
-</span></span><span id="133" class="l"><a href="#133">133: </a><span class="php-comment">     *
-</span></span><span id="134" class="l"><a href="#134">134: </a><span class="php-comment">     * This method removes all mappings from the conflict. After calling this
-</span></span><span id="135" class="l"><a href="#135">135: </a><span class="php-comment">     * method, {@link isResolved()} returns `true`.
-</span></span><span id="136" class="l"><a href="#136">136: </a><span class="php-comment">     */</span>
-</span><span id="137" class="l"><a href="#137">137: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> resolve()
-</span><span id="138" class="l"><a href="#138">138: </a>    {
-</span><span id="139" class="l"><a href="#139">139: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;mappings <span class="php-keyword1">as</span> <span class="php-var">$mapping</span>) {
-</span><span id="140" class="l"><a href="#140">140: </a>            <span class="php-var">$mapping</span>-&gt;removeConflict(<span class="php-var">$this</span>);
-</span><span id="141" class="l"><a href="#141">141: </a>        }
-</span><span id="142" class="l"><a href="#142">142: </a>
-</span><span id="143" class="l"><a href="#143">143: </a>        <span class="php-var">$this</span>-&gt;mappings = <span class="php-keyword1">array</span>();
-</span><span id="144" class="l"><a href="#144">144: </a>    }
-</span><span id="145" class="l"><a href="#145">145: </a>
-</span><span id="146" class="l"><a href="#146">146: </a>    <span class="php-comment">/**
-</span></span><span id="147" class="l"><a href="#147">147: </a><span class="php-comment">     * Returns whether the conflict is resolved.
-</span></span><span id="148" class="l"><a href="#148">148: </a><span class="php-comment">     *
-</span></span><span id="149" class="l"><a href="#149">149: </a><span class="php-comment">     * @return bool Returns `true` if the conflict has no associated mappings.
+</span><span id="121" class="l"><a href="#121">121: </a>        <span class="php-keyword1">unset</span>(<span class="php-var">$this</span>-&gt;mappings[<span class="php-var">$packageName</span>]);
+</span><span id="122" class="l"><a href="#122">122: </a>        <span class="php-var">$mapping</span>-&gt;removeConflict(<span class="php-var">$this</span>);
+</span><span id="123" class="l"><a href="#123">123: </a>
+</span><span id="124" class="l"><a href="#124">124: </a>        <span class="php-comment">// Conflict was resolved</span>
+</span><span id="125" class="l"><a href="#125">125: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">count</span>(<span class="php-var">$this</span>-&gt;mappings) &lt; <span class="php-num">2</span>) {
+</span><span id="126" class="l"><a href="#126">126: </a>            <span class="php-var">$resolvedMappings</span> = <span class="php-var">$this</span>-&gt;mappings;
+</span><span id="127" class="l"><a href="#127">127: </a>            <span class="php-var">$this</span>-&gt;mappings = <span class="php-keyword1">array</span>();
+</span><span id="128" class="l"><a href="#128">128: </a>
+</span><span id="129" class="l"><a href="#129">129: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$resolvedMappings</span> <span class="php-keyword1">as</span> <span class="php-var">$resolvedMapping</span>) {
+</span><span id="130" class="l"><a href="#130">130: </a>                <span class="php-var">$resolvedMapping</span>-&gt;removeConflict(<span class="php-var">$this</span>);
+</span><span id="131" class="l"><a href="#131">131: </a>            }
+</span><span id="132" class="l"><a href="#132">132: </a>        }
+</span><span id="133" class="l"><a href="#133">133: </a>    }
+</span><span id="134" class="l"><a href="#134">134: </a>
+</span><span id="135" class="l"><a href="#135">135: </a>    <span class="php-comment">/**
+</span></span><span id="136" class="l"><a href="#136">136: </a><span class="php-comment">     * Returns the resource mappings involved in the conflict.
+</span></span><span id="137" class="l"><a href="#137">137: </a><span class="php-comment">     *
+</span></span><span id="138" class="l"><a href="#138">138: </a><span class="php-comment">     * @return ResourceMapping[]
+</span></span><span id="139" class="l"><a href="#139">139: </a><span class="php-comment">     */</span>
+</span><span id="140" class="l"><a href="#140">140: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getMappings()
+</span><span id="141" class="l"><a href="#141">141: </a>    {
+</span><span id="142" class="l"><a href="#142">142: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;mappings;
+</span><span id="143" class="l"><a href="#143">143: </a>    }
+</span><span id="144" class="l"><a href="#144">144: </a>
+</span><span id="145" class="l"><a href="#145">145: </a>    <span class="php-comment">/**
+</span></span><span id="146" class="l"><a href="#146">146: </a><span class="php-comment">     * Resolves the conflict.
+</span></span><span id="147" class="l"><a href="#147">147: </a><span class="php-comment">     *
+</span></span><span id="148" class="l"><a href="#148">148: </a><span class="php-comment">     * This method removes all mappings from the conflict. After calling this
+</span></span><span id="149" class="l"><a href="#149">149: </a><span class="php-comment">     * method, {@link isResolved()} returns `true`.
 </span></span><span id="150" class="l"><a href="#150">150: </a><span class="php-comment">     */</span>
-</span><span id="151" class="l"><a href="#151">151: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> isResolved()
+</span><span id="151" class="l"><a href="#151">151: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> resolve()
 </span><span id="152" class="l"><a href="#152">152: </a>    {
-</span><span id="153" class="l"><a href="#153">153: </a>        <span class="php-keyword1">return</span> <span class="php-num">0</span> === <span class="php-keyword2">count</span>(<span class="php-var">$this</span>-&gt;mappings);
-</span><span id="154" class="l"><a href="#154">154: </a>    }
-</span><span id="155" class="l"><a href="#155">155: </a>}
-</span><span id="156" class="l"><a href="#156">156: </a></span></code></pre>
+</span><span id="153" class="l"><a href="#153">153: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;mappings <span class="php-keyword1">as</span> <span class="php-var">$mapping</span>) {
+</span><span id="154" class="l"><a href="#154">154: </a>            <span class="php-var">$mapping</span>-&gt;removeConflict(<span class="php-var">$this</span>);
+</span><span id="155" class="l"><a href="#155">155: </a>        }
+</span><span id="156" class="l"><a href="#156">156: </a>
+</span><span id="157" class="l"><a href="#157">157: </a>        <span class="php-var">$this</span>-&gt;mappings = <span class="php-keyword1">array</span>();
+</span><span id="158" class="l"><a href="#158">158: </a>    }
+</span><span id="159" class="l"><a href="#159">159: </a>
+</span><span id="160" class="l"><a href="#160">160: </a>    <span class="php-comment">/**
+</span></span><span id="161" class="l"><a href="#161">161: </a><span class="php-comment">     * Returns whether the conflict is resolved.
+</span></span><span id="162" class="l"><a href="#162">162: </a><span class="php-comment">     *
+</span></span><span id="163" class="l"><a href="#163">163: </a><span class="php-comment">     * @return bool Returns `true` if the conflict has no associated mappings.
+</span></span><span id="164" class="l"><a href="#164">164: </a><span class="php-comment">     */</span>
+</span><span id="165" class="l"><a href="#165">165: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> isResolved()
+</span><span id="166" class="l"><a href="#166">166: </a>    {
+</span><span id="167" class="l"><a href="#167">167: </a>        <span class="php-keyword1">return</span> <span class="php-num">0</span> === <span class="php-keyword2">count</span>(<span class="php-var">$this</span>-&gt;mappings);
+</span><span id="168" class="l"><a href="#168">168: </a>    }
+</span><span id="169" class="l"><a href="#169">169: </a>}
+</span><span id="170" class="l"><a href="#170">170: </a></span></code></pre>
 
 	<div id="footer">
 		Puli API API documentation generated by <a href="http://apigen.org">ApiGen</a>
@@ -509,6 +523,6 @@
 </div>
 </div>
 <script src="resources/combined.js?de92956e949966c1f12d45243b45d71770188b0c"></script>
-<script src="elementlist.js?d0ce0e748bb05385a0f789b2b5cacae543fee94b"></script>
+<script src="elementlist.js?9f6b7f92a31699e137ec348f7d751b7ac68c0256"></script>
 </body>
 </html>

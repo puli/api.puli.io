@@ -173,11 +173,6 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
 
@@ -256,6 +251,11 @@
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
 						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
 
 						</li>
 							</ul></li>
@@ -377,7 +377,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#62-841" title="Go to source code">Discovery/DiscoveryManagerImpl.php</a>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#65-857" title="Go to source code">Discovery/DiscoveryManagerImpl.php</a>
 		<br>
 	</div>
 
@@ -397,7 +397,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#113-134" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Environment.ProjectEnvironment.html">Puli\RepositoryManager\Api\Environment\ProjectEnvironment</a></code> <var>$environment</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.PackageCollection.html">Puli\RepositoryManager\Api\Package\PackageCollection</a></code> <var>$packages</var></span>, <span><code><a href="class-Puli.RepositoryManager.Package.PackageFileStorage.html">Puli\RepositoryManager\Package\PackageFileStorage</a></code> <var>$packageFileStorage</var></span>, <span>Psr\Log\LoggerInterface <var>$logger</var> = <span class="php-keyword1">null</span> </span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#116-137" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Environment.ProjectEnvironment.html">Puli\RepositoryManager\Api\Environment\ProjectEnvironment</a></code> <var>$environment</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.PackageCollection.html">Puli\RepositoryManager\Api\Package\PackageCollection</a></code> <var>$packages</var></span>, <span><code><a href="class-Puli.RepositoryManager.Package.PackageFileStorage.html">Puli\RepositoryManager\Package\PackageFileStorage</a></code> <var>$packageFileStorage</var></span>, <span>Psr\Log\LoggerInterface <var>$logger</var> = <span class="php-keyword1">null</span> </span> )</code>
 
 		<div class="description short">
 			<p>Creates a tag manager.</p>
@@ -438,7 +438,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEnvironment">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#136-142" title="Go to source code">getEnvironment</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#139-145" title="Go to source code">getEnvironment</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the manager's environment.</p>
@@ -474,7 +474,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addBindingType">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#144-188" title="Go to source code">addBindingType</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Discovery.BindingTypeDescriptor.html">Puli\RepositoryManager\Api\Discovery\BindingTypeDescriptor</a></code> <var>$typeDescriptor</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#147-191" title="Go to source code">addBindingType</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Discovery.BindingTypeDescriptor.html">Puli\RepositoryManager\Api\Discovery\BindingTypeDescriptor</a></code> <var>$typeDescriptor</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a new binding type.</p>
@@ -515,7 +515,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeBindingType">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#190-238" title="Go to source code">removeBindingType</a>( <span>string <var>$typeName</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#193-245" title="Go to source code">removeBindingType</a>( <span>string <var>$typeName</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a binding type.</p>
@@ -552,7 +552,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBindingTypes">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#240-261" title="Go to source code">getBindingTypes</a>( <span>string|string[] <var>$packageName</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$state</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#247-272" title="Go to source code">getBindingTypes</a>( <span>string|string[] <var>$packageName</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$state</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns all binding types.</p>
@@ -595,7 +595,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addBinding">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#263-306" title="Go to source code">addBinding</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Discovery.BindingDescriptor.html">Puli\RepositoryManager\Api\Discovery\BindingDescriptor</a></code> <var>$bindingDescriptor</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#274-317" title="Go to source code">addBinding</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Discovery.BindingDescriptor.html">Puli\RepositoryManager\Api\Discovery\BindingDescriptor</a></code> <var>$bindingDescriptor</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a new binding.</p>
@@ -632,7 +632,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeBinding">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#308-342" title="Go to source code">removeBinding</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#319-353" title="Go to source code">removeBinding</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a binding.</p>
@@ -669,7 +669,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_enableBinding">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#344-380" title="Go to source code">enableBinding</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span>, <span>string|string[] <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#355-395" title="Go to source code">enableBinding</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span>, <span>string|string[] <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Enables a binding.</p>
@@ -715,7 +715,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_disableBinding">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#382-418" title="Go to source code">disableBinding</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span>, <span>string|string[] <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#397-437" title="Go to source code">disableBinding</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span>, <span>string|string[] <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Disables a binding.</p>
@@ -761,7 +761,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBindings">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#420-441" title="Go to source code">getBindings</a>( <span>string|string[] <var>$packageName</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$state</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#439-464" title="Go to source code">getBindings</a>( <span>string|string[] <var>$packageName</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$state</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns all bindings.</p>
@@ -804,7 +804,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_findBindings">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#443-465" title="Go to source code">findBindings</a>( <span>Rhumsaa\Uuid\Uuid|string <var>$uuid</var></span>, <span>string|string[] <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#466-490" title="Go to source code">findBindings</a>( <span>Rhumsaa\Uuid\Uuid|string <var>$uuid</var></span>, <span>string|string[] <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns all bindings with the given UUID (prefix).</p>
@@ -847,7 +847,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_buildDiscovery">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#467-502" title="Go to source code">buildDiscovery</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#492-527" title="Go to source code">buildDiscovery</a>( )</code>
 
 		<div class="description short">
 			<p>Builds the resource discovery.</p>
@@ -879,7 +879,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clearDiscovery">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#504-512" title="Go to source code">clearDiscovery</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.DiscoveryManagerImpl.html#529-537" title="Go to source code">clearDiscovery</a>( )</code>
 
 		<div class="description short">
 			<p>Clears all contents of the resource discovery.</p>

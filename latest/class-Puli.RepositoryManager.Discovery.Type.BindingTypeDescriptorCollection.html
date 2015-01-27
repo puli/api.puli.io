@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class Puli\RepositoryManager\Discovery\Type\BindingTypeDescriptorStore | Puli API</title>
+	<title>Class Puli\RepositoryManager\Discovery\Type\BindingTypeDescriptorCollection | Puli API</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -173,11 +173,6 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
 
@@ -258,6 +253,11 @@
 						Iterator					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Transaction.html">
@@ -308,7 +308,7 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-Puli.RepositoryManager.Discovery.Type.AddTypeDescriptorToPackageFile.html">AddTypeDescriptorToPackageFile</a></li>
-				<li class="active"><a href="class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorStore.html">BindingTypeDescriptorStore</a></li>
+				<li class="active"><a href="class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorCollection.html">BindingTypeDescriptorCollection</a></li>
 				<li><a href="class-Puli.RepositoryManager.Discovery.Type.DefineType.html">DefineType</a></li>
 				<li><a href="class-Puli.RepositoryManager.Discovery.Type.LoadTypeDescriptor.html">LoadTypeDescriptor</a></li>
 				<li><a href="class-Puli.RepositoryManager.Discovery.Type.RemoveTypeDescriptorFromPackageFile.html">RemoveTypeDescriptorFromPackageFile</a></li>
@@ -353,7 +353,7 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class BindingTypeDescriptorStore</h1>
+	<h1>Class BindingTypeDescriptorCollection</h1>
 
 
 	<div class="description">
@@ -365,7 +365,7 @@
 <p>The store implements transparent merging of types defined within different
 packages, but with the same type name. If a type is requested for a name
 without giving a package name, the first type set for that name is
-returned by <code><a href="class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorStore.html#_get">Puli\RepositoryManager\Discovery\Type\BindingTypeDescriptorStore::get()</a></code>.</p>
+returned by <code><a href="class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorCollection.html#_get">Puli\RepositoryManager\Discovery\Type\BindingTypeDescriptorCollection::get()</a></code>.</p>
 	</div>
 
 
@@ -386,7 +386,7 @@ returned by <code><a href="class-Puli.RepositoryManager.Discovery.Type.BindingTy
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorStore.html#19-188" title="Go to source code">Discovery/Type/BindingTypeDescriptorStore.php</a>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorCollection.html#18-171" title="Go to source code">Discovery/Type/BindingTypeDescriptorCollection.php</a>
 		<br>
 	</div>
 
@@ -406,7 +406,7 @@ returned by <code><a href="class-Puli.RepositoryManager.Discovery.Type.BindingTy
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorStore.html#42-48" title="Go to source code">__construct</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorCollection.html#41-47" title="Go to source code">__construct</a>( )</code>
 
 		<div class="description short">
 			<p>Creates the store.</p>
@@ -436,7 +436,7 @@ returned by <code><a href="class-Puli.RepositoryManager.Discovery.Type.BindingTy
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorStore.html#50-60" title="Go to source code">add</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Discovery.BindingTypeDescriptor.html">Puli\RepositoryManager\Api\Discovery\BindingTypeDescriptor</a></code> <var>$typeDescriptor</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.Package.html">Puli\RepositoryManager\Api\Package\Package</a></code> <var>$package</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorCollection.html#49-57" title="Go to source code">add</a>( <span><code><a href="class-Puli.RepositoryManager.Api.Discovery.BindingTypeDescriptor.html">Puli\RepositoryManager\Api\Discovery\BindingTypeDescriptor</a></code> <var>$typeDescriptor</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a type descriptor.</p>
@@ -450,9 +450,6 @@ returned by <code><a href="class-Puli.RepositoryManager.Discovery.Type.BindingTy
 				<div class="list"><dl>
 					<dt><var>$typeDescriptor</var></dt>
 					<dd>The type descriptor.</dd>
-					<dt><var>$package</var></dt>
-					<dd><p>The package defining the
-                                             type descriptor.</p></dd>
 				</dl></div>
 
 
@@ -474,7 +471,7 @@ returned by <code><a href="class-Puli.RepositoryManager.Discovery.Type.BindingTy
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorStore.html#62-73" title="Go to source code">remove</a>( <span>string <var>$typeName</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.Package.html">Puli\RepositoryManager\Api\Package\Package</a></code> <var>$package</var></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorCollection.html#59-70" title="Go to source code">remove</a>( <span>string <var>$typeName</var></span>, <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a type descriptor.</p>
@@ -490,8 +487,8 @@ returned by <code><a href="class-Puli.RepositoryManager.Discovery.Type.BindingTy
 				<div class="list"><dl>
 					<dt><var>$typeName</var></dt>
 					<dd>The name of the type.</dd>
-					<dt><var>$package</var></dt>
-					<dd>The package containing the type.</dd>
+					<dt><var>$packageName</var></dt>
+					<dd>The name of the package containing the type.</dd>
 				</dl></div>
 
 
@@ -513,7 +510,7 @@ returned by <code><a href="class-Puli.RepositoryManager.Discovery.Type.BindingTy
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorStore.html#75-96" title="Go to source code">get</a>( <span>string <var>$typeName</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.Package.html">Puli\RepositoryManager\Api\Package\Package</a></code> <var>$package</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorCollection.html#72-93" title="Go to source code">get</a>( <span>string <var>$typeName</var></span>, <span>string <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns a type descriptor.</p>
@@ -530,8 +527,8 @@ returned.</p>
 				<div class="list"><dl>
 					<dt><var>$typeName</var></dt>
 					<dd>The name of the type.</dd>
-					<dt><var>$package</var></dt>
-					<dd>The package containing the type.</dd>
+					<dt><var>$packageName</var></dt>
+					<dd>The name of the package containing the type.</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -550,7 +547,47 @@ returned.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getAll" id="_getAll">
+	<tr data-order="getEnabled" id="_getEnabled">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.RepositoryManager.Api.Discovery.BindingTypeDescriptor.html">Puli\RepositoryManager\Api\Discovery\BindingTypeDescriptor</a></code>|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEnabled">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorCollection.html#95-116" title="Go to source code">getEnabled</a>( <span>string <var>$typeName</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns the enabled type descriptor for a given type name.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the enabled type descriptor for a given type name.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$typeName</var></dt>
+					<dd>The name of the type.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.RepositoryManager.Api.Discovery.BindingTypeDescriptor.html">Puli\RepositoryManager\Api\Discovery\BindingTypeDescriptor</a></code>|null<br><p>The enabled type descriptor or <code>null</code>
+                                   if no enabled descriptor was found.</p>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="listByTypeName" id="_listByTypeName">
 
 		<td class="attributes"><code>
 			 public 
@@ -561,8 +598,8 @@ returned.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getAll">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorStore.html#98-111" title="Go to source code">getAll</a>( <span>string <var>$typeName</var></span> )</code>
+		<a class="anchor" href="#_listByTypeName">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorCollection.html#118-131" title="Go to source code">listByTypeName</a>( <span>string <var>$typeName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns all type descriptors set for the given name.</p>
@@ -594,7 +631,7 @@ returned.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="exists" id="_exists">
+	<tr data-order="contains" id="_contains">
 
 		<td class="attributes"><code>
 			 public 
@@ -605,8 +642,8 @@ returned.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_exists">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorStore.html#113-125" title="Go to source code">exists</a>( <span>string <var>$typeName</var></span>, <span><code><a href="class-Puli.RepositoryManager.Api.Package.Package.html">Puli\RepositoryManager\Api\Package\Package</a></code> <var>$package</var></span> )</code>
+		<a class="anchor" href="#_contains">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorCollection.html#133-145" title="Go to source code">contains</a>( <span>string <var>$typeName</var></span>, <span>string <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether a type descriptor was set for the given name/package.</p>
@@ -620,8 +657,8 @@ returned.</p>
 				<div class="list"><dl>
 					<dt><var>$typeName</var></dt>
 					<dd>The name of the type.</dd>
-					<dt><var>$package</var></dt>
-					<dd>The package containing the type.</dd>
+					<dt><var>$packageName</var></dt>
+					<dd>The name of the package containing the type.</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -636,91 +673,7 @@ returned.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="existsAny" id="_existsAny">
-
-		<td class="attributes"><code>
-			 public 
-
-			boolean
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_existsAny">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorStore.html#127-139" title="Go to source code">existsAny</a>( <span>string <var>$typeName</var></span> )</code>
-
-		<div class="description short">
-			<p>Returns whether a type descriptor was set for the given name in any
-package.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Returns whether a type descriptor was set for the given name in any
-package.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$typeName</var></dt>
-					<dd>The name of the type.</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					boolean<br><p>Returns <code>true</code> if a type descriptor was set for the given
-             name.</p>
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="existsEnabled" id="_existsEnabled">
-
-		<td class="attributes"><code>
-			 public 
-
-			boolean
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_existsEnabled">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorStore.html#141-162" title="Go to source code">existsEnabled</a>( <span>string <var>$typeName</var></span> )</code>
-
-		<div class="description short">
-			<p>Returns whether an enabled type descriptor was set for the given name
-in any package.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Returns whether an enabled type descriptor was set for the given name
-in any package.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$typeName</var></dt>
-					<dd>The name of the type.</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					boolean<br><p>Returns <code>true</code> if an enabled type descriptor was set for
-             the given name.</p>
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getDefiningPackageNames" id="_getDefiningPackageNames">
+	<tr data-order="getPackageNames" id="_getPackageNames">
 
 		<td class="attributes"><code>
 			 public 
@@ -731,8 +684,8 @@ in any package.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getDefiningPackageNames">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorStore.html#164-177" title="Go to source code">getDefiningPackageNames</a>( <span>string <var>$typeName</var></span> )</code>
+		<a class="anchor" href="#_getPackageNames">#</a>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorCollection.html#147-160" title="Go to source code">getPackageNames</a>( <span>string <var>$typeName</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the names of the packages defining types with the given name.</p>
@@ -776,7 +729,7 @@ in any package.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTypeNames">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorStore.html#179-187" title="Go to source code">getTypeNames</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Discovery.Type.BindingTypeDescriptorCollection.html#162-170" title="Go to source code">getTypeNames</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the names of all type descriptors.</p>

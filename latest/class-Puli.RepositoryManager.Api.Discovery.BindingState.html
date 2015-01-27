@@ -173,11 +173,6 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.RepositoryManager.Api.Plugin.html">
-						Plugin					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Puli.RepositoryManager.Api.Repository.html">
 						Repository					</a>
 
@@ -256,6 +251,11 @@
 				<li>
 					<a href="namespace-Puli.RepositoryManager.Repository.Iterator.html">
 						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.RepositoryManager.Repository.Mapping.html">
+						Mapping					</a>
 
 						</li>
 							</ul></li>
@@ -384,7 +384,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Api.Discovery.BindingState.html#14-78" title="Go to source code">Api/Discovery/BindingState.php</a>
+			<b>Located at</b> <a href="source-class-Puli.RepositoryManager.Api.Discovery.BindingState.html#14-72" title="Go to source code">Api/Discovery/BindingState.php</a>
 		<br>
 	</div>
 
@@ -404,7 +404,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_all">#</a>
-		<code><a href="source-class-Puli.RepositoryManager.Api.Discovery.BindingState.html#57-72" title="Go to source code">all</a>( )</code>
+		<code><a href="source-class-Puli.RepositoryManager.Api.Discovery.BindingState.html#52-66" title="Go to source code">all</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all binding states.</p>
@@ -518,11 +518,11 @@
 			</code>
 
 			<div class="description short">
-				<p>State: The binding is held back. The referenced type is not loaded.</p>
+				<p>State: The binding is held back if the referenced type is not enabled.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>State: The binding is held back. The referenced type is not loaded.</p>
+				<p>State: The binding is held back if the referenced type is not enabled.</p>
 
 			</div>
 		</td>
@@ -533,36 +533,12 @@
 			</div>
 		</td>
 	</tr>
-	<tr data-order="IGNORED" id="IGNORED">
-
-		<td class="attributes"><code>integer</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Puli.RepositoryManager.Api.Discovery.BindingState.html#42-45" title="Go to source code"><b>IGNORED</b></a>
-			</code>
-
-			<div class="description short">
-				<p>State: The binding is ignored. This happens if its type is duplicated.</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>State: The binding is ignored. This happens if its type is duplicated.</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#IGNORED" class="anchor">#</a>
-				<code><span class="php-num">5</span></code>
-			</div>
-		</td>
-	</tr>
 	<tr data-order="INVALID" id="INVALID">
 
 		<td class="attributes"><code>integer</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.RepositoryManager.Api.Discovery.BindingState.html#47-50" title="Go to source code"><b>INVALID</b></a>
+				<a href="source-class-Puli.RepositoryManager.Api.Discovery.BindingState.html#42-45" title="Go to source code"><b>INVALID</b></a>
 			</code>
 
 			<div class="description short">
@@ -577,7 +553,7 @@
 		<td class="value">
 			<div>
 				<a href="#INVALID" class="anchor">#</a>
-				<code><span class="php-num">6</span></code>
+				<code><span class="php-num">5</span></code>
 			</div>
 		</td>
 	</tr>
@@ -586,7 +562,7 @@
 		<td class="attributes"><code>integer</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.RepositoryManager.Api.Discovery.BindingState.html#52-55" title="Go to source code"><b>DUPLICATE</b></a>
+				<a href="source-class-Puli.RepositoryManager.Api.Discovery.BindingState.html#47-50" title="Go to source code"><b>DUPLICATE</b></a>
 			</code>
 
 			<div class="description short">
@@ -601,7 +577,7 @@
 		<td class="value">
 			<div>
 				<a href="#DUPLICATE" class="anchor">#</a>
-				<code><span class="php-num">7</span></code>
+				<code><span class="php-num">6</span></code>
 			</div>
 		</td>
 	</tr>
