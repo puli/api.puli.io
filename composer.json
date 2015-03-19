@@ -14,6 +14,7 @@
         "puli/discovery": "~1.0",
         "puli/factory": "~1.0",
         "puli/manager": "~1.0",
+        "puli/web-resource-plugin": "~1.0",
         "apigen/apigen": "~4.0@stable"
     },
     "minimum-stability": "dev",

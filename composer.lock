@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ca4ef5a78ab5a7cc64a3e8518bb4e9f4",
+    "hash": "74739e64869c06bb2ae798b5e4130ee9",
     "packages": [
         {
             "name": "andrewsville/php-token-reflection",
@@ -1631,12 +1631,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/manager.git",
-                "reference": "7b4215da6bb5e14943b3934114d5709d222eedd8"
+                "reference": "33339b59681f8602f6114930c1aaa2a60b7cb383"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/manager/zipball/7b4215da6bb5e14943b3934114d5709d222eedd8",
-                "reference": "7b4215da6bb5e14943b3934114d5709d222eedd8",
+                "url": "https://api.github.com/repos/puli/manager/zipball/33339b59681f8602f6114930c1aaa2a60b7cb383",
+                "reference": "33339b59681f8602f6114930c1aaa2a60b7cb383",
                 "shasum": ""
             },
             "require": {
@@ -1681,7 +1681,7 @@
             ],
             "description": "Generates Puli repositories from configured packages.",
             "homepage": "http://puli.io",
-            "time": "2015-03-18 16:11:44"
+            "time": "2015-03-19 08:35:31"
         },
         {
             "name": "puli/repository",
@@ -1689,12 +1689,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/repository.git",
-                "reference": "169579dcf8f3d811257362874b6700a1aedfcd30"
+                "reference": "e0e6cc758c18de800ed64626038f81cbcbe73466"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/repository/zipball/169579dcf8f3d811257362874b6700a1aedfcd30",
-                "reference": "169579dcf8f3d811257362874b6700a1aedfcd30",
+                "url": "https://api.github.com/repos/puli/repository/zipball/e0e6cc758c18de800ed64626038f81cbcbe73466",
+                "reference": "e0e6cc758c18de800ed64626038f81cbcbe73466",
                 "shasum": ""
             },
             "require": {
@@ -1732,7 +1732,61 @@
             ],
             "description": "A filesystem-like repository for storing arbitrary resources.",
             "homepage": "http://puli.io",
-            "time": "2015-03-11 14:27:43"
+            "time": "2015-03-19 10:22:35"
+        },
+        {
+            "name": "puli/web-resource-plugin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/puli/web-resource-plugin.git",
+                "reference": "4f35b45897da31dc0c77648fde0e9db5d1873b3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/puli/web-resource-plugin/zipball/4f35b45897da31dc0c77648fde0e9db5d1873b3c",
+                "reference": "4f35b45897da31dc0c77648fde0e9db5d1873b3c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "puli/manager": "~1.0",
+                "puli/repository": "1.0.*"
+            },
+            "require-dev": {
+                "puli/cli": "~1.0",
+                "symfony/filesystem": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Puli\\WebResourcePlugin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "A Puli plugin for managing web assets.",
+            "homepage": "http://puli.io",
+            "keywords": [
+                "asset",
+                "puli",
+                "resource",
+                "web"
+            ],
+            "time": "2015-03-19 10:29:58"
         },
         {
             "name": "rhumsaa/uuid",
@@ -2134,12 +2188,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "223e0f5c466a65989f742eb6e2ab4b6960d7009b"
+                "reference": "dd9a2b033a797d4a4a7a1cff0e97b8901519518e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/223e0f5c466a65989f742eb6e2ab4b6960d7009b",
-                "reference": "223e0f5c466a65989f742eb6e2ab4b6960d7009b",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/dd9a2b033a797d4a4a7a1cff0e97b8901519518e",
+                "reference": "dd9a2b033a797d4a4a7a1cff0e97b8901519518e",
                 "shasum": ""
             },
             "require": {
@@ -2172,7 +2226,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2015-03-16 16:55:25"
+            "time": "2015-03-19 11:05:52"
         },
         {
             "name": "webmozart/expression",
@@ -2180,12 +2234,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/expression.git",
-                "reference": "67b6d5c266c13e1272fd94c63c8710662a179273"
+                "reference": "10cfa7064b4815ba542034551bfaa131b7bbe6bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/expression/zipball/67b6d5c266c13e1272fd94c63c8710662a179273",
-                "reference": "67b6d5c266c13e1272fd94c63c8710662a179273",
+                "url": "https://api.github.com/repos/webmozart/expression/zipball/10cfa7064b4815ba542034551bfaa131b7bbe6bf",
+                "reference": "10cfa7064b4815ba542034551bfaa131b7bbe6bf",
                 "shasum": ""
             },
             "require": {
@@ -2222,7 +2276,7 @@
                 "filter",
                 "formula"
             ],
-            "time": "2015-03-10 17:55:25"
+            "time": "2015-03-19 11:12:14"
         },
         {
             "name": "webmozart/glob",
@@ -2230,12 +2284,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/glob.git",
-                "reference": "4f71e9a44dec73f19e3ca595a2b50aa4b00e4a51"
+                "reference": "547d64055d387077526f674df0a49dd3fcec27cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/glob/zipball/4f71e9a44dec73f19e3ca595a2b50aa4b00e4a51",
-                "reference": "4f71e9a44dec73f19e3ca595a2b50aa4b00e4a51",
+                "url": "https://api.github.com/repos/webmozart/glob/zipball/547d64055d387077526f674df0a49dd3fcec27cb",
+                "reference": "547d64055d387077526f674df0a49dd3fcec27cb",
                 "shasum": ""
             },
             "require": {
@@ -2267,7 +2321,7 @@
                 }
             ],
             "description": "A PHP implementation of Ant's glob.",
-            "time": "2015-03-10 16:13:30"
+            "time": "2015-03-19 11:18:07"
         },
         {
             "name": "webmozart/json",
@@ -2275,12 +2329,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/json.git",
-                "reference": "8701f8314fa6d191d219ba523c5bb88480e28848"
+                "reference": "b698c6b828f832c85ae8cd1abbe2a5ac5905183a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/json/zipball/8701f8314fa6d191d219ba523c5bb88480e28848",
-                "reference": "8701f8314fa6d191d219ba523c5bb88480e28848",
+                "url": "https://api.github.com/repos/webmozart/json/zipball/b698c6b828f832c85ae8cd1abbe2a5ac5905183a",
+                "reference": "b698c6b828f832c85ae8cd1abbe2a5ac5905183a",
                 "shasum": ""
             },
             "require": {
@@ -2310,7 +2364,7 @@
                 }
             ],
             "description": "A robust JSON decoder/encoder with support for schema validation.",
-            "time": "2015-03-02 09:32:12"
+            "time": "2015-03-19 10:43:13"
         },
         {
             "name": "webmozart/key-value-store",
@@ -2318,12 +2372,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/key-value-store.git",
-                "reference": "877f9ab17716869f31cd800dc9d9cf157e836885"
+                "reference": "f1f40f0e22f4d22c5374151dcd6f51737e6a6c76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/key-value-store/zipball/877f9ab17716869f31cd800dc9d9cf157e836885",
-                "reference": "877f9ab17716869f31cd800dc9d9cf157e836885",
+                "url": "https://api.github.com/repos/webmozart/key-value-store/zipball/f1f40f0e22f4d22c5374151dcd6f51737e6a6c76",
+                "reference": "f1f40f0e22f4d22c5374151dcd6f51737e6a6c76",
                 "shasum": ""
             },
             "require": {
@@ -2363,20 +2417,20 @@
                 }
             ],
             "description": "A key-value store API with implementations for different backends.",
-            "time": "2015-03-11 15:11:07"
+            "time": "2015-03-19 11:20:20"
         },
         {
             "name": "webmozart/path-util",
-            "version": "dev-master",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/path-util.git",
-                "reference": "4f045787b13ee162747c735143ffe0ff60d976ba"
+                "reference": "86cd0f94363c17f4d557a9f02ed70f67584e9f84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/path-util/zipball/4f045787b13ee162747c735143ffe0ff60d976ba",
-                "reference": "4f045787b13ee162747c735143ffe0ff60d976ba",
+                "url": "https://api.github.com/repos/webmozart/path-util/zipball/86cd0f94363c17f4d557a9f02ed70f67584e9f84",
+                "reference": "86cd0f94363c17f4d557a9f02ed70f67584e9f84",
                 "shasum": ""
             },
             "require": {
@@ -2404,7 +2458,7 @@
                 }
             ],
             "description": "A robust cross-platform utility for normalizing, comparing and modifying file paths.",
-            "time": "2015-02-10 08:53:43"
+            "time": "2015-03-19 10:57:25"
         }
     ],
     "packages-dev": [],

@@ -282,6 +282,92 @@
 						Uri					</a>
 
 						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.WebResourcePlugin.html">
+						WebResourcePlugin<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.WebResourcePlugin.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.WebResourcePlugin.Api.Factory.html">
+						Factory					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.WebResourcePlugin.Api.Installation.html">
+						Installation					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.WebResourcePlugin.Api.Installer.html">
+						Installer<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.WebResourcePlugin.Api.Installer.Validation.html">
+						Validation					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.WebResourcePlugin.Api.Target.html">
+						Target					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.WebResourcePlugin.Api.UrlGenerator.html">
+						UrlGenerator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.WebResourcePlugin.Api.WebPath.html">
+						WebPath					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.WebResourcePlugin.Console.html">
+						Console					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.WebResourcePlugin.Factory.html">
+						Factory					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.WebResourcePlugin.Installation.html">
+						Installation					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.WebResourcePlugin.Installer.html">
+						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.WebResourcePlugin.Target.html">
+						Target					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.WebResourcePlugin.UrlGenerator.html">
+						UrlGenerator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.WebResourcePlugin.WebPath.html">
+						WebPath					</a>
+
+						</li>
 							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Webmozart.html">
@@ -412,7 +498,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Repository.FilesystemRepository.html#34-468" title="Go to source code">FilesystemRepository.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Repository.FilesystemRepository.html#35-512" title="Go to source code">FilesystemRepository.php</a>
 		<br>
 	</div>
 
@@ -432,7 +518,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isSymlinkSupported">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#84-103" title="Go to source code">isSymlinkSupported</a>( )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#90-109" title="Go to source code">isSymlinkSupported</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether symlinks are supported in the local environment.</p>
@@ -466,7 +552,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#105-120" title="Go to source code">__construct</a>( <span>string <var>$baseDir</var> = <span class="php-quote">'/'</span></span>, <span>boolean <var>$symlink</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#111-134" title="Go to source code">__construct</a>( <span>string <var>$baseDir</var> = <span class="php-quote">'/'</span></span>, <span>boolean <var>$symlink</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$relative</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Creates a new repository.</p>
@@ -480,9 +566,17 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 				<div class="list"><dl>
 					<dt><var>$baseDir</var></dt>
 					<dd><p>The base directory of the repository on the file
-                       system.</p></dd>
+                        system.</p></dd>
 					<dt><var>$symlink</var></dt>
-					<dd>Whether to use symbolic links for added files.</dd>
+					<dd><p>Whether to use symbolic links for added files. If
+                        symbolic links are not supported on the current
+                        system, the repository will create hard copies
+                        instead.</p></dd>
+					<dt><var>$relative</var></dt>
+					<dd><p>Whether to create relative symbolic links. If
+                        relative links are not supported on the current
+                        system, the repository will create absolute links
+                        instead.</p></dd>
 				</dl></div>
 
 
@@ -504,7 +598,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#122-138" title="Go to source code">get</a>( <span>string <var>$path</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#136-152" title="Go to source code">get</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the resource at the given path.</p>
@@ -552,7 +646,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_find">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#140-146" title="Go to source code">find</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#154-160" title="Go to source code">find</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the resources matching a query.</p>
@@ -601,7 +695,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_contains">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#148-157" title="Go to source code">contains</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#162-171" title="Go to source code">contains</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether any resources match a query.</p>
@@ -650,7 +744,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasChildren">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#159-174" title="Go to source code">hasChildren</a>( <span>string <var>$path</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#173-188" title="Go to source code">hasChildren</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether a resource has child resources.</p>
@@ -698,7 +792,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_listChildren">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#176-188" title="Go to source code">listChildren</a>( <span>string <var>$path</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#190-202" title="Go to source code">listChildren</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
 			<p>Lists the child resources of a resource.</p>
@@ -746,7 +840,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#190-220" title="Go to source code">add</a>( <span>string <var>$path</var></span>, <span><code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a></code>|<code><a href="class-Puli.Repository.Api.ResourceCollection.html">Puli\Repository\Api\ResourceCollection</a></code> <var>$resource</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#204-234" title="Go to source code">add</a>( <span>string <var>$path</var></span>, <span><code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a></code>|<code><a href="class-Puli.Repository.Api.ResourceCollection.html">Puli\Repository\Api\ResourceCollection</a></code> <var>$resource</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a new resource to the repository.</p>
@@ -793,7 +887,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#222-238" title="Go to source code">remove</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#236-252" title="Go to source code">remove</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
 
 		<div class="description short">
 			<p>Removes all resources matching the given query.</p>
@@ -842,7 +936,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#240-253" title="Go to source code">clear</a>( )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#254-267" title="Go to source code">clear</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all resources from the repository.</p>

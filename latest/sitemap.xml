@@ -142,6 +142,54 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.Repository.Uri.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/namespace-Puli.WebResourcePlugin.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.WebResourcePlugin.Api.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.WebResourcePlugin.Api.Factory.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.WebResourcePlugin.Api.Installation.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.WebResourcePlugin.Api.Installer.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.WebResourcePlugin.Api.Installer.Validation.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.WebResourcePlugin.Api.Target.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.WebResourcePlugin.Api.UrlGenerator.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.WebResourcePlugin.Api.WebPath.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.WebResourcePlugin.Console.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.WebResourcePlugin.Factory.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.WebResourcePlugin.Installation.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.WebResourcePlugin.Installer.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.WebResourcePlugin.Target.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.WebResourcePlugin.UrlGenerator.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.WebResourcePlugin.WebPath.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/namespace-Webmozart.html</loc>
 </url>
 <url>
