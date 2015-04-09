@@ -190,6 +190,30 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.Repository.Uri.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/namespace-Puli.SymfonyBridge.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.SymfonyBridge.Config.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.SymfonyBridge.HttpKernel.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.TwigExtension.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.TwigExtension.CacheWarmer.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.TwigExtension.Node.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.TwigExtension.NodeVisitor.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.TwigExtension.TokenParser.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/namespace-Webmozart.html</loc>
 </url>
 <url>
