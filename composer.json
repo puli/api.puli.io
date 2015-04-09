@@ -17,6 +17,7 @@
         "puli/asset-plugin": "~1.0@dev",
         "webmozart/assert": "~1.0@dev",
         "webmozart/key-value-store": "~1.0@dev",
+        "webmozart/expression": "~1.0@dev",
         "apigen/apigen": "4.0.*"
     },
     "config": {

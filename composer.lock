@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a109a5cdd1e2462383ee7e9fb57556c0",
+    "hash": "688ec7ab6d93b495dfd8e768e9cf12af",
     "packages": [
         {
             "name": "andrewsville/php-token-reflection",
@@ -1667,16 +1667,16 @@
         },
         {
             "name": "puli/manager",
-            "version": "1.0.0-beta2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/manager.git",
-                "reference": "e4a3764a270ba0fc05add96dd8161b418374821a"
+                "reference": "ae15eb7ebc29e1e7957fdb64dc5dd52231a9675b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/manager/zipball/e4a3764a270ba0fc05add96dd8161b418374821a",
-                "reference": "e4a3764a270ba0fc05add96dd8161b418374821a",
+                "url": "https://api.github.com/repos/puli/manager/zipball/ae15eb7ebc29e1e7957fdb64dc5dd52231a9675b",
+                "reference": "ae15eb7ebc29e1e7957fdb64dc5dd52231a9675b",
                 "shasum": ""
             },
             "require": {
@@ -1684,10 +1684,12 @@
                 "psr/log": "~1.0",
                 "puli/discovery": "~1.0",
                 "puli/factory": "~1.0",
-                "puli/repository": "~1.0",
+                "puli/repository": "1.0.*",
                 "rhumsaa/uuid": "~2.8",
                 "symfony/event-dispatcher": "~2.3",
                 "symfony/filesystem": "~2.3",
+                "webmozart/assert": "~1.0",
+                "webmozart/expression": "~1.0",
                 "webmozart/json": "~1.0",
                 "webmozart/path-util": "~1.0"
             },
@@ -1704,7 +1706,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Puli\\RepositoryManager\\": "src/"
+                    "Puli\\Manager\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1719,7 +1721,7 @@
             ],
             "description": "Generates Puli repositories from configured packages.",
             "homepage": "http://puli.io",
-            "time": "2015-01-27 11:14:06"
+            "time": "2015-04-09 00:31:57"
         },
         {
             "name": "puli/repository",
@@ -2213,6 +2215,56 @@
             "time": "2015-03-19 11:05:52"
         },
         {
+            "name": "webmozart/expression",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webmozart/expression.git",
+                "reference": "b52ae702b241b86084ba0a602a5d9313d48f2000"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webmozart/expression/zipball/b52ae702b241b86084ba0a602a5d9313d48f2000",
+                "reference": "b52ae702b241b86084ba0a602a5d9313d48f2000",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webmozart\\Expression\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "Formulate expressions and search criteria using PHP objects.",
+            "keywords": [
+                "criteria",
+                "expression",
+                "filter",
+                "formula"
+            ],
+            "time": "2015-03-26 14:00:09"
+        },
+        {
             "name": "webmozart/glob",
             "version": "2.0.0",
             "source": {
@@ -2405,7 +2457,8 @@
         "puli/manager": 20,
         "puli/asset-plugin": 20,
         "webmozart/assert": 20,
-        "webmozart/key-value-store": 20
+        "webmozart/key-value-store": 20,
+        "webmozart/expression": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
