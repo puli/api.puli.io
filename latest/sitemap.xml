@@ -76,93 +76,6 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.Factory.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Config.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Discovery.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Environment.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Event.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Factory.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Factory.Generator.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Package.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Php.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Repository.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Assert.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Config.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Conflict.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Discovery.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Discovery.Binding.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Discovery.Type.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Factory.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Factory.Generator.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Factory.Generator.Discovery.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Factory.Generator.KeyValueStore.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Factory.Generator.Repository.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Package.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Php.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Repository.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Repository.Iterator.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Repository.Mapping.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Transaction.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Util.html</loc>
-</url>
-<url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Repository.html</loc>
 </url>
 <url>
@@ -188,6 +101,81 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Repository.Uri.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.Config.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.Discovery.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.Environment.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.Event.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.Package.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Api.Repository.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Assert.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Config.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Conflict.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Discovery.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Discovery.Binding.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Discovery.Type.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Environment.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Generator.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Generator.Discovery.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Generator.KeyValueStore.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Generator.Repository.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Package.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Repository.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Repository.Iterator.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Repository.Mapping.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Transaction.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.RepositoryManager.Util.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Webmozart.html</loc>
