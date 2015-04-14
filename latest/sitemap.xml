@@ -834,6 +834,9 @@
 	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Api.KeyValueStore.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Asset.DuplicateAssetMappingException.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Asset.NoSuchAssetMappingException.html</loc>
 </url>
 <url>
@@ -870,19 +873,19 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Config.NoSuchConfigKeyException.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Discovery.CannotDisableBindingException.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Discovery.CannotEnableBindingException.html</loc>
-</url>
-<url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Discovery.DiscoveryNotEmptyException.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Discovery.DuplicateBindingException.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Discovery.DuplicateTypeException.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Discovery.NoSuchBindingException.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Discovery.NoSuchTypeException.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Discovery.TypeNotEnabledException.html</loc>
@@ -900,6 +903,9 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.NoDirectoryException.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.NonRootPackageExpectedException.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.NotLoadedException.html</loc>
 </url>
 <url>
@@ -910,6 +916,9 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Package.UnsupportedVersionException.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Repository.DuplicatePathMappingException.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Repository.NoSuchPathMappingException.html</loc>

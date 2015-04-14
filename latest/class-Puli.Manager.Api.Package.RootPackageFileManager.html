@@ -544,7 +544,7 @@ Whenever you call methods in this class, the changes will be written to disk.</p
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#19-196" title="Go to source code">Api/Package/RootPackageFileManager.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#19-241" title="Go to source code">Api/Package/RootPackageFileManager.php</a>
 		<br>
 	</div>
 
@@ -751,7 +751,7 @@ mandatory parameters.</p>
 		<div class="description detailed hidden">
 			<p>Removes a plugin class from the package file.</p>
 
-<p>If the package file does not contain the class, this method does nothign.</p>
+<p>If the package file does not contain the class, this method does nothing.</p>
 
 
 				<h4>Parameters</h4>
@@ -759,6 +759,76 @@ mandatory parameters.</p>
 					<dt><var>$pluginClass</var></dt>
 					<dd>The fully qualified plugin class name.</dd>
 				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removePluginClasses" id="_removePluginClasses">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removePluginClasses">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#78-84" title="Go to source code">removePluginClasses</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+
+		<div class="description short">
+			<p>Removes the plugin classes from the package file that match the given
+expression.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes the plugin classes from the package file that match the given
+expression.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearPluginClasses" id="_clearPluginClasses">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearPluginClasses">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#86-92" title="Go to source code">clearPluginClasses</a>( )</code>
+
+		<div class="description short">
+			<p>Removes all plugin classes from the package file.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes all plugin classes from the package file.</p>
+
+<p>If the package file does not contain any classes, this method does
+nothing.</p>
+
+
 
 
 
@@ -779,7 +849,7 @@ mandatory parameters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasPluginClass">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#78-86" title="Go to source code">hasPluginClass</a>( <span>string <var>$pluginClass</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#94-102" title="Go to source code">hasPluginClass</a>( <span>string <var>$pluginClass</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the package file contains a plugin class.</p>
@@ -819,7 +889,7 @@ mandatory parameters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasPluginClasses">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#88-94" title="Go to source code">hasPluginClasses</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#104-117" title="Go to source code">hasPluginClasses</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the package file contains any plugin classes.</p>
@@ -828,12 +898,22 @@ mandatory parameters.</p>
 		<div class="description detailed hidden">
 			<p>Returns whether the package file contains any plugin classes.</p>
 
+<p>You can optionally pass an expression to check whether the manager has
+plugin classes matching the expression.</p>
 
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					boolean<br><p>Returns <code>true</code> if the package file contains any plugin
-             classes and <code>false</code> otherwise.</p>
+					boolean<br><p>Returns <code>true</code> if the manager has plugin classes in the root
+             package and <code>false</code> otherwise. If an expression is passed,
+             this method only returns <code>true</code> if the manager has plugin
+             classes matching the expression.</p>
 				</div>
 
 
@@ -854,7 +934,7 @@ mandatory parameters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPluginClasses">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#96-101" title="Go to source code">getPluginClasses</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#119-124" title="Go to source code">getPluginClasses</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all installed plugin classes.</p>
@@ -876,29 +956,39 @@ mandatory parameters.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="clearPluginClasses" id="_clearPluginClasses">
+	<tr data-order="findPluginClasses" id="_findPluginClasses">
 
 		<td class="attributes"><code>
 			 public 
 
-			
+			string[]
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_clearPluginClasses">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#103-106" title="Go to source code">clearPluginClasses</a>( )</code>
+		<a class="anchor" href="#_findPluginClasses">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#126-134" title="Go to source code">findPluginClasses</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
-			<p>Removes all plugin classes from the package file.</p>
+			<p>Returns all installed plugin classes matching the given expression.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Removes all plugin classes from the package file.</p>
+			<p>Returns all installed plugin classes matching the given expression.</p>
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					string[]<br><p>The fully qualified plugin class names matching the
+                 expression.</p>
+				</div>
 
 
 
@@ -918,7 +1008,7 @@ mandatory parameters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setExtraKey">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#108-118" title="Go to source code">setExtraKey</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#136-146" title="Go to source code">setExtraKey</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets an extra key in the file.</p>
@@ -961,7 +1051,7 @@ mandatory parameters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setExtraKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#120-129" title="Go to source code">setExtraKeys</a>( <span>array <var>$values</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#148-157" title="Go to source code">setExtraKeys</a>( <span>array <var>$values</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the extra keys in the file.</p>
@@ -1002,7 +1092,7 @@ mandatory parameters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeExtraKey">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#131-140" title="Go to source code">removeExtraKey</a>( <span>string <var>$key</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#159-168" title="Go to source code">removeExtraKey</a>( <span>string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes an extra key from the file.</p>
@@ -1043,22 +1133,24 @@ mandatory parameters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeExtraKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#142-151" title="Go to source code">removeExtraKeys</a>( <span>array <var>$keys</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#170-180" title="Go to source code">removeExtraKeys</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
-			<p>Removes multiple extra keys from the file.</p>
+			<p>Removes the extra keys from the package file that match the given
+expression.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Removes multiple extra keys from the file.</p>
+			<p>Removes the extra keys from the package file that match the given
+expression.</p>
 
 <p>The file is saved directly after removing the keys.</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$keys</var></dt>
-					<dd>The names of the removed extra keys.</dd>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
 				</dl></div>
 
 
@@ -1084,7 +1176,7 @@ mandatory parameters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clearExtraKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#153-160" title="Go to source code">clearExtraKeys</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#182-189" title="Go to source code">clearExtraKeys</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all extra keys from the file.</p>
@@ -1120,7 +1212,7 @@ mandatory parameters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasExtraKey">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#162-170" title="Go to source code">hasExtraKey</a>( <span>string <var>$key</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#191-199" title="Go to source code">hasExtraKey</a>( <span>string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether an extra key exists.</p>
@@ -1160,7 +1252,7 @@ mandatory parameters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasExtraKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#172-178" title="Go to source code">hasExtraKeys</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#201-214" title="Go to source code">hasExtraKeys</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the file contains any extra keys.</p>
@@ -1169,12 +1261,22 @@ mandatory parameters.</p>
 		<div class="description detailed hidden">
 			<p>Returns whether the file contains any extra keys.</p>
 
+<p>You can optionally pass an expression to check whether the file contains
+extra keys matching the expression.</p>
 
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
 					boolean<br><p>Returns <code>true</code> if the file contains extra keys and <code>false</code>
-             otherwise.</p>
+             otherwise. If an expression is passed, this method only
+             returns <code>true</code> if the file contains extra keys matching the
+             expression.</p>
 				</div>
 
 
@@ -1195,7 +1297,7 @@ mandatory parameters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getExtraKey">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#180-188" title="Go to source code">getExtraKey</a>( <span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#216-224" title="Go to source code">getExtraKey</a>( <span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the value of a configuration key.</p>
@@ -1236,7 +1338,7 @@ mandatory parameters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getExtraKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#190-195" title="Go to source code">getExtraKeys</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#226-231" title="Go to source code">getExtraKeys</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the values of all extra keys set in the file.</p>
@@ -1258,16 +1360,57 @@ mandatory parameters.</p>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="findExtraKeys" id="_findExtraKeys">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_findExtraKeys">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFileManager.html#233-240" title="Go to source code">findExtraKeys</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns the values of all extra keys matching the given expression.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the values of all extra keys matching the given expression.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>A mapping of configuration keys to values.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	</table>
 
 	<table class="summary inherited">
 	<caption>Methods inherited from <a href="class-Puli.Manager.Api.Config.ConfigFileManager.html#methods">Puli\Manager\Api\Config\ConfigFileManager</a></caption>
 	<tr>
 		<td><code>
+			<a href="class-Puli.Manager.Api.Config.ConfigFileManager.html#_clearConfigKeys">clearConfigKeys()</a>, 
 			<a href="class-Puli.Manager.Api.Config.ConfigFileManager.html#_findConfigKeys">findConfigKeys()</a>, 
 			<a href="class-Puli.Manager.Api.Config.ConfigFileManager.html#_getConfigKey">getConfigKey()</a>, 
 			<a href="class-Puli.Manager.Api.Config.ConfigFileManager.html#_getConfigKeys">getConfigKeys()</a>, 
 			<a href="class-Puli.Manager.Api.Config.ConfigFileManager.html#_hasConfigKey">hasConfigKey()</a>, 
+			<a href="class-Puli.Manager.Api.Config.ConfigFileManager.html#_hasConfigKeys">hasConfigKeys()</a>, 
 			<a href="class-Puli.Manager.Api.Config.ConfigFileManager.html#_removeConfigKey">removeConfigKey()</a>, 
 			<a href="class-Puli.Manager.Api.Config.ConfigFileManager.html#_removeConfigKeys">removeConfigKeys()</a>, 
 			<a href="class-Puli.Manager.Api.Config.ConfigFileManager.html#_setConfigKey">setConfigKey()</a>, 

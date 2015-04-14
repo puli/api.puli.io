@@ -8,18 +8,16 @@ APIGEN ?= bin/apigen
 APIGEN_GENERATE = $(APIGEN) generate
 COMPOSER ?= composer
 COMPOSER_UPDATE = $(COMPOSER) update
-COMPOSER_INSTALL = $(COMPOSER) install
 
 all: html
 
-html: $(CLASS_FILES) $(APIGEN) update
+html: $(CLASS_FILES) $(APIGEN)
 	$(APIGEN_GENERATE) -d $(BUILD_DIR)
+
+$(APIGEN): update
 
 update: FORCE
 	$(COMPOSER_UPDATE)
-
-$(APIGEN):
-	$(COMPOSER_INSTALL)
 
 clean:
 	$(RM) -r $(BUILD_DIR)

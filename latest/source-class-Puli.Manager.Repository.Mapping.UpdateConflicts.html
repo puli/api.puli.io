@@ -657,6 +657,7 @@
 
 			<h3>Exceptions</h3>
 			<ul>
+				<li><a href="class-Puli.AssetPlugin.Api.Asset.DuplicateAssetMappingException.html">Puli\AssetPlugin\Api\Asset\DuplicateAssetMappingException</a></li>
 				<li><a href="class-Puli.AssetPlugin.Api.Asset.NoSuchAssetMappingException.html">Puli\AssetPlugin\Api\Asset\NoSuchAssetMappingException</a></li>
 				<li><a href="class-Puli.AssetPlugin.Api.Installation.NotInstallableException.html">Puli\AssetPlugin\Api\Installation\NotInstallableException</a></li>
 				<li><a href="class-Puli.AssetPlugin.Api.Installer.NoSuchInstallerException.html">Puli\AssetPlugin\Api\Installer\NoSuchInstallerException</a></li>
@@ -669,20 +670,22 @@
 				<li><a href="class-Puli.Discovery.Api.NoSuchTypeException.html">Puli\Discovery\Api\NoSuchTypeException</a></li>
 				<li><a href="class-Puli.Manager.Api.AlreadyLoadedException.html">Puli\Manager\Api\AlreadyLoadedException</a></li>
 				<li><a href="class-Puli.Manager.Api.Config.NoSuchConfigKeyException.html">Puli\Manager\Api\Config\NoSuchConfigKeyException</a></li>
-				<li><a href="class-Puli.Manager.Api.Discovery.CannotDisableBindingException.html">Puli\Manager\Api\Discovery\CannotDisableBindingException</a></li>
-				<li><a href="class-Puli.Manager.Api.Discovery.CannotEnableBindingException.html">Puli\Manager\Api\Discovery\CannotEnableBindingException</a></li>
 				<li><a href="class-Puli.Manager.Api.Discovery.DiscoveryNotEmptyException.html">Puli\Manager\Api\Discovery\DiscoveryNotEmptyException</a></li>
 				<li><a href="class-Puli.Manager.Api.Discovery.DuplicateBindingException.html">Puli\Manager\Api\Discovery\DuplicateBindingException</a></li>
+				<li><a href="class-Puli.Manager.Api.Discovery.DuplicateTypeException.html">Puli\Manager\Api\Discovery\DuplicateTypeException</a></li>
 				<li><a href="class-Puli.Manager.Api.Discovery.NoSuchBindingException.html">Puli\Manager\Api\Discovery\NoSuchBindingException</a></li>
+				<li><a href="class-Puli.Manager.Api.Discovery.NoSuchTypeException.html">Puli\Manager\Api\Discovery\NoSuchTypeException</a></li>
 				<li><a href="class-Puli.Manager.Api.Discovery.TypeNotEnabledException.html">Puli\Manager\Api\Discovery\TypeNotEnabledException</a></li>
 				<li><a href="class-Puli.Manager.Api.FileNotFoundException.html">Puli\Manager\Api\FileNotFoundException</a></li>
 				<li><a href="class-Puli.Manager.Api.InvalidConfigException.html">Puli\Manager\Api\InvalidConfigException</a></li>
 				<li><a href="class-Puli.Manager.Api.IOException.html">Puli\Manager\Api\IOException</a></li>
 				<li><a href="class-Puli.Manager.Api.NoDirectoryException.html">Puli\Manager\Api\NoDirectoryException</a></li>
+				<li><a href="class-Puli.Manager.Api.NonRootPackageExpectedException.html">Puli\Manager\Api\NonRootPackageExpectedException</a></li>
 				<li><a href="class-Puli.Manager.Api.NotLoadedException.html">Puli\Manager\Api\NotLoadedException</a></li>
 				<li><a href="class-Puli.Manager.Api.Package.NameConflictException.html">Puli\Manager\Api\Package\NameConflictException</a></li>
 				<li><a href="class-Puli.Manager.Api.Package.NoSuchPackageException.html">Puli\Manager\Api\Package\NoSuchPackageException</a></li>
 				<li><a href="class-Puli.Manager.Api.Package.UnsupportedVersionException.html">Puli\Manager\Api\Package\UnsupportedVersionException</a></li>
+				<li><a href="class-Puli.Manager.Api.Repository.DuplicatePathMappingException.html">Puli\Manager\Api\Repository\DuplicatePathMappingException</a></li>
 				<li><a href="class-Puli.Manager.Api.Repository.NoSuchPathMappingException.html">Puli\Manager\Api\Repository\NoSuchPathMappingException</a></li>
 				<li><a href="class-Puli.Manager.Api.Repository.RepositoryNotEmptyException.html">Puli\Manager\Api\Repository\RepositoryNotEmptyException</a></li>
 				<li><a href="class-Puli.Manager.Conflict.CyclicDependencyException.html">Puli\Manager\Conflict\CyclicDependencyException</a></li>
@@ -780,7 +783,7 @@
 </span><span id="44" class="l">    <span class="php-comment">/**
 </span></span><span id="45" class="l"><span class="php-comment">     * @var PathMappingCollection
 </span></span><span id="46" class="l"><span class="php-comment">     */</span>
-</span><span id="47" class="l">    <span class="php-keyword1">private</span> <span class="php-var">$mappings</span>;
+</span><span id="47" class="l">    <span class="php-keyword1">private</span> <span class="php-var">$mappingsByResource</span>;
 </span><span id="48" class="l">
 </span><span id="49" class="l">    <span class="php-comment">/**
 </span></span><span id="50" class="l"><span class="php-comment">     * @var string[]
@@ -792,12 +795,12 @@
 </span></span><span id="56" class="l"><span class="php-comment">     */</span>
 </span><span id="57" class="l">    <span class="php-keyword1">private</span> <span class="php-var">$removedConflicts</span> = <span class="php-keyword1">array</span>();
 </span><span id="58" class="l">
-</span><span id="59" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(<span class="php-keyword1">array</span> <span class="php-var">$repositoryPaths</span>, PackageConflictDetector <span class="php-var">$conflictDetector</span>, ConflictCollection <span class="php-var">$conflicts</span>, PathMappingCollection <span class="php-var">$mappings</span>)
+</span><span id="59" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(<span class="php-keyword1">array</span> <span class="php-var">$repositoryPaths</span>, PackageConflictDetector <span class="php-var">$conflictDetector</span>, ConflictCollection <span class="php-var">$conflicts</span>, PathMappingCollection <span class="php-var">$mappingsByResource</span>)
 </span><span id="60" class="l">    {
 </span><span id="61" class="l">        <span class="php-var">$this</span>-&gt;repositoryPaths = <span class="php-var">$repositoryPaths</span>;
 </span><span id="62" class="l">        <span class="php-var">$this</span>-&gt;conflictDetector = <span class="php-var">$conflictDetector</span>;
 </span><span id="63" class="l">        <span class="php-var">$this</span>-&gt;conflicts = <span class="php-var">$conflicts</span>;
-</span><span id="64" class="l">        <span class="php-var">$this</span>-&gt;mappings = <span class="php-var">$mappings</span>;
+</span><span id="64" class="l">        <span class="php-var">$this</span>-&gt;mappingsByResource = <span class="php-var">$mappingsByResource</span>;
 </span><span id="65" class="l">    }
 </span><span id="66" class="l">
 </span><span id="67" class="l">    <span class="php-comment">/**
@@ -829,7 +832,7 @@
 </span><span id="93" class="l">            <span class="php-var">$conflict</span> = <span class="php-keyword1">new</span> PathConflict(<span class="php-var">$repositoryPath</span>);
 </span><span id="94" class="l">
 </span><span id="95" class="l">            <span class="php-keyword1">foreach</span> (<span class="php-var">$packageConflict</span>-&gt;getPackageNames() <span class="php-keyword1">as</span> <span class="php-var">$packageName</span>) {
-</span><span id="96" class="l">                <span class="php-var">$conflict</span>-&gt;addMapping(<span class="php-var">$this</span>-&gt;mappings-&gt;get(<span class="php-var">$repositoryPath</span>, <span class="php-var">$packageName</span>));
+</span><span id="96" class="l">                <span class="php-var">$conflict</span>-&gt;addMapping(<span class="php-var">$this</span>-&gt;mappingsByResource-&gt;get(<span class="php-var">$repositoryPath</span>, <span class="php-var">$packageName</span>));
 </span><span id="97" class="l">            }
 </span><span id="98" class="l">
 </span><span id="99" class="l">            <span class="php-var">$this</span>-&gt;conflicts-&gt;add(<span class="php-var">$conflict</span>);
@@ -893,6 +896,6 @@
 </div>
 </div>
 <script src="resources/combined.js?90a9ebc032fe484834129d90a6307c0552eea616"></script>
-<script src="elementlist.js?bff3173bff9a6fc70c5b51cb83c7541494ffa9ab"></script>
+<script src="elementlist.js?3bb9bd7b72aefcf8a938166898c8a9d7c381c40f"></script>
 </body>
 </html>

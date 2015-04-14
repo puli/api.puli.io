@@ -501,9 +501,7 @@
  * The name of the type. * The package that defines the type.</p>
 
 <p>The store implements transparent merging of types defined within different
-packages, but with the same type name. If a type is requested for a name
-without giving a package name, the first type set for that name is
-returned by <code><a href="class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#_get">Puli\Manager\Discovery\Type\BindingTypeDescriptorCollection::get()</a></code>.</p>
+packages, but with the same type name.</p>
 	</div>
 
 
@@ -524,7 +522,7 @@ returned by <code><a href="class-Puli.Manager.Discovery.Type.BindingTypeDescript
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#18-194" title="Go to source code">Discovery/Type/BindingTypeDescriptorCollection.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#18-200" title="Go to source code">Discovery/Type/BindingTypeDescriptorCollection.php</a>
 		<br>
 	</div>
 
@@ -544,7 +542,7 @@ returned by <code><a href="class-Puli.Manager.Discovery.Type.BindingTypeDescript
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#41-47" title="Go to source code">__construct</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#39-45" title="Go to source code">__construct</a>( )</code>
 
 		<div class="description short">
 			<p>Creates the store.</p>
@@ -574,7 +572,7 @@ returned by <code><a href="class-Puli.Manager.Discovery.Type.BindingTypeDescript
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#49-57" title="Go to source code">add</a>( <span><code><a href="class-Puli.Manager.Api.Discovery.BindingTypeDescriptor.html">Puli\Manager\Api\Discovery\BindingTypeDescriptor</a></code> <var>$typeDescriptor</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#47-55" title="Go to source code">add</a>( <span><code><a href="class-Puli.Manager.Api.Discovery.BindingTypeDescriptor.html">Puli\Manager\Api\Discovery\BindingTypeDescriptor</a></code> <var>$typeDescriptor</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a type descriptor.</p>
@@ -609,7 +607,7 @@ returned by <code><a href="class-Puli.Manager.Discovery.Type.BindingTypeDescript
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#59-70" title="Go to source code">remove</a>( <span>string <var>$typeName</var></span>, <span>string <var>$packageName</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#57-68" title="Go to source code">remove</a>( <span>string <var>$typeName</var></span>, <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a type descriptor.</p>
@@ -648,7 +646,7 @@ returned by <code><a href="class-Puli.Manager.Discovery.Type.BindingTypeDescript
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#72-93" title="Go to source code">get</a>( <span>string <var>$typeName</var></span>, <span>string <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#70-84" title="Go to source code">get</a>( <span>string <var>$typeName</var></span>, <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns a type descriptor.</p>
@@ -656,9 +654,6 @@ returned by <code><a href="class-Puli.Manager.Discovery.Type.BindingTypeDescript
 
 		<div class="description detailed hidden">
 			<p>Returns a type descriptor.</p>
-
-<p>If no package is passed, the first descriptor set for the type name is
-returned.</p>
 
 
 				<h4>Parameters</h4>
@@ -685,6 +680,50 @@ returned.</p>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="getFirst" id="_getFirst">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.Manager.Api.Discovery.BindingTypeDescriptor.html">Puli\Manager\Api\Discovery\BindingTypeDescriptor</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFirst">#</a>
+		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#86-99" title="Go to source code">getFirst</a>( <span>string <var>$typeName</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns the first type descriptor with the given name.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the first type descriptor with the given name.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$typeName</var></dt>
+					<dd>The name of the type.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.Manager.Api.Discovery.BindingTypeDescriptor.html">Puli\Manager\Api\Discovery\BindingTypeDescriptor</a></code><br>The type descriptor.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					OutOfBoundsException<br><p>If no type descriptor was set for the
+                             given name.</p>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="getEnabled" id="_getEnabled">
 
 		<td class="attributes"><code>
@@ -697,7 +736,7 @@ returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEnabled">#</a>
-		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#95-116" title="Go to source code">getEnabled</a>( <span>string <var>$typeName</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#101-122" title="Go to source code">getEnabled</a>( <span>string <var>$typeName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the enabled type descriptor for a given type name.</p>
@@ -737,7 +776,7 @@ returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_listByTypeName">#</a>
-		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#118-131" title="Go to source code">listByTypeName</a>( <span>string <var>$typeName</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#124-137" title="Go to source code">listByTypeName</a>( <span>string <var>$typeName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns all type descriptors set for the given name.</p>
@@ -781,7 +820,7 @@ returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_contains">#</a>
-		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#133-145" title="Go to source code">contains</a>( <span>string <var>$typeName</var></span>, <span>string <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#139-151" title="Go to source code">contains</a>( <span>string <var>$typeName</var></span>, <span>string <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether a type descriptor was set for the given name/package.</p>
@@ -823,7 +862,7 @@ returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPackageNames">#</a>
-		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#147-160" title="Go to source code">getPackageNames</a>( <span>string <var>$typeName</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#153-166" title="Go to source code">getPackageNames</a>( <span>string <var>$typeName</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the names of the packages defining types with the given name.</p>
@@ -867,7 +906,7 @@ returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTypeNames">#</a>
-		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#162-170" title="Go to source code">getTypeNames</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#168-176" title="Go to source code">getTypeNames</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the names of all type descriptors.</p>
@@ -901,7 +940,7 @@ returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_toArray">#</a>
-		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#172-182" title="Go to source code">toArray</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#178-188" title="Go to source code">toArray</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the contents of the collection as array.</p>
@@ -937,7 +976,7 @@ returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isEmpty">#</a>
-		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#184-193" title="Go to source code">isEmpty</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html#190-199" title="Go to source code">isEmpty</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the collection is empty.</p>

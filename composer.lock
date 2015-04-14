@@ -948,16 +948,16 @@
         },
         {
             "name": "nette/di",
-            "version": "v2.3.1",
+            "version": "v2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/di.git",
-                "reference": "85ba123b193a8b0d666bfe0222b31a460f122465"
+                "reference": "73bcbabbec2b884746b246e2cfc7e69fbf3be8b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/di/zipball/85ba123b193a8b0d666bfe0222b31a460f122465",
-                "reference": "85ba123b193a8b0d666bfe0222b31a460f122465",
+                "url": "https://api.github.com/repos/nette/di/zipball/73bcbabbec2b884746b246e2cfc7e69fbf3be8b8",
+                "reference": "73bcbabbec2b884746b246e2cfc7e69fbf3be8b8",
                 "shasum": ""
             },
             "require": {
@@ -1001,7 +1001,7 @@
             ],
             "description": "Nette Dependency Injection Component",
             "homepage": "http://nette.org",
-            "time": "2015-03-27 09:46:44"
+            "time": "2015-04-08 13:52:20"
         },
         {
             "name": "nette/finder",
@@ -1609,12 +1609,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/asset-plugin.git",
-                "reference": "74843e0b7f1162d8ed513f9494d809b4e2023250"
+                "reference": "cd9eae541cbe6b3eb273eecc062efcffae2f2720"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/asset-plugin/zipball/74843e0b7f1162d8ed513f9494d809b4e2023250",
-                "reference": "74843e0b7f1162d8ed513f9494d809b4e2023250",
+                "url": "https://api.github.com/repos/puli/asset-plugin/zipball/cd9eae541cbe6b3eb273eecc062efcffae2f2720",
+                "reference": "cd9eae541cbe6b3eb273eecc062efcffae2f2720",
                 "shasum": ""
             },
             "require": {
@@ -1655,7 +1655,7 @@
                 "resource",
                 "web"
             ],
-            "time": "2015-04-08 23:20:16"
+            "time": "2015-04-13 15:23:34"
         },
         {
             "name": "puli/discovery",
@@ -1663,12 +1663,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/discovery.git",
-                "reference": "bb268bfb0a1aca1fa1cefcca3f4668f69a4da573"
+                "reference": "3f2562745e576c0d61ca0ed4f91128e2dbc92c3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/discovery/zipball/bb268bfb0a1aca1fa1cefcca3f4668f69a4da573",
-                "reference": "bb268bfb0a1aca1fa1cefcca3f4668f69a4da573",
+                "url": "https://api.github.com/repos/puli/discovery/zipball/3f2562745e576c0d61ca0ed4f91128e2dbc92c3a",
+                "reference": "3f2562745e576c0d61ca0ed4f91128e2dbc92c3a",
                 "shasum": ""
             },
             "require": {
@@ -1704,7 +1704,7 @@
             ],
             "description": "Discovers Puli resources bound to predefined types.",
             "homepage": "http://puli.io",
-            "time": "2015-04-08 15:17:58"
+            "time": "2015-04-13 15:02:13"
         },
         {
             "name": "puli/factory",
@@ -1756,12 +1756,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/manager.git",
-                "reference": "ae15eb7ebc29e1e7957fdb64dc5dd52231a9675b"
+                "reference": "b890a4e1d6d110b8ad06e20d7baa4d42930520c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/manager/zipball/ae15eb7ebc29e1e7957fdb64dc5dd52231a9675b",
-                "reference": "ae15eb7ebc29e1e7957fdb64dc5dd52231a9675b",
+                "url": "https://api.github.com/repos/puli/manager/zipball/b890a4e1d6d110b8ad06e20d7baa4d42930520c4",
+                "reference": "b890a4e1d6d110b8ad06e20d7baa4d42930520c4",
                 "shasum": ""
             },
             "require": {
@@ -1806,7 +1806,7 @@
             ],
             "description": "Generates Puli repositories from configured packages.",
             "homepage": "http://puli.io",
-            "time": "2015-04-09 00:31:57"
+            "time": "2015-04-13 15:08:14"
         },
         {
             "name": "puli/repository",
@@ -1814,12 +1814,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/repository.git",
-                "reference": "f6e69e31d366de2e06d461a95e57e4dd8c4d3b6d"
+                "reference": "2122a85adc546737db7adb111bf854e9d159aae9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/repository/zipball/f6e69e31d366de2e06d461a95e57e4dd8c4d3b6d",
-                "reference": "f6e69e31d366de2e06d461a95e57e4dd8c4d3b6d",
+                "url": "https://api.github.com/repos/puli/repository/zipball/2122a85adc546737db7adb111bf854e9d159aae9",
+                "reference": "2122a85adc546737db7adb111bf854e9d159aae9",
                 "shasum": ""
             },
             "require": {
@@ -1857,7 +1857,7 @@
             ],
             "description": "A filesystem-like repository for storing arbitrary resources.",
             "homepage": "http://puli.io",
-            "time": "2015-04-06 12:38:00"
+            "time": "2015-04-13 14:58:18"
         },
         {
             "name": "puli/symfony-bridge",
@@ -1865,12 +1865,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/symfony-bridge.git",
-                "reference": "df1500c14d36565d5f2296dd9392a9b0f58c5ada"
+                "reference": "25976504622cab150b46e8834607908324a13b5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/symfony-bridge/zipball/df1500c14d36565d5f2296dd9392a9b0f58c5ada",
-                "reference": "df1500c14d36565d5f2296dd9392a9b0f58c5ada",
+                "url": "https://api.github.com/repos/puli/symfony-bridge/zipball/25976504622cab150b46e8834607908324a13b5e",
+                "reference": "25976504622cab150b46e8834607908324a13b5e",
                 "shasum": ""
             },
             "require": {
@@ -1902,7 +1902,7 @@
             ],
             "description": "Integrates the Puli library with the Symfony components.",
             "homepage": "http://puli.io",
-            "time": "2015-04-08 17:00:30"
+            "time": "2015-04-13 15:30:11"
         },
         {
             "name": "puli/twig-extension",
@@ -1910,12 +1910,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/twig-extension.git",
-                "reference": "a3a97d358eca370012ce9139ebc2129593cab945"
+                "reference": "6df5d8c108c338842543d5d6499ab76d75c488f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/twig-extension/zipball/a3a97d358eca370012ce9139ebc2129593cab945",
-                "reference": "a3a97d358eca370012ce9139ebc2129593cab945",
+                "url": "https://api.github.com/repos/puli/twig-extension/zipball/6df5d8c108c338842543d5d6499ab76d75c488f5",
+                "reference": "6df5d8c108c338842543d5d6499ab76d75c488f5",
                 "shasum": ""
             },
             "require": {
@@ -1954,7 +1954,7 @@
             ],
             "description": "A Puli extension for the Twig templating system.",
             "homepage": "http://puli.io",
-            "time": "2015-04-08 17:02:42"
+            "time": "2015-04-13 15:27:54"
         },
         {
             "name": "rhumsaa/uuid",
@@ -2753,12 +2753,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/expression.git",
-                "reference": "b52ae702b241b86084ba0a602a5d9313d48f2000"
+                "reference": "152f7859b3889d3bde4fdcbd5b24325da956d506"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/expression/zipball/b52ae702b241b86084ba0a602a5d9313d48f2000",
-                "reference": "b52ae702b241b86084ba0a602a5d9313d48f2000",
+                "url": "https://api.github.com/repos/webmozart/expression/zipball/152f7859b3889d3bde4fdcbd5b24325da956d506",
+                "reference": "152f7859b3889d3bde4fdcbd5b24325da956d506",
                 "shasum": ""
             },
             "require": {
@@ -2795,7 +2795,7 @@
                 "filter",
                 "formula"
             ],
-            "time": "2015-03-26 14:00:09"
+            "time": "2015-04-13 14:45:17"
         },
         {
             "name": "webmozart/glob",
@@ -2891,12 +2891,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/key-value-store.git",
-                "reference": "f1f40f0e22f4d22c5374151dcd6f51737e6a6c76"
+                "reference": "ab7c58d54abdc8619aaa6605edf31ad479b8dd44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/key-value-store/zipball/f1f40f0e22f4d22c5374151dcd6f51737e6a6c76",
-                "reference": "f1f40f0e22f4d22c5374151dcd6f51737e6a6c76",
+                "url": "https://api.github.com/repos/webmozart/key-value-store/zipball/ab7c58d54abdc8619aaa6605edf31ad479b8dd44",
+                "reference": "ab7c58d54abdc8619aaa6605edf31ad479b8dd44",
                 "shasum": ""
             },
             "require": {
@@ -2936,7 +2936,7 @@
                 }
             ],
             "description": "A key-value store API with implementations for different backends.",
-            "time": "2015-03-19 11:20:20"
+            "time": "2015-04-13 14:51:01"
         },
         {
             "name": "webmozart/path-util",

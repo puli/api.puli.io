@@ -520,7 +520,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#29-337" title="Go to source code">Installer/PackageFileInstallerManager.php</a>
+			<b>Located at</b> <a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#31-481" title="Go to source code">Installer/PackageFileInstallerManager.php</a>
 		<br>
 	</div>
 
@@ -540,7 +540,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#58-62" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Package.RootPackageFileManager.html">Puli\Manager\Api\Package\RootPackageFileManager</a></code> <var>$rootPackageFileManager</var></span>, <span><code><a href="class-Puli.Manager.Api.Package.PackageCollection.html">Puli\Manager\Api\Package\PackageCollection</a></code> <var>$packages</var></span> )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#65-70" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Package.RootPackageFileManager.html">Puli\Manager\Api\Package\RootPackageFileManager</a></code> <var>$rootPackageFileManager</var></span>, <span><code><a href="class-Puli.Manager.Api.Package.PackageCollection.html">Puli\Manager\Api\Package\PackageCollection</a></code> <var>$packages</var></span> )</code>
 
 		<div class="description short">
 			
@@ -558,7 +558,7 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="addInstallerDescriptor" id="_addInstallerDescriptor">
+	<tr data-order="addRootInstallerDescriptor" id="_addRootInstallerDescriptor">
 
 		<td class="attributes"><code>
 			 public 
@@ -569,8 +569,8 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_addInstallerDescriptor">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#64-99" title="Go to source code">addInstallerDescriptor</a>( <span><code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerDescriptor.html">Puli\AssetPlugin\Api\Installer\InstallerDescriptor</a></code> <var>$descriptor</var></span> )</code>
+		<a class="anchor" href="#_addRootInstallerDescriptor">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#72-107" title="Go to source code">addRootInstallerDescriptor</a>( <span><code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerDescriptor.html">Puli\AssetPlugin\Api\Installer\InstallerDescriptor</a></code> <var>$descriptor</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds an installer descriptor.</p>
@@ -591,11 +591,11 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerManager.html#_addInstallerDescriptor">Puli\AssetPlugin\Api\Installer\InstallerManager::addInstallerDescriptor()</a></code></div>
+				<div class="list"><code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerManager.html#_addRootInstallerDescriptor">Puli\AssetPlugin\Api\Installer\InstallerManager::addRootInstallerDescriptor()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="removeInstallerDescriptor" id="_removeInstallerDescriptor">
+	<tr data-order="removeRootInstallerDescriptor" id="_removeRootInstallerDescriptor">
 
 		<td class="attributes"><code>
 			 public 
@@ -606,8 +606,8 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_removeInstallerDescriptor">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#101-136" title="Go to source code">removeInstallerDescriptor</a>( <span>string <var>$name</var></span> )</code>
+		<a class="anchor" href="#_removeRootInstallerDescriptor">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#109-144" title="Go to source code">removeRootInstallerDescriptor</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes the installer descriptor with the given name.</p>
@@ -628,7 +628,285 @@
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerManager.html#_removeInstallerDescriptor">Puli\AssetPlugin\Api\Installer\InstallerManager::removeInstallerDescriptor()</a></code></div>
+				<div class="list"><code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerManager.html#_removeRootInstallerDescriptor">Puli\AssetPlugin\Api\Installer\InstallerManager::removeRootInstallerDescriptor()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeRootInstallerDescriptors" id="_removeRootInstallerDescriptors">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeRootInstallerDescriptors">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#146-172" title="Go to source code">removeRootInstallerDescriptors</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+
+		<div class="description short">
+			<p>Removes all installer descriptors matching the given expression.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes all installer descriptors matching the given expression.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerManager.html#_removeRootInstallerDescriptors">Puli\AssetPlugin\Api\Installer\InstallerManager::removeRootInstallerDescriptors()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearRootInstallerDescriptors" id="_clearRootInstallerDescriptors">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearRootInstallerDescriptors">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#174-180" title="Go to source code">clearRootInstallerDescriptors</a>( )</code>
+
+		<div class="description short">
+			<p>Removes all installer descriptors.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes all installer descriptors.</p>
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerManager.html#_clearRootInstallerDescriptors">Puli\AssetPlugin\Api\Installer\InstallerManager::clearRootInstallerDescriptors()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRootInstallerDescriptor" id="_getRootInstallerDescriptor">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerDescriptor.html">Puli\AssetPlugin\Api\Installer\InstallerDescriptor</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRootInstallerDescriptor">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#182-194" title="Go to source code">getRootInstallerDescriptor</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns the installer descriptor with the given name from the root
+package.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the installer descriptor with the given name from the root
+package.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>The installer name.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerDescriptor.html">Puli\AssetPlugin\Api\Installer\InstallerDescriptor</a></code><br>The installer descriptor.
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerManager.html#_getRootInstallerDescriptor">Puli\AssetPlugin\Api\Installer\InstallerManager::getRootInstallerDescriptor()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRootInstallerDescriptors" id="_getRootInstallerDescriptors">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerDescriptor.html">Puli\AssetPlugin\Api\Installer\InstallerDescriptor</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRootInstallerDescriptors">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#196-204" title="Go to source code">getRootInstallerDescriptors</a>( )</code>
+
+		<div class="description short">
+			<p>Returns all installer descriptors in the root package.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all installer descriptors in the root package.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerDescriptor.html">Puli\AssetPlugin\Api\Installer\InstallerDescriptor</a>[]</code><br>The installer descriptors.
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerManager.html#_getRootInstallerDescriptors">Puli\AssetPlugin\Api\Installer\InstallerManager::getRootInstallerDescriptors()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="findRootInstallerDescriptors" id="_findRootInstallerDescriptors">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerDescriptor.html">Puli\AssetPlugin\Api\Installer\InstallerDescriptor</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_findRootInstallerDescriptors">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#206-222" title="Go to source code">findRootInstallerDescriptors</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns all installer descriptors in the root package that match the
+given expression.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all installer descriptors in the root package that match the
+given expression.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerDescriptor.html">Puli\AssetPlugin\Api\Installer\InstallerDescriptor</a>[]</code><br><p>The installer descriptors that match the
+                              expression.</p>
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerManager.html#_findRootInstallerDescriptors">Puli\AssetPlugin\Api\Installer\InstallerManager::findRootInstallerDescriptors()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasRootInstallerDescriptor" id="_hasRootInstallerDescriptor">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasRootInstallerDescriptor">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#224-232" title="Go to source code">hasRootInstallerDescriptor</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns whether the installer descriptor with the given name exists in
+the root package.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether the installer descriptor with the given name exists in
+the root package.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>The installer name.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br><p>Returns <code>true</code> if the installer with the given name
+                exists and <code>false</code> otherwise.</p>
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerManager.html#_hasRootInstallerDescriptor">Puli\AssetPlugin\Api\Installer\InstallerManager::hasRootInstallerDescriptor()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasRootInstallerDescriptors" id="_hasRootInstallerDescriptors">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasRootInstallerDescriptors">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#234-252" title="Go to source code">hasRootInstallerDescriptors</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns whether the root package contains any installer descriptors.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether the root package contains any installer descriptors.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br><p>Returns <code>true</code> if the manager contains installers and
+                <code>false</code> otherwise.</p>
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerManager.html#_hasRootInstallerDescriptors">Puli\AssetPlugin\Api\Installer\InstallerManager::hasRootInstallerDescriptors()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -644,7 +922,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInstallerDescriptor">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#138-150" title="Go to source code">getInstallerDescriptor</a>( <span>string <var>$name</var></span>, <span> <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#254-266" title="Go to source code">getInstallerDescriptor</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the installer descriptor with the given name.</p>
@@ -658,8 +936,6 @@
 				<div class="list"><dl>
 					<dt><var>$name</var></dt>
 					<dd>The installer name.</dd>
-					<dt><var>$packageName</var></dt>
-					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -687,7 +963,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInstallerDescriptors">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#152-160" title="Go to source code">getInstallerDescriptors</a>( )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#268-276" title="Go to source code">getInstallerDescriptors</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all registered installer descriptors.</p>
@@ -711,6 +987,48 @@
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="findInstallerDescriptors" id="_findInstallerDescriptors">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerDescriptor.html">Puli\AssetPlugin\Api\Installer\InstallerDescriptor</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_findInstallerDescriptors">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#278-294" title="Go to source code">findInstallerDescriptors</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns all installer descriptors matching the given expression.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all installer descriptors matching the given expression.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerDescriptor.html">Puli\AssetPlugin\Api\Installer\InstallerDescriptor</a>[]</code><br><p>The installer descriptors that match the
+                              expression.</p>
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.AssetPlugin.Api.Installer.InstallerManager.html#_findInstallerDescriptors">Puli\AssetPlugin\Api\Installer\InstallerManager::findInstallerDescriptors()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="hasInstallerDescriptor" id="_hasInstallerDescriptor">
 
 		<td class="attributes"><code>
@@ -723,7 +1041,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasInstallerDescriptor">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#162-170" title="Go to source code">hasInstallerDescriptor</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#296-304" title="Go to source code">hasInstallerDescriptor</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the installer descriptor with the given name exists.</p>
@@ -765,7 +1083,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasInstallerDescriptors">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#172-180" title="Go to source code">hasInstallerDescriptors</a>( )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html#306-324" title="Go to source code">hasInstallerDescriptors</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the manager contains any installer descriptors.</p>
@@ -775,6 +1093,11 @@
 			<p>Returns whether the manager contains any installer descriptors.</p>
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">

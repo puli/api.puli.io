@@ -522,7 +522,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#16-103" title="Go to source code">Api/Target/InstallTargetManager.php</a>
+			<b>Located at</b> <a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#17-134" title="Go to source code">Api/Target/InstallTargetManager.php</a>
 		<br>
 	</div>
 
@@ -542,7 +542,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addTarget">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#24-35" title="Go to source code">addTarget</a>( <span><code><a href="class-Puli.AssetPlugin.Api.Target.InstallTarget.html">Puli\AssetPlugin\Api\Target\InstallTarget</a></code> <var>$target</var></span> )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#25-36" title="Go to source code">addTarget</a>( <span><code><a href="class-Puli.AssetPlugin.Api.Target.InstallTarget.html">Puli\AssetPlugin\Api\Target\InstallTarget</a></code> <var>$target</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds an install target.</p>
@@ -585,7 +585,7 @@ overwritten.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeTarget">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#37-44" title="Go to source code">removeTarget</a>( <span>string <var>$targetName</var></span> )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#38-45" title="Go to source code">removeTarget</a>( <span>string <var>$targetName</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes an install target.</p>
@@ -610,6 +610,75 @@ overwritten.</p>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="removeTargets" id="_removeTargets">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeTargets">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#47-54" title="Go to source code">removeTargets</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+
+		<div class="description short">
+			<p>Removes all install targets matching the given expression.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes all install targets matching the given expression.</p>
+
+<p>If no matching targets are found, this method does nothing.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearTargets" id="_clearTargets">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearTargets">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#56-61" title="Go to source code">clearTargets</a>( )</code>
+
+		<div class="description short">
+			<p>Removes all install targets.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes all install targets.</p>
+
+<p>If no targets are found, this method does nothing.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="getTarget" id="_getTarget">
 
 		<td class="attributes"><code>
@@ -622,7 +691,7 @@ overwritten.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTarget">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#46-55" title="Go to source code">getTarget</a>( <span>string <var>$targetName</var></span> )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#63-72" title="Go to source code">getTarget</a>( <span>string <var>$targetName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the install target with the given name.</p>
@@ -665,7 +734,7 @@ overwritten.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTargets">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#57-62" title="Go to source code">getTargets</a>( )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#74-79" title="Go to source code">getTargets</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all install targets.</p>
@@ -675,6 +744,45 @@ overwritten.</p>
 			<p>Returns all install targets.</p>
 
 
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.AssetPlugin.Api.Target.InstallTargetCollection.html">Puli\AssetPlugin\Api\Target\InstallTargetCollection</a></code><br>The install targets.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="findTargets" id="_findTargets">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.AssetPlugin.Api.Target.InstallTargetCollection.html">Puli\AssetPlugin\Api\Target\InstallTargetCollection</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_findTargets">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#81-88" title="Go to source code">findTargets</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns all install targets matching the given expression.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all install targets matching the given expression.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
@@ -699,7 +807,7 @@ overwritten.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasTarget">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#64-71" title="Go to source code">hasTarget</a>( <span>string <var>$targetName</var></span> )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#90-97" title="Go to source code">hasTarget</a>( <span>string <var>$targetName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether an install target exists.</p>
@@ -738,7 +846,7 @@ overwritten.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasTargets">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#73-79" title="Go to source code">hasTargets</a>( )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#99-110" title="Go to source code">hasTargets</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the manager has any targets.</p>
@@ -747,7 +855,15 @@ overwritten.</p>
 		<div class="description detailed hidden">
 			<p>Returns whether the manager has any targets.</p>
 
+<p>You can optionally pass an expression to check whether the manager has
+targets matching that expression.</p>
 
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
@@ -773,7 +889,7 @@ overwritten.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setDefaultTarget">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#81-90" title="Go to source code">setDefaultTarget</a>( <span>string <var>$targetName</var></span> )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#112-121" title="Go to source code">setDefaultTarget</a>( <span>string <var>$targetName</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the default target.</p>
@@ -814,7 +930,7 @@ overwritten.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDefaultTarget">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#92-102" title="Go to source code">getDefaultTarget</a>( )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html#123-133" title="Go to source code">getDefaultTarget</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the default target.</p>

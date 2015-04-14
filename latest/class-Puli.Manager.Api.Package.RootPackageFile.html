@@ -545,7 +545,7 @@ configuration will inherit.</p>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#17-311" title="Go to source code">Api/Package/RootPackageFile.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#17-330" title="Go to source code">Api/Package/RootPackageFile.php</a>
 		<br>
 	</div>
 
@@ -717,40 +717,6 @@ mark one of the packages to override the other one.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getInstallInfos" id="_getInstallInfos">
-
-		<td class="attributes"><code>
-			 public 
-
-			<code><a href="class-Puli.Manager.Api.Package.InstallInfo.html">Puli\Manager\Api\Package\InstallInfo</a>[]</code>
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_getInstallInfos">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#108-117" title="Go to source code">getInstallInfos</a>( )</code>
-
-		<div class="description short">
-			<p>Returns the install infos of all installed packages.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Returns the install infos of all installed packages.</p>
-
-
-
-				<h4>Returns</h4>
-				<div class="list">
-					<code><a href="class-Puli.Manager.Api.Package.InstallInfo.html">Puli\Manager\Api\Package\InstallInfo</a>[]</code><br>The install infos.
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
 	<tr data-order="setInstallInfos" id="_setInstallInfos">
 
 		<td class="attributes"><code>
@@ -763,7 +729,7 @@ mark one of the packages to override the other one.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setInstallInfos">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#119-131" title="Go to source code">setInstallInfos</a>( <span>array <var>$installInfos</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#108-120" title="Go to source code">setInstallInfos</a>( <span>array <var>$installInfos</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the install infos of all installed packages.</p>
@@ -798,7 +764,7 @@ mark one of the packages to override the other one.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addInstallInfo">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#133-141" title="Go to source code">addInstallInfo</a>( <span><code><a href="class-Puli.Manager.Api.Package.InstallInfo.html">Puli\Manager\Api\Package\InstallInfo</a></code> <var>$installInfo</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#122-130" title="Go to source code">addInstallInfo</a>( <span><code><a href="class-Puli.Manager.Api.Package.InstallInfo.html">Puli\Manager\Api\Package\InstallInfo</a></code> <var>$installInfo</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds install info for an installed package.</p>
@@ -833,7 +799,7 @@ mark one of the packages to override the other one.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeInstallInfo">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#143-151" title="Go to source code">removeInstallInfo</a>( <span>string <var>$packageName</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#132-140" title="Go to source code">removeInstallInfo</a>( <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes the install info of an installed package.</p>
@@ -856,6 +822,36 @@ mark one of the packages to override the other one.</p>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="clearInstallInfos" id="_clearInstallInfos">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearInstallInfos">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#142-148" title="Go to source code">clearInstallInfos</a>( )</code>
+
+		<div class="description short">
+			<p>Removes all install infos.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes all install infos.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="getInstallInfo" id="_getInstallInfo">
 
 		<td class="attributes"><code>
@@ -868,7 +864,7 @@ mark one of the packages to override the other one.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInstallInfo">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#153-172" title="Go to source code">getInstallInfo</a>( <span>string <var>$packageName</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#150-169" title="Go to source code">getInstallInfo</a>( <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the install info of an installed package.</p>
@@ -899,6 +895,40 @@ mark one of the packages to override the other one.</p>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="getInstallInfos" id="_getInstallInfos">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.Manager.Api.Package.InstallInfo.html">Puli\Manager\Api\Package\InstallInfo</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInstallInfos">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#171-180" title="Go to source code">getInstallInfos</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the install infos of all installed packages.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the install infos of all installed packages.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.Manager.Api.Package.InstallInfo.html">Puli\Manager\Api\Package\InstallInfo</a>[]</code><br>The install infos.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="hasInstallInfo" id="_hasInstallInfo">
 
 		<td class="attributes"><code>
@@ -911,7 +941,7 @@ mark one of the packages to override the other one.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasInstallInfo">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#174-184" title="Go to source code">hasInstallInfo</a>( <span>string <var>$packageName</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#182-192" title="Go to source code">hasInstallInfo</a>( <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether an install info with a given name exists.</p>
@@ -938,6 +968,41 @@ mark one of the packages to override the other one.</p>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="hasInstallInfos" id="_hasInstallInfos">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasInstallInfos">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#194-203" title="Go to source code">hasInstallInfos</a>( )</code>
+
+		<div class="description short">
+			<p>Returns whether the package file contains any install infos.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether the package file contains any install infos.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br><p>Returns <code>true</code> if the file contains install infos and
+             <code>false</code> otherwise.</p>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="getPluginClasses" id="_getPluginClasses">
 
 		<td class="attributes"><code>
@@ -950,7 +1015,7 @@ mark one of the packages to override the other one.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPluginClasses">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#186-196" title="Go to source code">getPluginClasses</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#205-215" title="Go to source code">getPluginClasses</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the plugin classes.</p>
@@ -988,7 +1053,7 @@ mark one of the packages to override the other one.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setPluginClasses">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#198-222" title="Go to source code">setPluginClasses</a>( <span>array <var>$pluginClasses</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#217-241" title="Go to source code">setPluginClasses</a>( <span>array <var>$pluginClasses</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the plugin classes.</p>
@@ -1039,7 +1104,7 @@ required parameters, an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addPluginClasses">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#224-244" title="Go to source code">addPluginClasses</a>( <span>array <var>$pluginClasses</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#243-263" title="Go to source code">addPluginClasses</a>( <span>array <var>$pluginClasses</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds multiple plugin classes.</p>
@@ -1084,7 +1149,7 @@ required parameters, an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addPluginClass">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#246-264" title="Go to source code">addPluginClass</a>( <span>string <var>$pluginClass</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#265-283" title="Go to source code">addPluginClass</a>( <span>string <var>$pluginClass</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a plugin class.</p>
@@ -1129,7 +1194,7 @@ required parameters, an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removePluginClass">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#266-280" title="Go to source code">removePluginClass</a>( <span>string <var>$pluginClass</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#285-299" title="Go to source code">removePluginClass</a>( <span>string <var>$pluginClass</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a plugin class.</p>
@@ -1170,7 +1235,7 @@ plugin class.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clearPluginClasses">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#282-288" title="Go to source code">clearPluginClasses</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#301-307" title="Go to source code">clearPluginClasses</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all plugin classes.</p>
@@ -1200,7 +1265,7 @@ plugin class.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasPluginClass">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#290-300" title="Go to source code">hasPluginClass</a>( <span>string <var>$pluginClass</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#309-319" title="Go to source code">hasPluginClass</a>( <span>string <var>$pluginClass</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the configuration contains a plugin class.</p>
@@ -1239,7 +1304,7 @@ plugin class.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasPluginClasses">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#302-310" title="Go to source code">hasPluginClasses</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.RootPackageFile.html#321-329" title="Go to source code">hasPluginClasses</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the configuration contains any plugin classes.</p>

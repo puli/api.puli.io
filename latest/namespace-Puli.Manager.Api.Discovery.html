@@ -460,11 +460,11 @@
 
 			<h3>Exceptions</h3>
 			<ul>
-				<li><a href="class-Puli.Manager.Api.Discovery.CannotDisableBindingException.html">CannotDisableBindingException</a></li>
-				<li><a href="class-Puli.Manager.Api.Discovery.CannotEnableBindingException.html">CannotEnableBindingException</a></li>
 				<li><a href="class-Puli.Manager.Api.Discovery.DiscoveryNotEmptyException.html">DiscoveryNotEmptyException</a></li>
 				<li><a href="class-Puli.Manager.Api.Discovery.DuplicateBindingException.html">DuplicateBindingException</a></li>
+				<li><a href="class-Puli.Manager.Api.Discovery.DuplicateTypeException.html">DuplicateTypeException</a></li>
 				<li><a href="class-Puli.Manager.Api.Discovery.NoSuchBindingException.html">NoSuchBindingException</a></li>
+				<li><a href="class-Puli.Manager.Api.Discovery.NoSuchTypeException.html">NoSuchTypeException</a></li>
 				<li><a href="class-Puli.Manager.Api.Discovery.TypeNotEnabledException.html">TypeNotEnabledException</a></li>
 			</ul>
 
@@ -532,21 +532,13 @@
 <caption>Interfaces summary</caption>
 <tr>
 	<td class="name"><a href="class-Puli.Manager.Api.Discovery.DiscoveryManager.html">DiscoveryManager</a></td>
-	<td></td>
+	<td>Manages the resource discovery of a Puli project.</td>
 </tr>
 </table>
 
 
 <table class="summary" id="exceptions">
 <caption>Exceptions summary</caption>
-<tr>
-	<td class="name"><a href="class-Puli.Manager.Api.Discovery.CannotDisableBindingException.html">CannotDisableBindingException</a></td>
-	<td>Thrown when a binding cannot be disabled.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-Puli.Manager.Api.Discovery.CannotEnableBindingException.html">CannotEnableBindingException</a></td>
-	<td>Thrown when a binding cannot be enabled.</td>
-</tr>
 <tr>
 	<td class="name"><a href="class-Puli.Manager.Api.Discovery.DiscoveryNotEmptyException.html">DiscoveryNotEmptyException</a></td>
 	<td>Thrown when the resource discovery should have been empty but was not.</td>
@@ -556,8 +548,16 @@
 	<td>Thrown when a duplicate binding is detected.</td>
 </tr>
 <tr>
+	<td class="name"><a href="class-Puli.Manager.Api.Discovery.DuplicateTypeException.html">DuplicateTypeException</a></td>
+	<td>Thrown when a duplicate binding type is detected.</td>
+</tr>
+<tr>
 	<td class="name"><a href="class-Puli.Manager.Api.Discovery.NoSuchBindingException.html">NoSuchBindingException</a></td>
 	<td>Thrown when a binding was not found.</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-Puli.Manager.Api.Discovery.NoSuchTypeException.html">NoSuchTypeException</a></td>
+	<td>Thrown when a binding type was not found.</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-Puli.Manager.Api.Discovery.TypeNotEnabledException.html">TypeNotEnabledException</a></td>
@@ -574,6 +574,6 @@
 </div>
 </div>
 <script src="resources/combined.js?90a9ebc032fe484834129d90a6307c0552eea616"></script>
-<script src="elementlist.js?bff3173bff9a6fc70c5b51cb83c7541494ffa9ab"></script>
+<script src="elementlist.js?3bb9bd7b72aefcf8a938166898c8a9d7c381c40f"></script>
 </body>
 </html>

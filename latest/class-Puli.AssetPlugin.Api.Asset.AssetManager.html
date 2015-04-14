@@ -456,6 +456,7 @@
 
 			<h3>Exceptions</h3>
 			<ul>
+				<li><a href="class-Puli.AssetPlugin.Api.Asset.DuplicateAssetMappingException.html">DuplicateAssetMappingException</a></li>
 				<li><a href="class-Puli.AssetPlugin.Api.Asset.NoSuchAssetMappingException.html">NoSuchAssetMappingException</a></li>
 			</ul>
 
@@ -521,7 +522,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#18-99" title="Go to source code">Api/Asset/AssetManager.php</a>
+			<b>Located at</b> <a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#18-179" title="Go to source code">Api/Asset/AssetManager.php</a>
 		<br>
 	</div>
 
@@ -529,7 +530,7 @@
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="addAssetMapping" id="_addAssetMapping">
+	<tr data-order="addRootAssetMapping" id="_addRootAssetMapping">
 
 		<td class="attributes"><code>
 			 public 
@@ -540,8 +541,8 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_addAssetMapping">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#32-42" title="Go to source code">addAssetMapping</a>( <span><code><a href="class-Puli.AssetPlugin.Api.Asset.AssetMapping.html">Puli\AssetPlugin\Api\Asset\AssetMapping</a></code> <var>$mapping</var></span>, <span>integer <var>$flags</var> = <span class="php-num">0</span></span> )</code>
+		<a class="anchor" href="#_addRootAssetMapping">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#36-50" title="Go to source code">addRootAssetMapping</a>( <span><code><a href="class-Puli.AssetPlugin.Api.Asset.AssetMapping.html">Puli\AssetPlugin\Api\Asset\AssetMapping</a></code> <var>$mapping</var></span>, <span>integer <var>$flags</var> = <span class="php-num">0</span></span> )</code>
 
 		<div class="description short">
 			<p>Adds an asset mapping to the repository.</p>
@@ -549,6 +550,8 @@
 
 		<div class="description detailed hidden">
 			<p>Adds an asset mapping to the repository.</p>
+
+<p>The mapping is added to the root package.</p>
 
 
 				<h4>Parameters</h4>
@@ -564,7 +567,9 @@
 				<h4>Throws</h4>
 				<div class="list">
 					<code><a href="class-Puli.AssetPlugin.Api.Target.NoSuchTargetException.html">Puli\AssetPlugin\Api\Target\NoSuchTargetException</a></code><br><p>If the target referred to by the mapping
-                              does not exist.</p>
+                              does not exist.</p><br>
+					<code><a href="class-Puli.AssetPlugin.Api.Asset.DuplicateAssetMappingException.html">Puli\AssetPlugin\Api\Asset\DuplicateAssetMappingException</a></code><br><p>If a mapping with the same UUID
+                                       exists already.</p>
 				</div>
 
 
@@ -572,7 +577,7 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="removeAssetMapping" id="_removeAssetMapping">
+	<tr data-order="removeRootAssetMapping" id="_removeRootAssetMapping">
 
 		<td class="attributes"><code>
 			 public 
@@ -583,8 +588,8 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_removeAssetMapping">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#44-49" title="Go to source code">removeAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<a class="anchor" href="#_removeRootAssetMapping">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#52-60" title="Go to source code">removeRootAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes an asset mapping from the repository.</p>
@@ -593,6 +598,9 @@
 		<div class="description detailed hidden">
 			<p>Removes an asset mapping from the repository.</p>
 
+<p>The mapping is removed from the root package. If the UUID is not found,
+this method does nothing.</p>
+
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
@@ -600,6 +608,278 @@
 					<dd>The UUID of the mapping.</dd>
 				</dl></div>
 
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeRootAssetMappings" id="_removeRootAssetMappings">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeRootAssetMappings">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#62-70" title="Go to source code">removeRootAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+
+		<div class="description short">
+			<p>Removes all asset mappings matching the given expression.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes all asset mappings matching the given expression.</p>
+
+<p>The mappings are removed from the root package. If no matching mappings
+are found, this method does nothing.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearRootAssetMappings" id="_clearRootAssetMappings">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearRootAssetMappings">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#72-78" title="Go to source code">clearRootAssetMappings</a>( )</code>
+
+		<div class="description short">
+			<p>Removes all asset mappings from the repository.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes all asset mappings from the repository.</p>
+
+<p>The mappings are removed from the root package. If no matching mappings
+are found, this method does nothing.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRootAssetMapping" id="_getRootAssetMapping">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.AssetPlugin.Api.Asset.AssetMapping.html">Puli\AssetPlugin\Api\Asset\AssetMapping</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRootAssetMapping">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#80-90" title="Go to source code">getRootAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns the asset mapping for a web path from the root package.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the asset mapping for a web path from the root package.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uuid</var></dt>
+					<dd>The UUID of the mapping.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.AssetPlugin.Api.Asset.AssetMapping.html">Puli\AssetPlugin\Api\Asset\AssetMapping</a></code><br>The corresponding asset mapping.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Puli.AssetPlugin.Api.Asset.NoSuchAssetMappingException.html">Puli\AssetPlugin\Api\Asset\NoSuchAssetMappingException</a></code><br><p>If the web path is not mapped in the
+                                    root package.</p>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRootAssetMappings" id="_getRootAssetMappings">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.AssetPlugin.Api.Asset.AssetMapping.html">Puli\AssetPlugin\Api\Asset\AssetMapping</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRootAssetMappings">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#92-97" title="Go to source code">getRootAssetMappings</a>( )</code>
+
+		<div class="description short">
+			<p>Returns all asset mappings in the root package.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all asset mappings in the root package.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.AssetPlugin.Api.Asset.AssetMapping.html">Puli\AssetPlugin\Api\Asset\AssetMapping</a>[]</code><br>The asset mappings.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasRootAssetMapping" id="_hasRootAssetMapping">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasRootAssetMapping">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#99-106" title="Go to source code">hasRootAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns whether a web path is mapped in the root package.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether a web path is mapped in the root package.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uuid</var></dt>
+					<dd>The UUID of the mapping.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>Returns <code>true</code> if the web path is mapped in the root package.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="findRootAssetMappings" id="_findRootAssetMappings">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.AssetPlugin.Api.Asset.AssetMapping.html">Puli\AssetPlugin\Api\Asset\AssetMapping</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_findRootAssetMappings">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#108-116" title="Go to source code">findRootAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns all asset mappings in the root package matching the given
+expression.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all asset mappings in the root package matching the given
+expression.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.AssetPlugin.Api.Asset.AssetMapping.html">Puli\AssetPlugin\Api\Asset\AssetMapping</a>[]</code><br>The asset mappings matching the expression.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasRootAssetMappings" id="_hasRootAssetMappings">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasRootAssetMappings">#</a>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#118-129" title="Go to source code">hasRootAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns whether any web paths are mapped in the root package.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether any web paths are mapped in the root package.</p>
+
+<p>You can optionally pass an expression to check whether the manager has
+mappings matching that expression.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br><p>Returns <code>true</code> if any web paths are mapped in the root
+                     package.</p>
+				</div>
 
 
 
@@ -619,7 +899,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAssetMapping">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#51-60" title="Go to source code">getAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#131-140" title="Go to source code">getAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the asset mapping for a web path.</p>
@@ -662,7 +942,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAssetMappings">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#62-67" title="Go to source code">getAssetMappings</a>( )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#142-147" title="Go to source code">getAssetMappings</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all asset mappings.</p>
@@ -696,7 +976,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_findAssetMappings">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#69-76" title="Go to source code">findAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#149-156" title="Go to source code">findAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns all asset mappings matching the given expression.</p>
@@ -735,7 +1015,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasAssetMapping">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#78-85" title="Go to source code">hasAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#158-165" title="Go to source code">hasAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether a web path is mapped.</p>
@@ -774,17 +1054,17 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasAssetMappings">#</a>
-		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#87-97" title="Go to source code">hasAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#167-177" title="Go to source code">hasAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
-			<p>Returns whether a web path is mapped.</p>
+			<p>Returns whether any web paths are mapped.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Returns whether a web path is mapped.</p>
+			<p>Returns whether any web paths are mapped.</p>
 
-<p>You can optionally pass ane expression to check whether the manager has
-bindings matching that expression.</p>
+<p>You can optionally pass an expression to check whether the manager has
+mappings matching that expression.</p>
 
 
 				<h4>Parameters</h4>
@@ -795,7 +1075,7 @@ bindings matching that expression.</p>
 
 				<h4>Returns</h4>
 				<div class="list">
-					boolean<br>Returns <code>true</code> if the web path is mapped.
+					boolean<br>Returns <code>true</code> if any web paths are mapped.
 				</div>
 
 
@@ -815,29 +1095,51 @@ bindings matching that expression.</p>
 
 	<table class="summary constants" id="constants">
 	<caption>Constants summary</caption>
-	<tr data-order="NO_TARGET_CHECK" id="NO_TARGET_CHECK">
+	<tr data-order="OVERRIDE" id="OVERRIDE">
 
 		<td class="attributes"><code>integer</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#26-30" title="Go to source code"><b>NO_TARGET_CHECK</b></a>
+				<a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#26-29" title="Go to source code"><b>OVERRIDE</b></a>
 			</code>
 
 			<div class="description short">
-				<p>Flag: Don't check whether the install target exists in
-<code><a href="class-Puli.AssetPlugin.Api.Asset.AssetManager.html#_addAssetMapping">Puli\AssetPlugin\Api\Asset\AssetManager::addAssetMapping()</a></code>.</p>
+				<p>Flag: Override existing asset mappings in addAssetMapping().</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>Flag: Don't check whether the install target exists in
-<code><a href="class-Puli.AssetPlugin.Api.Asset.AssetManager.html#_addAssetMapping">Puli\AssetPlugin\Api\Asset\AssetManager::addAssetMapping()</a></code>.</p>
+				<p>Flag: Override existing asset mappings in addAssetMapping().</p>
 
 			</div>
 		</td>
 		<td class="value">
 			<div>
-				<a href="#NO_TARGET_CHECK" class="anchor">#</a>
+				<a href="#OVERRIDE" class="anchor">#</a>
 				<code><span class="php-num">1</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="IGNORE_TARGET_NOT_FOUND" id="IGNORE_TARGET_NOT_FOUND">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Puli.AssetPlugin.Api.Asset.AssetManager.html#31-34" title="Go to source code"><b>IGNORE_TARGET_NOT_FOUND</b></a>
+			</code>
+
+			<div class="description short">
+				<p>Flag: Ignore if the target does not exist in addAssetMapping().</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Flag: Ignore if the target does not exist in addAssetMapping().</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#IGNORE_TARGET_NOT_FOUND" class="anchor">#</a>
+				<code><span class="php-num">2</span></code>
 			</div>
 		</td>
 	</tr>
