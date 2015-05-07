@@ -7,54 +7,6 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/namespace-Puli.AssetPlugin.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.AssetPlugin.Api.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.AssetPlugin.Api.Asset.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.AssetPlugin.Api.Factory.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.AssetPlugin.Api.Installation.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.AssetPlugin.Api.Installer.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.AssetPlugin.Api.Installer.Validation.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.AssetPlugin.Api.Target.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.AssetPlugin.Api.UrlGenerator.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.AssetPlugin.Asset.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.AssetPlugin.Console.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.AssetPlugin.Factory.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.AssetPlugin.Installation.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.AssetPlugin.Installer.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.AssetPlugin.Target.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.AssetPlugin.UrlGenerator.html</loc>
-</url>
-<url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Discovery.html</loc>
 </url>
 <url>
@@ -82,6 +34,9 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Asset.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Config.html</loc>
 </url>
 <url>
@@ -100,6 +55,15 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Factory.Generator.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Installation.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Installer.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Installer.Validation.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Package.html</loc>
 </url>
 <url>
@@ -109,7 +73,13 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Repository.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Server.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Assert.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Asset.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Config.html</loc>
@@ -142,6 +112,12 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Factory.Generator.Repository.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Installation.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Installer.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Package.html</loc>
 </url>
 <url>
@@ -155,6 +131,9 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Repository.Mapping.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Server.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Transaction.html</loc>
@@ -214,6 +193,12 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.TwigExtension.TokenParser.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/namespace-Puli.UrlGenerator.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.UrlGenerator.Api.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/namespace-Webmozart.html</loc>
 </url>
 <url>
@@ -227,69 +212,6 @@
 </url>
 
 
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Asset.AssetMapping.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.AssetPlugin.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Installation.InstallationParams.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Installer.InstallerDescriptor.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Installer.InstallerParameter.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Installer.Validation.ConstraintViolation.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Installer.Validation.InstallerParameterValidator.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Target.InstallTarget.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Target.InstallTargetCollection.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Asset.DiscoveryAssetManager.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Console.AssetCommandHandler.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Console.InstallerCommandHandler.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Console.TargetCommandHandler.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Console.WebConsoleConfig.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Factory.CreateUrlGeneratorMethodGenerator.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Installation.InstallationManagerImpl.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Installer.CopyInstaller.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Installer.PackageFileInstallerManager.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Installer.SymlinkInstaller.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Target.PackageFileInstallTargetManager.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.UrlGenerator.DiscoveryUrlGenerator.html</loc>
-</url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Discovery.AbstractEditableDiscovery.html</loc>
 </url>
@@ -324,6 +246,9 @@
 	<loc>http://api.puli.io/latest/class-Puli.Discovery.Validation.SimpleParameterValidator.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Asset.AssetMapping.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Config.Config.html</loc>
 </url>
 <url>
@@ -352,6 +277,21 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Event.GenerateFactoryEvent.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Installation.InstallationParams.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Installer.InstallerDescriptor.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Installer.InstallerParameter.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Installer.Validation.ConstraintViolation.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Installer.Validation.InstallerParameterValidator.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Package.InstallInfo.html</loc>
@@ -402,10 +342,19 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Repository.PathMappingState.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Server.Server.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Server.ServerCollection.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Assert.Assert.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Config.AbstractConfigFileManager.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Asset.DiscoveryAssetManager.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Config.AbstractConfigManager.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Config.ConfigFileManagerImpl.html</loc>
@@ -528,6 +477,18 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Factory.Generator.Repository.FilesystemRepositoryGenerator.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Installation.InstallationManagerImpl.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Installer.CopyInstaller.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Installer.PackageFileInstallerManager.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Installer.SymlinkInstaller.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Package.PackageFileStorage.html</loc>
 </url>
 <url>
@@ -583,6 +544,9 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Repository.RepositoryManagerImpl.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Server.PackageFileServerManager.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Transaction.InterceptedOperation.html</loc>
@@ -687,6 +651,9 @@
 	<loc>http://api.puli.io/latest/class-Puli.TwigExtension.TokenParser.LoadedByPuliTokenParser.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.UrlGenerator.DiscoveryUrlGenerator.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.ArrayStore.html</loc>
 </url>
 <url>
@@ -714,27 +681,6 @@
 	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Util.Serializer.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Asset.AssetManager.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Factory.UrlGeneratorFactory.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Installation.InstallationManager.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Installer.InstallerManager.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Installer.ResourceInstaller.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Target.InstallTargetManager.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.UrlGenerator.AssetUrlGenerator.html</loc>
-</url>
-<url>
 	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Binding.ResourceBinding.html</loc>
 </url>
 <url>
@@ -750,6 +696,9 @@
 	<loc>http://api.puli.io/latest/class-Puli.Factory.PuliFactory.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Asset.AssetManager.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Config.ConfigFileManager.html</loc>
 </url>
 <url>
@@ -757,6 +706,9 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Config.ConfigFileWriter.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Config.ConfigManager.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Discovery.DiscoveryManager.html</loc>
@@ -772,6 +724,15 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Factory.Generator.ServiceGenerator.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Installation.InstallationManager.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Installer.InstallerManager.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Installer.ResourceInstaller.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Package.PackageFileReader.html</loc>
@@ -790,6 +751,9 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Repository.RepositoryManager.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Server.ServerManager.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Transaction.AtomicOperation.html</loc>
@@ -831,28 +795,13 @@
 	<loc>http://api.puli.io/latest/class-Puli.TwigExtension.PathResolver.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.UrlGenerator.Api.UrlGenerator.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.UrlGenerator.Api.UrlGeneratorFactory.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Api.KeyValueStore.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Asset.DuplicateAssetMappingException.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Asset.NoSuchAssetMappingException.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Installation.NotInstallableException.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Installer.NoSuchInstallerException.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Installer.NoSuchParameterException.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.Target.NoSuchTargetException.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.AssetPlugin.Api.UrlGenerator.CannotGenerateUrlException.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Binding.MissingParameterException.html</loc>
@@ -868,6 +817,12 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.AlreadyLoadedException.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Asset.DuplicateAssetMappingException.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Asset.NoSuchAssetMappingException.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Config.NoSuchConfigKeyException.html</loc>
@@ -892,6 +847,15 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.FileNotFoundException.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Installation.NotInstallableException.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Installer.NoSuchInstallerException.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Installer.NoSuchParameterException.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.InvalidConfigException.html</loc>
@@ -927,6 +891,9 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Repository.RepositoryNotEmptyException.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Server.NoSuchServerException.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Conflict.CyclicDependencyException.html</loc>
 </url>
 <url>
@@ -952,6 +919,9 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Repository.Uri.InvalidUriException.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.UrlGenerator.Api.CannotGenerateUrlException.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Api.InvalidKeyException.html</loc>

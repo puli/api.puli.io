@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Puli\Manager\Server\PackageFileServerManager | Puli API</title>
+
+	<link rel="stylesheet" href="resources/style.css?95ada9fb523b6ab4fd1c47bb375f713f2cc65542">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-8282807-3"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Puli.html">
+						Puli<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.html">
+						Discovery<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Validation.html">
+						Validation					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Discovery.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Discovery.Validation.html">
+						Validation					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Factory.html">
+						Factory					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-Puli.Manager.html">
+						Manager<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Asset.html">
+						Asset					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Environment.html">
+						Environment					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Event.html">
+						Event					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Factory.html">
+						Factory<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Factory.Generator.html">
+						Generator					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Installation.html">
+						Installation					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Installer.html">
+						Installer<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Installer.Validation.html">
+						Validation					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Package.html">
+						Package					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Php.html">
+						Php					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Repository.html">
+						Repository					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Server.html">
+						Server					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Assert.html">
+						Assert					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Asset.html">
+						Asset					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Conflict.html">
+						Conflict					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Discovery.html">
+						Discovery<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Discovery.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Discovery.Type.html">
+						Type					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Factory.html">
+						Factory<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Factory.Generator.html">
+						Generator<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Factory.Generator.Discovery.html">
+						Discovery					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Factory.Generator.KeyValueStore.html">
+						KeyValueStore					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Factory.Generator.Repository.html">
+						Repository					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Installation.html">
+						Installation					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Installer.html">
+						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Package.html">
+						Package					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Php.html">
+						Php					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Repository.html">
+						Repository<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Repository.Iterator.html">
+						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Repository.Mapping.html">
+						Mapping					</a>
+
+						</li>
+							</ul></li>
+				<li class="active">
+					<a href="namespace-Puli.Manager.Server.html">
+						Server					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Transaction.html">
+						Transaction					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Util.html">
+						Util					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Repository.html">
+						Repository<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Api.Resource.html">
+						Resource					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.html">
+						Resource<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Collection.html">
+						Collection					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Iterator.html">
+						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Metadata.html">
+						Metadata					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Repository.StreamWrapper.html">
+						StreamWrapper					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Uri.html">
+						Uri					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.SymfonyBridge.html">
+						SymfonyBridge<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.SymfonyBridge.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.SymfonyBridge.HttpKernel.html">
+						HttpKernel					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.TwigExtension.html">
+						TwigExtension<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.TwigExtension.CacheWarmer.html">
+						CacheWarmer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.TwigExtension.Node.html">
+						Node					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.TwigExtension.NodeVisitor.html">
+						NodeVisitor					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.TwigExtension.TokenParser.html">
+						TokenParser					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.UrlGenerator.html">
+						UrlGenerator<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.UrlGenerator.Api.html">
+						Api					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
+					<a href="namespace-Webmozart.html">
+						Webmozart<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.html">
+						KeyValueStore<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.Api.html">
+						Api					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Webmozart.KeyValueStore.Util.html">
+						Util					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Puli.Manager.Server.PackageFileServerManager.html">PackageFileServerManager</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Puli.Manager.Server.html" title="Summary of Puli\Manager\Server"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class PackageFileServerManager</h1>
+
+
+	<div class="description">
+	<p>A server manager that stores the servers in the package file.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Puli\Manager\Server\PackageFileServerManager</span></b>			
+			 implements 
+				<a href="class-Puli.Manager.Api.Server.ServerManager.html"><span>Puli\Manager\Api\Server\ServerManager</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.Manager.html">Manager</a>\<a href="namespace-Puli.Manager.Server.html">Server</a><br>
+		
+
+				<b>Author:</b>
+				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
+				<b>Since:</b>
+				1.0<br>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Server.PackageFileServerManager.html#27-316" title="Go to source code">Server/PackageFileServerManager.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Puli.Manager.Server.PackageFileServerManager.html#60-64" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Package.RootPackageFileManager.html">Puli\Manager\Api\Package\RootPackageFileManager</a></code> <var>$rootPackageFileManager</var></span>, <span><code><a href="class-Puli.Manager.Api.Installer.InstallerManager.html">Puli\Manager\Api\Installer\InstallerManager</a></code> <var>$installerManager</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addServer" id="_addServer">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addServer">#</a>
+		<code><a href="source-class-Puli.Manager.Server.PackageFileServerManager.html#66-91" title="Go to source code">addServer</a>( <span><code><a href="class-Puli.Manager.Api.Server.Server.html">Puli\Manager\Api\Server\Server</a></code> <var>$server</var></span> )</code>
+
+		<div class="description short">
+			<p>Adds a server.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adds a server.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$server</var></dt>
+					<dd>The server to add.</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Puli.Manager.Api.Installer.NoSuchInstallerException.html">Puli\Manager\Api\Installer\NoSuchInstallerException</a></code><br><p>If the installer referred to by the
+                                 server does not exist.</p>
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Server.ServerManager.html#_addServer">Puli\Manager\Api\Server\ServerManager::addServer()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeServer" id="_removeServer">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeServer">#</a>
+		<code><a href="source-class-Puli.Manager.Server.PackageFileServerManager.html#93-99" title="Go to source code">removeServer</a>( <span>string <var>$serverName</var></span> )</code>
+
+		<div class="description short">
+			<p>Removes a server.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes a server.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$serverName</var></dt>
+					<dd>The name of the server.</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Server.ServerManager.html#_removeServer">Puli\Manager\Api\Server\ServerManager::removeServer()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeServers" id="_removeServers">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeServers">#</a>
+		<code><a href="source-class-Puli.Manager.Server.PackageFileServerManager.html#101-132" title="Go to source code">removeServers</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+
+		<div class="description short">
+			<p>Removes all servers matching the given expression.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes all servers matching the given expression.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Server.ServerManager.html#_removeServers">Puli\Manager\Api\Server\ServerManager::removeServers()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearServers" id="_clearServers">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearServers">#</a>
+		<code><a href="source-class-Puli.Manager.Server.PackageFileServerManager.html#134-140" title="Go to source code">clearServers</a>( )</code>
+
+		<div class="description short">
+			<p>Removes all servers.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes all servers.</p>
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Server.ServerManager.html#_clearServers">Puli\Manager\Api\Server\ServerManager::clearServers()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getServer" id="_getServer">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.Manager.Api.Server.Server.html">Puli\Manager\Api\Server\Server</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getServer">#</a>
+		<code><a href="source-class-Puli.Manager.Server.PackageFileServerManager.html#142-150" title="Go to source code">getServer</a>( <span>string <var>$serverName</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns the server with the given name.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the server with the given name.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$serverName</var></dt>
+					<dd>The name of the server.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.Manager.Api.Server.Server.html">Puli\Manager\Api\Server\Server</a></code><br>The server.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					NoSuchServerException<br>If the server does not exist.
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Server.ServerManager.html#_getServer">Puli\Manager\Api\Server\ServerManager::getServer()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getServers" id="_getServers">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.Manager.Api.Server.ServerCollection.html">Puli\Manager\Api\Server\ServerCollection</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getServers">#</a>
+		<code><a href="source-class-Puli.Manager.Server.PackageFileServerManager.html#152-160" title="Go to source code">getServers</a>( )</code>
+
+		<div class="description short">
+			<p>Returns all servers.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all servers.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.Manager.Api.Server.ServerCollection.html">Puli\Manager\Api\Server\ServerCollection</a></code><br>The servers.
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Server.ServerManager.html#_getServers">Puli\Manager\Api\Server\ServerManager::getServers()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="findServers" id="_findServers">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.Manager.Api.Server.ServerCollection.html">Puli\Manager\Api\Server\ServerCollection</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_findServers">#</a>
+		<code><a href="source-class-Puli.Manager.Server.PackageFileServerManager.html#162-178" title="Go to source code">findServers</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns all servers matching the given expression.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all servers matching the given expression.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.Manager.Api.Server.ServerCollection.html">Puli\Manager\Api\Server\ServerCollection</a></code><br>The servers.
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Server.ServerManager.html#_findServers">Puli\Manager\Api\Server\ServerManager::findServers()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasServer" id="_hasServer">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasServer">#</a>
+		<code><a href="source-class-Puli.Manager.Server.PackageFileServerManager.html#180-188" title="Go to source code">hasServer</a>( <span>string <var>$serverName</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns whether a server exists.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether a server exists.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$serverName</var></dt>
+					<dd>The name of the server.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>Returns <code>true</code> if the server exists and <code>false</code> otherwise.
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Server.ServerManager.html#_hasServer">Puli\Manager\Api\Server\ServerManager::hasServer()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasServers" id="_hasServers">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasServers">#</a>
+		<code><a href="source-class-Puli.Manager.Server.PackageFileServerManager.html#190-208" title="Go to source code">hasServers</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns whether the manager has any servers.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether the manager has any servers.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$expr</var></dt>
+					<dd>The search criteria.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br><p>Returns <code>true</code> if the manager has servers and <code>false</code>
+             otherwise.</p>
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Server.ServerManager.html#_hasServers">Puli\Manager\Api\Server\ServerManager::hasServers()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDefaultServer" id="_setDefaultServer">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDefaultServer">#</a>
+		<code><a href="source-class-Puli.Manager.Server.PackageFileServerManager.html#210-220" title="Go to source code">setDefaultServer</a>( <span>string <var>$serverName</var></span> )</code>
+
+		<div class="description short">
+			<p>Sets the default server.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets the default server.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$serverName</var></dt>
+					<dd>The name of the default server.</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					NoSuchServerException<br>If the server does not exist.
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Server.ServerManager.html#_setDefaultServer">Puli\Manager\Api\Server\ServerManager::setDefaultServer()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDefaultServer" id="_getDefaultServer">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.Manager.Api.Server.Server.html">Puli\Manager\Api\Server\Server</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDefaultServer">#</a>
+		<code><a href="source-class-Puli.Manager.Server.PackageFileServerManager.html#222-230" title="Go to source code">getDefaultServer</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the default server.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the default server.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.Manager.Api.Server.Server.html">Puli\Manager\Api\Server\Server</a></code><br>The default server.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					NoSuchServerException<br>If the collection is empty.
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Server.ServerManager.html#_getDefaultServer">Puli\Manager\Api\Server\ServerManager::getDefaultServer()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="SERVERS_KEY" id="SERVERS_KEY">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Puli.Manager.Server.PackageFileServerManager.html#35-38" title="Go to source code"><b>SERVERS_KEY</b></a>
+			</code>
+
+			<div class="description short">
+				<p>The extra key that stores the server data.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The extra key that stores the server data.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#SERVERS_KEY" class="anchor">#</a>
+				<code><span class="php-quote">'servers'</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Puli API API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

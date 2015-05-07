@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4008670458d29a0f69fa2bfa9fbfa36e",
+    "hash": "e09b79442b484cc7bcf3e75d484f65a5",
     "packages": [
         {
             "name": "andrewsville/php-token-reflection",
@@ -1567,60 +1567,6 @@
             "time": "2012-12-21 11:40:51"
         },
         {
-            "name": "puli/asset-plugin",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/puli/asset-plugin.git",
-                "reference": "cd9eae541cbe6b3eb273eecc062efcffae2f2720"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/puli/asset-plugin/zipball/cd9eae541cbe6b3eb273eecc062efcffae2f2720",
-                "reference": "cd9eae541cbe6b3eb273eecc062efcffae2f2720",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.9",
-                "puli/manager": "~1.0",
-                "puli/repository": "1.0.*"
-            },
-            "require-dev": {
-                "puli/cli": "~1.0",
-                "symfony/filesystem": "~2.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Puli\\AssetPlugin\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bernhard Schussek",
-                    "email": "bschussek@gmail.com"
-                }
-            ],
-            "description": "A Puli plugin for managing web assets.",
-            "homepage": "http://puli.io",
-            "keywords": [
-                "asset",
-                "puli",
-                "resource",
-                "web"
-            ],
-            "time": "2015-04-13 15:23:34"
-        },
-        {
             "name": "puli/discovery",
             "version": "dev-master",
             "source": {
@@ -1715,16 +1661,16 @@
         },
         {
             "name": "puli/manager",
-            "version": "1.0.0-beta4",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/puli/manager.git",
-                "reference": "de6c51848cb93c4c55376e06cb3e5b49647bb98c"
+                "reference": "ef6e1d86bb9998bc9029db2f6038f27a0d110fb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/puli/manager/zipball/de6c51848cb93c4c55376e06cb3e5b49647bb98c",
-                "reference": "de6c51848cb93c4c55376e06cb3e5b49647bb98c",
+                "url": "https://api.github.com/repos/puli/manager/zipball/ef6e1d86bb9998bc9029db2f6038f27a0d110fb7",
+                "reference": "ef6e1d86bb9998bc9029db2f6038f27a0d110fb7",
                 "shasum": ""
             },
             "require": {
@@ -1732,8 +1678,9 @@
                 "psr/log": "~1.0",
                 "puli/discovery": "~1.0",
                 "puli/factory": "~1.0",
-                "puli/repository": "~1.0",
-                "rhumsaa/uuid": "~2.8",
+                "puli/repository": "1.0.*",
+                "puli/url-generator": "~1.0",
+                "ramsey/uuid": "~2.8",
                 "symfony/event-dispatcher": "~2.3",
                 "symfony/filesystem": "~2.3",
                 "webmozart/assert": "~1.0",
@@ -1769,7 +1716,7 @@
             ],
             "description": "Generates Puli repositories from configured packages.",
             "homepage": "http://puli.io",
-            "time": "2015-04-13 15:07:06"
+            "time": "2015-05-06 15:21:07"
         },
         {
             "name": "puli/repository",
@@ -1920,7 +1867,62 @@
             "time": "2015-04-13 15:27:54"
         },
         {
-            "name": "rhumsaa/uuid",
+            "name": "puli/url-generator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/puli/url-generator.git",
+                "reference": "60084090df0e549fc452be8e06d800126809318e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/puli/url-generator/zipball/60084090df0e549fc452be8e06d800126809318e",
+                "reference": "60084090df0e549fc452be8e06d800126809318e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "puli/discovery": "~1.0",
+                "puli/repository": "1.0.*",
+                "webmozart/glob": "~2.0"
+            },
+            "require-dev": {
+                "puli/cli": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Puli\\UrlGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "Generates URLs for public Puli resources.",
+            "homepage": "http://puli.io",
+            "keywords": [
+                "asset",
+                "public",
+                "puli",
+                "resource",
+                "url"
+            ],
+            "time": "2015-05-05 13:44:59"
+        },
+        {
+            "name": "ramsey/uuid",
             "version": "2.8.0",
             "source": {
                 "type": "git",
@@ -2949,9 +2951,9 @@
     "stability-flags": {
         "puli/repository": 20,
         "puli/discovery": 20,
+        "puli/url-generator": 20,
         "puli/factory": 20,
         "puli/manager": 20,
-        "puli/asset-plugin": 20,
         "puli/symfony-bridge": 20,
         "puli/twig-extension": 20,
         "webmozart/assert": 20,

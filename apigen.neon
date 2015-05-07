@@ -1,9 +1,9 @@
 source:
     - vendor/puli/repository/src
     - vendor/puli/discovery/src
+    - vendor/puli/url-generator/src
     - vendor/puli/factory/src
     - vendor/puli/manager/src
-    - vendor/puli/asset-plugin/src
     - vendor/puli/symfony-bridge/src
     - vendor/puli/twig-extension/src
     - vendor/webmozart/key-value-store/src
