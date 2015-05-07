@@ -497,12 +497,12 @@
 	<p>A discovery that supports the addition and removal of bindings and types.</p>
 
 <p>Binding types have a name and optionally one or more parameters. Binding
-types can be defined with the define() method:</p>
+types can be defined with the <code><a href="class-Puli.Discovery.Api.EditableDiscovery.html#_defineType">Puli\Discovery\Api\EditableDiscovery::defineType()</a></code> method:</p>
 
 <pre><span class="php-keyword1">use</span> Puli\Discovery\Api\Binding\BindingParameter;
 <span class="php-keyword1">use</span> Puli\Discovery\Api\Binding\BindingType;
 
-<span class="php-var">$discovery</span>-&gt;<span class="php-keyword2">define</span>(<span class="php-keyword1">new</span> BindingType(<span class="php-quote">'acme/xliff-messages'</span>, <span class="php-keyword1">array</span>( <span class="php-keyword1">new</span> BindingParameter(<span class="php-quote">'translationDomain'</span>, <span class="php-keyword1">null</span>, <span class="php-quote">'messages'</span>),
+<span class="php-var">$discovery</span>-&gt;defineType(<span class="php-keyword1">new</span> BindingType(<span class="php-quote">'acme/xliff-messages'</span>, <span class="php-keyword1">array</span>( <span class="php-keyword1">new</span> BindingParameter(<span class="php-quote">'translationDomain'</span>, <span class="php-keyword1">null</span>, <span class="php-quote">'messages'</span>),
 ));</pre>
 
 <p>Resources can be bound to these types with the <code><a href="class-Puli.Discovery.Api.EditableDiscovery.html#_bind">Puli\Discovery\Api\EditableDiscovery::bind()</a></code> method:</p>
@@ -695,7 +695,7 @@ need to construct an instance of <code><a href="class-Puli.Discovery.Api.Binding
 <pre><span class="php-keyword1">use</span> Puli\Discovery\Api\Binding\BindingParameter;
 <span class="php-keyword1">use</span> Puli\Discovery\Api\Binding\BindingType;
 
-<span class="php-var">$binder</span>-&gt;<span class="php-keyword2">define</span>(<span class="php-keyword1">new</span> BindingType(<span class="php-quote">'acme/xliff-message'</span>, <span class="php-keyword1">array</span>( <span class="php-keyword1">new</span> BindingParameter(<span class="php-quote">'translationDomain'</span>, <span class="php-keyword1">null</span>, <span class="php-quote">'messages'</span>),
+<span class="php-var">$binder</span>-&gt;defineType(<span class="php-keyword1">new</span> BindingType(<span class="php-quote">'acme/xliff-message'</span>, <span class="php-keyword1">array</span>( <span class="php-keyword1">new</span> BindingParameter(<span class="php-quote">'translationDomain'</span>, <span class="php-keyword1">null</span>, <span class="php-quote">'messages'</span>),
 ));</pre>
 
 

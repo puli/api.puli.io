@@ -957,6 +957,9 @@
 	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Api.InvalidKeyException.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Api.NoSuchKeyException.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Api.ReadException.html</loc>
 </url>
 <url>
