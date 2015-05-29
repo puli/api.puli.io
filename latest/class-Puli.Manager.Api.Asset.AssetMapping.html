@@ -491,7 +491,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Asset.AssetMapping.html#17-124" title="Go to source code">Api/Asset/AssetMapping.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Asset.AssetMapping.html#17-125" title="Go to source code">Api/Asset/AssetMapping.php</a>
 		<br>
 	</div>
 
@@ -511,7 +511,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetMapping.html#65-83" title="Go to source code">__construct</a>( <span>string <var>$glob</var></span>, <span>string <var>$serverName</var></span>, <span>string <var>$publicPath</var></span>, <span>Rhumsaa\Uuid\Uuid <var>$uuid</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetMapping.html#65-84" title="Go to source code">__construct</a>( <span>string <var>$glob</var></span>, <span>string <var>$serverName</var></span>, <span>string <var>$serverPath</var></span>, <span>Rhumsaa\Uuid\Uuid <var>$uuid</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Creates the mapping.</p>
@@ -527,8 +527,9 @@
 					<dd>A glob for resources in the repository.</dd>
 					<dt><var>$serverName</var></dt>
 					<dd>The name of the asset server.</dd>
-					<dt><var>$publicPath</var></dt>
-					<dd>The path of the resource in the document root.</dd>
+					<dt><var>$serverPath</var></dt>
+					<dd><p>The path of the resource in the document root
+                          of the server.</p></dd>
 					<dt><var>$uuid</var></dt>
 					<dd>The UUID of the mapping.</dd>
 				</dl></div>
@@ -552,7 +553,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getUuid">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetMapping.html#85-93" title="Go to source code">getUuid</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetMapping.html#86-94" title="Go to source code">getUuid</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the UUID of the mapping.</p>
@@ -586,7 +587,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getGlob">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetMapping.html#95-103" title="Go to source code">getGlob</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetMapping.html#96-104" title="Go to source code">getGlob</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the glob for the resources in the repository.</p>
@@ -620,7 +621,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getServerName">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetMapping.html#105-113" title="Go to source code">getServerName</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetMapping.html#106-114" title="Go to source code">getServerName</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the name of the mapped server.</p>
@@ -642,7 +643,7 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getPublicPath" id="_getPublicPath">
+	<tr data-order="getServerPath" id="_getServerPath">
 
 		<td class="attributes"><code>
 			 public 
@@ -653,15 +654,15 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getPublicPath">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetMapping.html#115-123" title="Go to source code">getPublicPath</a>( )</code>
+		<a class="anchor" href="#_getServerPath">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetMapping.html#116-124" title="Go to source code">getServerPath</a>( )</code>
 
 		<div class="description short">
-			<p>Returns the path of the resources relative to the document root.</p>
+			<p>Returns the path of the resources relative to the server's document root.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Returns the path of the resources relative to the document root.</p>
+			<p>Returns the path of the resources relative to the server's document root.</p>
 
 
 
@@ -759,27 +760,27 @@
 			</div>
 		</td>
 	</tr>
-	<tr data-order="PUBLIC_PATH" id="PUBLIC_PATH">
+	<tr data-order="SERVER_PATH" id="SERVER_PATH">
 
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Asset.AssetMapping.html#40-43" title="Go to source code"><b>PUBLIC_PATH</b></a>
+				<a href="source-class-Puli.Manager.Api.Asset.AssetMapping.html#40-43" title="Go to source code"><b>SERVER_PATH</b></a>
 			</code>
 
 			<div class="description short">
-				<p>The public path field in Expression instances.</p>
+				<p>The server path field in Expression instances.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>The public path field in Expression instances.</p>
+				<p>The server path field in Expression instances.</p>
 
 			</div>
 		</td>
 		<td class="value">
 			<div>
-				<a href="#PUBLIC_PATH" class="anchor">#</a>
-				<code><span class="php-quote">'publicPath'</span></code>
+				<a href="#SERVER_PATH" class="anchor">#</a>
+				<code><span class="php-quote">'serverPath'</span></code>
 			</div>
 		</td>
 	</tr>

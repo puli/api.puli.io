@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class Puli\TwigExtension\NodeVisitor\LoadedByPuliTagger | Puli API</title>
+	<title>Class Puli\TwigExtension\NodeVisitor\PuliDirTagger | Puli API</title>
 
 	<link rel="stylesheet" href="resources/style.css?95ada9fb523b6ab4fd1c47bb375f713f2cc65542">
 
@@ -419,7 +419,7 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-Puli.TwigExtension.NodeVisitor.AbstractPathResolver.html">AbstractPathResolver</a></li>
-				<li class="active"><a href="class-Puli.TwigExtension.NodeVisitor.LoadedByPuliTagger.html">LoadedByPuliTagger</a></li>
+				<li class="active"><a href="class-Puli.TwigExtension.NodeVisitor.PuliDirTagger.html">PuliDirTagger</a></li>
 				<li><a href="class-Puli.TwigExtension.NodeVisitor.TemplatePathResolver.html">TemplatePathResolver</a></li>
 			</ul>
 
@@ -459,20 +459,20 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class LoadedByPuliTagger</h1>
+	<h1>Class PuliDirTagger</h1>
 
 
 	<div class="description">
-	<p>Adds the "puli" attribute to all Twig_Module nodes that were loaded
-through the Puli loader.</p>
+	<p>Adds the "puli-dir" attribute to all Twig_Module nodes that were
+loaded through the Puli loader.</p>
 
-<p>For these nodes, it is guaranteed that the "filename" attribute is a Puli
-path.</p>
+<p>This attribute can be used to convert relative paths in the template to
+absolute paths.</p>
 	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
-<b><span>Puli\TwigExtension\NodeVisitor\LoadedByPuliTagger</span></b>			
+<b><span>Puli\TwigExtension\NodeVisitor\PuliDirTagger</span></b>			
 			 implements 
 <span>Twig_NodeVisitorInterface</span>
 			
@@ -497,7 +497,7 @@ path.</p>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.TwigExtension.NodeVisitor.LoadedByPuliTagger.html#22-103" title="Go to source code">NodeVisitor/LoadedByPuliTagger.php</a>
+			<b>Located at</b> <a href="source-class-Puli.TwigExtension.NodeVisitor.PuliDirTagger.html#23-107" title="Go to source code">NodeVisitor/PuliDirTagger.php</a>
 		<br>
 	</div>
 
@@ -517,7 +517,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_enterNode">#</a>
-		<code><a href="source-class-Puli.TwigExtension.NodeVisitor.LoadedByPuliTagger.html#39-54" title="Go to source code">enterNode</a>( <span>Twig_NodeInterface <var>$node</var></span>, <span>Twig_Environment <var>$env</var></span> )</code>
+		<code><a href="source-class-Puli.TwigExtension.NodeVisitor.PuliDirTagger.html#40-55" title="Go to source code">enterNode</a>( <span>Twig_NodeInterface <var>$node</var></span>, <span>Twig_Environment <var>$env</var></span> )</code>
 
 		<div class="description short">
 			<p>Called before child nodes are visited.</p>
@@ -558,7 +558,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_leaveNode">#</a>
-		<code><a href="source-class-Puli.TwigExtension.NodeVisitor.LoadedByPuliTagger.html#56-88" title="Go to source code">leaveNode</a>( <span>Twig_NodeInterface <var>$node</var></span>, <span>Twig_Environment <var>$env</var></span> )</code>
+		<code><a href="source-class-Puli.TwigExtension.NodeVisitor.PuliDirTagger.html#57-92" title="Go to source code">leaveNode</a>( <span>Twig_NodeInterface <var>$node</var></span>, <span>Twig_Environment <var>$env</var></span> )</code>
 
 		<div class="description short">
 			<p>Called after child nodes are visited.</p>
@@ -599,7 +599,7 @@ path.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPriority">#</a>
-		<code><a href="source-class-Puli.TwigExtension.NodeVisitor.LoadedByPuliTagger.html#90-102" title="Go to source code">getPriority</a>( )</code>
+		<code><a href="source-class-Puli.TwigExtension.NodeVisitor.PuliDirTagger.html#94-106" title="Go to source code">getPriority</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the priority for this visitor.</p>

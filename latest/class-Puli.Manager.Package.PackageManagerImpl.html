@@ -495,7 +495,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#33-396" title="Go to source code">Package/PackageManagerImpl.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#33-464" title="Go to source code">Package/PackageManagerImpl.php</a>
 		<br>
 	</div>
 
@@ -559,7 +559,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_installPackage">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#85-150" title="Go to source code">installPackage</a>( <span>string <var>$installPath</var></span>, <span>string|null <var>$name</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$installerName</var> = Puli\Manager\Package\InstallInfo::DEFAULT_INSTALLER_NAME</span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#85-142" title="Go to source code">installPackage</a>( <span>string <var>$installPath</var></span>, <span>string|null <var>$name</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$installerName</var> = Puli\Manager\Package\InstallInfo::DEFAULT_INSTALLER_NAME</span> )</code>
 
 		<div class="description short">
 			<p>Installs the package at the given path in the repository.</p>
@@ -596,6 +596,51 @@
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="renamePackage" id="_renamePackage">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_renamePackage">#</a>
+		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#144-164" title="Go to source code">renamePackage</a>( <span>string <var>$name</var></span>, <span>string <var>$newName</var></span> )</code>
+
+		<div class="description short">
+			<p>Renames the package with the given name.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Renames the package with the given name.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>The package name.</dd>
+					<dt><var>$newName</var></dt>
+					<dd>The new package name.</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					NoSuchPackageException<br>If the package was not found.<br>
+					<code><a href="class-Puli.Manager.Api.Package.NameConflictException.html">Puli\Manager\Api\Package\NameConflictException</a></code><br><p>If a package with the new name exists
+                              already.</p>
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Package.PackageManager.html#_renamePackage">Puli\Manager\Api\Package\PackageManager::renamePackage()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="removePackage" id="_removePackage">
 
 		<td class="attributes"><code>
@@ -608,7 +653,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removePackage">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#152-177" title="Go to source code">removePackage</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#166-191" title="Go to source code">removePackage</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes the package with the given name.</p>
@@ -645,7 +690,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removePackages">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#179-208" title="Go to source code">removePackages</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#193-222" title="Go to source code">removePackages</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes all packages matching the given expression.</p>
@@ -682,7 +727,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clearPackages">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#210-216" title="Go to source code">clearPackages</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#224-230" title="Go to source code">clearPackages</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all packages.</p>
@@ -714,7 +759,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPackage">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#218-228" title="Go to source code">getPackage</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#232-242" title="Go to source code">getPackage</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns a package by name.</p>
@@ -759,7 +804,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRootPackage">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#230-238" title="Go to source code">getRootPackage</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#244-252" title="Go to source code">getRootPackage</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the root package.</p>
@@ -795,7 +840,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPackages">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#240-249" title="Go to source code">getPackages</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#254-263" title="Go to source code">getPackages</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all installed packages.</p>
@@ -831,7 +876,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_findPackages">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#251-267" title="Go to source code">findPackages</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#265-281" title="Go to source code">findPackages</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns all packages matching the given expression.</p>
@@ -872,7 +917,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasPackage">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#269-279" title="Go to source code">hasPackage</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#283-293" title="Go to source code">hasPackage</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the manager has the package with the given name.</p>
@@ -913,7 +958,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasPackages">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#281-299" title="Go to source code">hasPackages</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#295-313" title="Go to source code">hasPackages</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the manager has any packages.</p>
@@ -957,7 +1002,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEnvironment">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#301-307" title="Go to source code">getEnvironment</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageManagerImpl.html#315-321" title="Go to source code">getEnvironment</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the manager's environment.</p>

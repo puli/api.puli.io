@@ -276,6 +276,9 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Environment.ProjectEnvironment.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Event.BuildRepositoryEvent.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Event.GenerateFactoryEvent.html</loc>
 </url>
 <url>
@@ -636,7 +639,7 @@
 	<loc>http://api.puli.io/latest/class-Puli.TwigExtension.NodeVisitor.AbstractPathResolver.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.TwigExtension.NodeVisitor.LoadedByPuliTagger.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.TwigExtension.NodeVisitor.PuliDirTagger.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.TwigExtension.NodeVisitor.TemplatePathResolver.html</loc>
@@ -792,13 +795,7 @@
 	<loc>http://api.puli.io/latest/class-Puli.SymfonyBridge.Config.ChainableFileLocator.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.TwigExtension.PathResolver.html</loc>
-</url>
-<url>
 	<loc>http://api.puli.io/latest/class-Puli.UrlGenerator.Api.UrlGenerator.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.UrlGenerator.Api.UrlGeneratorFactory.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Api.KeyValueStore.html</loc>
@@ -886,9 +883,6 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Repository.NoSuchPathMappingException.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Repository.RepositoryNotEmptyException.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Server.NoSuchServerException.html</loc>
