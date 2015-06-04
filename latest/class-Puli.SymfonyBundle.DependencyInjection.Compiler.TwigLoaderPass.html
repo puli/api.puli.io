@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class Webmozart\KeyValueStore\Util\KeyUtil | Puli API</title>
+	<title>Class Puli\SymfonyBundle\DependencyInjection\Compiler\TwigLoaderPass | Puli API</title>
 
 	<link rel="stylesheet" href="resources/style.css?95ada9fb523b6ab4fd1c47bb375f713f2cc65542">
 
@@ -29,7 +29,7 @@
 		<div id="groups">
 				<h3>Namespaces</h3>
 			<ul>
-				<li>
+				<li class="active">
 					<a href="namespace-Puli.html">
 						Puli<span></span>
 					</a>
@@ -347,6 +347,30 @@
 
 						</li>
 							</ul></li>
+				<li class="active">
+					<a href="namespace-Puli.SymfonyBundle.html">
+						SymfonyBundle<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Puli.SymfonyBundle.DependencyInjection.html">
+						DependencyInjection<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Puli.SymfonyBundle.DependencyInjection.Compiler.html">
+						Compiler					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.SymfonyBundle.Tests.html">
+						Tests					</a>
+
+						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Puli.TwigExtension.html">
 						TwigExtension<span></span>
@@ -386,29 +410,6 @@
 
 						</li>
 							</ul></li></ul></li>
-				<li class="active">
-					<a href="namespace-Webmozart.html">
-						Webmozart<span></span>
-					</a>
-
-						<ul>
-				<li class="active">
-					<a href="namespace-Webmozart.KeyValueStore.html">
-						KeyValueStore<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Webmozart.KeyValueStore.Api.html">
-						Api					</a>
-
-						</li>
-				<li class="active">
-					<a href="namespace-Webmozart.KeyValueStore.Util.html">
-						Util					</a>
-
-						</li>
-							</ul></li></ul></li>
 			</ul>
 		</div>
 
@@ -418,8 +419,7 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li class="active"><a href="class-Webmozart.KeyValueStore.Util.KeyUtil.html">KeyUtil</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.Util.Serializer.html">Serializer</a></li>
+				<li class="active"><a href="class-Puli.SymfonyBundle.DependencyInjection.Compiler.TwigLoaderPass.html">TwigLoaderPass</a></li>
 			</ul>
 
 
@@ -446,7 +446,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-Webmozart.KeyValueStore.Util.html" title="Summary of Webmozart\KeyValueStore\Util"><span>Namespace</span></a>
+				<a href="namespace-Puli.SymfonyBundle.DependencyInjection.Compiler.html" title="Summary of Puli\SymfonyBundle\DependencyInjection\Compiler"><span>Namespace</span></a>
 			</li>
 			<li class="active">
 <span>Class</span>			</li>
@@ -458,13 +458,31 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class KeyUtil</h1>
+	<h1>Class TwigLoaderPass</h1>
 
 
 	<div class="description">
-	<p>Utility methods for dealing with key-value store keys.</p>
+	<p>Moves the "puli.twig.template_loader" service before the
+"twig.loader.filesystem" service.</p>
+
+<p>This is necessary since the following PR:
+https://github.com/symfony/symfony/pull/12894</p>
+
+<p>If not done, the PuliTemplateLoader is never invoked, because the filesystem
+loader already resolves the Puli template path using the PuliFileLocator.
+The responsible line is TemplateNameParser:59 which does not throw an
+exception anymore.</p>
 	</div>
 
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Puli\SymfonyBundle\DependencyInjection\Compiler\TwigLoaderPass</span></b>			
+			 implements 
+<span>Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface</span>
+			
+			
+		</dd>
+	</dl>
 
 
 
@@ -476,14 +494,14 @@
 	<div class="info">
 		
 		
-		<b>Namespace:</b> <a href="namespace-Webmozart.html">Webmozart</a>\<a href="namespace-Webmozart.KeyValueStore.html">KeyValueStore</a>\<a href="namespace-Webmozart.KeyValueStore.Util.html">Util</a><br>
+		<b>Namespace:</b> <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.SymfonyBundle.html">SymfonyBundle</a>\<a href="namespace-Puli.SymfonyBundle.DependencyInjection.html">DependencyInjection</a>\<a href="namespace-Puli.SymfonyBundle.DependencyInjection.Compiler.html">Compiler</a><br>
 		
 
 				<b>Author:</b>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Webmozart.KeyValueStore.Util.KeyUtil.html#16-57" title="Go to source code">Util/KeyUtil.php</a>
+			<b>Located at</b> <a href="source-class-Puli.SymfonyBundle.DependencyInjection.Compiler.TwigLoaderPass.html#18-94" title="Go to source code">DependencyInjection/Compiler/TwigLoaderPass.php</a>
 		<br>
 	</div>
 
@@ -491,10 +509,10 @@
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="validate" id="_validate">
+	<tr data-order="process" id="_process">
 
 		<td class="attributes"><code>
-			 public static
+			 public 
 
 			
 			
@@ -502,67 +520,19 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_validate">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.Util.KeyUtil.html#24-36" title="Go to source code">validate</a>( <span>mixed <var>$key</var></span> )</code>
+		<a class="anchor" href="#_process">#</a>
+		<code><a href="source-class-Puli.SymfonyBundle.DependencyInjection.Compiler.TwigLoaderPass.html#35-86" title="Go to source code">process</a>( <span>Symfony\Component\DependencyInjection\ContainerBuilder <var>$container</var></span> )</code>
 
 		<div class="description short">
-			<p>Validates that a key is valid.</p>
+			
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Validates that a key is valid.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$key</var></dt>
-					<dd>The tested key.</dd>
-				</dl></div>
-
-
-				<h4>Throws</h4>
-				<div class="list">
-					<code><a href="class-Webmozart.KeyValueStore.Api.InvalidKeyException.html">Webmozart\KeyValueStore\Api\InvalidKeyException</a></code><br>If the key is invalid.
-				</div>
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="validateMultiple" id="_validateMultiple">
-
-		<td class="attributes"><code>
-			 public static
-
 			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_validateMultiple">#</a>
-		<code><a href="source-class-Webmozart.KeyValueStore.Util.KeyUtil.html#38-52" title="Go to source code">validateMultiple</a>( <span>array <var>$keys</var></span> )</code>
-
-		<div class="description short">
-			<p>Validates that multiple keys are valid.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Validates that multiple keys are valid.</p>
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$keys</var></dt>
-					<dd>The tested keys.</dd>
-				</dl></div>
 
 
-				<h4>Throws</h4>
-				<div class="list">
-					<code><a href="class-Webmozart.KeyValueStore.Api.InvalidKeyException.html">Webmozart\KeyValueStore\Api\InvalidKeyException</a></code><br>If a key is invalid.
-				</div>
 
 
 

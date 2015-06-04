@@ -178,6 +178,18 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.SymfonyBridge.HttpKernel.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/namespace-Puli.SymfonyBundle.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.SymfonyBundle.DependencyInjection.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.SymfonyBundle.DependencyInjection.Compiler.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.SymfonyBundle.Tests.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/namespace-Puli.TwigExtension.html</loc>
 </url>
 <url>
@@ -197,18 +209,6 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.UrlGenerator.Api.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Webmozart.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Webmozart.KeyValueStore.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Webmozart.KeyValueStore.Api.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Webmozart.KeyValueStore.Util.html</loc>
 </url>
 
 
@@ -630,6 +630,21 @@
 	<loc>http://api.puli.io/latest/class-Puli.SymfonyBridge.HttpKernel.ChainableKernelFileLocator.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.SymfonyBundle.DependencyInjection.Compiler.TwigLoaderPass.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.SymfonyBundle.DependencyInjection.Configuration.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.SymfonyBundle.DependencyInjection.PuliExtension.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.SymfonyBundle.PuliBundle.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.SymfonyBundle.Tests.ContainerTest.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Puli.TwigExtension.CacheWarmer.TwigTemplateCacheWarmer.html</loc>
 </url>
 <url>
@@ -655,33 +670,6 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.UrlGenerator.DiscoveryUrlGenerator.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.ArrayStore.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.CachedStore.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.JsonFileStore.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.NullStore.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.PhpRedisStore.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.PredisStore.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.RiakStore.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Util.KeyUtil.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Util.Serializer.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Binding.ResourceBinding.html</loc>
@@ -796,9 +784,6 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.UrlGenerator.Api.UrlGenerator.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Api.KeyValueStore.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Binding.MissingParameterException.html</loc>
@@ -916,26 +901,5 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.UrlGenerator.Api.CannotGenerateUrlException.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Api.InvalidKeyException.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Api.NoSuchKeyException.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Api.ReadException.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Api.SerializationFailedException.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Api.UnserializationFailedException.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Api.UnsupportedValueException.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Webmozart.KeyValueStore.Api.WriteException.html</loc>
 </url>
 </urlset>

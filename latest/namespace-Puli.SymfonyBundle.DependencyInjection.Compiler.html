@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Namespace Webmozart\KeyValueStore\Api | Puli API</title>
+	<title>Namespace Puli\SymfonyBundle\DependencyInjection\Compiler | Puli API</title>
 
 	<link rel="stylesheet" href="resources/style.css?95ada9fb523b6ab4fd1c47bb375f713f2cc65542">
 
@@ -29,7 +29,7 @@
 		<div id="groups">
 				<h3>Namespaces</h3>
 			<ul>
-				<li>
+				<li class="active">
 					<a href="namespace-Puli.html">
 						Puli<span></span>
 					</a>
@@ -347,6 +347,30 @@
 
 						</li>
 							</ul></li>
+				<li class="active">
+					<a href="namespace-Puli.SymfonyBundle.html">
+						SymfonyBundle<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Puli.SymfonyBundle.DependencyInjection.html">
+						DependencyInjection<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Puli.SymfonyBundle.DependencyInjection.Compiler.html">
+						Compiler					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.SymfonyBundle.Tests.html">
+						Tests					</a>
+
+						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Puli.TwigExtension.html">
 						TwigExtension<span></span>
@@ -386,29 +410,6 @@
 
 						</li>
 							</ul></li></ul></li>
-				<li class="active">
-					<a href="namespace-Webmozart.html">
-						Webmozart<span></span>
-					</a>
-
-						<ul>
-				<li class="active">
-					<a href="namespace-Webmozart.KeyValueStore.html">
-						KeyValueStore<span></span>
-					</a>
-
-						<ul>
-				<li class="active">
-					<a href="namespace-Webmozart.KeyValueStore.Api.html">
-						Api					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Webmozart.KeyValueStore.Util.html">
-						Util					</a>
-
-						</li>
-							</ul></li></ul></li>
 			</ul>
 		</div>
 
@@ -416,23 +417,13 @@
 
 
 		<div id="elements">
-
-			<h3>Interfaces</h3>
+			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Webmozart.KeyValueStore.Api.KeyValueStore.html">KeyValueStore</a></li>
+				<li><a href="class-Puli.SymfonyBundle.DependencyInjection.Compiler.TwigLoaderPass.html">TwigLoaderPass</a></li>
 			</ul>
 
 
-			<h3>Exceptions</h3>
-			<ul>
-				<li><a href="class-Webmozart.KeyValueStore.Api.InvalidKeyException.html">InvalidKeyException</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.Api.NoSuchKeyException.html">NoSuchKeyException</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.Api.ReadException.html">ReadException</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.Api.SerializationFailedException.html">SerializationFailedException</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.Api.UnserializationFailedException.html">UnserializationFailedException</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.Api.UnsupportedValueException.html">UnsupportedValueException</a></li>
-				<li><a href="class-Webmozart.KeyValueStore.Api.WriteException.html">WriteException</a></li>
-			</ul>
+
 
 
 		</div>
@@ -466,51 +457,21 @@
 	</div>
 
 <div id="content" class="namespace">
-	<h1>Namespace <a href="namespace-Webmozart.html">Webmozart</a>\<a href="namespace-Webmozart.KeyValueStore.html">KeyValueStore</a>\Api</h1>
+	<h1>Namespace <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.SymfonyBundle.html">SymfonyBundle</a>\<a href="namespace-Puli.SymfonyBundle.DependencyInjection.html">DependencyInjection</a>\Compiler</h1>
 
 
 
-
-<table class="summary" id="interfaces">
-<caption>Interfaces summary</caption>
+<table class="summary" id="classes">
+<caption>Classes summary</caption>
 <tr>
-	<td class="name"><a href="class-Webmozart.KeyValueStore.Api.KeyValueStore.html">KeyValueStore</a></td>
-	<td>A key-value store.</td>
+	<td class="name"><a href="class-Puli.SymfonyBundle.DependencyInjection.Compiler.TwigLoaderPass.html">TwigLoaderPass</a></td>
+	<td><p>Moves the "puli.twig.template_loader" service before the
+"twig.loader.filesystem" service.</p></td>
 </tr>
 </table>
 
 
-<table class="summary" id="exceptions">
-<caption>Exceptions summary</caption>
-<tr>
-	<td class="name"><a href="class-Webmozart.KeyValueStore.Api.InvalidKeyException.html">InvalidKeyException</a></td>
-	<td>Thrown when a key is invalid.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-Webmozart.KeyValueStore.Api.NoSuchKeyException.html">NoSuchKeyException</a></td>
-	<td>Thrown when a key was not found in the store.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-Webmozart.KeyValueStore.Api.ReadException.html">ReadException</a></td>
-	<td>Thrown when a key-value store cannot be read.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-Webmozart.KeyValueStore.Api.SerializationFailedException.html">SerializationFailedException</a></td>
-	<td>Thrown when a value cannot be serialized.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-Webmozart.KeyValueStore.Api.UnserializationFailedException.html">UnserializationFailedException</a></td>
-	<td>Thrown when a value cannot be unserialized.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-Webmozart.KeyValueStore.Api.UnsupportedValueException.html">UnsupportedValueException</a></td>
-	<td>Thrown when an unsupported value is stored in a key-value store.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-Webmozart.KeyValueStore.Api.WriteException.html">WriteException</a></td>
-	<td>Thrown when a key-value store cannot be written.</td>
-</tr>
-</table>
+
 
 
 </div>
@@ -521,6 +482,6 @@
 </div>
 </div>
 <script src="resources/combined.js?90a9ebc032fe484834129d90a6307c0552eea616"></script>
-<script src="elementlist.js?cee12ed4bd4a9d5982e6f6206d31343c040f2d80"></script>
+<script src="elementlist.js?da8aade47835cab8cda4137a19b984fde654603c"></script>
 </body>
 </html>

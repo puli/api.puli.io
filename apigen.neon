@@ -5,8 +5,8 @@ source:
     - vendor/puli/factory/src
     - vendor/puli/manager/src
     - vendor/puli/symfony-bridge/src
+    - vendor/puli/symfony-bundle
     - vendor/puli/twig-extension/src
-    - vendor/webmozart/key-value-store/src
 
 title: Puli API
 
