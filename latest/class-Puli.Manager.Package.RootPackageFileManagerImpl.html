@@ -160,6 +160,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -227,6 +232,11 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
 
@@ -252,11 +262,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -420,8 +425,7 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-Puli.Manager.Package.PackageFileStorage.html">PackageFileStorage</a></li>
-				<li><a href="class-Puli.Manager.Package.PackageJsonReader.html">PackageJsonReader</a></li>
-				<li><a href="class-Puli.Manager.Package.PackageJsonWriter.html">PackageJsonWriter</a></li>
+				<li><a href="class-Puli.Manager.Package.PackageJsonSerializer.html">PackageJsonSerializer</a></li>
 				<li><a href="class-Puli.Manager.Package.PackageManagerImpl.html">PackageManagerImpl</a></li>
 				<li class="active"><a href="class-Puli.Manager.Package.RootPackageFileManagerImpl.html">RootPackageFileManagerImpl</a></li>
 			</ul>
@@ -508,7 +512,7 @@ Whenever you call methods in this class, the changes will be written to disk.</p
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#25-497" title="Go to source code">Package/RootPackageFileManagerImpl.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#25-498" title="Go to source code">Package/RootPackageFileManagerImpl.php</a>
 		<br>
 	</div>
 
@@ -528,7 +532,7 @@ Whenever you call methods in this class, the changes will be written to disk.</p
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#51-62" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Environment.ProjectEnvironment.html">Puli\Manager\Api\Environment\ProjectEnvironment</a></code> <var>$environment</var></span>, <span><code><a href="class-Puli.Manager.Package.PackageFileStorage.html">Puli\Manager\Package\PackageFileStorage</a></code> <var>$packageFileStorage</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#52-63" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Environment.ProjectEnvironment.html">Puli\Manager\Api\Environment\ProjectEnvironment</a></code> <var>$environment</var></span>, <span><code><a href="class-Puli.Manager.Package.PackageFileStorage.html">Puli\Manager\Package\PackageFileStorage</a></code> <var>$packageFileStorage</var></span> )</code>
 
 		<div class="description short">
 			<p>Creates a new package file manager.</p>
@@ -565,7 +569,7 @@ Whenever you call methods in this class, the changes will be written to disk.</p
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getConfig">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#64-70" title="Go to source code">getConfig</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#65-71" title="Go to source code">getConfig</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the managed configuration.</p>
@@ -601,7 +605,7 @@ Whenever you call methods in this class, the changes will be written to disk.</p
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEnvironment">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#72-78" title="Go to source code">getEnvironment</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#73-79" title="Go to source code">getEnvironment</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the project environment.</p>
@@ -637,7 +641,7 @@ Whenever you call methods in this class, the changes will be written to disk.</p
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPackageFile">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#80-86" title="Go to source code">getPackageFile</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#81-87" title="Go to source code">getPackageFile</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the managed package file.</p>
@@ -673,7 +677,7 @@ Whenever you call methods in this class, the changes will be written to disk.</p
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPackageName">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#88-94" title="Go to source code">getPackageName</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#89-95" title="Go to source code">getPackageName</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the package name configured in the package file.</p>
@@ -709,7 +713,7 @@ Whenever you call methods in this class, the changes will be written to disk.</p
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setPackageName">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#96-116" title="Go to source code">setPackageName</a>( <span>string <var>$packageName</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#97-117" title="Go to source code">setPackageName</a>( <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the package name configured in the package file.</p>
@@ -746,7 +750,7 @@ Whenever you call methods in this class, the changes will be written to disk.</p
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addPluginClass">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#118-141" title="Go to source code">addPluginClass</a>( <span>string <var>$pluginClass</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#119-142" title="Go to source code">addPluginClass</a>( <span>string <var>$pluginClass</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a plugin class to the package file.</p>
@@ -783,7 +787,7 @@ Whenever you call methods in this class, the changes will be written to disk.</p
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removePluginClass">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#143-163" title="Go to source code">removePluginClass</a>( <span>string <var>$pluginClass</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#144-164" title="Go to source code">removePluginClass</a>( <span>string <var>$pluginClass</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a plugin class from the package file.</p>
@@ -820,7 +824,7 @@ Whenever you call methods in this class, the changes will be written to disk.</p
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removePluginClasses">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#165-191" title="Go to source code">removePluginClasses</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#166-192" title="Go to source code">removePluginClasses</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes the plugin classes from the package file that match the given
@@ -859,7 +863,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clearPluginClasses">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#193-199" title="Go to source code">clearPluginClasses</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#194-200" title="Go to source code">clearPluginClasses</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all plugin classes from the package file.</p>
@@ -891,7 +895,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasPluginClass">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#201-207" title="Go to source code">hasPluginClass</a>( <span>string <var>$pluginClass</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#202-208" title="Go to source code">hasPluginClass</a>( <span>string <var>$pluginClass</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the package file contains a plugin class.</p>
@@ -933,7 +937,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasPluginClasses">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#209-225" title="Go to source code">hasPluginClasses</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#210-226" title="Go to source code">hasPluginClasses</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the package file contains any plugin classes.</p>
@@ -977,7 +981,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPluginClasses">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#227-233" title="Go to source code">getPluginClasses</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#228-234" title="Go to source code">getPluginClasses</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all installed plugin classes.</p>
@@ -1013,7 +1017,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_findPluginClasses">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#235-249" title="Go to source code">findPluginClasses</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#236-250" title="Go to source code">findPluginClasses</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns all installed plugin classes matching the given expression.</p>
@@ -1055,7 +1059,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setExtraKey">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#251-276" title="Go to source code">setExtraKey</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#252-277" title="Go to source code">setExtraKey</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets an extra key in the file.</p>
@@ -1076,7 +1080,7 @@ expression.</p>
 
 				<h4>Throws</h4>
 				<div class="list">
-					IOException<br>If the file cannot be written.
+					StorageException<br>If the file cannot be written.
 				</div>
 
 
@@ -1098,7 +1102,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setExtraKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#278-315" title="Go to source code">setExtraKeys</a>( <span>array <var>$values</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#279-316" title="Go to source code">setExtraKeys</a>( <span>array <var>$values</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the extra keys in the file.</p>
@@ -1117,7 +1121,7 @@ expression.</p>
 
 				<h4>Throws</h4>
 				<div class="list">
-					IOException<br>If the file cannot be written.
+					StorageException<br>If the file cannot be written.
 				</div>
 
 
@@ -1139,7 +1143,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeExtraKey">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#317-337" title="Go to source code">removeExtraKey</a>( <span>string <var>$key</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#318-338" title="Go to source code">removeExtraKey</a>( <span>string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes an extra key from the file.</p>
@@ -1158,7 +1162,7 @@ expression.</p>
 
 				<h4>Throws</h4>
 				<div class="list">
-					IOException<br>If the file cannot be written.
+					StorageException<br>If the file cannot be written.
 				</div>
 
 
@@ -1180,7 +1184,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeExtraKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#339-365" title="Go to source code">removeExtraKeys</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#340-366" title="Go to source code">removeExtraKeys</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes the extra keys from the package file that match the given
@@ -1201,7 +1205,7 @@ expression.</p>
 
 				<h4>Throws</h4>
 				<div class="list">
-					IOException<br>If the file cannot be written.
+					StorageException<br>If the file cannot be written.
 				</div>
 
 
@@ -1223,7 +1227,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clearExtraKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#367-387" title="Go to source code">clearExtraKeys</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#368-388" title="Go to source code">clearExtraKeys</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all extra keys from the file.</p>
@@ -1237,7 +1241,7 @@ expression.</p>
 
 				<h4>Throws</h4>
 				<div class="list">
-					IOException<br>If the file cannot be written.
+					StorageException<br>If the file cannot be written.
 				</div>
 
 
@@ -1259,7 +1263,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasExtraKey">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#389-395" title="Go to source code">hasExtraKey</a>( <span>string <var>$key</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#390-396" title="Go to source code">hasExtraKey</a>( <span>string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether an extra key exists.</p>
@@ -1301,7 +1305,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasExtraKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#397-413" title="Go to source code">hasExtraKeys</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#398-414" title="Go to source code">hasExtraKeys</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the file contains any extra keys.</p>
@@ -1345,7 +1349,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getExtraKey">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#415-421" title="Go to source code">getExtraKey</a>( <span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#416-422" title="Go to source code">getExtraKey</a>( <span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the value of a configuration key.</p>
@@ -1388,7 +1392,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getExtraKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#423-429" title="Go to source code">getExtraKeys</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#424-430" title="Go to source code">getExtraKeys</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the values of all extra keys set in the file.</p>
@@ -1424,7 +1428,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_findExtraKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#431-445" title="Go to source code">findExtraKeys</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#432-446" title="Go to source code">findExtraKeys</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the values of all extra keys matching the given expression.</p>
@@ -1465,7 +1469,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_saveConfigFile">#</a>
-		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#447-453" title="Go to source code">saveConfigFile</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Package.RootPackageFileManagerImpl.html#448-454" title="Go to source code">saveConfigFile</a>( )</code>
 
 		<div class="description short">
 			<p>Saves the file containing the managed configuration.</p>
@@ -1480,7 +1484,7 @@ expression.</p>
 				<h4>Throws</h4>
 				<div class="list">
 					InvalidConfigException<br>If the value is invalid.<br>
-					IOException<br>If the file cannot be written.
+					StorageException<br>If the file cannot be written.
 				</div>
 
 

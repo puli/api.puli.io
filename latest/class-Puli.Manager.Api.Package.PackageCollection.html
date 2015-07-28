@@ -160,6 +160,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -227,6 +232,11 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
 
@@ -252,11 +262,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -430,8 +435,7 @@
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-Puli.Manager.Api.Package.PackageFileReader.html">PackageFileReader</a></li>
-				<li><a href="class-Puli.Manager.Api.Package.PackageFileWriter.html">PackageFileWriter</a></li>
+				<li><a href="class-Puli.Manager.Api.Package.PackageFileSerializer.html">PackageFileSerializer</a></li>
 				<li><a href="class-Puli.Manager.Api.Package.PackageManager.html">PackageManager</a></li>
 				<li><a href="class-Puli.Manager.Api.Package.RootPackageFileManager.html">RootPackageFileManager</a></li>
 			</ul>
@@ -515,7 +519,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#19-270" title="Go to source code">Api/Package/PackageCollection.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#19-271" title="Go to source code">Api/Package/PackageCollection.php</a>
 		<br>
 	</div>
 
@@ -535,7 +539,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#37-40" title="Go to source code">__construct</a>( <span>array <var>$packages</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#38-41" title="Go to source code">__construct</a>( <span>array <var>$packages</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -565,7 +569,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#42-54" title="Go to source code">add</a>( <span><code><a href="class-Puli.Manager.Api.Package.Package.html">Puli\Manager\Api\Package\Package</a></code> <var>$package</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#43-55" title="Go to source code">add</a>( <span><code><a href="class-Puli.Manager.Api.Package.Package.html">Puli\Manager\Api\Package\Package</a></code> <var>$package</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a package to the collection.</p>
@@ -600,7 +604,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_merge">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#56-66" title="Go to source code">merge</a>( <span>array <var>$packages</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#57-67" title="Go to source code">merge</a>( <span>array <var>$packages</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds multiple packages to the collection.</p>
@@ -635,7 +639,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_replace">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#68-77" title="Go to source code">replace</a>( <span>array <var>$packages</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#69-78" title="Go to source code">replace</a>( <span>array <var>$packages</var></span> )</code>
 
 		<div class="description short">
 			<p>Replaces the collection with the given packages.</p>
@@ -670,7 +674,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#79-91" title="Go to source code">remove</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#80-92" title="Go to source code">remove</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a package from the collection.</p>
@@ -705,7 +709,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#93-103" title="Go to source code">clear</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#94-104" title="Go to source code">clear</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all packages from the collection.</p>
@@ -735,7 +739,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#105-124" title="Go to source code">get</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#106-125" title="Go to source code">get</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the package with the given name.</p>
@@ -778,7 +782,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_contains">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#126-136" title="Go to source code">contains</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#127-137" title="Go to source code">contains</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether a package with the given name exists.</p>
@@ -817,7 +821,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRootPackage">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#138-148" title="Go to source code">getRootPackage</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#139-149" title="Go to source code">getRootPackage</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the root package.</p>
@@ -853,7 +857,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRootPackageName">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#150-160" title="Go to source code">getRootPackageName</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#151-161" title="Go to source code">getRootPackageName</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the name of the root package.</p>
@@ -889,7 +893,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInstalledPackages">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#162-178" title="Go to source code">getInstalledPackages</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#163-179" title="Go to source code">getInstalledPackages</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all installed packages.</p>
@@ -925,7 +929,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInstalledPackageNames">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#180-190" title="Go to source code">getInstalledPackageNames</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#181-191" title="Go to source code">getInstalledPackageNames</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the names of all installed packages.</p>
@@ -961,7 +965,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPackageNames">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#192-200" title="Go to source code">getPackageNames</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#193-201" title="Go to source code">getPackageNames</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the names of all packages.</p>
@@ -995,7 +999,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_toArray">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#202-210" title="Go to source code">toArray</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#203-211" title="Go to source code">toArray</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the packages in the collection.</p>
@@ -1029,7 +1033,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isEmpty">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#212-221" title="Go to source code">isEmpty</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#213-222" title="Go to source code">isEmpty</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the collection is empty.</p>
@@ -1064,7 +1068,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getIterator">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#223-229" title="Go to source code">getIterator</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#224-230" title="Go to source code">getIterator</a>( )</code>
 
 		<div class="description short">
 			
@@ -1096,7 +1100,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_count">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#231-237" title="Go to source code">count</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#232-238" title="Go to source code">count</a>( )</code>
 
 		<div class="description short">
 			
@@ -1128,7 +1132,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetExists">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#239-245" title="Go to source code">offsetExists</a>( <span> <var>$name</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#240-246" title="Go to source code">offsetExists</a>( <span> <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1160,7 +1164,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetGet">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#247-253" title="Go to source code">offsetGet</a>( <span> <var>$name</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#248-254" title="Go to source code">offsetGet</a>( <span> <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1192,7 +1196,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetSet">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#255-261" title="Go to source code">offsetSet</a>( <span> <var>$name</var></span>, <span> <var>$package</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#256-262" title="Go to source code">offsetSet</a>( <span> <var>$name</var></span>, <span> <var>$package</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1224,7 +1228,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetUnset">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#263-269" title="Go to source code">offsetUnset</a>( <span> <var>$name</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.PackageCollection.html#264-270" title="Go to source code">offsetUnset</a>( <span> <var>$name</var></span> )</code>
 
 		<div class="description short">
 			

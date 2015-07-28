@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Puli\Repository\AbstractPathMappingRepository | Puli API</title>
+
+	<link rel="stylesheet" href="resources/style.css?95ada9fb523b6ab4fd1c47bb375f713f2cc65542">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-8282807-3"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Puli.html">
+						Puli<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.html">
+						Discovery<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Validation.html">
+						Validation					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Discovery.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Discovery.Validation.html">
+						Validation					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Factory.html">
+						Factory					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.html">
+						Manager<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Asset.html">
+						Asset					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Environment.html">
+						Environment					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Event.html">
+						Event					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Factory.html">
+						Factory<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Factory.Generator.html">
+						Generator					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Installation.html">
+						Installation					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Installer.html">
+						Installer<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Installer.Validation.html">
+						Validation					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Package.html">
+						Package					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Php.html">
+						Php					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Repository.html">
+						Repository					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Server.html">
+						Server					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Assert.html">
+						Assert					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Asset.html">
+						Asset					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Conflict.html">
+						Conflict					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Discovery.html">
+						Discovery<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Discovery.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Discovery.Type.html">
+						Type					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Factory.html">
+						Factory<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Factory.Generator.html">
+						Generator<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Factory.Generator.Discovery.html">
+						Discovery					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Factory.Generator.KeyValueStore.html">
+						KeyValueStore					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Factory.Generator.Repository.html">
+						Repository					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Installation.html">
+						Installation					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Installer.html">
+						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Package.html">
+						Package					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Php.html">
+						Php					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Repository.html">
+						Repository<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Repository.Mapping.html">
+						Mapping					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Server.html">
+						Server					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Transaction.html">
+						Transaction					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Util.html">
+						Util					</a>
+
+						</li>
+							</ul></li>
+				<li class="active">
+					<a href="namespace-Puli.Repository.html">
+						Repository<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Api.Resource.html">
+						Resource					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.html">
+						Resource<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Collection.html">
+						Collection					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Iterator.html">
+						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Metadata.html">
+						Metadata					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Repository.StreamWrapper.html">
+						StreamWrapper					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Uri.html">
+						Uri					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.SymfonyBridge.html">
+						SymfonyBridge<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.SymfonyBridge.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.SymfonyBridge.HttpKernel.html">
+						HttpKernel					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.SymfonyBundle.html">
+						SymfonyBundle<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.SymfonyBundle.DependencyInjection.html">
+						DependencyInjection<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.SymfonyBundle.DependencyInjection.Compiler.html">
+						Compiler					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.SymfonyBundle.Tests.html">
+						Tests					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.TwigExtension.html">
+						TwigExtension<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.TwigExtension.CacheWarmer.html">
+						CacheWarmer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.TwigExtension.Node.html">
+						Node					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.TwigExtension.NodeVisitor.html">
+						NodeVisitor					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.TwigExtension.TokenParser.html">
+						TokenParser					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.UrlGenerator.html">
+						UrlGenerator<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.UrlGenerator.Api.html">
+						Api					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Puli.Repository.AbstractPathMappingRepository.html">AbstractPathMappingRepository</a></li>
+				<li><a href="class-Puli.Repository.AbstractRepository.html">AbstractRepository</a></li>
+				<li><a href="class-Puli.Repository.FilesystemRepository.html">FilesystemRepository</a></li>
+				<li><a href="class-Puli.Repository.InMemoryRepository.html">InMemoryRepository</a></li>
+				<li><a href="class-Puli.Repository.NullRepository.html">NullRepository</a></li>
+				<li><a href="class-Puli.Repository.OptimizedPathMappingRepository.html">OptimizedPathMappingRepository</a></li>
+				<li><a href="class-Puli.Repository.PathMappingRepository.html">PathMappingRepository</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Puli.Repository.RepositoryFactoryException.html">RepositoryFactoryException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Puli.Repository.html" title="Summary of Puli\Repository"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class AbstractPathMappingRepository</h1>
+
+
+	<div class="description">
+	<p>Abstract base for Path mapping repositories.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Puli.Repository.AbstractRepository.html"><span>Puli\Repository\AbstractRepository</span></a>
+			
+			 implements 
+				<a href="class-Puli.Repository.Api.ResourceRepository.html"><span>Puli\Repository\Api\ResourceRepository</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Puli\Repository\AbstractPathMappingRepository</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Puli.Repository.OptimizedPathMappingRepository.html">Puli\Repository\OptimizedPathMappingRepository</a>, 
+			<a href="class-Puli.Repository.PathMappingRepository.html">Puli\Repository\PathMappingRepository</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br>
+		
+		<b>Namespace:</b> <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.Repository.html">Repository</a><br>
+		
+
+				<b>Author:</b>
+				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
+				<b>Author:</b>
+				Titouan Galopin <a href="mailto:ga&#108;&#111;&#112;&#105;&#110;&#116;&#105;&#116;&#111;&#117;&#97;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">ga&#108;&#111;&#112;&#105;&#110;&#116;&#105;&#116;&#111;&#117;&#97;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a><br>
+				<b>Since:</b>
+				1.0<br>
+			<b>Located at</b> <a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#27-248" title="Go to source code">AbstractPathMappingRepository.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#42-52" title="Go to source code">__construct</a>( <span>Webmozart\KeyValueStore\Api\KeyValueStore <var>$store</var></span> )</code>
+
+		<div class="description short">
+			<p>Creates a new repository.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a new repository.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$store</var></dt>
+					<dd>The store of all the paths.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addResource" id="_addResource">
+
+		<td class="attributes"><code>
+			abstract protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addResource">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#54-60" title="Go to source code">addResource</a>( <span>string <var>$path</var></span>, <span><code><a href="class-Puli.Repository.Api.Resource.FilesystemResource.html">Puli\Repository\Api\Resource\FilesystemResource</a></code> <var>$resource</var></span> )</code>
+
+		<div class="description short">
+			<p>Add the resource (internal method after checks of add()).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add the resource (internal method after checks of add()).</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd></dd>
+					<dt><var>$resource</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add" id="_add">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#62-93" title="Go to source code">add</a>( <span> <var>$path</var></span>, <span> <var>$resource</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clear" id="_clear">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clear">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#95-107" title="Go to source code">clear</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ensureDirectoryExists" id="_ensureDirectoryExists">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ensureDirectoryExists">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#109-126" title="Go to source code">ensureDirectoryExists</a>( <span>string <var>$path</var></span> )</code>
+
+		<div class="description short">
+			<p>Recursively creates a directory for a path.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Recursively creates a directory for a path.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd>A directory path.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createRoot" id="_createRoot">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createRoot">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#128-138" title="Go to source code">createRoot</a>( )</code>
+
+		<div class="description short">
+			<p>Create the repository root.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create the repository root.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="countStore" id="_countStore">
+
+		<td class="attributes"><code>
+			 protected 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_countStore">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#140-152" title="Go to source code">countStore</a>( )</code>
+
+		<div class="description short">
+			<p>Count the number of elements in the store.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Count the number of elements in the store.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sortStore" id="_sortStore">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sortStore">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#154-164" title="Go to source code">sortStore</a>( )</code>
+
+		<div class="description short">
+			<p>Sort the store by keys.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sort the store by keys.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createResource" id="_createResource">
+
+		<td class="attributes"><code>
+			 protected 
+
+			<code><a href="class-Puli.Repository.Resource.DirectoryResource.html">Puli\Repository\Resource\DirectoryResource</a></code>|<code><a href="class-Puli.Repository.Resource.FileResource.html">Puli\Repository\Resource\FileResource</a></code>|<code><a href="class-Puli.Repository.Resource.GenericResource.html">Puli\Repository\Resource\GenericResource</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createResource">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#166-180" title="Go to source code">createResource</a>( <span>string <var>$filesystemPath</var></span> )</code>
+
+		<div class="description short">
+			<p>Create a filesystem or generic resource.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create a filesystem or generic resource.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filesystemPath</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.Repository.Resource.DirectoryResource.html">Puli\Repository\Resource\DirectoryResource</a></code>|<code><a href="class-Puli.Repository.Resource.FileResource.html">Puli\Repository\Resource\FileResource</a></code>|<code><a href="class-Puli.Repository.Resource.GenericResource.html">Puli\Repository\Resource\GenericResource</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createResources" id="_createResources">
+
+		<td class="attributes"><code>
+			 protected 
+
+			<code><a href="class-Puli.Repository.Resource.DirectoryResource.html">Puli\Repository\Resource\DirectoryResource</a>[]</code>|<code><a href="class-Puli.Repository.Resource.FileResource.html">Puli\Repository\Resource\FileResource</a>[]</code>|<code><a href="class-Puli.Repository.Resource.GenericResource.html">Puli\Repository\Resource\GenericResource</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createResources">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#182-203" title="Go to source code">createResources</a>( <span>array <var>$filesystemPaths</var></span> )</code>
+
+		<div class="description short">
+			<p>Create a list of resources using their filesystem paths.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create a list of resources using their filesystem paths.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filesystemPaths</var></dt>
+					<dd>The filesystem paths.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.Repository.Resource.DirectoryResource.html">Puli\Repository\Resource\DirectoryResource</a>[]</code>|<code><a href="class-Puli.Repository.Resource.FileResource.html">Puli\Repository\Resource\FileResource</a>[]</code>|<code><a href="class-Puli.Repository.Resource.GenericResource.html">Puli\Repository\Resource\GenericResource</a>[]</code><br>The created resources.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RuntimeException<br>If one of the files / directories does not exist.
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createFilesystemResource" id="_createFilesystemResource">
+
+		<td class="attributes"><code>
+			 protected 
+
+			<code><a href="class-Puli.Repository.Resource.DirectoryResource.html">Puli\Repository\Resource\DirectoryResource</a></code>|<code><a href="class-Puli.Repository.Resource.FileResource.html">Puli\Repository\Resource\FileResource</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createFilesystemResource">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#205-230" title="Go to source code">createFilesystemResource</a>( <span>string <var>$filesystemPath</var></span> )</code>
+
+		<div class="description short">
+			<p>Create a resource using its filesystem path.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create a resource using its filesystem path.</p>
+
+<p>If the filesystem path is a directory, a DirectoryResource will be created.
+If the filesystem path is a file, a FileResource will be created.
+If the filesystem does not exists, a GenericResource will be created.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filesystemPath</var></dt>
+					<dd>The filesystem path.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.Repository.Resource.DirectoryResource.html">Puli\Repository\Resource\DirectoryResource</a></code>|<code><a href="class-Puli.Repository.Resource.FileResource.html">Puli\Repository\Resource\FileResource</a></code><br>The created resource.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RuntimeException<br>If the file / directory does not exist.
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createAndAttachResource" id="_createAndAttachResource">
+
+		<td class="attributes"><code>
+			 protected 
+
+			<code><a href="class-Puli.Repository.Resource.DirectoryResource.html">Puli\Repository\Resource\DirectoryResource</a></code>|<code><a href="class-Puli.Repository.Resource.FileResource.html">Puli\Repository\Resource\FileResource</a></code>|<code><a href="class-Puli.Repository.Resource.GenericResource.html">Puli\Repository\Resource\GenericResource</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createAndAttachResource">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#232-247" title="Go to source code">createAndAttachResource</a>( <span>string <var>$filesystemPath</var></span>, <span>string <var>$repositoryPath</var></span> )</code>
+
+		<div class="description short">
+			<p>Create a filesystem or generic resource and
+attach it to the given repository path.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create a filesystem or generic resource and
+attach it to the given repository path.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filesystemPath</var></dt>
+					<dd></dd>
+					<dt><var>$repositoryPath</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.Repository.Resource.DirectoryResource.html">Puli\Repository\Resource\DirectoryResource</a></code>|<code><a href="class-Puli.Repository.Resource.FileResource.html">Puli\Repository\Resource\FileResource</a></code>|<code><a href="class-Puli.Repository.Resource.GenericResource.html">Puli\Repository\Resource\GenericResource</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Puli.Repository.AbstractRepository.html#methods">Puli\Repository\AbstractRepository</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Puli.Repository.AbstractRepository.html#_sanitizePath">sanitizePath()</a>, 
+			<a href="class-Puli.Repository.AbstractRepository.html#_validateSearchLanguage">validateSearchLanguage()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Puli.Repository.Api.ResourceRepository.html#methods">Puli\Repository\Api\ResourceRepository</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Puli.Repository.Api.ResourceRepository.html#_contains">contains()</a>, 
+			<a href="class-Puli.Repository.Api.ResourceRepository.html#_find">find()</a>, 
+			<a href="class-Puli.Repository.Api.ResourceRepository.html#_get">get()</a>, 
+			<a href="class-Puli.Repository.Api.ResourceRepository.html#_hasChildren">hasChildren()</a>, 
+			<a href="class-Puli.Repository.Api.ResourceRepository.html#_listChildren">listChildren()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="store" id="$store">
+		<td class="attributes"><code>
+			protected  
+			Webmozart\KeyValueStore\Api\KeyValueStore
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#37-40" title="Go to source code"><var>$store</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$store" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Puli API API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

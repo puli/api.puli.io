@@ -161,6 +161,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -228,6 +233,11 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
 
@@ -253,11 +263,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -471,8 +476,7 @@
 				<li><a href="class-Puli.Manager.Config.AbstractConfigManager.html">Puli\Manager\Config\AbstractConfigManager</a></li>
 				<li><a href="class-Puli.Manager.Config.ConfigFileManagerImpl.html">Puli\Manager\Config\ConfigFileManagerImpl</a></li>
 				<li><a href="class-Puli.Manager.Config.ConfigFileStorage.html">Puli\Manager\Config\ConfigFileStorage</a></li>
-				<li><a href="class-Puli.Manager.Config.ConfigJsonReader.html">Puli\Manager\Config\ConfigJsonReader</a></li>
-				<li><a href="class-Puli.Manager.Config.ConfigJsonWriter.html">Puli\Manager\Config\ConfigJsonWriter</a></li>
+				<li><a href="class-Puli.Manager.Config.ConfigJsonSerializer.html">Puli\Manager\Config\ConfigJsonSerializer</a></li>
 				<li><a href="class-Puli.Manager.Config.DefaultConfig.html">Puli\Manager\Config\DefaultConfig</a></li>
 				<li><a href="class-Puli.Manager.Config.EnvConfig.html">Puli\Manager\Config\EnvConfig</a></li>
 				<li><a href="class-Puli.Manager.Conflict.OverrideGraph.html">Puli\Manager\Conflict\OverrideGraph</a></li>
@@ -509,18 +513,16 @@
 				<li><a href="class-Puli.Manager.Factory.Generator.KeyValueStore.PredisStoreGenerator.html">Puli\Manager\Factory\Generator\KeyValueStore\PredisStoreGenerator</a></li>
 				<li><a href="class-Puli.Manager.Factory.Generator.KeyValueStore.RiakStoreGenerator.html">Puli\Manager\Factory\Generator\KeyValueStore\RiakStoreGenerator</a></li>
 				<li><a href="class-Puli.Manager.Factory.Generator.Repository.FilesystemRepositoryGenerator.html">Puli\Manager\Factory\Generator\Repository\FilesystemRepositoryGenerator</a></li>
+				<li><a href="class-Puli.Manager.Filesystem.FilesystemStorage.html">Puli\Manager\Filesystem\FilesystemStorage</a></li>
 				<li><a href="class-Puli.Manager.Installation.InstallationManagerImpl.html">Puli\Manager\Installation\InstallationManagerImpl</a></li>
 				<li><a href="class-Puli.Manager.Installer.CopyInstaller.html">Puli\Manager\Installer\CopyInstaller</a></li>
 				<li><a href="class-Puli.Manager.Installer.PackageFileInstallerManager.html">Puli\Manager\Installer\PackageFileInstallerManager</a></li>
 				<li><a href="class-Puli.Manager.Installer.SymlinkInstaller.html">Puli\Manager\Installer\SymlinkInstaller</a></li>
 				<li><a href="class-Puli.Manager.Package.PackageFileStorage.html">Puli\Manager\Package\PackageFileStorage</a></li>
-				<li><a href="class-Puli.Manager.Package.PackageJsonReader.html">Puli\Manager\Package\PackageJsonReader</a></li>
-				<li><a href="class-Puli.Manager.Package.PackageJsonWriter.html">Puli\Manager\Package\PackageJsonWriter</a></li>
+				<li><a href="class-Puli.Manager.Package.PackageJsonSerializer.html">Puli\Manager\Package\PackageJsonSerializer</a></li>
 				<li><a href="class-Puli.Manager.Package.PackageManagerImpl.html">Puli\Manager\Package\PackageManagerImpl</a></li>
 				<li><a href="class-Puli.Manager.Package.RootPackageFileManagerImpl.html">Puli\Manager\Package\RootPackageFileManagerImpl</a></li>
 				<li><a href="class-Puli.Manager.Php.ClassWriter.html">Puli\Manager\Php\ClassWriter</a></li>
-				<li><a href="class-Puli.Manager.Repository.Iterator.RecursivePathIterator.html">Puli\Manager\Repository\Iterator\RecursivePathIterator</a></li>
-				<li><a href="class-Puli.Manager.Repository.Iterator.RecursivePathsIterator.html">Puli\Manager\Repository\Iterator\RecursivePathsIterator</a></li>
 				<li><a href="class-Puli.Manager.Repository.Mapping.AddPathMappingToPackageFile.html">Puli\Manager\Repository\Mapping\AddPathMappingToPackageFile</a></li>
 				<li><a href="class-Puli.Manager.Repository.Mapping.ConflictCollection.html">Puli\Manager\Repository\Mapping\ConflictCollection</a></li>
 				<li><a href="class-Puli.Manager.Repository.Mapping.LoadPathMapping.html">Puli\Manager\Repository\Mapping\LoadPathMapping</a></li>
@@ -538,10 +540,14 @@
 				<li><a href="class-Puli.Manager.Util.DistinguishedName.html">Puli\Manager\Util\DistinguishedName</a></li>
 				<li><a href="class-Puli.Manager.Util.System.html">Puli\Manager\Util\System</a></li>
 				<li><a href="class-Puli.Manager.Util.TwoDimensionalHashMap.html">Puli\Manager\Util\TwoDimensionalHashMap</a></li>
+				<li><a href="class-Puli.Repository.AbstractPathMappingRepository.html">Puli\Repository\AbstractPathMappingRepository</a></li>
+				<li><a href="class-Puli.Repository.AbstractRepository.html">Puli\Repository\AbstractRepository</a></li>
 				<li><a href="class-Puli.Repository.Api.Resource.ResourceMetadata.html">Puli\Repository\Api\Resource\ResourceMetadata</a></li>
 				<li><a href="class-Puli.Repository.FilesystemRepository.html">Puli\Repository\FilesystemRepository</a></li>
 				<li><a href="class-Puli.Repository.InMemoryRepository.html">Puli\Repository\InMemoryRepository</a></li>
 				<li><a href="class-Puli.Repository.NullRepository.html">Puli\Repository\NullRepository</a></li>
+				<li><a href="class-Puli.Repository.OptimizedPathMappingRepository.html">Puli\Repository\OptimizedPathMappingRepository</a></li>
+				<li><a href="class-Puli.Repository.PathMappingRepository.html">Puli\Repository\PathMappingRepository</a></li>
 				<li><a href="class-Puli.Repository.Resource.AbstractFilesystemResource.html">Puli\Repository\Resource\AbstractFilesystemResource</a></li>
 				<li><a href="class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html">Puli\Repository\Resource\Collection\ArrayResourceCollection</a></li>
 				<li><a href="class-Puli.Repository.Resource.Collection.FilesystemResourceCollection.html">Puli\Repository\Resource\Collection\FilesystemResourceCollection</a></li>
@@ -584,8 +590,7 @@
 				<li><a href="class-Puli.Factory.PuliFactory.html">Puli\Factory\PuliFactory</a></li>
 				<li><a href="class-Puli.Manager.Api.Asset.AssetManager.html">Puli\Manager\Api\Asset\AssetManager</a></li>
 				<li><a href="class-Puli.Manager.Api.Config.ConfigFileManager.html">Puli\Manager\Api\Config\ConfigFileManager</a></li>
-				<li><a href="class-Puli.Manager.Api.Config.ConfigFileReader.html">Puli\Manager\Api\Config\ConfigFileReader</a></li>
-				<li><a href="class-Puli.Manager.Api.Config.ConfigFileWriter.html">Puli\Manager\Api\Config\ConfigFileWriter</a></li>
+				<li><a href="class-Puli.Manager.Api.Config.ConfigFileSerializer.html">Puli\Manager\Api\Config\ConfigFileSerializer</a></li>
 				<li><a href="class-Puli.Manager.Api.Config.ConfigManager.html">Puli\Manager\Api\Config\ConfigManager</a></li>
 				<li><a href="class-Puli.Manager.Api.Discovery.DiscoveryManager.html">Puli\Manager\Api\Discovery\DiscoveryManager</a></li>
 				<li><a href="class-Puli.Manager.Api.Event.PuliEvents.html">Puli\Manager\Api\Event\PuliEvents</a></li>
@@ -595,13 +600,13 @@
 				<li><a href="class-Puli.Manager.Api.Installation.InstallationManager.html">Puli\Manager\Api\Installation\InstallationManager</a></li>
 				<li><a href="class-Puli.Manager.Api.Installer.InstallerManager.html">Puli\Manager\Api\Installer\InstallerManager</a></li>
 				<li><a href="class-Puli.Manager.Api.Installer.ResourceInstaller.html">Puli\Manager\Api\Installer\ResourceInstaller</a></li>
-				<li><a href="class-Puli.Manager.Api.Package.PackageFileReader.html">Puli\Manager\Api\Package\PackageFileReader</a></li>
-				<li><a href="class-Puli.Manager.Api.Package.PackageFileWriter.html">Puli\Manager\Api\Package\PackageFileWriter</a></li>
+				<li><a href="class-Puli.Manager.Api.Package.PackageFileSerializer.html">Puli\Manager\Api\Package\PackageFileSerializer</a></li>
 				<li><a href="class-Puli.Manager.Api.Package.PackageManager.html">Puli\Manager\Api\Package\PackageManager</a></li>
 				<li><a href="class-Puli.Manager.Api.Package.RootPackageFileManager.html">Puli\Manager\Api\Package\RootPackageFileManager</a></li>
 				<li><a href="class-Puli.Manager.Api.PuliPlugin.html">Puli\Manager\Api\PuliPlugin</a></li>
 				<li><a href="class-Puli.Manager.Api.Repository.RepositoryManager.html">Puli\Manager\Api\Repository\RepositoryManager</a></li>
 				<li><a href="class-Puli.Manager.Api.Server.ServerManager.html">Puli\Manager\Api\Server\ServerManager</a></li>
+				<li><a href="class-Puli.Manager.Api.Storage.Storage.html">Puli\Manager\Api\Storage\Storage</a></li>
 				<li><a href="class-Puli.Manager.Transaction.AtomicOperation.html">Puli\Manager\Transaction\AtomicOperation</a></li>
 				<li><a href="class-Puli.Manager.Transaction.OperationInterceptor.html">Puli\Manager\Transaction\OperationInterceptor</a></li>
 				<li><a href="class-Puli.Repository.Api.EditableRepository.html">Puli\Repository\Api\EditableRepository</a></li>
@@ -639,7 +644,6 @@
 				<li><a href="class-Puli.Manager.Api.Installer.NoSuchInstallerException.html">Puli\Manager\Api\Installer\NoSuchInstallerException</a></li>
 				<li><a href="class-Puli.Manager.Api.Installer.NoSuchParameterException.html">Puli\Manager\Api\Installer\NoSuchParameterException</a></li>
 				<li><a href="class-Puli.Manager.Api.InvalidConfigException.html">Puli\Manager\Api\InvalidConfigException</a></li>
-				<li><a href="class-Puli.Manager.Api.IOException.html">Puli\Manager\Api\IOException</a></li>
 				<li><a href="class-Puli.Manager.Api.NoDirectoryException.html">Puli\Manager\Api\NoDirectoryException</a></li>
 				<li><a href="class-Puli.Manager.Api.NonRootPackageExpectedException.html">Puli\Manager\Api\NonRootPackageExpectedException</a></li>
 				<li><a href="class-Puli.Manager.Api.NotLoadedException.html">Puli\Manager\Api\NotLoadedException</a></li>
@@ -649,6 +653,7 @@
 				<li><a href="class-Puli.Manager.Api.Repository.DuplicatePathMappingException.html">Puli\Manager\Api\Repository\DuplicatePathMappingException</a></li>
 				<li><a href="class-Puli.Manager.Api.Repository.NoSuchPathMappingException.html">Puli\Manager\Api\Repository\NoSuchPathMappingException</a></li>
 				<li><a href="class-Puli.Manager.Api.Server.NoSuchServerException.html">Puli\Manager\Api\Server\NoSuchServerException</a></li>
+				<li><a href="class-Puli.Manager.Api.Storage.StorageException.html">Puli\Manager\Api\Storage\StorageException</a></li>
 				<li><a href="class-Puli.Manager.Conflict.CyclicDependencyException.html">Puli\Manager\Conflict\CyclicDependencyException</a></li>
 				<li><a href="class-Puli.Manager.Conflict.PackageConflictException.html">Puli\Manager\Conflict\PackageConflictException</a></li>
 				<li><a href="class-Puli.Repository.Api.ResourceNotFoundException.html">Puli\Repository\Api\ResourceNotFoundException</a></li>
@@ -692,7 +697,7 @@
 		</ul>
 	</div>
 
-<pre class="numbers"><code><span class="l"><a href="#1"> 1: </a></span><span class="l"><a href="#2"> 2: </a></span><span class="l"><a href="#3"> 3: </a></span></span><span class="l"><a href="#4"> 4: </a></span></span><span class="l"><a href="#5"> 5: </a></span></span><span class="l"><a href="#6"> 6: </a></span></span><span class="l"><a href="#7"> 7: </a></span></span><span class="l"><a href="#8"> 8: </a></span></span><span class="l"><a href="#9"> 9: </a></span></span><span class="l"><a href="#10">10: </a></span><span class="l"><a href="#11">11: </a></span><span class="l"><a href="#12">12: </a></span><span class="l"><a href="#13">13: </a></span><span class="l"><a href="#14">14: </a></span></span><span class="l"><a href="#15">15: </a></span></span><span class="l"><a href="#16">16: </a></span></span><span class="l"><a href="#17">17: </a></span></span><span class="l"><a href="#18">18: </a></span></span><span class="l"><a href="#19">19: </a></span><span class="l"><a href="#20">20: </a></span><span class="l"><a href="#21">21: </a></span><span class="l"><a href="#22">22: </a></span></span><span class="l"><a href="#23">23: </a></span></span><span class="l"><a href="#24">24: </a></span></span><span class="l"><a href="#25">25: </a></span></span><span class="l"><a href="#26">26: </a></span></span><span class="l"><a href="#27">27: </a></span></span><span class="l"><a href="#28">28: </a></span></span><span class="l"><a href="#29">29: </a></span></span><span class="l"><a href="#30">30: </a></span></span><span class="l"><a href="#31">31: </a></span></span><span class="l"><a href="#32">32: </a></span></span><span class="l"><a href="#33">33: </a></span></span><span class="l"><a href="#34">34: </a></span></span><span class="l"><a href="#35">35: </a></span></span><span class="l"><a href="#36">36: </a></span></span><span class="l"><a href="#37">37: </a></span><span class="l"><a href="#38">38: </a></span><span class="l"><a href="#39">39: </a></span><span class="l"><a href="#40">40: </a></span></code></pre>
+<pre class="numbers"><code><span class="l"><a href="#1"> 1: </a></span><span class="l"><a href="#2"> 2: </a></span><span class="l"><a href="#3"> 3: </a></span></span><span class="l"><a href="#4"> 4: </a></span></span><span class="l"><a href="#5"> 5: </a></span></span><span class="l"><a href="#6"> 6: </a></span></span><span class="l"><a href="#7"> 7: </a></span></span><span class="l"><a href="#8"> 8: </a></span></span><span class="l"><a href="#9"> 9: </a></span></span><span class="l"><a href="#10">10: </a></span><span class="l"><a href="#11">11: </a></span><span class="l"><a href="#12">12: </a></span><span class="l"><a href="#13">13: </a></span><span class="l"><a href="#14">14: </a></span></span><span class="l"><a href="#15">15: </a></span></span><span class="l"><a href="#16">16: </a></span></span><span class="l"><a href="#17">17: </a></span></span><span class="l"><a href="#18">18: </a></span></span><span class="l"><a href="#19">19: </a></span></span><span class="l"><a href="#20">20: </a></span><span class="l"><a href="#21">21: </a></span><span class="l"><a href="#22">22: </a></span><span class="l"><a href="#23">23: </a></span></span><span class="l"><a href="#24">24: </a></span></span><span class="l"><a href="#25">25: </a></span></span><span class="l"><a href="#26">26: </a></span></span><span class="l"><a href="#27">27: </a></span></span><span class="l"><a href="#28">28: </a></span></span><span class="l"><a href="#29">29: </a></span></span><span class="l"><a href="#30">30: </a></span></span><span class="l"><a href="#31">31: </a></span></span><span class="l"><a href="#32">32: </a></span></span><span class="l"><a href="#33">33: </a></span></span><span class="l"><a href="#34">34: </a></span></span><span class="l"><a href="#35">35: </a></span></span><span class="l"><a href="#36">36: </a></span></span><span class="l"><a href="#37">37: </a></span></span><span class="l"><a href="#38">38: </a></span><span class="l"><a href="#39">39: </a></span><span class="l"><a href="#40">40: </a></span><span class="l"><a href="#41">41: </a></span></code></pre>
 <pre class="code"><code><span id="1" class="l"><span class="xlang">&lt;?php</span>
 </span><span id="2" class="l">
 </span><span id="3" class="l"><span class="php-comment">/*
@@ -710,29 +715,30 @@
 </span></span><span id="15" class="l"><span class="php-comment"> * Generates URLs for Puli assets.
 </span></span><span id="16" class="l"><span class="php-comment"> *
 </span></span><span id="17" class="l"><span class="php-comment"> * @since  1.0
-</span></span><span id="18" class="l"><span class="php-comment"> * @author Bernhard Schussek &lt;bschussek@gmail.com&gt;
-</span></span><span id="19" class="l"><span class="php-comment"> */</span>
-</span><span id="20" class="l"><span class="php-keyword1">interface</span> UrlGenerator
-</span><span id="21" class="l">{
-</span><span id="22" class="l">    <span class="php-comment">/**
-</span></span><span id="23" class="l"><span class="php-comment">     * Generates a URL for a Puli asset.
-</span></span><span id="24" class="l"><span class="php-comment">     *
-</span></span><span id="25" class="l"><span class="php-comment">     * Depending on the configuration of the resource, the returned URL is
-</span></span><span id="26" class="l"><span class="php-comment">     * either relative to the current domain or absolute.
-</span></span><span id="27" class="l"><span class="php-comment">     *
-</span></span><span id="28" class="l"><span class="php-comment">     * If you pass the current URL, the returned URL is relative to the passed
-</span></span><span id="29" class="l"><span class="php-comment">     * URL.
-</span></span><span id="30" class="l"><span class="php-comment">     *
-</span></span><span id="31" class="l"><span class="php-comment">     * @param string $repositoryPath The repository path of the resource.
-</span></span><span id="32" class="l"><span class="php-comment">     * @param null   $currentUrl     The current URL.
-</span></span><span id="33" class="l"><span class="php-comment">     *
-</span></span><span id="34" class="l"><span class="php-comment">     * @return string The URL of the resource.
-</span></span><span id="35" class="l"><span class="php-comment">     *
-</span></span><span id="36" class="l"><span class="php-comment">     * @throws CannotGenerateUrlException If the URL cannot be generated.
-</span></span><span id="37" class="l"><span class="php-comment">     */</span>
-</span><span id="38" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> generateUrl(<span class="php-var">$repositoryPath</span>, <span class="php-var">$currentUrl</span> = <span class="php-keyword1">null</span>);
-</span><span id="39" class="l">}
-</span><span id="40" class="l"></span></code></pre>
+</span></span><span id="18" class="l"><span class="php-comment"> *
+</span></span><span id="19" class="l"><span class="php-comment"> * @author Bernhard Schussek &lt;bschussek@gmail.com&gt;
+</span></span><span id="20" class="l"><span class="php-comment"> */</span>
+</span><span id="21" class="l"><span class="php-keyword1">interface</span> UrlGenerator
+</span><span id="22" class="l">{
+</span><span id="23" class="l">    <span class="php-comment">/**
+</span></span><span id="24" class="l"><span class="php-comment">     * Generates a URL for a Puli asset.
+</span></span><span id="25" class="l"><span class="php-comment">     *
+</span></span><span id="26" class="l"><span class="php-comment">     * Depending on the configuration of the resource, the returned URL is
+</span></span><span id="27" class="l"><span class="php-comment">     * either relative to the current domain or absolute.
+</span></span><span id="28" class="l"><span class="php-comment">     *
+</span></span><span id="29" class="l"><span class="php-comment">     * If you pass the current URL, the returned URL is relative to the passed
+</span></span><span id="30" class="l"><span class="php-comment">     * URL.
+</span></span><span id="31" class="l"><span class="php-comment">     *
+</span></span><span id="32" class="l"><span class="php-comment">     * @param string $repositoryPath The repository path of the resource.
+</span></span><span id="33" class="l"><span class="php-comment">     * @param null   $currentUrl     The current URL.
+</span></span><span id="34" class="l"><span class="php-comment">     *
+</span></span><span id="35" class="l"><span class="php-comment">     * @return string The URL of the resource.
+</span></span><span id="36" class="l"><span class="php-comment">     *
+</span></span><span id="37" class="l"><span class="php-comment">     * @throws CannotGenerateUrlException If the URL cannot be generated.
+</span></span><span id="38" class="l"><span class="php-comment">     */</span>
+</span><span id="39" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> generateUrl(<span class="php-var">$repositoryPath</span>, <span class="php-var">$currentUrl</span> = <span class="php-keyword1">null</span>);
+</span><span id="40" class="l">}
+</span><span id="41" class="l"></span></code></pre>
 
 	<div id="footer">
 		Puli API API documentation generated by <a href="http://apigen.org">ApiGen</a>
@@ -740,6 +746,6 @@
 </div>
 </div>
 <script src="resources/combined.js?90a9ebc032fe484834129d90a6307c0552eea616"></script>
-<script src="elementlist.js?da8aade47835cab8cda4137a19b984fde654603c"></script>
+<script src="elementlist.js?4f17497adfecd0429867f808f2fae8b1b1d1037a"></script>
 </body>
 </html>

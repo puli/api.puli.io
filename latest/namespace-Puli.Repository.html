@@ -160,6 +160,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -227,6 +232,11 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
 
@@ -252,11 +262,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -419,9 +424,13 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
+				<li><a href="class-Puli.Repository.AbstractPathMappingRepository.html">AbstractPathMappingRepository</a></li>
+				<li><a href="class-Puli.Repository.AbstractRepository.html">AbstractRepository</a></li>
 				<li><a href="class-Puli.Repository.FilesystemRepository.html">FilesystemRepository</a></li>
 				<li><a href="class-Puli.Repository.InMemoryRepository.html">InMemoryRepository</a></li>
 				<li><a href="class-Puli.Repository.NullRepository.html">NullRepository</a></li>
+				<li><a href="class-Puli.Repository.OptimizedPathMappingRepository.html">OptimizedPathMappingRepository</a></li>
+				<li><a href="class-Puli.Repository.PathMappingRepository.html">PathMappingRepository</a></li>
 			</ul>
 
 
@@ -485,6 +494,14 @@
 <table class="summary" id="classes">
 <caption>Classes summary</caption>
 <tr>
+	<td class="name"><a href="class-Puli.Repository.AbstractPathMappingRepository.html">AbstractPathMappingRepository</a></td>
+	<td>Abstract base for Path mapping repositories.</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-Puli.Repository.AbstractRepository.html">AbstractRepository</a></td>
+	<td>Abstract base for repositories providing tools to avoid code duplication.</td>
+</tr>
+<tr>
 	<td class="name"><a href="class-Puli.Repository.FilesystemRepository.html">FilesystemRepository</a></td>
 	<td>A repository reading from the file system.</td>
 </tr>
@@ -495,6 +512,18 @@
 <tr>
 	<td class="name"><a href="class-Puli.Repository.NullRepository.html">NullRepository</a></td>
 	<td>A repository that does nothing.</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-Puli.Repository.OptimizedPathMappingRepository.html">OptimizedPathMappingRepository</a></td>
+	<td><p>An optimized path mapping resource repository.
+When a resource is added, all its children are resolved
+and getting them is much faster.</p></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-Puli.Repository.PathMappingRepository.html">PathMappingRepository</a></td>
+	<td><p>A development path mapping resource repository.
+Each resource is resolved at <code>get()</code> time to improve
+developer experience.</p></td>
 </tr>
 </table>
 
@@ -517,6 +546,6 @@
 </div>
 </div>
 <script src="resources/combined.js?90a9ebc032fe484834129d90a6307c0552eea616"></script>
-<script src="elementlist.js?da8aade47835cab8cda4137a19b984fde654603c"></script>
+<script src="elementlist.js?4f17497adfecd0429867f808f2fae8b1b1d1037a"></script>
 </body>
 </html>

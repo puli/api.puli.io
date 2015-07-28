@@ -160,6 +160,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -227,6 +232,11 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
 
@@ -252,11 +262,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -492,7 +497,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#46-555" title="Go to source code">Repository/RepositoryManagerImpl.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#46-556" title="Go to source code">Repository/RepositoryManagerImpl.php</a>
 		<br>
 	</div>
 
@@ -512,7 +517,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#119-138" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Environment.ProjectEnvironment.html">Puli\Manager\Api\Environment\ProjectEnvironment</a></code> <var>$environment</var></span>, <span><code><a href="class-Puli.Repository.Api.EditableRepository.html">Puli\Repository\Api\EditableRepository</a></code> <var>$repo</var></span>, <span><code><a href="class-Puli.Manager.Api.Package.PackageCollection.html">Puli\Manager\Api\Package\PackageCollection</a></code> <var>$packages</var></span>, <span><code><a href="class-Puli.Manager.Package.PackageFileStorage.html">Puli\Manager\Package\PackageFileStorage</a></code> <var>$packageFileStorage</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#120-139" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Environment.ProjectEnvironment.html">Puli\Manager\Api\Environment\ProjectEnvironment</a></code> <var>$environment</var></span>, <span><code><a href="class-Puli.Repository.Api.EditableRepository.html">Puli\Repository\Api\EditableRepository</a></code> <var>$repo</var></span>, <span><code><a href="class-Puli.Manager.Api.Package.PackageCollection.html">Puli\Manager\Api\Package\PackageCollection</a></code> <var>$packages</var></span>, <span><code><a href="class-Puli.Manager.Package.PackageFileStorage.html">Puli\Manager\Package\PackageFileStorage</a></code> <var>$packageFileStorage</var></span> )</code>
 
 		<div class="description short">
 			<p>Creates a repository manager.</p>
@@ -553,7 +558,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEnvironment">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#140-146" title="Go to source code">getEnvironment</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#141-147" title="Go to source code">getEnvironment</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the manager's environment.</p>
@@ -589,7 +594,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRepository">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#148-154" title="Go to source code">getRepository</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#149-155" title="Go to source code">getRepository</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the managed repository.</p>
@@ -625,7 +630,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addRootPathMapping">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#156-195" title="Go to source code">addRootPathMapping</a>( <span><code><a href="class-Puli.Manager.Api.Repository.PathMapping.html">Puli\Manager\Api\Repository\PathMapping</a></code> <var>$mapping</var></span>, <span>integer <var>$flags</var> = <span class="php-num">0</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#157-196" title="Go to source code">addRootPathMapping</a>( <span><code><a href="class-Puli.Manager.Api.Repository.PathMapping.html">Puli\Manager\Api\Repository\PathMapping</a></code> <var>$mapping</var></span>, <span>integer <var>$flags</var> = <span class="php-num">0</span></span> )</code>
 
 		<div class="description short">
 			<p>Adds a path mapping to the repository.</p>
@@ -670,7 +675,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeRootPathMapping">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#197-231" title="Go to source code">removeRootPathMapping</a>( <span>string <var>$repositoryPath</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#198-232" title="Go to source code">removeRootPathMapping</a>( <span>string <var>$repositoryPath</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a path mapping from the repository.</p>
@@ -707,7 +712,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeRootPathMappings">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#233-264" title="Go to source code">removeRootPathMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#234-265" title="Go to source code">removeRootPathMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes all path mappings from the repository that match the given
@@ -746,7 +751,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clearRootPathMappings">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#266-272" title="Go to source code">clearRootPathMappings</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#267-273" title="Go to source code">clearRootPathMappings</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all path mappings from the repository.</p>
@@ -778,7 +783,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRootPathMapping">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#274-280" title="Go to source code">getRootPathMapping</a>( <span>string <var>$repositoryPath</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#275-281" title="Go to source code">getRootPathMapping</a>( <span>string <var>$repositoryPath</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the path mapping for a repository path in the root package.</p>
@@ -824,7 +829,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_findRootPathMappings">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#282-291" title="Go to source code">findRootPathMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#283-292" title="Go to source code">findRootPathMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns all path mappings in the root package that match the given
@@ -867,7 +872,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRootPathMappings">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#293-310" title="Go to source code">getRootPathMappings</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#294-311" title="Go to source code">getRootPathMappings</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all path mappings in the root package.</p>
@@ -903,7 +908,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasRootPathMapping">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#312-318" title="Go to source code">hasRootPathMapping</a>( <span>string <var>$repositoryPath</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#313-319" title="Go to source code">hasRootPathMapping</a>( <span>string <var>$repositoryPath</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether a repository path is mapped in the root package.</p>
@@ -945,7 +950,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasRootPathMappings">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#320-332" title="Go to source code">hasRootPathMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#321-333" title="Go to source code">hasRootPathMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the manager has any path mappings in the root package.</p>
@@ -989,7 +994,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPathMapping">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#334-349" title="Go to source code">getPathMapping</a>( <span>string <var>$repositoryPath</var></span>, <span>string <var>$packageName</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#335-350" title="Go to source code">getPathMapping</a>( <span>string <var>$repositoryPath</var></span>, <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the path mapping for a repository path.</p>
@@ -1037,7 +1042,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPathMappings">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#351-367" title="Go to source code">getPathMappings</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#352-368" title="Go to source code">getPathMappings</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all path mappings.</p>
@@ -1073,7 +1078,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_findPathMappings">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#369-387" title="Go to source code">findPathMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#370-388" title="Go to source code">findPathMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns all path mappings matching the given expression.</p>
@@ -1114,7 +1119,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasPathMapping">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#389-400" title="Go to source code">hasPathMapping</a>( <span>string <var>$repositoryPath</var></span>, <span>string <var>$packageName</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#390-401" title="Go to source code">hasPathMapping</a>( <span>string <var>$repositoryPath</var></span>, <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether a repository path is mapped.</p>
@@ -1158,7 +1163,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasPathMappings">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#402-422" title="Go to source code">hasPathMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#403-423" title="Go to source code">hasPathMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the manager has any path mappings.</p>
@@ -1202,7 +1207,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPathConflicts">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#424-432" title="Go to source code">getPathConflicts</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#425-433" title="Go to source code">getPathConflicts</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all path conflicts.</p>
@@ -1238,7 +1243,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_buildRepository">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#434-456" title="Go to source code">buildRepository</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#435-457" title="Go to source code">buildRepository</a>( )</code>
 
 		<div class="description short">
 			<p>Builds the resource repository.</p>
@@ -1253,7 +1258,7 @@ expression.</p>
 				<h4>Throws</h4>
 				<div class="list">
 					NoDirectoryException<br><p>If the dump directory exists and is not a
-                             directory.</p><br>
+                                 directory.</p><br>
 					PackageConflictException<br><p>If two packages contain conflicting
                                  resource definitions.</p>
 				</div>
@@ -1277,7 +1282,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clearRepository">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#458-464" title="Go to source code">clearRepository</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#459-465" title="Go to source code">clearRepository</a>( )</code>
 
 		<div class="description short">
 			<p>Clears the contents of the resource repository.</p>

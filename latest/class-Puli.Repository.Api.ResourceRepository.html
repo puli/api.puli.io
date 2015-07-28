@@ -160,6 +160,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -227,6 +232,11 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
 
@@ -252,11 +262,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -494,14 +499,18 @@ objects, each of which has a path in the repository:</p>
 
 	<div>
 		<h4>Direct known implementers</h4>
+			<a href="class-Puli.Repository.AbstractRepository.html">Puli\Repository\AbstractRepository</a>, 
 			<a href="class-Puli.Repository.Api.EditableRepository.html">Puli\Repository\Api\EditableRepository</a>
 	</div>
 
 	<div>
 		<h4>Indirect known implementers</h4>
+			<a href="class-Puli.Repository.AbstractPathMappingRepository.html">Puli\Repository\AbstractPathMappingRepository</a>, 
 			<a href="class-Puli.Repository.FilesystemRepository.html">Puli\Repository\FilesystemRepository</a>, 
 			<a href="class-Puli.Repository.InMemoryRepository.html">Puli\Repository\InMemoryRepository</a>, 
-			<a href="class-Puli.Repository.NullRepository.html">Puli\Repository\NullRepository</a>
+			<a href="class-Puli.Repository.NullRepository.html">Puli\Repository\NullRepository</a>, 
+			<a href="class-Puli.Repository.OptimizedPathMappingRepository.html">Puli\Repository\OptimizedPathMappingRepository</a>, 
+			<a href="class-Puli.Repository.PathMappingRepository.html">Puli\Repository\PathMappingRepository</a>
 	</div>
 
 
@@ -516,7 +525,7 @@ objects, each of which has a path in the repository:</p>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Repository.Api.ResourceRepository.html#16-111" title="Go to source code">Api/ResourceRepository.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Repository.Api.ResourceRepository.html#16-112" title="Go to source code">Api/ResourceRepository.php</a>
 		<br>
 	</div>
 
@@ -536,7 +545,7 @@ objects, each of which has a path in the repository:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#42-54" title="Go to source code">get</a>( <span>string <var>$path</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#43-55" title="Go to source code">get</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the resource at the given path.</p>
@@ -561,8 +570,8 @@ objects, each of which has a path in the repository:</p>
 				<h4>Throws</h4>
 				<div class="list">
 					<code><a href="class-Puli.Repository.Api.ResourceNotFoundException.html">Puli\Repository\Api\ResourceNotFoundException</a></code><br>If the resource cannot be found.<br>
-					InvalidArgumentException<br><p>If the path is invalid. The path must be
-                                 a non-empty string starting with "/".</p>
+					InvalidArgumentException<br><p>If the path is invalid. The path must
+                                  be a non-empty string starting with "/".</p>
 				</div>
 
 
@@ -582,7 +591,7 @@ objects, each of which has a path in the repository:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_find">#</a>
-		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#56-68" title="Go to source code">find</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
+		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#57-69" title="Go to source code">find</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the resources matching a query.</p>
@@ -629,7 +638,7 @@ objects, each of which has a path in the repository:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_contains">#</a>
-		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#70-82" title="Go to source code">contains</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
+		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#71-83" title="Go to source code">contains</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether any resources match a query.</p>
@@ -676,7 +685,7 @@ objects, each of which has a path in the repository:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasChildren">#</a>
-		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#84-96" title="Go to source code">hasChildren</a>( <span>string <var>$path</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#85-97" title="Go to source code">hasChildren</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether a resource has child resources.</p>
@@ -701,8 +710,8 @@ objects, each of which has a path in the repository:</p>
 				<h4>Throws</h4>
 				<div class="list">
 					<code><a href="class-Puli.Repository.Api.ResourceNotFoundException.html">Puli\Repository\Api\ResourceNotFoundException</a></code><br>If the resource cannot be found.<br>
-					InvalidArgumentException<br><p>If the path is invalid. The path must be
-                                 a non-empty string starting with "/".</p>
+					InvalidArgumentException<br><p>If the path is invalid. The path must
+                                  be a non-empty string starting with "/".</p>
 				</div>
 
 
@@ -722,7 +731,7 @@ objects, each of which has a path in the repository:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_listChildren">#</a>
-		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#98-110" title="Go to source code">listChildren</a>( <span>string <var>$path</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#99-111" title="Go to source code">listChildren</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
 			<p>Lists the child resources of a resource.</p>
@@ -747,8 +756,8 @@ objects, each of which has a path in the repository:</p>
 				<h4>Throws</h4>
 				<div class="list">
 					<code><a href="class-Puli.Repository.Api.ResourceNotFoundException.html">Puli\Repository\Api\ResourceNotFoundException</a></code><br>If the resource cannot be found.<br>
-					InvalidArgumentException<br><p>If the path is invalid. The path must be
-                                 a non-empty string starting with "/".</p>
+					InvalidArgumentException<br><p>If the path is invalid. The path must
+                                  be a non-empty string starting with "/".</p>
 				</div>
 
 

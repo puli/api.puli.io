@@ -160,6 +160,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -227,6 +232,11 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
 
@@ -252,11 +262,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -430,8 +435,7 @@
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-Puli.Manager.Api.Package.PackageFileReader.html">PackageFileReader</a></li>
-				<li><a href="class-Puli.Manager.Api.Package.PackageFileWriter.html">PackageFileWriter</a></li>
+				<li><a href="class-Puli.Manager.Api.Package.PackageFileSerializer.html">PackageFileSerializer</a></li>
 				<li><a href="class-Puli.Manager.Api.Package.PackageManager.html">PackageManager</a></li>
 				<li><a href="class-Puli.Manager.Api.Package.RootPackageFileManager.html">RootPackageFileManager</a></li>
 			</ul>
@@ -506,7 +510,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Package.Package.html#18-247" title="Go to source code">Api/Package/Package.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Package.Package.html#18-254" title="Go to source code">Api/Package/Package.php</a>
 		<br>
 	</div>
 
@@ -526,7 +530,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#76-118" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Package.PackageFile.html">Puli\Manager\Api\Package\PackageFile</a></code> <var>$packageFile</var></span>, <span>string <var>$installPath</var></span>, <span><code><a href="class-Puli.Manager.Api.Package.InstallInfo.html">Puli\Manager\Api\Package\InstallInfo</a></code> <var>$installInfo</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$loadErrors</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#82-124" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Package.PackageFile.html">Puli\Manager\Api\Package\PackageFile</a></code> <var>$packageFile</var></span>, <span>string <var>$installPath</var></span>, <span><code><a href="class-Puli.Manager.Api.Package.InstallInfo.html">Puli\Manager\Api\Package\InstallInfo</a></code> <var>$installInfo</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$loadErrors</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>Creates a new package.</p>
@@ -569,7 +573,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getName">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#120-128" title="Go to source code">getName</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#126-134" title="Go to source code">getName</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the name of the package.</p>
@@ -603,7 +607,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInstallPath">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#130-138" title="Go to source code">getInstallPath</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#136-144" title="Go to source code">getInstallPath</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the absolute path at which the package is installed.</p>
@@ -637,7 +641,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPackageFile">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#140-149" title="Go to source code">getPackageFile</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#146-155" title="Go to source code">getPackageFile</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the package file of the package.</p>
@@ -672,7 +676,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInstallInfo">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#151-159" title="Go to source code">getInstallInfo</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#157-165" title="Go to source code">getInstallInfo</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the package's install info.</p>
@@ -706,7 +710,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getLoadErrors">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#161-170" title="Go to source code">getLoadErrors</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#167-176" title="Go to source code">getLoadErrors</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the error that occurred during loading of the package.</p>
@@ -741,7 +745,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getState">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#172-180" title="Go to source code">getState</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#178-186" title="Go to source code">getState</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the state of the package.</p>
@@ -775,7 +779,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isEnabled">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#182-192" title="Go to source code">isEnabled</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#188-198" title="Go to source code">isEnabled</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the package is enabled.</p>
@@ -813,7 +817,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isNotFound">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#194-204" title="Go to source code">isNotFound</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#200-210" title="Go to source code">isNotFound</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the package was not found.</p>
@@ -851,7 +855,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isNotLoadable">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#206-216" title="Go to source code">isNotLoadable</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#212-222" title="Go to source code">isNotLoadable</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the package was not loadable.</p>
@@ -889,7 +893,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_match">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#218-236" title="Go to source code">match</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#224-243" title="Go to source code">match</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the package matches the given expression.</p>
@@ -931,7 +935,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDefaultName">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#238-246" title="Go to source code">getDefaultName</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Package.Package.html#245-253" title="Go to source code">getDefaultName</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the default name of a package.</p>
@@ -969,7 +973,7 @@
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Package.Package.html#26-29" title="Go to source code"><b>NAME</b></a>
+				<a href="source-class-Puli.Manager.Api.Package.Package.html#27-30" title="Go to source code"><b>NAME</b></a>
 			</code>
 
 			<div class="description short">
@@ -993,7 +997,7 @@
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Package.Package.html#31-34" title="Go to source code"><b>INSTALL_PATH</b></a>
+				<a href="source-class-Puli.Manager.Api.Package.Package.html#32-35" title="Go to source code"><b>INSTALL_PATH</b></a>
 			</code>
 
 			<div class="description short">
@@ -1017,7 +1021,7 @@
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Package.Package.html#36-39" title="Go to source code"><b>STATE</b></a>
+				<a href="source-class-Puli.Manager.Api.Package.Package.html#37-40" title="Go to source code"><b>STATE</b></a>
 			</code>
 
 			<div class="description short">
@@ -1041,7 +1045,7 @@
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Package.Package.html#41-44" title="Go to source code"><b>INSTALLER</b></a>
+				<a href="source-class-Puli.Manager.Api.Package.Package.html#42-45" title="Go to source code"><b>INSTALLER</b></a>
 			</code>
 
 			<div class="description short">
@@ -1057,6 +1061,30 @@
 			<div>
 				<a href="#INSTALLER" class="anchor">#</a>
 				<code><span class="php-quote">'installer'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="DEV" id="DEV">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Puli.Manager.Api.Package.Package.html#47-50" title="Go to source code"><b>DEV</b></a>
+			</code>
+
+			<div class="description short">
+				<p>The dev field in Webmozart\Expression\Expression instances.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The dev field in Webmozart\Expression\Expression instances.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#DEV" class="anchor">#</a>
+				<code><span class="php-quote">'dev'</span></code>
 			</div>
 		</td>
 	</tr>

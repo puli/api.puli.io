@@ -160,6 +160,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -227,6 +232,11 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
 
@@ -252,11 +262,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -420,8 +425,7 @@
 			<h3>Classes</h3>
 			<ul>
 				<li class="active"><a href="class-Puli.Manager.Package.PackageFileStorage.html">PackageFileStorage</a></li>
-				<li><a href="class-Puli.Manager.Package.PackageJsonReader.html">PackageJsonReader</a></li>
-				<li><a href="class-Puli.Manager.Package.PackageJsonWriter.html">PackageJsonWriter</a></li>
+				<li><a href="class-Puli.Manager.Package.PackageJsonSerializer.html">PackageJsonSerializer</a></li>
 				<li><a href="class-Puli.Manager.Package.PackageManagerImpl.html">PackageManagerImpl</a></li>
 				<li><a href="class-Puli.Manager.Package.RootPackageFileManagerImpl.html">RootPackageFileManagerImpl</a></li>
 			</ul>
@@ -467,11 +471,6 @@
 
 	<div class="description">
 	<p>Loads and saves package files.</p>
-
-<p>This class adds a layer on top of <code><a href="class-Puli.Manager.Api.Package.PackageFileReader.html">Puli\Manager\Api\Package\PackageFileReader</a></code> and
-<code><a href="class-Puli.Manager.Api.Package.PackageFileWriter.html">Puli\Manager\Api\Package\PackageFileWriter</a></code>. Any logic that is related to the loading and
-saving of package configuration, but not directly related to the
-reading/writing of a specific file format, is executed by this class.</p>
 	</div>
 
 
@@ -492,7 +491,7 @@ reading/writing of a specific file format, is executed by this class.</p>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Package.PackageFileStorage.html#25-151" title="Go to source code">Package/PackageFileStorage.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Package.PackageFileStorage.html#25-158" title="Go to source code">Package/PackageFileStorage.php</a>
 		<br>
 	</div>
 
@@ -512,7 +511,7 @@ reading/writing of a specific file format, is executed by this class.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageFileStorage.html#53-67" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Package.PackageFileReader.html">Puli\Manager\Api\Package\PackageFileReader</a></code> <var>$reader</var></span>, <span><code><a href="class-Puli.Manager.Api.Package.PackageFileWriter.html">Puli\Manager\Api\Package\PackageFileWriter</a></code> <var>$writer</var></span>, <span><code><a href="class-Puli.Manager.Api.Factory.FactoryManager.html">Puli\Manager\Api\Factory\FactoryManager</a></code> <var>$factoryManager</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageFileStorage.html#49-64" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Storage.Storage.html">Puli\Manager\Api\Storage\Storage</a></code> <var>$storage</var></span>, <span><code><a href="class-Puli.Manager.Api.Package.PackageFileSerializer.html">Puli\Manager\Api\Package\PackageFileSerializer</a></code> <var>$serializer</var></span>, <span><code><a href="class-Puli.Manager.Api.Factory.FactoryManager.html">Puli\Manager\Api\Factory\FactoryManager</a></code> <var>$factoryManager</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Creates a new storage.</p>
@@ -524,14 +523,15 @@ reading/writing of a specific file format, is executed by this class.</p>
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$reader</var></dt>
-					<dd>The package file reader.</dd>
-					<dt><var>$writer</var></dt>
-					<dd>The package file writer.</dd>
+					<dt><var>$storage</var></dt>
+					<dd>The file storage.</dd>
+					<dt><var>$serializer</var></dt>
+					<dd>The package file serializer.</dd>
 					<dt><var>$factoryManager</var></dt>
-					<dd><p>The manager used to regenerate
-                                         the factory class after saving
-                                         the root package file.</p></dd>
+					<dd><p>The manager used to
+                                             regenerate the factory class
+                                             after saving the root
+                                             package file.</p></dd>
 				</dl></div>
 
 
@@ -553,7 +553,7 @@ reading/writing of a specific file format, is executed by this class.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_loadPackageFile">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageFileStorage.html#69-93" title="Go to source code">loadPackageFile</a>( <span>string <var>$path</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageFileStorage.html#66-93" title="Go to source code">loadPackageFile</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
 			<p>Loads a package file from a file path.</p>
@@ -581,7 +581,11 @@ exception is thrown.</p>
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><a href="class-Puli.Manager.Api.InvalidConfigException.html">Puli\Manager\Api\InvalidConfigException</a></code><br>If the file contains invalid configuration.
+					<code><a href="class-Puli.Manager.Api.Storage.StorageException.html">Puli\Manager\Api\Storage\StorageException</a></code><br>If the file cannot be read.<br>
+					<code><a href="class-Puli.Manager.Api.InvalidConfigException.html">Puli\Manager\Api\InvalidConfigException</a></code><br><p>If the file contains invalid
+                                    configuration.</p><br>
+					<code><a href="class-Puli.Manager.Api.Package.UnsupportedVersionException.html">Puli\Manager\Api\Package\UnsupportedVersionException</a></code><br><p>If the version of the package file
+                                    is not supported.</p>
 				</div>
 
 
@@ -601,7 +605,7 @@ exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_savePackageFile">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageFileStorage.html#95-107" title="Go to source code">savePackageFile</a>( <span><code><a href="class-Puli.Manager.Api.Package.PackageFile.html">Puli\Manager\Api\Package\PackageFile</a></code> <var>$packageFile</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageFileStorage.html#95-109" title="Go to source code">savePackageFile</a>( <span><code><a href="class-Puli.Manager.Api.Package.PackageFile.html">Puli\Manager\Api\Package\PackageFile</a></code> <var>$packageFile</var></span> )</code>
 
 		<div class="description short">
 			<p>Saves a package file.</p>
@@ -622,7 +626,7 @@ exception is thrown.</p>
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><a href="class-Puli.Manager.Api.IOException.html">Puli\Manager\Api\IOException</a></code><br>If the file cannot be written.
+					<code><a href="class-Puli.Manager.Api.Storage.StorageException.html">Puli\Manager\Api\Storage\StorageException</a></code><br>If the file cannot be written.
 				</div>
 
 
@@ -642,7 +646,7 @@ exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_loadRootPackageFile">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageFileStorage.html#109-132" title="Go to source code">loadRootPackageFile</a>( <span>string <var>$path</var></span>, <span><code><a href="class-Puli.Manager.Api.Config.Config.html">Puli\Manager\Api\Config\Config</a></code> <var>$baseConfig</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageFileStorage.html#111-137" title="Go to source code">loadRootPackageFile</a>( <span>string <var>$path</var></span>, <span><code><a href="class-Puli.Manager.Api.Config.Config.html">Puli\Manager\Api\Config\Config</a></code> <var>$baseConfig</var></span> )</code>
 
 		<div class="description short">
 			<p>Loads a root package file from a file path.</p>
@@ -670,7 +674,11 @@ exception is thrown.</p>
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><a href="class-Puli.Manager.Api.InvalidConfigException.html">Puli\Manager\Api\InvalidConfigException</a></code><br>If the file contains invalid configuration.
+					<code><a href="class-Puli.Manager.Api.Storage.StorageException.html">Puli\Manager\Api\Storage\StorageException</a></code><br>If the file cannot be read.<br>
+					<code><a href="class-Puli.Manager.Api.InvalidConfigException.html">Puli\Manager\Api\InvalidConfigException</a></code><br><p>If the file contains invalid
+                                    configuration.</p><br>
+					<code><a href="class-Puli.Manager.Api.Package.UnsupportedVersionException.html">Puli\Manager\Api\Package\UnsupportedVersionException</a></code><br><p>If the version of the package file
+                                    is not supported.</p>
 				</div>
 
 
@@ -690,7 +698,7 @@ exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_saveRootPackageFile">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageFileStorage.html#134-150" title="Go to source code">saveRootPackageFile</a>( <span><code><a href="class-Puli.Manager.Api.Package.RootPackageFile.html">Puli\Manager\Api\Package\RootPackageFile</a></code> <var>$packageFile</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageFileStorage.html#139-157" title="Go to source code">saveRootPackageFile</a>( <span><code><a href="class-Puli.Manager.Api.Package.RootPackageFile.html">Puli\Manager\Api\Package\RootPackageFile</a></code> <var>$packageFile</var></span> )</code>
 
 		<div class="description short">
 			<p>Saves a root package file.</p>
@@ -711,7 +719,7 @@ exception is thrown.</p>
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><a href="class-Puli.Manager.Api.IOException.html">Puli\Manager\Api\IOException</a></code><br>If the file cannot be written.
+					<code><a href="class-Puli.Manager.Api.Storage.StorageException.html">Puli\Manager\Api\Storage\StorageException</a></code><br>If the file cannot be written.
 				</div>
 
 

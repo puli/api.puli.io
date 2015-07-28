@@ -159,6 +159,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -226,6 +231,11 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
 
@@ -251,11 +261,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -469,8 +474,7 @@
 				<li><a href="class-Puli.Manager.Config.AbstractConfigManager.html">Puli\Manager\Config\AbstractConfigManager</a></li>
 				<li><a href="class-Puli.Manager.Config.ConfigFileManagerImpl.html">Puli\Manager\Config\ConfigFileManagerImpl</a></li>
 				<li><a href="class-Puli.Manager.Config.ConfigFileStorage.html">Puli\Manager\Config\ConfigFileStorage</a></li>
-				<li><a href="class-Puli.Manager.Config.ConfigJsonReader.html">Puli\Manager\Config\ConfigJsonReader</a></li>
-				<li><a href="class-Puli.Manager.Config.ConfigJsonWriter.html">Puli\Manager\Config\ConfigJsonWriter</a></li>
+				<li><a href="class-Puli.Manager.Config.ConfigJsonSerializer.html">Puli\Manager\Config\ConfigJsonSerializer</a></li>
 				<li><a href="class-Puli.Manager.Config.DefaultConfig.html">Puli\Manager\Config\DefaultConfig</a></li>
 				<li><a href="class-Puli.Manager.Config.EnvConfig.html">Puli\Manager\Config\EnvConfig</a></li>
 				<li><a href="class-Puli.Manager.Conflict.OverrideGraph.html">Puli\Manager\Conflict\OverrideGraph</a></li>
@@ -507,18 +511,16 @@
 				<li><a href="class-Puli.Manager.Factory.Generator.KeyValueStore.PredisStoreGenerator.html">Puli\Manager\Factory\Generator\KeyValueStore\PredisStoreGenerator</a></li>
 				<li><a href="class-Puli.Manager.Factory.Generator.KeyValueStore.RiakStoreGenerator.html">Puli\Manager\Factory\Generator\KeyValueStore\RiakStoreGenerator</a></li>
 				<li><a href="class-Puli.Manager.Factory.Generator.Repository.FilesystemRepositoryGenerator.html">Puli\Manager\Factory\Generator\Repository\FilesystemRepositoryGenerator</a></li>
+				<li><a href="class-Puli.Manager.Filesystem.FilesystemStorage.html">Puli\Manager\Filesystem\FilesystemStorage</a></li>
 				<li><a href="class-Puli.Manager.Installation.InstallationManagerImpl.html">Puli\Manager\Installation\InstallationManagerImpl</a></li>
 				<li><a href="class-Puli.Manager.Installer.CopyInstaller.html">Puli\Manager\Installer\CopyInstaller</a></li>
 				<li><a href="class-Puli.Manager.Installer.PackageFileInstallerManager.html">Puli\Manager\Installer\PackageFileInstallerManager</a></li>
 				<li><a href="class-Puli.Manager.Installer.SymlinkInstaller.html">Puli\Manager\Installer\SymlinkInstaller</a></li>
 				<li><a href="class-Puli.Manager.Package.PackageFileStorage.html">Puli\Manager\Package\PackageFileStorage</a></li>
-				<li><a href="class-Puli.Manager.Package.PackageJsonReader.html">Puli\Manager\Package\PackageJsonReader</a></li>
-				<li><a href="class-Puli.Manager.Package.PackageJsonWriter.html">Puli\Manager\Package\PackageJsonWriter</a></li>
+				<li><a href="class-Puli.Manager.Package.PackageJsonSerializer.html">Puli\Manager\Package\PackageJsonSerializer</a></li>
 				<li><a href="class-Puli.Manager.Package.PackageManagerImpl.html">Puli\Manager\Package\PackageManagerImpl</a></li>
 				<li><a href="class-Puli.Manager.Package.RootPackageFileManagerImpl.html">Puli\Manager\Package\RootPackageFileManagerImpl</a></li>
 				<li><a href="class-Puli.Manager.Php.ClassWriter.html">Puli\Manager\Php\ClassWriter</a></li>
-				<li><a href="class-Puli.Manager.Repository.Iterator.RecursivePathIterator.html">Puli\Manager\Repository\Iterator\RecursivePathIterator</a></li>
-				<li><a href="class-Puli.Manager.Repository.Iterator.RecursivePathsIterator.html">Puli\Manager\Repository\Iterator\RecursivePathsIterator</a></li>
 				<li><a href="class-Puli.Manager.Repository.Mapping.AddPathMappingToPackageFile.html">Puli\Manager\Repository\Mapping\AddPathMappingToPackageFile</a></li>
 				<li><a href="class-Puli.Manager.Repository.Mapping.ConflictCollection.html">Puli\Manager\Repository\Mapping\ConflictCollection</a></li>
 				<li><a href="class-Puli.Manager.Repository.Mapping.LoadPathMapping.html">Puli\Manager\Repository\Mapping\LoadPathMapping</a></li>
@@ -536,10 +538,14 @@
 				<li><a href="class-Puli.Manager.Util.DistinguishedName.html">Puli\Manager\Util\DistinguishedName</a></li>
 				<li><a href="class-Puli.Manager.Util.System.html">Puli\Manager\Util\System</a></li>
 				<li><a href="class-Puli.Manager.Util.TwoDimensionalHashMap.html">Puli\Manager\Util\TwoDimensionalHashMap</a></li>
+				<li><a href="class-Puli.Repository.AbstractPathMappingRepository.html">Puli\Repository\AbstractPathMappingRepository</a></li>
+				<li><a href="class-Puli.Repository.AbstractRepository.html">Puli\Repository\AbstractRepository</a></li>
 				<li><a href="class-Puli.Repository.Api.Resource.ResourceMetadata.html">Puli\Repository\Api\Resource\ResourceMetadata</a></li>
 				<li><a href="class-Puli.Repository.FilesystemRepository.html">Puli\Repository\FilesystemRepository</a></li>
 				<li><a href="class-Puli.Repository.InMemoryRepository.html">Puli\Repository\InMemoryRepository</a></li>
 				<li><a href="class-Puli.Repository.NullRepository.html">Puli\Repository\NullRepository</a></li>
+				<li><a href="class-Puli.Repository.OptimizedPathMappingRepository.html">Puli\Repository\OptimizedPathMappingRepository</a></li>
+				<li><a href="class-Puli.Repository.PathMappingRepository.html">Puli\Repository\PathMappingRepository</a></li>
 				<li><a href="class-Puli.Repository.Resource.AbstractFilesystemResource.html">Puli\Repository\Resource\AbstractFilesystemResource</a></li>
 				<li><a href="class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html">Puli\Repository\Resource\Collection\ArrayResourceCollection</a></li>
 				<li><a href="class-Puli.Repository.Resource.Collection.FilesystemResourceCollection.html">Puli\Repository\Resource\Collection\FilesystemResourceCollection</a></li>
@@ -582,8 +588,7 @@
 				<li><a href="class-Puli.Factory.PuliFactory.html">Puli\Factory\PuliFactory</a></li>
 				<li><a href="class-Puli.Manager.Api.Asset.AssetManager.html">Puli\Manager\Api\Asset\AssetManager</a></li>
 				<li><a href="class-Puli.Manager.Api.Config.ConfigFileManager.html">Puli\Manager\Api\Config\ConfigFileManager</a></li>
-				<li><a href="class-Puli.Manager.Api.Config.ConfigFileReader.html">Puli\Manager\Api\Config\ConfigFileReader</a></li>
-				<li><a href="class-Puli.Manager.Api.Config.ConfigFileWriter.html">Puli\Manager\Api\Config\ConfigFileWriter</a></li>
+				<li><a href="class-Puli.Manager.Api.Config.ConfigFileSerializer.html">Puli\Manager\Api\Config\ConfigFileSerializer</a></li>
 				<li><a href="class-Puli.Manager.Api.Config.ConfigManager.html">Puli\Manager\Api\Config\ConfigManager</a></li>
 				<li><a href="class-Puli.Manager.Api.Discovery.DiscoveryManager.html">Puli\Manager\Api\Discovery\DiscoveryManager</a></li>
 				<li><a href="class-Puli.Manager.Api.Event.PuliEvents.html">Puli\Manager\Api\Event\PuliEvents</a></li>
@@ -593,13 +598,13 @@
 				<li><a href="class-Puli.Manager.Api.Installation.InstallationManager.html">Puli\Manager\Api\Installation\InstallationManager</a></li>
 				<li><a href="class-Puli.Manager.Api.Installer.InstallerManager.html">Puli\Manager\Api\Installer\InstallerManager</a></li>
 				<li><a href="class-Puli.Manager.Api.Installer.ResourceInstaller.html">Puli\Manager\Api\Installer\ResourceInstaller</a></li>
-				<li><a href="class-Puli.Manager.Api.Package.PackageFileReader.html">Puli\Manager\Api\Package\PackageFileReader</a></li>
-				<li><a href="class-Puli.Manager.Api.Package.PackageFileWriter.html">Puli\Manager\Api\Package\PackageFileWriter</a></li>
+				<li><a href="class-Puli.Manager.Api.Package.PackageFileSerializer.html">Puli\Manager\Api\Package\PackageFileSerializer</a></li>
 				<li><a href="class-Puli.Manager.Api.Package.PackageManager.html">Puli\Manager\Api\Package\PackageManager</a></li>
 				<li><a href="class-Puli.Manager.Api.Package.RootPackageFileManager.html">Puli\Manager\Api\Package\RootPackageFileManager</a></li>
 				<li><a href="class-Puli.Manager.Api.PuliPlugin.html">Puli\Manager\Api\PuliPlugin</a></li>
 				<li><a href="class-Puli.Manager.Api.Repository.RepositoryManager.html">Puli\Manager\Api\Repository\RepositoryManager</a></li>
 				<li><a href="class-Puli.Manager.Api.Server.ServerManager.html">Puli\Manager\Api\Server\ServerManager</a></li>
+				<li><a href="class-Puli.Manager.Api.Storage.Storage.html">Puli\Manager\Api\Storage\Storage</a></li>
 				<li><a href="class-Puli.Manager.Transaction.AtomicOperation.html">Puli\Manager\Transaction\AtomicOperation</a></li>
 				<li><a href="class-Puli.Manager.Transaction.OperationInterceptor.html">Puli\Manager\Transaction\OperationInterceptor</a></li>
 				<li><a href="class-Puli.Repository.Api.EditableRepository.html">Puli\Repository\Api\EditableRepository</a></li>
@@ -637,7 +642,6 @@
 				<li><a href="class-Puli.Manager.Api.Installer.NoSuchInstallerException.html">Puli\Manager\Api\Installer\NoSuchInstallerException</a></li>
 				<li><a href="class-Puli.Manager.Api.Installer.NoSuchParameterException.html">Puli\Manager\Api\Installer\NoSuchParameterException</a></li>
 				<li><a href="class-Puli.Manager.Api.InvalidConfigException.html">Puli\Manager\Api\InvalidConfigException</a></li>
-				<li><a href="class-Puli.Manager.Api.IOException.html">Puli\Manager\Api\IOException</a></li>
 				<li><a href="class-Puli.Manager.Api.NoDirectoryException.html">Puli\Manager\Api\NoDirectoryException</a></li>
 				<li><a href="class-Puli.Manager.Api.NonRootPackageExpectedException.html">Puli\Manager\Api\NonRootPackageExpectedException</a></li>
 				<li><a href="class-Puli.Manager.Api.NotLoadedException.html">Puli\Manager\Api\NotLoadedException</a></li>
@@ -647,6 +651,7 @@
 				<li><a href="class-Puli.Manager.Api.Repository.DuplicatePathMappingException.html">Puli\Manager\Api\Repository\DuplicatePathMappingException</a></li>
 				<li><a href="class-Puli.Manager.Api.Repository.NoSuchPathMappingException.html">Puli\Manager\Api\Repository\NoSuchPathMappingException</a></li>
 				<li><a href="class-Puli.Manager.Api.Server.NoSuchServerException.html">Puli\Manager\Api\Server\NoSuchServerException</a></li>
+				<li><a href="class-Puli.Manager.Api.Storage.StorageException.html">Puli\Manager\Api\Storage\StorageException</a></li>
 				<li><a href="class-Puli.Manager.Conflict.CyclicDependencyException.html">Puli\Manager\Conflict\CyclicDependencyException</a></li>
 				<li><a href="class-Puli.Manager.Conflict.PackageConflictException.html">Puli\Manager\Conflict\PackageConflictException</a></li>
 				<li><a href="class-Puli.Repository.Api.ResourceNotFoundException.html">Puli\Repository\Api\ResourceNotFoundException</a></li>
@@ -768,6 +773,9 @@
 				<td class="name"><a href="namespace-Puli.Manager.Api.Server.html">Puli\Manager\Api\Server</a></td>
 			</tr>
 			<tr>
+				<td class="name"><a href="namespace-Puli.Manager.Api.Storage.html">Puli\Manager\Api\Storage</a></td>
+			</tr>
+			<tr>
 				<td class="name"><a href="namespace-Puli.Manager.Assert.html">Puli\Manager\Assert</a></td>
 			</tr>
 			<tr>
@@ -804,6 +812,9 @@
 				<td class="name"><a href="namespace-Puli.Manager.Factory.Generator.Repository.html">Puli\Manager\Factory\Generator\Repository</a></td>
 			</tr>
 			<tr>
+				<td class="name"><a href="namespace-Puli.Manager.Filesystem.html">Puli\Manager\Filesystem</a></td>
+			</tr>
+			<tr>
 				<td class="name"><a href="namespace-Puli.Manager.Installation.html">Puli\Manager\Installation</a></td>
 			</tr>
 			<tr>
@@ -817,9 +828,6 @@
 			</tr>
 			<tr>
 				<td class="name"><a href="namespace-Puli.Manager.Repository.html">Puli\Manager\Repository</a></td>
-			</tr>
-			<tr>
-				<td class="name"><a href="namespace-Puli.Manager.Repository.Iterator.html">Puli\Manager\Repository\Iterator</a></td>
 			</tr>
 			<tr>
 				<td class="name"><a href="namespace-Puli.Manager.Repository.Mapping.html">Puli\Manager\Repository\Mapping</a></td>
@@ -913,6 +921,6 @@
 </div>
 </div>
 <script src="resources/combined.js?90a9ebc032fe484834129d90a6307c0552eea616"></script>
-<script src="elementlist.js?da8aade47835cab8cda4137a19b984fde654603c"></script>
+<script src="elementlist.js?4f17497adfecd0429867f808f2fae8b1b1d1037a"></script>
 </body>
 </html>

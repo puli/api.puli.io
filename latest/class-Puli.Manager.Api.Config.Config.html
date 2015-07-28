@@ -160,6 +160,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -227,6 +232,11 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
 
@@ -252,11 +262,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -426,8 +431,7 @@
 			<h3>Interfaces</h3>
 			<ul>
 				<li><a href="class-Puli.Manager.Api.Config.ConfigFileManager.html">ConfigFileManager</a></li>
-				<li><a href="class-Puli.Manager.Api.Config.ConfigFileReader.html">ConfigFileReader</a></li>
-				<li><a href="class-Puli.Manager.Api.Config.ConfigFileWriter.html">ConfigFileWriter</a></li>
+				<li><a href="class-Puli.Manager.Api.Config.ConfigFileSerializer.html">ConfigFileSerializer</a></li>
 				<li><a href="class-Puli.Manager.Api.Config.ConfigManager.html">ConfigManager</a></li>
 			</ul>
 
@@ -548,7 +552,7 @@ referenced keys when the values are accessed:</p>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Config.Config.html#16-703" title="Go to source code">Api/Config/Config.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Config.Config.html#16-706" title="Go to source code">Api/Config/Config.php</a>
 		<br>
 	</div>
 
@@ -568,7 +572,7 @@ referenced keys when the values are accessed:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#173-181" title="Go to source code">getKeys</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#177-185" title="Go to source code">getKeys</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all valid configuration keys.</p>
@@ -602,7 +606,7 @@ referenced keys when the values are accessed:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#183-195" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Config.Config.html">Puli\Manager\Api\Config\Config</a></code> <var>$baseConfig</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$values</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#187-199" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Config.Config.html">Puli\Manager\Api\Config\Config</a></code> <var>$baseConfig</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$values</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>Creates a new configuration.</p>
@@ -640,7 +644,7 @@ referenced keys when the values are accessed:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBaseConfig">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#197-205" title="Go to source code">getBaseConfig</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#201-209" title="Go to source code">getBaseConfig</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the base configuration.</p>
@@ -674,7 +678,7 @@ referenced keys when the values are accessed:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#207-229" title="Go to source code">get</a>( <span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$fallback</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#211-233" title="Go to source code">get</a>( <span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$fallback</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the value of a configuration key.</p>
@@ -729,7 +733,7 @@ in its fallback configuration.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRaw">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#231-276" title="Go to source code">getRaw</a>( <span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$fallback</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#235-280" title="Go to source code">getRaw</a>( <span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$fallback</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the raw value of a configuration key.</p>
@@ -789,7 +793,7 @@ in its fallback configuration.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_contains">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#278-308" title="Go to source code">contains</a>( <span>string <var>$key</var></span>, <span>boolean <var>$fallback</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#282-312" title="Go to source code">contains</a>( <span>string <var>$key</var></span>, <span>boolean <var>$fallback</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether a configuration key is set.</p>
@@ -835,7 +839,7 @@ in its fallback configuration.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#310-339" title="Go to source code">set</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#314-343" title="Go to source code">set</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the value of a configuration key.</p>
@@ -877,7 +881,7 @@ in its fallback configuration.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_merge">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#341-354" title="Go to source code">merge</a>( <span>array <var>$values</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#345-358" title="Go to source code">merge</a>( <span>array <var>$values</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets a list of configuration values.</p>
@@ -917,7 +921,7 @@ in its fallback configuration.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_replace">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#356-368" title="Go to source code">replace</a>( <span>array <var>$values</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#360-372" title="Go to source code">replace</a>( <span>array <var>$values</var></span> )</code>
 
 		<div class="description short">
 			<p>Replaces the configuration with a list of configuration values.</p>
@@ -957,7 +961,7 @@ in its fallback configuration.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#370-393" title="Go to source code">remove</a>( <span>string <var>$key</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#374-397" title="Go to source code">remove</a>( <span>string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a configuration key.</p>
@@ -999,7 +1003,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#395-404" title="Go to source code">clear</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#399-408" title="Go to source code">clear</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all configuration keys.</p>
@@ -1032,7 +1036,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 
 		<td class="name"><div>
 		<a class="anchor" href="#_toFlatArray">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#406-417" title="Go to source code">toFlatArray</a>( <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#410-421" title="Go to source code">toFlatArray</a>( <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns all configuration values as flat array.</p>
@@ -1072,7 +1076,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 
 		<td class="name"><div>
 		<a class="anchor" href="#_toFlatRawArray">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#419-452" title="Go to source code">toFlatRawArray</a>( <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#423-456" title="Go to source code">toFlatRawArray</a>( <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns all raw configuration values as flat array.</p>
@@ -1130,7 +1134,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 
 		<td class="name"><div>
 		<a class="anchor" href="#_toArray">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#454-465" title="Go to source code">toArray</a>( <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#458-469" title="Go to source code">toArray</a>( <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns all configuration values as nested array.</p>
@@ -1170,7 +1174,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 
 		<td class="name"><div>
 		<a class="anchor" href="#_toRawArray">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#467-510" title="Go to source code">toRawArray</a>( <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#471-514" title="Go to source code">toRawArray</a>( <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns all raw configuration values as nested array.</p>
@@ -1232,7 +1236,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isEmpty">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#512-529" title="Go to source code">isEmpty</a>( <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.Config.html#516-533" title="Go to source code">isEmpty</a>( <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the configuration is empty.</p>
@@ -1276,7 +1280,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#82" title="Go to source code"><b>PULI_DIR</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#83" title="Go to source code"><b>PULI_DIR</b></a>
 			</code>
 
 			<div class="description short">
@@ -1295,12 +1299,36 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 			</div>
 		</td>
 	</tr>
+	<tr data-order="BOOTSTRAP_FILE" id="BOOTSTRAP_FILE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#85" title="Go to source code"><b>BOOTSTRAP_FILE</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#BOOTSTRAP_FILE" class="anchor">#</a>
+				<code><span class="php-quote">'bootstrap-file'</span></code>
+			</div>
+		</td>
+	</tr>
 	<tr data-order="FACTORY" id="FACTORY">
 
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#84" title="Go to source code"><b>FACTORY</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#87" title="Go to source code"><b>FACTORY</b></a>
 			</code>
 
 			<div class="description short">
@@ -1324,7 +1352,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#86" title="Go to source code"><b>FACTORY_AUTO_GENERATE</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#89" title="Go to source code"><b>FACTORY_AUTO_GENERATE</b></a>
 			</code>
 
 			<div class="description short">
@@ -1348,7 +1376,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#88" title="Go to source code"><b>FACTORY_IN</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#91" title="Go to source code"><b>FACTORY_IN</b></a>
 			</code>
 
 			<div class="description short">
@@ -1372,7 +1400,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#90" title="Go to source code"><b>FACTORY_IN_CLASS</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#93" title="Go to source code"><b>FACTORY_IN_CLASS</b></a>
 			</code>
 
 			<div class="description short">
@@ -1396,7 +1424,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#92" title="Go to source code"><b>FACTORY_IN_FILE</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#95" title="Go to source code"><b>FACTORY_IN_FILE</b></a>
 			</code>
 
 			<div class="description short">
@@ -1420,7 +1448,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#94" title="Go to source code"><b>FACTORY_OUT</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#97" title="Go to source code"><b>FACTORY_OUT</b></a>
 			</code>
 
 			<div class="description short">
@@ -1444,7 +1472,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#96" title="Go to source code"><b>FACTORY_OUT_CLASS</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#99" title="Go to source code"><b>FACTORY_OUT_CLASS</b></a>
 			</code>
 
 			<div class="description short">
@@ -1468,7 +1496,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#98" title="Go to source code"><b>FACTORY_OUT_FILE</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#101" title="Go to source code"><b>FACTORY_OUT_FILE</b></a>
 			</code>
 
 			<div class="description short">
@@ -1492,7 +1520,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#100" title="Go to source code"><b>REPOSITORY</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#103" title="Go to source code"><b>REPOSITORY</b></a>
 			</code>
 
 			<div class="description short">
@@ -1516,7 +1544,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#102" title="Go to source code"><b>REPOSITORY_TYPE</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#105" title="Go to source code"><b>REPOSITORY_TYPE</b></a>
 			</code>
 
 			<div class="description short">
@@ -1540,7 +1568,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#104" title="Go to source code"><b>REPOSITORY_PATH</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#107" title="Go to source code"><b>REPOSITORY_PATH</b></a>
 			</code>
 
 			<div class="description short">
@@ -1564,7 +1592,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#106" title="Go to source code"><b>REPOSITORY_SYMLINK</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#109" title="Go to source code"><b>REPOSITORY_SYMLINK</b></a>
 			</code>
 
 			<div class="description short">
@@ -1588,7 +1616,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#108" title="Go to source code"><b>DISCOVERY</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#111" title="Go to source code"><b>DISCOVERY</b></a>
 			</code>
 
 			<div class="description short">
@@ -1612,7 +1640,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#110" title="Go to source code"><b>DISCOVERY_TYPE</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#113" title="Go to source code"><b>DISCOVERY_TYPE</b></a>
 			</code>
 
 			<div class="description short">
@@ -1636,7 +1664,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#112" title="Go to source code"><b>DISCOVERY_STORE</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#115" title="Go to source code"><b>DISCOVERY_STORE</b></a>
 			</code>
 
 			<div class="description short">
@@ -1660,7 +1688,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#114" title="Go to source code"><b>DISCOVERY_STORE_TYPE</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#117" title="Go to source code"><b>DISCOVERY_STORE_TYPE</b></a>
 			</code>
 
 			<div class="description short">
@@ -1684,7 +1712,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#116" title="Go to source code"><b>DISCOVERY_STORE_PATH</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#119" title="Go to source code"><b>DISCOVERY_STORE_PATH</b></a>
 			</code>
 
 			<div class="description short">
@@ -1708,7 +1736,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#118" title="Go to source code"><b>DISCOVERY_STORE_HOST</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#121" title="Go to source code"><b>DISCOVERY_STORE_HOST</b></a>
 			</code>
 
 			<div class="description short">
@@ -1732,7 +1760,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#120" title="Go to source code"><b>DISCOVERY_STORE_PORT</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#123" title="Go to source code"><b>DISCOVERY_STORE_PORT</b></a>
 			</code>
 
 			<div class="description short">
@@ -1756,7 +1784,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#122" title="Go to source code"><b>DISCOVERY_STORE_BUCKET</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#125" title="Go to source code"><b>DISCOVERY_STORE_BUCKET</b></a>
 			</code>
 
 			<div class="description short">
@@ -1780,7 +1808,7 @@ be returned by <code><a href="class-Puli.Manager.Api.Config.Config.html#_get">Pu
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Config.Config.html#124" title="Go to source code"><b>DISCOVERY_STORE_CACHE</b></a>
+				<a href="source-class-Puli.Manager.Api.Config.Config.html#127" title="Go to source code"><b>DISCOVERY_STORE_CACHE</b></a>
 			</code>
 
 			<div class="description short">

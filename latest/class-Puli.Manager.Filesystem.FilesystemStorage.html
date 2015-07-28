@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Interface Puli\Manager\Api\Config\ConfigFileWriter | Puli API</title>
+	<title>Class Puli\Manager\Filesystem\FilesystemStorage | Puli API</title>
 
 	<link rel="stylesheet" href="resources/style.css?95ada9fb523b6ab4fd1c47bb375f713f2cc65542">
 
@@ -80,7 +80,7 @@
 					</a>
 
 						<ul>
-				<li class="active">
+				<li>
 					<a href="namespace-Puli.Manager.Api.html">
 						Api<span></span>
 					</a>
@@ -91,7 +91,7 @@
 						Asset					</a>
 
 						</li>
-				<li class="active">
+				<li>
 					<a href="namespace-Puli.Manager.Api.Config.html">
 						Config					</a>
 
@@ -160,6 +160,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -226,6 +231,11 @@
 
 						</li>
 							</ul></li></ul></li>
+				<li class="active">
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
@@ -252,11 +262,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -419,23 +424,11 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Puli.Manager.Api.Config.Config.html">Config</a></li>
-				<li><a href="class-Puli.Manager.Api.Config.ConfigFile.html">ConfigFile</a></li>
-			</ul>
-
-			<h3>Interfaces</h3>
-			<ul>
-				<li><a href="class-Puli.Manager.Api.Config.ConfigFileManager.html">ConfigFileManager</a></li>
-				<li><a href="class-Puli.Manager.Api.Config.ConfigFileReader.html">ConfigFileReader</a></li>
-				<li class="active"><a href="class-Puli.Manager.Api.Config.ConfigFileWriter.html">ConfigFileWriter</a></li>
-				<li><a href="class-Puli.Manager.Api.Config.ConfigManager.html">ConfigManager</a></li>
+				<li class="active"><a href="class-Puli.Manager.Filesystem.FilesystemStorage.html">FilesystemStorage</a></li>
 			</ul>
 
 
-			<h3>Exceptions</h3>
-			<ul>
-				<li><a href="class-Puli.Manager.Api.Config.NoSuchConfigKeyException.html">NoSuchConfigKeyException</a></li>
-			</ul>
+
 
 
 		</div>
@@ -458,7 +451,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-Puli.Manager.Api.Config.html" title="Summary of Puli\Manager\Api\Config"><span>Namespace</span></a>
+				<a href="namespace-Puli.Manager.Filesystem.html" title="Summary of Puli\Manager\Filesystem"><span>Namespace</span></a>
 			</li>
 			<li class="active">
 <span>Class</span>			</li>
@@ -470,21 +463,26 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Interface ConfigFileWriter</h1>
+	<h1>Class FilesystemStorage</h1>
 
 
 	<div class="description">
-	<p>Writes configuration files.</p>
+	<p>Stores files on the filesystem.</p>
 	</div>
 
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Puli\Manager\Filesystem\FilesystemStorage</span></b>			
+			 implements 
+				<a href="class-Puli.Manager.Api.Storage.Storage.html"><span>Puli\Manager\Api\Storage\Storage</span></a>
+			
+			
+		</dd>
+	</dl>
 
 
 
 
-	<div>
-		<h4>Direct known implementers</h4>
-			<a href="class-Puli.Manager.Config.ConfigJsonWriter.html">Puli\Manager\Config\ConfigJsonWriter</a>
-	</div>
 
 
 
@@ -492,14 +490,14 @@
 	<div class="info">
 		
 		
-		<b>Namespace:</b> <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.Manager.html">Manager</a>\<a href="namespace-Puli.Manager.Api.html">Api</a>\<a href="namespace-Puli.Manager.Api.Config.html">Config</a><br>
+		<b>Namespace:</b> <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.Manager.html">Manager</a>\<a href="namespace-Puli.Manager.Filesystem.html">Filesystem</a><br>
 		
 
 				<b>Author:</b>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Config.ConfigFileWriter.html#14-29" title="Go to source code">Api/Config/ConfigFileWriter.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Filesystem.FilesystemStorage.html#20-81" title="Go to source code">Filesystem/FilesystemStorage.php</a>
 		<br>
 	</div>
 
@@ -507,40 +505,136 @@
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="writeConfigFile" id="_writeConfigFile">
+	<tr data-order="read" id="_read">
 
 		<td class="attributes"><code>
 			 public 
 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_writeConfigFile">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.ConfigFileWriter.html#22-28" title="Go to source code">writeConfigFile</a>( <span><code><a href="class-Puli.Manager.Api.Config.ConfigFile.html">Puli\Manager\Api\Config\ConfigFile</a></code> <var>$configFile</var></span>, <span>string <var>$path</var></span> )</code>
+		<a class="anchor" href="#_read">#</a>
+		<code><a href="source-class-Puli.Manager.Filesystem.FilesystemStorage.html#29-47" title="Go to source code">read</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
-			<p>Writes a configuration file.</p>
+			<p>Reads a file.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Writes a configuration file.</p>
+			<p>Reads a file.</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$configFile</var></dt>
-					<dd>The configuration file to write.</dd>
 					<dt><var>$path</var></dt>
-					<dd>The file path to write to.</dd>
+					<dd>The file path.</dd>
 				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>The file contents.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Puli.Manager.Api.Storage.StorageException.html">Puli\Manager\Api\Storage\StorageException</a></code><br>If the file cannot be read.
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Storage.Storage.html#_read">Puli\Manager\Api\Storage\Storage::read()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="write" id="_write">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_write">#</a>
+		<code><a href="source-class-Puli.Manager.Filesystem.FilesystemStorage.html#49-72" title="Go to source code">write</a>( <span>string <var>$path</var></span>, <span>string <var>$contents</var></span> )</code>
+
+		<div class="description short">
+			<p>Writes a file.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Writes a file.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd>The file path.</dd>
+					<dt><var>$contents</var></dt>
+					<dd>The contents to write to the file.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer<br>The number of bytes written to the file.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Puli.Manager.Api.Storage.StorageException.html">Puli\Manager\Api\Storage\StorageException</a></code><br>If the file cannot be written.
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Storage.Storage.html#_write">Puli\Manager\Api\Storage\Storage::write()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="exists" id="_exists">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_exists">#</a>
+		<code><a href="source-class-Puli.Manager.Filesystem.FilesystemStorage.html#74-80" title="Go to source code">exists</a>( <span>string <var>$path</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns whether a path exists.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether a path exists.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd>The file path.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>Returns <code>true</code> if the path exists and <code>false</code> otherwise.
+				</div>
 
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Storage.Storage.html#_exists">Puli\Manager\Api\Storage\Storage::exists()</a></code></div>
 		</div>
 		</div></td>
 	</tr>

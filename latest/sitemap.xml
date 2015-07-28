@@ -76,6 +76,9 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Server.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Storage.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Assert.html</loc>
 </url>
 <url>
@@ -112,6 +115,9 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Factory.Generator.Repository.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Filesystem.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Installation.html</loc>
 </url>
 <url>
@@ -125,9 +131,6 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Repository.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Repository.Iterator.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Repository.Mapping.html</loc>
@@ -366,10 +369,7 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Config.ConfigFileStorage.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Config.ConfigJsonReader.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Config.ConfigJsonWriter.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Config.ConfigJsonSerializer.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Config.DefaultConfig.html</loc>
@@ -480,6 +480,9 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Factory.Generator.Repository.FilesystemRepositoryGenerator.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Filesystem.FilesystemStorage.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Installation.InstallationManagerImpl.html</loc>
 </url>
 <url>
@@ -495,10 +498,7 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Package.PackageFileStorage.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Package.PackageJsonReader.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Package.PackageJsonWriter.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Package.PackageJsonSerializer.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Package.PackageManagerImpl.html</loc>
@@ -508,12 +508,6 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Php.ClassWriter.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Repository.Iterator.RecursivePathIterator.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Repository.Iterator.RecursivePathsIterator.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Repository.Mapping.AddPathMappingToPackageFile.html</loc>
@@ -567,6 +561,12 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Util.TwoDimensionalHashMap.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.Repository.AbstractPathMappingRepository.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Repository.AbstractRepository.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Puli.Repository.Api.Resource.ResourceMetadata.html</loc>
 </url>
 <url>
@@ -577,6 +577,12 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Repository.NullRepository.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Repository.OptimizedPathMappingRepository.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Repository.PathMappingRepository.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Repository.Resource.AbstractFilesystemResource.html</loc>
@@ -693,10 +699,7 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Config.ConfigFileManager.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Config.ConfigFileReader.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Config.ConfigFileWriter.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Config.ConfigFileSerializer.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Config.ConfigManager.html</loc>
@@ -726,10 +729,7 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Installer.ResourceInstaller.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Package.PackageFileReader.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Package.PackageFileWriter.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Package.PackageFileSerializer.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Package.PackageManager.html</loc>
@@ -745,6 +745,9 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Server.ServerManager.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Storage.Storage.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Transaction.AtomicOperation.html</loc>
@@ -843,9 +846,6 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.InvalidConfigException.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.IOException.html</loc>
-</url>
-<url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.NoDirectoryException.html</loc>
 </url>
 <url>
@@ -871,6 +871,9 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Server.NoSuchServerException.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Storage.StorageException.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Conflict.CyclicDependencyException.html</loc>

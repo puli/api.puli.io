@@ -160,6 +160,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -227,6 +232,11 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
 
@@ -252,11 +262,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -422,8 +427,7 @@
 				<li class="active"><a href="class-Puli.Manager.Config.AbstractConfigManager.html">AbstractConfigManager</a></li>
 				<li><a href="class-Puli.Manager.Config.ConfigFileManagerImpl.html">ConfigFileManagerImpl</a></li>
 				<li><a href="class-Puli.Manager.Config.ConfigFileStorage.html">ConfigFileStorage</a></li>
-				<li><a href="class-Puli.Manager.Config.ConfigJsonReader.html">ConfigJsonReader</a></li>
-				<li><a href="class-Puli.Manager.Config.ConfigJsonWriter.html">ConfigJsonWriter</a></li>
+				<li><a href="class-Puli.Manager.Config.ConfigJsonSerializer.html">ConfigJsonSerializer</a></li>
 				<li><a href="class-Puli.Manager.Config.DefaultConfig.html">DefaultConfig</a></li>
 				<li><a href="class-Puli.Manager.Config.EnvConfig.html">EnvConfig</a></li>
 			</ul>
@@ -503,7 +507,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#23-223" title="Go to source code">Config/AbstractConfigManager.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#23-224" title="Go to source code">Config/AbstractConfigManager.php</a>
 		<br>
 	</div>
 
@@ -523,7 +527,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setConfigKey">#</a>
-		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#31-57" title="Go to source code">setConfigKey</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#32-58" title="Go to source code">setConfigKey</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets a config key in the file.</p>
@@ -546,7 +550,7 @@
 				<div class="list">
 					NoSuchConfigKeyException<br>If the configuration key is invalid.<br>
 					<code><a href="class-Puli.Manager.Api.InvalidConfigException.html">Puli\Manager\Api\InvalidConfigException</a></code><br>If the value is invalid.<br>
-					<code><a href="class-Puli.Manager.Api.IOException.html">Puli\Manager\Api\IOException</a></code><br>If the file cannot be written.
+					<code><a href="class-Puli.Manager.Api.Storage.StorageException.html">Puli\Manager\Api\Storage\StorageException</a></code><br>If the file cannot be written.
 				</div>
 
 
@@ -568,7 +572,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setConfigKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#59-76" title="Go to source code">setConfigKeys</a>( <span>array <var>$values</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#60-77" title="Go to source code">setConfigKeys</a>( <span>array <var>$values</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets config keys in the file.</p>
@@ -589,7 +593,7 @@
 				<div class="list">
 					NoSuchConfigKeyException<br>If a configuration key is invalid.<br>
 					<code><a href="class-Puli.Manager.Api.InvalidConfigException.html">Puli\Manager\Api\InvalidConfigException</a></code><br>If a value is invalid.<br>
-					<code><a href="class-Puli.Manager.Api.IOException.html">Puli\Manager\Api\IOException</a></code><br>If the file cannot be written.
+					<code><a href="class-Puli.Manager.Api.Storage.StorageException.html">Puli\Manager\Api\Storage\StorageException</a></code><br>If the file cannot be written.
 				</div>
 
 
@@ -611,7 +615,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeConfigKey">#</a>
-		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#78-99" title="Go to source code">removeConfigKey</a>( <span>string <var>$key</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#79-100" title="Go to source code">removeConfigKey</a>( <span>string <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a config key from the file.</p>
@@ -631,7 +635,7 @@
 				<h4>Throws</h4>
 				<div class="list">
 					NoSuchConfigKeyException<br>If the configuration key is invalid.<br>
-					<code><a href="class-Puli.Manager.Api.IOException.html">Puli\Manager\Api\IOException</a></code><br>If the file cannot be written.
+					<code><a href="class-Puli.Manager.Api.Storage.StorageException.html">Puli\Manager\Api\Storage\StorageException</a></code><br>If the file cannot be written.
 				</div>
 
 
@@ -653,7 +657,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeConfigKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#101-122" title="Go to source code">removeConfigKeys</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#102-123" title="Go to source code">removeConfigKeys</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes the config keys from the file that match the given expression.</p>
@@ -673,7 +677,7 @@
 				<h4>Throws</h4>
 				<div class="list">
 					NoSuchConfigKeyException<br>If a configuration key is invalid.<br>
-					<code><a href="class-Puli.Manager.Api.IOException.html">Puli\Manager\Api\IOException</a></code><br>If the file cannot be written.
+					<code><a href="class-Puli.Manager.Api.Storage.StorageException.html">Puli\Manager\Api\Storage\StorageException</a></code><br>If the file cannot be written.
 				</div>
 
 
@@ -695,7 +699,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clearConfigKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#124-130" title="Go to source code">clearConfigKeys</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#125-131" title="Go to source code">clearConfigKeys</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all config keys from the file.</p>
@@ -709,7 +713,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><a href="class-Puli.Manager.Api.IOException.html">Puli\Manager\Api\IOException</a></code><br>If the file cannot be written.
+					<code><a href="class-Puli.Manager.Api.Storage.StorageException.html">Puli\Manager\Api\Storage\StorageException</a></code><br>If the file cannot be written.
 				</div>
 
 
@@ -731,7 +735,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasConfigKey">#</a>
-		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#132-140" title="Go to source code">hasConfigKey</a>( <span>string <var>$key</var></span>, <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#133-141" title="Go to source code">hasConfigKey</a>( <span>string <var>$key</var></span>, <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether a configuration key exists.</p>
@@ -775,7 +779,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasConfigKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#142-158" title="Go to source code">hasConfigKeys</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#143-159" title="Go to source code">hasConfigKeys</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the file contains any configuration keys.</p>
@@ -822,7 +826,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getConfigKey">#</a>
-		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#160-172" title="Go to source code">getConfigKey</a>( <span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$fallback</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$raw</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#161-173" title="Go to source code">getConfigKey</a>( <span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$fallback</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$raw</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the value of a configuration key.</p>
@@ -876,7 +880,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getConfigKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#174-195" title="Go to source code">getConfigKeys</a>( <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$includeUnset</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$raw</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#175-196" title="Go to source code">getConfigKeys</a>( <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$includeUnset</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$raw</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the values of all configuration keys set in the file.</p>
@@ -924,7 +928,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_findConfigKeys">#</a>
-		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#197-214" title="Go to source code">findConfigKeys</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span>, <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$includeUnset</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$raw</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#198-215" title="Go to source code">findConfigKeys</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span>, <span>boolean <var>$includeFallback</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$includeUnset</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$raw</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the values of all configuration keys matching the given
@@ -978,7 +982,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_saveConfigFile">#</a>
-		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#216-222" title="Go to source code">saveConfigFile</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Config.AbstractConfigManager.html#217-223" title="Go to source code">saveConfigFile</a>( )</code>
 
 		<div class="description short">
 			<p>Saves the file containing the managed configuration.</p>
@@ -993,7 +997,7 @@ expression.</p>
 				<h4>Throws</h4>
 				<div class="list">
 					<code><a href="class-Puli.Manager.Api.InvalidConfigException.html">Puli\Manager\Api\InvalidConfigException</a></code><br>If the value is invalid.<br>
-					<code><a href="class-Puli.Manager.Api.IOException.html">Puli\Manager\Api\IOException</a></code><br>If the file cannot be written.
+					<code><a href="class-Puli.Manager.Api.Storage.StorageException.html">Puli\Manager\Api\Storage\StorageException</a></code><br>If the file cannot be written.
 				</div>
 
 

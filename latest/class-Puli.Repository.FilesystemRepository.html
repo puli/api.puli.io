@@ -160,6 +160,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -227,6 +232,11 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
 
@@ -252,11 +262,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -419,9 +424,13 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
+				<li><a href="class-Puli.Repository.AbstractPathMappingRepository.html">AbstractPathMappingRepository</a></li>
+				<li><a href="class-Puli.Repository.AbstractRepository.html">AbstractRepository</a></li>
 				<li class="active"><a href="class-Puli.Repository.FilesystemRepository.html">FilesystemRepository</a></li>
 				<li><a href="class-Puli.Repository.InMemoryRepository.html">InMemoryRepository</a></li>
 				<li><a href="class-Puli.Repository.NullRepository.html">NullRepository</a></li>
+				<li><a href="class-Puli.Repository.OptimizedPathMappingRepository.html">OptimizedPathMappingRepository</a></li>
+				<li><a href="class-Puli.Repository.PathMappingRepository.html">PathMappingRepository</a></li>
 			</ul>
 
 
@@ -491,6 +500,15 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
+			<a href="class-Puli.Repository.AbstractRepository.html"><span>Puli\Repository\AbstractRepository</span></a>
+			
+			 implements 
+				<a href="class-Puli.Repository.Api.ResourceRepository.html"><span>Puli\Repository\Api\ResourceRepository</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
 <b><span>Puli\Repository\FilesystemRepository</span></b>			
 			 implements 
 				<a href="class-Puli.Repository.Api.EditableRepository.html"><span>Puli\Repository\Api\EditableRepository</span></a>
@@ -516,7 +534,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Repository.FilesystemRepository.html#35-534" title="Go to source code">FilesystemRepository.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Repository.FilesystemRepository.html#34-528" title="Go to source code">FilesystemRepository.php</a>
 		<br>
 	</div>
 
@@ -616,7 +634,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#136-152" title="Go to source code">get</a>( <span>string <var>$path</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#136-149" title="Go to source code">get</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the resource at the given path.</p>
@@ -641,8 +659,8 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 				<h4>Throws</h4>
 				<div class="list">
 					<code><a href="class-Puli.Repository.Api.ResourceNotFoundException.html">Puli\Repository\Api\ResourceNotFoundException</a></code><br>If the resource cannot be found.<br>
-					InvalidArgumentException<br><p>If the path is invalid. The path must be
-                                 a non-empty string starting with "/".</p>
+					InvalidArgumentException<br><p>If the path is invalid. The path must
+                                  be a non-empty string starting with "/".</p>
 				</div>
 
 
@@ -664,7 +682,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_find">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#154-160" title="Go to source code">find</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#151-157" title="Go to source code">find</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the resources matching a query.</p>
@@ -691,7 +709,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 				<h4>Throws</h4>
 				<div class="list">
 					InvalidArgumentException<br>If the query is invalid.<br>
-					<code><a href="class-Puli.Repository.Api.UnsupportedLanguageException.html">Puli\Repository\Api\UnsupportedLanguageException</a></code><br>If the language is not supported.
+					UnsupportedLanguageException<br>If the language is not supported.
 				</div>
 
 
@@ -713,7 +731,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_contains">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#162-171" title="Go to source code">contains</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#159-168" title="Go to source code">contains</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether any resources match a query.</p>
@@ -740,7 +758,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 				<h4>Throws</h4>
 				<div class="list">
 					InvalidArgumentException<br>If the query is invalid.<br>
-					<code><a href="class-Puli.Repository.Api.UnsupportedLanguageException.html">Puli\Repository\Api\UnsupportedLanguageException</a></code><br>If the language is not supported.
+					UnsupportedLanguageException<br>If the language is not supported.
 				</div>
 
 
@@ -762,7 +780,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasChildren">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#173-188" title="Go to source code">hasChildren</a>( <span>string <var>$path</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#170-185" title="Go to source code">hasChildren</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether a resource has child resources.</p>
@@ -787,8 +805,8 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 				<h4>Throws</h4>
 				<div class="list">
 					<code><a href="class-Puli.Repository.Api.ResourceNotFoundException.html">Puli\Repository\Api\ResourceNotFoundException</a></code><br>If the resource cannot be found.<br>
-					InvalidArgumentException<br><p>If the path is invalid. The path must be
-                                 a non-empty string starting with "/".</p>
+					InvalidArgumentException<br><p>If the path is invalid. The path must
+                                  be a non-empty string starting with "/".</p>
 				</div>
 
 
@@ -810,7 +828,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_listChildren">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#190-202" title="Go to source code">listChildren</a>( <span>string <var>$path</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#187-199" title="Go to source code">listChildren</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
 			<p>Lists the child resources of a resource.</p>
@@ -835,8 +853,8 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 				<h4>Throws</h4>
 				<div class="list">
 					<code><a href="class-Puli.Repository.Api.ResourceNotFoundException.html">Puli\Repository\Api\ResourceNotFoundException</a></code><br>If the resource cannot be found.<br>
-					InvalidArgumentException<br><p>If the path is invalid. The path must be
-                                 a non-empty string starting with "/".</p>
+					InvalidArgumentException<br><p>If the path is invalid. The path must
+                                  be a non-empty string starting with "/".</p>
 				</div>
 
 
@@ -858,7 +876,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#204-234" title="Go to source code">add</a>( <span>string <var>$path</var></span>, <span><code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a></code>|<code><a href="class-Puli.Repository.Api.ResourceCollection.html">Puli\Repository\Api\ResourceCollection</a></code> <var>$resource</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#201-228" title="Go to source code">add</a>( <span>string <var>$path</var></span>, <span><code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a></code>|<code><a href="class-Puli.Repository.Api.ResourceCollection.html">Puli\Repository\Api\ResourceCollection</a></code> <var>$resource</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a new resource to the repository.</p>
@@ -881,8 +899,9 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidArgumentException<br><p>If the path is invalid. The path must be
-                                 a non-empty string starting with "/".</p><br>
+					InvalidArgumentException<br><p>If the path is invalid. The path
+                                     must be  a non-empty string starting
+                                     with "/".</p><br>
 					<code><a href="class-Puli.Repository.Api.UnsupportedResourceException.html">Puli\Repository\Api\UnsupportedResourceException</a></code><br>If the resource is invalid.
 				</div>
 
@@ -905,7 +924,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#236-252" title="Go to source code">remove</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#230-246" title="Go to source code">remove</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
 
 		<div class="description short">
 			<p>Removes all resources matching the given query.</p>
@@ -932,7 +951,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 				<h4>Throws</h4>
 				<div class="list">
 					InvalidArgumentException<br>If the query is invalid.<br>
-					<code><a href="class-Puli.Repository.Api.UnsupportedLanguageException.html">Puli\Repository\Api\UnsupportedLanguageException</a></code><br>If the language is not supported.
+					UnsupportedLanguageException<br>If the language is not supported.
 				</div>
 
 
@@ -954,7 +973,7 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#254-267" title="Go to source code">clear</a>( )</code>
+		<code><a href="source-class-Puli.Repository.FilesystemRepository.html#248-261" title="Go to source code">clear</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all resources from the repository.</p>
@@ -980,6 +999,15 @@ cannot be read. Any leading ".." segments will simply be stripped off.</p>
 	</tr>
 	</table>
 
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Puli.Repository.AbstractRepository.html#methods">Puli\Repository\AbstractRepository</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Puli.Repository.AbstractRepository.html#_sanitizePath">sanitizePath()</a>, 
+			<a href="class-Puli.Repository.AbstractRepository.html#_validateSearchLanguage">validateSearchLanguage()</a>
+		</code></td>
+	</tr>
+	</table>
 
 
 

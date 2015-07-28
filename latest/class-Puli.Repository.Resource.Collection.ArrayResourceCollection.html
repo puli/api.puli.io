@@ -160,6 +160,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -227,6 +232,11 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
 
@@ -252,11 +262,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -500,7 +505,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#23-220" title="Go to source code">Resource/Collection/ArrayResourceCollection.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#23-221" title="Go to source code">Resource/Collection/ArrayResourceCollection.php</a>
 		<br>
 	</div>
 
@@ -520,7 +525,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#36-52" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a>[]</code> <var>$resources</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#37-53" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a>[]</code> <var>$resources</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>Creates a new collection.</p>
@@ -542,8 +547,8 @@ collection as argument.</p>
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidArgumentException<br><p>If the resources are not an array and
-                                 not a traversable object.</p><br>
+					InvalidArgumentException<br><p>If the resources are not an array
+                                     and not a traversable object.</p><br>
 					<code><a href="class-Puli.Repository.Api.UnsupportedResourceException.html">Puli\Repository\Api\UnsupportedResourceException</a></code><br><p>If a resource does not implement
                                      <code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a></code>.</p>
 				</div>
@@ -565,7 +570,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#54-60" title="Go to source code">add</a>( <span><code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a></code> <var>$resource</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#55-61" title="Go to source code">add</a>( <span><code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a></code> <var>$resource</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds a resource to the collection.</p>
@@ -602,7 +607,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#62-68" title="Go to source code">set</a>( <span>integer <var>$key</var></span>, <span><code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a></code> <var>$resource</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#63-69" title="Go to source code">set</a>( <span>integer <var>$key</var></span>, <span><code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a></code> <var>$resource</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets a resource at a collection key.</p>
@@ -641,7 +646,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#70-83" title="Go to source code">get</a>( <span>integer <var>$key</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#71-84" title="Go to source code">get</a>( <span>integer <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the resource for a collection key.</p>
@@ -686,7 +691,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_remove">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#85-91" title="Go to source code">remove</a>( <span>integer <var>$key</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#86-92" title="Go to source code">remove</a>( <span>integer <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a collection key from the collection.</p>
@@ -723,7 +728,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_has">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#93-99" title="Go to source code">has</a>( <span>integer <var>$key</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#94-100" title="Go to source code">has</a>( <span>integer <var>$key</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether a collection key exists.</p>
@@ -764,7 +769,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#101-107" title="Go to source code">clear</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#102-108" title="Go to source code">clear</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all resources from the collection.</p>
@@ -796,7 +801,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_keys">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#109-115" title="Go to source code">keys</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#110-116" title="Go to source code">keys</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the keys of the collection.</p>
@@ -832,7 +837,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_replace">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#117-125" title="Go to source code">replace</a>( <span><code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a>[]</code> <var>$resources</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#118-126" title="Go to source code">replace</a>( <span><code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a>[]</code> <var>$resources</var></span> )</code>
 
 		<div class="description short">
 			<p>Replaces the collection contents with the given resources.</p>
@@ -846,14 +851,14 @@ collection as argument.</p>
 				<div class="list"><dl>
 					<dt><var>$resources</var></dt>
 					<dd><p>The resources to write into the
-                                      collection.</p></dd>
+                             collection.</p></dd>
 				</dl></div>
 
 
 				<h4>Throws</h4>
 				<div class="list">
 					InvalidArgumentException<br><p>If the resources are not an array and
-                                 not a traversable object.</p><br>
+                                     not a traversable object.</p><br>
 					<code><a href="class-Puli.Repository.Api.UnsupportedResourceException.html">Puli\Repository\Api\UnsupportedResourceException</a></code><br><p>If a resource does not implement
                                      <code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a></code>.</p>
 				</div>
@@ -877,7 +882,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_merge">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#127-138" title="Go to source code">merge</a>( <span><code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a>[]</code> <var>$resources</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#128-139" title="Go to source code">merge</a>( <span><code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a>[]</code> <var>$resources</var></span> )</code>
 
 		<div class="description short">
 			<p>Merges the given resources into the collection.</p>
@@ -891,14 +896,14 @@ collection as argument.</p>
 				<div class="list"><dl>
 					<dt><var>$resources</var></dt>
 					<dd><p>The resources to merge into the
-                                      collection.</p></dd>
+                             collection.</p></dd>
 				</dl></div>
 
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidArgumentException<br><p>If the resources are not an array and
-                                 not a traversable object.</p><br>
+					InvalidArgumentException<br><p>If the resources are not an array
+                                     and not a traversable object.</p><br>
 					<code><a href="class-Puli.Repository.Api.UnsupportedResourceException.html">Puli\Repository\Api\UnsupportedResourceException</a></code><br><p>If a resource does not implement
                                      <code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a></code>.</p>
 				</div>
@@ -922,7 +927,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isEmpty">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#140-146" title="Go to source code">isEmpty</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#141-147" title="Go to source code">isEmpty</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the collection is empty.</p>
@@ -958,7 +963,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetExists">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#148-154" title="Go to source code">offsetExists</a>( <span> <var>$key</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#149-155" title="Go to source code">offsetExists</a>( <span> <var>$key</var></span> )</code>
 
 		<div class="description short">
 			
@@ -988,7 +993,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetGet">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#156-162" title="Go to source code">offsetGet</a>( <span> <var>$key</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#157-163" title="Go to source code">offsetGet</a>( <span> <var>$key</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1018,7 +1023,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetSet">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#164-174" title="Go to source code">offsetSet</a>( <span> <var>$key</var></span>, <span> <var>$value</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#165-175" title="Go to source code">offsetSet</a>( <span> <var>$key</var></span>, <span> <var>$value</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1048,7 +1053,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetUnset">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#176-182" title="Go to source code">offsetUnset</a>( <span> <var>$key</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#177-183" title="Go to source code">offsetUnset</a>( <span> <var>$key</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1078,7 +1083,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPaths">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#184-193" title="Go to source code">getPaths</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#185-194" title="Go to source code">getPaths</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the paths of all resources in the collection.</p>
@@ -1114,7 +1119,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getNames">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#195-204" title="Go to source code">getNames</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#196-205" title="Go to source code">getNames</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the names of all resources in the collection.</p>
@@ -1150,7 +1155,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_count">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#206-209" title="Go to source code">count</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#207-210" title="Go to source code">count</a>( )</code>
 
 		<div class="description short">
 			
@@ -1180,7 +1185,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getIterator">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#211-214" title="Go to source code">getIterator</a>( <span> <var>$mode</var> = Puli\Repository\Resource\Collection\ResourceCollectionIterator::KEY_AS_CURSOR</span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#212-215" title="Go to source code">getIterator</a>( <span> <var>$mode</var> = Puli\Repository\Resource\Collection\ResourceCollectionIterator::KEY_AS_CURSOR</span> )</code>
 
 		<div class="description short">
 			
@@ -1212,7 +1217,7 @@ collection as argument.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_toArray">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#216-219" title="Go to source code">toArray</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.Collection.ArrayResourceCollection.html#217-220" title="Go to source code">toArray</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the collection contents as array.</p>

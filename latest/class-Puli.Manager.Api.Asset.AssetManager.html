@@ -160,6 +160,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -227,6 +232,11 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
 
@@ -252,11 +262,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -516,7 +521,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addRootAssetMapping">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#36-50" title="Go to source code">addRootAssetMapping</a>( <span><code><a href="class-Puli.Manager.Api.Asset.AssetMapping.html">Puli\Manager\Api\Asset\AssetMapping</a></code> <var>$mapping</var></span>, <span>integer <var>$flags</var> = <span class="php-num">0</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#37-51" title="Go to source code">addRootAssetMapping</a>( <span><code><a href="class-Puli.Manager.Api.Asset.AssetMapping.html">Puli\Manager\Api\Asset\AssetMapping</a></code> <var>$mapping</var></span>, <span>integer <var>$flags</var> = <span class="php-num">0</span></span> )</code>
 
 		<div class="description short">
 			<p>Adds an asset mapping to the repository.</p>
@@ -541,7 +546,7 @@
 				<h4>Throws</h4>
 				<div class="list">
 					<code><a href="class-Puli.Manager.Api.Server.NoSuchServerException.html">Puli\Manager\Api\Server\NoSuchServerException</a></code><br><p>If the server referred to by the mapping
-                              does not exist.</p><br>
+                                       does not exist.</p><br>
 					<code><a href="class-Puli.Manager.Api.Asset.DuplicateAssetMappingException.html">Puli\Manager\Api\Asset\DuplicateAssetMappingException</a></code><br><p>If a mapping with the same UUID
                                        exists already.</p>
 				</div>
@@ -563,7 +568,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeRootAssetMapping">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#52-60" title="Go to source code">removeRootAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#53-61" title="Go to source code">removeRootAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes an asset mapping from the repository.</p>
@@ -601,7 +606,7 @@ this method does nothing.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeRootAssetMappings">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#62-70" title="Go to source code">removeRootAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#63-71" title="Go to source code">removeRootAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes all asset mappings matching the given expression.</p>
@@ -639,7 +644,7 @@ are found, this method does nothing.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clearRootAssetMappings">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#72-78" title="Go to source code">clearRootAssetMappings</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#73-79" title="Go to source code">clearRootAssetMappings</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all asset mappings from the repository.</p>
@@ -672,7 +677,7 @@ are found, this method does nothing.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRootAssetMapping">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#80-90" title="Go to source code">getRootAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#81-91" title="Go to source code">getRootAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the asset mapping from the root package.</p>
@@ -716,7 +721,7 @@ are found, this method does nothing.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRootAssetMappings">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#92-97" title="Go to source code">getRootAssetMappings</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#93-98" title="Go to source code">getRootAssetMappings</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all asset mappings in the root package.</p>
@@ -750,7 +755,7 @@ are found, this method does nothing.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasRootAssetMapping">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#99-106" title="Go to source code">hasRootAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#100-107" title="Go to source code">hasRootAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the root package contains a mapping with the given UUID.</p>
@@ -789,7 +794,7 @@ are found, this method does nothing.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_findRootAssetMappings">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#108-116" title="Go to source code">findRootAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#109-117" title="Go to source code">findRootAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns all asset mappings in the root package matching the given
@@ -830,7 +835,7 @@ expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasRootAssetMappings">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#118-128" title="Go to source code">hasRootAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#119-129" title="Go to source code">hasRootAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the root package contains any asset mappings.</p>
@@ -872,7 +877,7 @@ mappings matching that expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAssetMapping">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#130-139" title="Go to source code">getAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#131-140" title="Go to source code">getAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the asset mapping for a UUID.</p>
@@ -915,7 +920,7 @@ mappings matching that expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAssetMappings">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#141-146" title="Go to source code">getAssetMappings</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#142-147" title="Go to source code">getAssetMappings</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all asset mappings.</p>
@@ -949,7 +954,7 @@ mappings matching that expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_findAssetMappings">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#148-155" title="Go to source code">findAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#149-156" title="Go to source code">findAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns all asset mappings matching the given expression.</p>
@@ -988,7 +993,7 @@ mappings matching that expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasAssetMapping">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#157-164" title="Go to source code">hasAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#158-165" title="Go to source code">hasAssetMapping</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether an asset mapping with the given UUID exists.</p>
@@ -1027,7 +1032,7 @@ mappings matching that expression.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasAssetMappings">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#166-176" title="Go to source code">hasAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#167-177" title="Go to source code">hasAssetMappings</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether any asset mappings exist.</p>
@@ -1073,7 +1078,7 @@ mappings matching that expression.</p>
 		<td class="attributes"><code>integer</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#26-29" title="Go to source code"><b>OVERRIDE</b></a>
+				<a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#27-30" title="Go to source code"><b>OVERRIDE</b></a>
 			</code>
 
 			<div class="description short">
@@ -1097,7 +1102,7 @@ mappings matching that expression.</p>
 		<td class="attributes"><code>integer</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#31-34" title="Go to source code"><b>IGNORE_SERVER_NOT_FOUND</b></a>
+				<a href="source-class-Puli.Manager.Api.Asset.AssetManager.html#32-35" title="Go to source code"><b>IGNORE_SERVER_NOT_FOUND</b></a>
 			</code>
 
 			<div class="description short">

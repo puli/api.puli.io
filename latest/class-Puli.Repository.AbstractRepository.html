@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class Puli\Manager\Package\PackageJsonReader | Puli API</title>
+	<title>Class Puli\Repository\AbstractRepository | Puli API</title>
 
 	<link rel="stylesheet" href="resources/style.css?95ada9fb523b6ab4fd1c47bb375f713f2cc65542">
 
@@ -74,7 +74,7 @@
 						Factory					</a>
 
 						</li>
-				<li class="active">
+				<li>
 					<a href="namespace-Puli.Manager.html">
 						Manager<span></span>
 					</a>
@@ -160,6 +160,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -227,6 +232,11 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
 
@@ -236,7 +246,7 @@
 						Installer					</a>
 
 						</li>
-				<li class="active">
+				<li>
 					<a href="namespace-Puli.Manager.Package.html">
 						Package					</a>
 
@@ -252,11 +262,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -279,7 +284,7 @@
 
 						</li>
 							</ul></li>
-				<li>
+				<li class="active">
 					<a href="namespace-Puli.Repository.html">
 						Repository<span></span>
 					</a>
@@ -419,15 +424,21 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Puli.Manager.Package.PackageFileStorage.html">PackageFileStorage</a></li>
-				<li class="active"><a href="class-Puli.Manager.Package.PackageJsonReader.html">PackageJsonReader</a></li>
-				<li><a href="class-Puli.Manager.Package.PackageJsonWriter.html">PackageJsonWriter</a></li>
-				<li><a href="class-Puli.Manager.Package.PackageManagerImpl.html">PackageManagerImpl</a></li>
-				<li><a href="class-Puli.Manager.Package.RootPackageFileManagerImpl.html">RootPackageFileManagerImpl</a></li>
+				<li><a href="class-Puli.Repository.AbstractPathMappingRepository.html">AbstractPathMappingRepository</a></li>
+				<li class="active"><a href="class-Puli.Repository.AbstractRepository.html">AbstractRepository</a></li>
+				<li><a href="class-Puli.Repository.FilesystemRepository.html">FilesystemRepository</a></li>
+				<li><a href="class-Puli.Repository.InMemoryRepository.html">InMemoryRepository</a></li>
+				<li><a href="class-Puli.Repository.NullRepository.html">NullRepository</a></li>
+				<li><a href="class-Puli.Repository.OptimizedPathMappingRepository.html">OptimizedPathMappingRepository</a></li>
+				<li><a href="class-Puli.Repository.PathMappingRepository.html">PathMappingRepository</a></li>
 			</ul>
 
 
 
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Puli.Repository.RepositoryFactoryException.html">RepositoryFactoryException</a></li>
+			</ul>
 
 
 		</div>
@@ -450,7 +461,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-Puli.Manager.Package.html" title="Summary of Puli\Manager\Package"><span>Namespace</span></a>
+				<a href="namespace-Puli.Repository.html" title="Summary of Puli\Repository"><span>Namespace</span></a>
 			</li>
 			<li class="active">
 <span>Class</span>			</li>
@@ -462,44 +473,54 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class PackageJsonReader</h1>
+	<h1>Class AbstractRepository</h1>
 
 
 	<div class="description">
-	<p>Reads JSON package files.</p>
-
-<p>The data in the JSON file is validated against the schema
-<code>res/schema/package-schema.json</code>.</p>
+	<p>Abstract base for repositories providing tools to avoid code duplication.</p>
 	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
-<b><span>Puli\Manager\Package\PackageJsonReader</span></b>			
+<b><span>Puli\Repository\AbstractRepository</span></b>			
 			 implements 
-				<a href="class-Puli.Manager.Api.Package.PackageFileReader.html"><span>Puli\Manager\Api\Package\PackageFileReader</span></a>
+				<a href="class-Puli.Repository.Api.ResourceRepository.html"><span>Puli\Repository\Api\ResourceRepository</span></a>
 			
 			
 		</dd>
 	</dl>
 
 
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Puli.Repository.AbstractPathMappingRepository.html">Puli\Repository\AbstractPathMappingRepository</a>, 
+			<a href="class-Puli.Repository.FilesystemRepository.html">Puli\Repository\FilesystemRepository</a>, 
+			<a href="class-Puli.Repository.InMemoryRepository.html">Puli\Repository\InMemoryRepository</a>
+	</div>
 
+	<div>
+		<h4>Indirect known subclasses</h4>
+			<a href="class-Puli.Repository.OptimizedPathMappingRepository.html">Puli\Repository\OptimizedPathMappingRepository</a>, 
+			<a href="class-Puli.Repository.PathMappingRepository.html">Puli\Repository\PathMappingRepository</a>
+	</div>
 
 
 
 
 
 	<div class="info">
+		<b>Abstract</b><br>
 		
-		
-		<b>Namespace:</b> <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.Manager.html">Manager</a>\<a href="namespace-Puli.Manager.Package.html">Package</a><br>
+		<b>Namespace:</b> <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.Repository.html">Repository</a><br>
 		
 
 				<b>Author:</b>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
+				<b>Author:</b>
+				Titouan Galopin <a href="mailto:ga&#108;&#111;&#112;&#105;&#110;&#116;&#105;&#116;&#111;&#117;&#97;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">ga&#108;&#111;&#112;&#105;&#110;&#116;&#105;&#116;&#111;&#117;&#97;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Package.PackageJsonReader.html#32-226" title="Go to source code">Package/PackageJsonReader.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Repository.AbstractRepository.html#19-55" title="Go to source code">AbstractRepository.php</a>
 		<br>
 	</div>
 
@@ -507,107 +528,94 @@
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="readPackageFile" id="_readPackageFile">
+	<tr data-order="validateSearchLanguage" id="_validateSearchLanguage">
 
 		<td class="attributes"><code>
-			 public 
+			 protected 
 
-			<code><a href="class-Puli.Manager.Api.Package.PackageFile.html">Puli\Manager\Api\Package\PackageFile</a></code>
+			
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_readPackageFile">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageJsonReader.html#43-55" title="Go to source code">readPackageFile</a>( <span>string <var>$path</var></span> )</code>
+		<a class="anchor" href="#_validateSearchLanguage">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractRepository.html#29-39" title="Go to source code">validateSearchLanguage</a>( <span>string <var>$language</var></span> )</code>
 
 		<div class="description short">
-			<p>Reads a package file.</p>
+			<p>Validate a language is usable to search in repositories.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Reads a package file.</p>
+			<p>Validate a language is usable to search in repositories.</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$path</var></dt>
-					<dd>The file path to read.</dd>
+					<dt><var>$language</var></dt>
+					<dd></dd>
 				</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><a href="class-Puli.Manager.Api.Package.PackageFile.html">Puli\Manager\Api\Package\PackageFile</a></code><br>The package file.
-				</div>
-
-				<h4>Throws</h4>
-				<div class="list">
-					<code><a href="class-Puli.Manager.Api.FileNotFoundException.html">Puli\Manager\Api\FileNotFoundException</a></code><br>If the file was not found.<br>
-					<code><a href="class-Puli.Manager.Api.InvalidConfigException.html">Puli\Manager\Api\InvalidConfigException</a></code><br>If the source contains invalid configuration.<br>
-					<code><a href="class-Puli.Manager.Api.Package.UnsupportedVersionException.html">Puli\Manager\Api\Package\UnsupportedVersionException</a></code><br><p>If the version of the package file
-                                    is not supported by the reader.</p>
-				</div>
 
 
 
-				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.Manager.Api.Package.PackageFileReader.html#_readPackageFile">Puli\Manager\Api\Package\PackageFileReader::readPackageFile()</a></code></div>
+
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="readRootPackageFile" id="_readRootPackageFile">
+	<tr data-order="sanitizePath" id="_sanitizePath">
 
 		<td class="attributes"><code>
-			 public 
+			 protected 
 
-			<code><a href="class-Puli.Manager.Api.Package.RootPackageFile.html">Puli\Manager\Api\Package\RootPackageFile</a></code>
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_readRootPackageFile">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageJsonReader.html#57-70" title="Go to source code">readRootPackageFile</a>( <span>string <var>$path</var></span>, <span><code><a href="class-Puli.Manager.Api.Config.Config.html">Puli\Manager\Api\Config\Config</a></code> <var>$baseConfig</var> = <span class="php-keyword1">null</span></span> )</code>
+		<a class="anchor" href="#_sanitizePath">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractRepository.html#41-54" title="Go to source code">sanitizePath</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
-			<p>Reads a root package file.</p>
+			<p>Sanitize a given path and check its validity.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Reads a root package file.</p>
+			<p>Sanitize a given path and check its validity.</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$path</var></dt>
-					<dd>The file path to read.</dd>
-					<dt><var>$baseConfig</var></dt>
-					<dd><p>The configuration that the package will inherit
-                          its configuration values from.</p></dd>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><a href="class-Puli.Manager.Api.Package.RootPackageFile.html">Puli\Manager\Api\Package\RootPackageFile</a></code><br>The root package file.
-				</div>
-
-				<h4>Throws</h4>
-				<div class="list">
-					<code><a href="class-Puli.Manager.Api.FileNotFoundException.html">Puli\Manager\Api\FileNotFoundException</a></code><br>If the file was not found.<br>
-					<code><a href="class-Puli.Manager.Api.InvalidConfigException.html">Puli\Manager\Api\InvalidConfigException</a></code><br>If the file contains invalid configuration.<br>
-					<code><a href="class-Puli.Manager.Api.Package.UnsupportedVersionException.html">Puli\Manager\Api\Package\UnsupportedVersionException</a></code><br><p>If the version of the package file
-                                    is not supported by the reader.</p>
+					string
 				</div>
 
 
 
-				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.Manager.Api.Package.PackageFileReader.html#_readRootPackageFile">Puli\Manager\Api\Package\PackageFileReader::readRootPackageFile()</a></code></div>
+
 		</div>
 		</div></td>
 	</tr>
 	</table>
 
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Puli.Repository.Api.ResourceRepository.html#methods">Puli\Repository\Api\ResourceRepository</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Puli.Repository.Api.ResourceRepository.html#_contains">contains()</a>, 
+			<a href="class-Puli.Repository.Api.ResourceRepository.html#_find">find()</a>, 
+			<a href="class-Puli.Repository.Api.ResourceRepository.html#_get">get()</a>, 
+			<a href="class-Puli.Repository.Api.ResourceRepository.html#_hasChildren">hasChildren()</a>, 
+			<a href="class-Puli.Repository.Api.ResourceRepository.html#_listChildren">listChildren()</a>
+		</code></td>
+	</tr>
+	</table>
 
 
 

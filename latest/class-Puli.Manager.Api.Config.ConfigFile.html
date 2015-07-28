@@ -160,6 +160,11 @@
 						Server					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Manager.Assert.html">
@@ -227,6 +232,11 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Puli.Manager.Installation.html">
 						Installation					</a>
 
@@ -252,11 +262,6 @@
 					</a>
 
 						<ul>
-				<li>
-					<a href="namespace-Puli.Manager.Repository.Iterator.html">
-						Iterator					</a>
-
-						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Repository.Mapping.html">
 						Mapping					</a>
@@ -426,8 +431,7 @@
 			<h3>Interfaces</h3>
 			<ul>
 				<li><a href="class-Puli.Manager.Api.Config.ConfigFileManager.html">ConfigFileManager</a></li>
-				<li><a href="class-Puli.Manager.Api.Config.ConfigFileReader.html">ConfigFileReader</a></li>
-				<li><a href="class-Puli.Manager.Api.Config.ConfigFileWriter.html">ConfigFileWriter</a></li>
+				<li><a href="class-Puli.Manager.Api.Config.ConfigFileSerializer.html">ConfigFileSerializer</a></li>
 				<li><a href="class-Puli.Manager.Api.Config.ConfigManager.html">ConfigManager</a></li>
 			</ul>
 
@@ -495,7 +499,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Config.ConfigFile.html#17-76" title="Go to source code">Api/Config/ConfigFile.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Config.ConfigFile.html#17-77" title="Go to source code">Api/Config/ConfigFile.php</a>
 		<br>
 	</div>
 
@@ -515,7 +519,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.ConfigFile.html#35-54" title="Go to source code">__construct</a>( <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-Puli.Manager.Api.Config.Config.html">Puli\Manager\Api\Config\Config</a></code> <var>$baseConfig</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.ConfigFile.html#36-55" title="Go to source code">__construct</a>( <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-Puli.Manager.Api.Config.Config.html">Puli\Manager\Api\Config\Config</a></code> <var>$baseConfig</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Creates a new configuration file.</p>
@@ -529,11 +533,11 @@
 				<div class="list"><dl>
 					<dt><var>$path</var></dt>
 					<dd><p>The path where the configuration file is stored
-                          or <code>null</code> if this configuration is not stored
-                          on the file system.</p></dd>
+                               or <code>null</code> if this configuration is not stored
+                               on the file system.</p></dd>
 					<dt><var>$baseConfig</var></dt>
 					<dd><p>The configuration that the configuration will
-                          inherit its values from.</p></dd>
+                               inherit its values from.</p></dd>
 				</dl></div>
 
 
@@ -559,7 +563,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPath">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.ConfigFile.html#56-65" title="Go to source code">getPath</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.ConfigFile.html#57-66" title="Go to source code">getPath</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the path to the configuration file.</p>
@@ -594,7 +598,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getConfig">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Config.ConfigFile.html#67-75" title="Go to source code">getConfig</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Config.ConfigFile.html#68-76" title="Go to source code">getConfig</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the configuration stored in the file.</p>
