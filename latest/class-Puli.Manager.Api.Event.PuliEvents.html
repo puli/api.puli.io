@@ -49,26 +49,34 @@
 						<ul>
 				<li>
 					<a href="namespace-Puli.Discovery.Api.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
+							</ul></li>
 				<li>
-					<a href="namespace-Puli.Discovery.Api.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Discovery.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
 
-						</li>
+						<ul>
 				<li>
-					<a href="namespace-Puli.Discovery.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.Factory.html">
 						Factory					</a>
@@ -97,13 +105,13 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Discovery.html">
-						Discovery					</a>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Environment.html">
-						Environment					</a>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
 
 						</li>
 				<li class="active">
@@ -140,6 +148,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Api.Package.html">
 						Package					</a>
@@ -244,6 +257,11 @@
 				<li>
 					<a href="namespace-Puli.Manager.Installer.html">
 						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
 
 						</li>
 				<li>
@@ -424,8 +442,10 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
+				<li><a href="class-Puli.Manager.Api.Event.AddAssetMappingEvent.html">AddAssetMappingEvent</a></li>
 				<li><a href="class-Puli.Manager.Api.Event.BuildRepositoryEvent.html">BuildRepositoryEvent</a></li>
 				<li><a href="class-Puli.Manager.Api.Event.GenerateFactoryEvent.html">GenerateFactoryEvent</a></li>
+				<li><a href="class-Puli.Manager.Api.Event.RemoveAssetMappingEvent.html">RemoveAssetMappingEvent</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
@@ -493,7 +513,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Event.PuliEvents.html#14-37" title="Go to source code">Api/Event/PuliEvents.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Event.PuliEvents.html#14-47" title="Go to source code">Api/Event/PuliEvents.php</a>
 		<br>
 	</div>
 
@@ -566,11 +586,11 @@
 			</code>
 
 			<div class="description short">
-				<p>Dispatched before the resource repository is built.</p>
+				<p>Dispatched after the resource repository is built.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>Dispatched before the resource repository is built.</p>
+				<p>Dispatched after the resource repository is built.</p>
 
 			</div>
 		</td>
@@ -578,6 +598,54 @@
 			<div>
 				<a href="#POST_BUILD_REPOSITORY" class="anchor">#</a>
 				<code><span class="php-quote">'puli.post-build-repository'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="POST_ADD_ASSET_MAPPING" id="POST_ADD_ASSET_MAPPING">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Puli.Manager.Api.Event.PuliEvents.html#38-41" title="Go to source code"><b>POST_ADD_ASSET_MAPPING</b></a>
+			</code>
+
+			<div class="description short">
+				<p>Dispatched after adding asset mappings.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Dispatched after adding asset mappings.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#POST_ADD_ASSET_MAPPING" class="anchor">#</a>
+				<code><span class="php-quote">'puli.post-add-asset-mapping'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="POST_REMOVE_ASSET_MAPPING" id="POST_REMOVE_ASSET_MAPPING">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Puli.Manager.Api.Event.PuliEvents.html#43-46" title="Go to source code"><b>POST_REMOVE_ASSET_MAPPING</b></a>
+			</code>
+
+			<div class="description short">
+				<p>Dispatched after removing asset mappings.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Dispatched after removing asset mappings.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#POST_REMOVE_ASSET_MAPPING" class="anchor">#</a>
+				<code><span class="php-quote">'puli.post-remove-asset-mapping'</span></code>
 			</div>
 		</td>
 	</tr>

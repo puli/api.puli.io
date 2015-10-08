@@ -49,26 +49,34 @@
 						<ul>
 				<li>
 					<a href="namespace-Puli.Discovery.Api.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
+							</ul></li>
 				<li>
-					<a href="namespace-Puli.Discovery.Api.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Discovery.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
 
-						</li>
+						<ul>
 				<li>
-					<a href="namespace-Puli.Discovery.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.Factory.html">
 						Factory					</a>
@@ -97,13 +105,13 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Discovery.html">
-						Discovery					</a>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Environment.html">
-						Environment					</a>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
 
 						</li>
 				<li>
@@ -140,6 +148,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Api.Package.html">
 						Package					</a>
@@ -244,6 +257,11 @@
 				<li>
 					<a href="namespace-Puli.Manager.Installer.html">
 						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
 
 						</li>
 				<li>
@@ -428,6 +446,7 @@
 				<li><a href="class-Puli.Repository.Resource.DirectoryResource.html">DirectoryResource</a></li>
 				<li><a href="class-Puli.Repository.Resource.FileResource.html">FileResource</a></li>
 				<li class="active"><a href="class-Puli.Repository.Resource.GenericResource.html">GenericResource</a></li>
+				<li><a href="class-Puli.Repository.Resource.LinkResource.html">LinkResource</a></li>
 			</ul>
 
 
@@ -486,7 +505,8 @@
 
 	<div>
 		<h4>Direct known subclasses</h4>
-			<a href="class-Puli.Repository.Resource.AbstractFilesystemResource.html">Puli\Repository\Resource\AbstractFilesystemResource</a>
+			<a href="class-Puli.Repository.Resource.AbstractFilesystemResource.html">Puli\Repository\Resource\AbstractFilesystemResource</a>, 
+			<a href="class-Puli.Repository.Resource.LinkResource.html">Puli\Repository\Resource\LinkResource</a>
 	</div>
 
 	<div>
@@ -509,7 +529,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Repository.Resource.GenericResource.html#20-246" title="Go to source code">Resource/GenericResource.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Repository.Resource.GenericResource.html#20-247" title="Go to source code">Resource/GenericResource.php</a>
 		<br>
 	</div>
 
@@ -638,7 +658,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getChild">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#70-80" title="Go to source code">getChild</a>( <span>string <var>$relPath</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#71-81" title="Go to source code">getChild</a>( <span>string <var>$relPath</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the child resource with the given relative path.</p>
@@ -683,7 +703,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasChild">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#82-92" title="Go to source code">hasChild</a>( <span>string <var>$relPath</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#83-93" title="Go to source code">hasChild</a>( <span>string <var>$relPath</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the child resource with the given relative path exists.</p>
@@ -724,7 +744,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasChildren">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#94-104" title="Go to source code">hasChildren</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#95-105" title="Go to source code">hasChildren</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the resource has child resources.</p>
@@ -760,7 +780,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_listChildren">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#106-122" title="Go to source code">listChildren</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#107-123" title="Go to source code">listChildren</a>( )</code>
 
 		<div class="description short">
 			<p>Lists the child resources of the resources.</p>
@@ -796,7 +816,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMetadata">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#124-130" title="Go to source code">getMetadata</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#125-131" title="Go to source code">getMetadata</a>( )</code>
 
 		<div class="description short">
 			<p>Returns metadata about a resource.</p>
@@ -832,7 +852,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_attachTo">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#132-143" title="Go to source code">attachTo</a>( <span><code><a href="class-Puli.Repository.Api.ResourceRepository.html">Puli\Repository\Api\ResourceRepository</a></code> <var>$repo</var></span>, <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#133-144" title="Go to source code">attachTo</a>( <span><code><a href="class-Puli.Repository.Api.ResourceRepository.html">Puli\Repository\Api\ResourceRepository</a></code> <var>$repo</var></span>, <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Attaches the resource to a repository.</p>
@@ -873,7 +893,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_detach">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#145-151" title="Go to source code">detach</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#146-152" title="Go to source code">detach</a>( )</code>
 
 		<div class="description short">
 			<p>Detaches the resource from the repository.</p>
@@ -905,7 +925,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRepository">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#153-159" title="Go to source code">getRepository</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#154-160" title="Go to source code">getRepository</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the repository that the resource is attached to.</p>
@@ -943,7 +963,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRepositoryPath">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#161-167" title="Go to source code">getRepositoryPath</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#162-168" title="Go to source code">getRepositoryPath</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the path of the resource in the repository.</p>
@@ -980,7 +1000,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isAttached">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#169-175" title="Go to source code">isAttached</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#170-176" title="Go to source code">isAttached</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the resource is attached to a repository.</p>
@@ -1016,7 +1036,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createReference">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#177-186" title="Go to source code">createReference</a>( <span>string <var>$path</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#178-187" title="Go to source code">createReference</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
 			<p>Creates a reference to the resource.</p>
@@ -1057,7 +1077,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isReference">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#188-194" title="Go to source code">isReference</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#189-195" title="Go to source code">isReference</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether a resource is a reference.</p>
@@ -1093,7 +1113,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_serialize">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#196-206" title="Go to source code">serialize</a>( )</code>
+		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#197-207" title="Go to source code">serialize</a>( )</code>
 
 		<div class="description short">
 			
@@ -1123,7 +1143,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_unserialize">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#208-216" title="Go to source code">unserialize</a>( <span> <var>$string</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#209-217" title="Go to source code">unserialize</a>( <span> <var>$string</var></span> )</code>
 
 		<div class="description short">
 			
@@ -1153,7 +1173,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_preSerialize">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#218-230" title="Go to source code">preSerialize</a>( <span>array <var>&amp; $data</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#219-231" title="Go to source code">preSerialize</a>( <span>array <var>&amp; $data</var></span> )</code>
 
 		<div class="description short">
 			<p>Invoked before serializing a resource.</p>
@@ -1191,7 +1211,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_postUnserialize">#</a>
-		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#232-245" title="Go to source code">postUnserialize</a>( <span>array <var>$data</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Resource.GenericResource.html#233-246" title="Go to source code">postUnserialize</a>( <span>array <var>$data</var></span> )</code>
 
 		<div class="description short">
 			<p>Invoked after unserializing a resource.</p>

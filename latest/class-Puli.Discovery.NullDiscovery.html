@@ -49,26 +49,34 @@
 						<ul>
 				<li>
 					<a href="namespace-Puli.Discovery.Api.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
+							</ul></li>
 				<li>
-					<a href="namespace-Puli.Discovery.Api.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Discovery.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
 
-						</li>
+						<ul>
 				<li>
-					<a href="namespace-Puli.Discovery.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.Factory.html">
 						Factory					</a>
@@ -97,13 +105,13 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Discovery.html">
-						Discovery					</a>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Environment.html">
-						Environment					</a>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
 
 						</li>
 				<li>
@@ -140,6 +148,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Api.Package.html">
 						Package					</a>
@@ -244,6 +257,11 @@
 				<li>
 					<a href="namespace-Puli.Manager.Installer.html">
 						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
 
 						</li>
 				<li>
@@ -504,7 +522,7 @@ in tests).</p>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Discovery.NullDiscovery.html#17-116" title="Go to source code">NullDiscovery.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Discovery.NullDiscovery.html#22-148" title="Go to source code">NullDiscovery.php</a>
 		<br>
 	</div>
 
@@ -512,341 +530,50 @@ in tests).</p>
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="bind" id="_bind">
+	<tr data-order="findBindings" id="_findBindings">
 
 		<td class="attributes"><code>
 			 public 
 
-			
+			<code><a href="class-Puli.Discovery.Api.Binding.Binding.html">Puli\Discovery\Api\Binding\Binding</a>[]</code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_bind">#</a>
-		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#30-35" title="Go to source code">bind</a>( <span>string <var>$query</var></span>, <span>string <var>$typeName</var></span>, <span>array <var>$parameterValues</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
+		<a class="anchor" href="#_findBindings">#</a>
+		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#35-41" title="Go to source code">findBindings</a>( <span>string <var>$typeName</var></span>, <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
-			<p>Binds resources to a type.</p>
+			<p>Returns all bindings bound to the given binding type.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Binds resources to a type.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$query</var></dt>
-					<dd>A query for resources in the repository.</dd>
-					<dt><var>$typeName</var></dt>
-					<dd>The type name to bind to.</dd>
-					<dt><var>$parameterValues</var></dt>
-					<dd><p>Values for the parameters defined for the
-                               type.</p></dd>
-					<dt><var>$language</var></dt>
-					<dd>The language of the resource query.</dd>
-				</dl></div>
-
-
-				<h4>Throws</h4>
-				<div class="list">
-					NoSuchParameterException<br>If an invalid parameter was passed.<br>
-					MissingParameterException<br>If a required parameter was not passed.<br>
-					<code><a href="class-Puli.Discovery.Api.NoSuchTypeException.html">Puli\Discovery\Api\NoSuchTypeException</a></code><br>If the passed type does not exist.<br>
-					UnsupportedLanguageException<br>If the passed language is not supported.
-				</div>
-
-
-
-				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.Discovery.Api.EditableDiscovery.html#_bind">Puli\Discovery\Api\EditableDiscovery::bind()</a></code></div>
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="unbind" id="_unbind">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_unbind">#</a>
-		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#37-42" title="Go to source code">unbind</a>( <span>string <var>$query</var></span>, <span>string|null <var>$typeName</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$parameterValues</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$language</var> = <span class="php-keyword1">null</span></span> )</code>
-
-		<div class="description short">
-			<p>Unbinds a bound query.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Unbinds a bound query.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$query</var></dt>
-					<dd>The resource query.</dd>
-					<dt><var>$typeName</var></dt>
-					<dd>The name of a binding type.</dd>
-					<dt><var>$parameterValues</var></dt>
-					<dd>The values of the binding parameters.</dd>
-					<dt><var>$language</var></dt>
-					<dd>The language of the resource query.</dd>
-				</dl></div>
-
-
-
-
-
-				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.Discovery.Api.EditableDiscovery.html#_unbind">Puli\Discovery\Api\EditableDiscovery::unbind()</a></code></div>
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="defineType" id="_defineType">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_defineType">#</a>
-		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#44-49" title="Go to source code">defineType</a>( <span>string|BindingType <var>$type</var></span> )</code>
-
-		<div class="description short">
-			<p>Defines a binding type.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Defines a binding type.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$type</var></dt>
-					<dd>The type name or instance.</dd>
-				</dl></div>
-
-
-				<h4>Throws</h4>
-				<div class="list">
-					DuplicateTypeException<br>If the type is already defined.<br>
-					InvalidArgumentException<br>If the type is invalid.
-				</div>
-
-
-
-				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.Discovery.Api.EditableDiscovery.html#_defineType">Puli\Discovery\Api\EditableDiscovery::defineType()</a></code></div>
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="undefineType" id="_undefineType">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_undefineType">#</a>
-		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#51-56" title="Go to source code">undefineType</a>( <span>string <var>$typeName</var></span> )</code>
-
-		<div class="description short">
-			<p>Undefines a binding type.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Undefines a binding type.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$typeName</var></dt>
-					<dd>The name of a binding type.</dd>
-				</dl></div>
-
-
-
-
-
-				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.Discovery.Api.EditableDiscovery.html#_undefineType">Puli\Discovery\Api\EditableDiscovery::undefineType()</a></code></div>
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="clear" id="_clear">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#58-63" title="Go to source code">clear</a>( )</code>
-
-		<div class="description short">
-			<p>Removes all defined types and bindings.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Removes all defined types and bindings.</p>
-
-
-
-
-
-
-
-				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.Discovery.Api.EditableDiscovery.html#_clear">Puli\Discovery\Api\EditableDiscovery::clear()</a></code></div>
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="findByType" id="_findByType">
-
-		<td class="attributes"><code>
-			 public 
-
-			ResourceBinding[]
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_findByType">#</a>
-		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#65-71" title="Go to source code">findByType</a>( <span>string <var>$typeName</var></span> )</code>
-
-		<div class="description short">
-			<p>Returns all bindings bound to a binding type.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Returns all bindings bound to a binding type.</p>
+			<p>Returns all bindings bound to the given binding type.</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$typeName</var></dt>
 					<dd>The name of the binding type.</dd>
+					<dt><var>$expr</var></dt>
+					<dd>The expression to filter by.</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					ResourceBinding[]<br>The matching bindings.
-				</div>
-
-				<h4>Throws</h4>
-				<div class="list">
-					<code><a href="class-Puli.Discovery.Api.NoSuchTypeException.html">Puli\Discovery\Api\NoSuchTypeException</a></code><br>If the type has not been defined.
-				</div>
-
-
-
-				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.Discovery.Api.ResourceDiscovery.html#_findByType">Puli\Discovery\Api\ResourceDiscovery::findByType()</a></code></div>
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="findByPath" id="_findByPath">
-
-		<td class="attributes"><code>
-			 public 
-
-			ResourceBinding[]
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_findByPath">#</a>
-		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#73-83" title="Go to source code">findByPath</a>( <span>string <var>$resourcePath</var></span>, <span>string|null <var>$typeName</var> = <span class="php-keyword1">null</span></span> )</code>
-
-		<div class="description short">
-			<p>Returns all bindings for the given resource path.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Returns all bindings for the given resource path.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$resourcePath</var></dt>
-					<dd>The canonical path to a resource.</dd>
-					<dt><var>$typeName</var></dt>
-					<dd>The name of a binding type.</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					ResourceBinding[]<br>The matching bindings.
-				</div>
-
-				<h4>Throws</h4>
-				<div class="list">
-					ResourceNotFoundException<br>If the path does not exist.<br>
-					<code><a href="class-Puli.Discovery.Api.NoSuchTypeException.html">Puli\Discovery\Api\NoSuchTypeException</a></code><br>If the type has not been defined.
-				</div>
-
-
-
-				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.Discovery.Api.ResourceDiscovery.html#_findByPath">Puli\Discovery\Api\ResourceDiscovery::findByPath()</a></code></div>
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getBindings" id="_getBindings">
-
-		<td class="attributes"><code>
-			 public 
-
-			ResourceBinding[]
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_getBindings">#</a>
-		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#85-91" title="Go to source code">getBindings</a>( )</code>
-
-		<div class="description short">
-			<p>Returns all bindings.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Returns all bindings.</p>
-
-
-
-				<h4>Returns</h4>
-				<div class="list">
-					ResourceBinding[]<br>The bindings.
+					<code><a href="class-Puli.Discovery.Api.Binding.Binding.html">Puli\Discovery\Api\Binding\Binding</a>[]</code><br>The matching bindings.
 				</div>
 
 
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.Discovery.Api.ResourceDiscovery.html#_getBindings">Puli\Discovery\Api\ResourceDiscovery::getBindings()</a></code></div>
+				<div class="list"><code><a href="class-Puli.Discovery.Api.Discovery.html#_findBindings">Puli\Discovery\Api\Discovery::findBindings()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="isTypeDefined" id="_isTypeDefined">
+	<tr data-order="hasBindings" id="_hasBindings">
 
 		<td class="attributes"><code>
 			 public 
@@ -857,94 +584,298 @@ in tests).</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_isTypeDefined">#</a>
-		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#93-99" title="Go to source code">isTypeDefined</a>( <span>string <var>$typeName</var></span> )</code>
+		<a class="anchor" href="#_hasBindings">#</a>
+		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#43-49" title="Go to source code">hasBindings</a>( <span>string|null <var>$typeName</var> = <span class="php-keyword1">null</span></span>, <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
-			<p>Returns whether a binding type has been defined.</p>
+			<p>Returns whether the discovery contains bindings.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Returns whether a binding type has been defined.</p>
+			<p>Returns whether the discovery contains bindings.</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$typeName</var></dt>
-					<dd>The name of a binding type.</dd>
+					<dd>The name of the binding type.</dd>
+					<dt><var>$expr</var></dt>
+					<dd>The expression to filter by.</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					boolean<br>Returns <code>true</code> if the binding type has been defined.
+					boolean<br>Returns whether the discovery contains matching bindings.
 				</div>
 
 
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.Discovery.Api.ResourceDiscovery.html#_isTypeDefined">Puli\Discovery\Api\ResourceDiscovery::isTypeDefined()</a></code></div>
+				<div class="list"><code><a href="class-Puli.Discovery.Api.Discovery.html#_hasBindings">Puli\Discovery\Api\Discovery::hasBindings()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getDefinedType" id="_getDefinedType">
+	<tr data-order="getBindings" id="_getBindings">
 
 		<td class="attributes"><code>
 			 public 
 
-			BindingType
+			<code><a href="class-Puli.Discovery.Api.Binding.Binding.html">Puli\Discovery\Api\Binding\Binding</a>[]</code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getDefinedType">#</a>
-		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#101-107" title="Go to source code">getDefinedType</a>( <span>string <var>$typeName</var></span> )</code>
+		<a class="anchor" href="#_getBindings">#</a>
+		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#51-57" title="Go to source code">getBindings</a>( )</code>
 
 		<div class="description short">
-			<p>Returns the binding type with a given name.</p>
+			<p>Returns all bindings.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Returns the binding type with a given name.</p>
+			<p>Returns all bindings.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.Discovery.Api.Binding.Binding.html">Puli\Discovery\Api\Binding\Binding</a>[]</code><br>The bindings.
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Discovery.Api.Discovery.html#_getBindings">Puli\Discovery\Api\Discovery::getBindings()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasBinding" id="_hasBinding">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasBinding">#</a>
+		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#59-65" title="Go to source code">hasBinding</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns whether the discovery contains a binding.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether the discovery contains a binding.</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$typeName</var></dt>
-					<dd>The name of a binding type.</dd>
+					<dt><var>$uuid</var></dt>
+					<dd>The UUID of the binding.</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					BindingType<br>The matching binding type.
+					boolean<br><p>Returns <code>true</code> if a binding with the given UUID exists and
+             <code>false</code> otherwise.</p>
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Discovery.Api.Discovery.html#_hasBinding">Puli\Discovery\Api\Discovery::hasBinding()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBinding" id="_getBinding">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.Discovery.Api.Binding.Binding.html">Puli\Discovery\Api\Binding\Binding</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBinding">#</a>
+		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#67-73" title="Go to source code">getBinding</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns the binding with the given UUID.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the binding with the given UUID.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uuid</var></dt>
+					<dd>The UUID of the binding.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.Discovery.Api.Binding.Binding.html">Puli\Discovery\Api\Binding\Binding</a></code><br>The binding.
 				</div>
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><a href="class-Puli.Discovery.Api.NoSuchTypeException.html">Puli\Discovery\Api\NoSuchTypeException</a></code><br>If a type with that name has not been defined.
+					<code><a href="class-Puli.Discovery.Api.Binding.NoSuchBindingException.html">Puli\Discovery\Api\Binding\NoSuchBindingException</a></code><br>If the binding does not exist.
 				</div>
 
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.Discovery.Api.ResourceDiscovery.html#_getDefinedType">Puli\Discovery\Api\ResourceDiscovery::getDefinedType()</a></code></div>
+				<div class="list"><code><a href="class-Puli.Discovery.Api.Discovery.html#_getBinding">Puli\Discovery\Api\Discovery::getBinding()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getDefinedTypes" id="_getDefinedTypes">
+	<tr data-order="hasBindingType" id="_hasBindingType">
 
 		<td class="attributes"><code>
 			 public 
 
-			BindingType[]
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getDefinedTypes">#</a>
-		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#109-115" title="Go to source code">getDefinedTypes</a>( )</code>
+		<a class="anchor" href="#_hasBindingType">#</a>
+		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#75-81" title="Go to source code">hasBindingType</a>( <span>string <var>$typeName</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns whether a binding type exists.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether a binding type exists.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$typeName</var></dt>
+					<dd>The name of a binding type.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br><p>Returns <code>true</code> if the binding type exists and <code>false</code>
+             otherwise.</p>
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Discovery.Api.Discovery.html#_hasBindingType">Puli\Discovery\Api\Discovery::hasBindingType()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBindingType" id="_getBindingType">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.Discovery.Api.Type.BindingType.html">Puli\Discovery\Api\Type\BindingType</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBindingType">#</a>
+		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#83-89" title="Go to source code">getBindingType</a>( <span>string <var>$typeName</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns the binding type with the given name.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the binding type with the given name.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$typeName</var></dt>
+					<dd>The name of a binding type.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.Discovery.Api.Type.BindingType.html">Puli\Discovery\Api\Type\BindingType</a></code><br>The binding type.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Puli.Discovery.Api.Type.NoSuchTypeException.html">Puli\Discovery\Api\Type\NoSuchTypeException</a></code><br>If a type with that name does not exist.
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Discovery.Api.Discovery.html#_getBindingType">Puli\Discovery\Api\Discovery::getBindingType()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasBindingTypes" id="_hasBindingTypes">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasBindingTypes">#</a>
+		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#91-97" title="Go to source code">hasBindingTypes</a>( )</code>
+
+		<div class="description short">
+			<p>Returns whether any binding types have been defined.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether any binding types have been defined.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br><p>Returns <code>true</code> if the discovery contains binding types and
+             <code>false</code> otherwise.</p>
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Discovery.Api.Discovery.html#_hasBindingTypes">Puli\Discovery\Api\Discovery::hasBindingTypes()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBindingTypes" id="_getBindingTypes">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.Discovery.Api.Type.BindingType.html">Puli\Discovery\Api\Type\BindingType</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBindingTypes">#</a>
+		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#99-105" title="Go to source code">getBindingTypes</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all defined binding types.</p>
@@ -957,14 +888,247 @@ in tests).</p>
 
 				<h4>Returns</h4>
 				<div class="list">
-					BindingType[]<br>The defined binding types.
+					<code><a href="class-Puli.Discovery.Api.Type.BindingType.html">Puli\Discovery\Api\Type\BindingType</a>[]</code><br>The defined binding types.
 				</div>
 
 
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.Discovery.Api.ResourceDiscovery.html#_getDefinedTypes">Puli\Discovery\Api\ResourceDiscovery::getDefinedTypes()</a></code></div>
+				<div class="list"><code><a href="class-Puli.Discovery.Api.Discovery.html#_getBindingTypes">Puli\Discovery\Api\Discovery::getBindingTypes()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addBinding" id="_addBinding">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addBinding">#</a>
+		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#107-112" title="Go to source code">addBinding</a>( <span><code><a href="class-Puli.Discovery.Api.Binding.Binding.html">Puli\Discovery\Api\Binding\Binding</a></code> <var>$binding</var></span> )</code>
+
+		<div class="description short">
+			<p>Adds a binding to the discovery.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adds a binding to the discovery.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$binding</var></dt>
+					<dd>The binding to add.</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					NoSuchParameterException<br>If an invalid parameter was passed.<br>
+					MissingParameterException<br>If a required parameter was not passed.<br>
+					<code><a href="class-Puli.Discovery.Api.Type.NoSuchTypeException.html">Puli\Discovery\Api\Type\NoSuchTypeException</a></code><br><p>If the type of the binding does not
+                                    exist.</p><br>
+					BindingNotAcceptedException<br><p>If the type of the binding does not
+                                    accept the binding.</p>
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Discovery.Api.EditableDiscovery.html#_addBinding">Puli\Discovery\Api\EditableDiscovery::addBinding()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeBinding" id="_removeBinding">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeBinding">#</a>
+		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#114-119" title="Go to source code">removeBinding</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+
+		<div class="description short">
+			<p>Removes a binding from the discovery.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes a binding from the discovery.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uuid</var></dt>
+					<dd>The UUID of the binding.</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Discovery.Api.EditableDiscovery.html#_removeBinding">Puli\Discovery\Api\EditableDiscovery::removeBinding()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeBindings" id="_removeBindings">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeBindings">#</a>
+		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#121-126" title="Go to source code">removeBindings</a>( <span>string|null <var>$typeName</var> = <span class="php-keyword1">null</span></span>, <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Removes all bindings from the discovery.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes all bindings from the discovery.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$typeName</var></dt>
+					<dd><p>The name of the binding type or <code>null</code>
+                                 to remove all bindings.</p></dd>
+					<dt><var>$expr</var></dt>
+					<dd>The expression to filter by.</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Discovery.Api.EditableDiscovery.html#_removeBindings">Puli\Discovery\Api\EditableDiscovery::removeBindings()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addBindingType" id="_addBindingType">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addBindingType">#</a>
+		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#128-133" title="Go to source code">addBindingType</a>( <span><code><a href="class-Puli.Discovery.Api.Type.BindingType.html">Puli\Discovery\Api\Type\BindingType</a></code> <var>$type</var></span> )</code>
+
+		<div class="description short">
+			<p>Adds a binding type to the discovery.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adds a binding type to the discovery.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd>The type to add.</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					DuplicateTypeException<br>If a binding type with the same name exists.
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Discovery.Api.EditableDiscovery.html#_addBindingType">Puli\Discovery\Api\EditableDiscovery::addBindingType()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeBindingType" id="_removeBindingType">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeBindingType">#</a>
+		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#135-140" title="Go to source code">removeBindingType</a>( <span>string <var>$typeName</var></span> )</code>
+
+		<div class="description short">
+			<p>Removes a binding type from the discovery.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes a binding type from the discovery.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$typeName</var></dt>
+					<dd>The name of the binding type.</dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Discovery.Api.EditableDiscovery.html#_removeBindingType">Puli\Discovery\Api\EditableDiscovery::removeBindingType()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeBindingTypes" id="_removeBindingTypes">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeBindingTypes">#</a>
+		<code><a href="source-class-Puli.Discovery.NullDiscovery.html#142-147" title="Go to source code">removeBindingTypes</a>( )</code>
+
+		<div class="description short">
+			<p>Removes all binding types and bindings from the discovery.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes all binding types and bindings from the discovery.</p>
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Puli.Discovery.Api.EditableDiscovery.html#_removeBindingTypes">Puli\Discovery\Api\EditableDiscovery::removeBindingTypes()</a></code></div>
 		</div>
 		</div></td>
 	</tr>

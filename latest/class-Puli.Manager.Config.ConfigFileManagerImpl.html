@@ -49,26 +49,34 @@
 						<ul>
 				<li>
 					<a href="namespace-Puli.Discovery.Api.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
+							</ul></li>
 				<li>
-					<a href="namespace-Puli.Discovery.Api.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Discovery.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
 
-						</li>
+						<ul>
 				<li>
-					<a href="namespace-Puli.Discovery.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.Factory.html">
 						Factory					</a>
@@ -97,13 +105,13 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Discovery.html">
-						Discovery					</a>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Environment.html">
-						Environment					</a>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
 
 						</li>
 				<li>
@@ -140,6 +148,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Api.Package.html">
 						Package					</a>
@@ -244,6 +257,11 @@
 				<li>
 					<a href="namespace-Puli.Manager.Installer.html">
 						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
 
 						</li>
 				<li>
@@ -534,7 +552,7 @@ Whenever you call methods in this class, the changes will be written to disk.</p
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Manager.Config.ConfigFileManagerImpl.html#45-56" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Environment.GlobalEnvironment.html">Puli\Manager\Api\Environment\GlobalEnvironment</a></code> <var>$environment</var></span>, <span><code><a href="class-Puli.Manager.Config.ConfigFileStorage.html">Puli\Manager\Config\ConfigFileStorage</a></code> <var>$configFileStorage</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Config.ConfigFileManagerImpl.html#45-56" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Context.Context.html">Puli\Manager\Api\Context\Context</a></code> <var>$context</var></span>, <span><code><a href="class-Puli.Manager.Config.ConfigFileStorage.html">Puli\Manager\Config\ConfigFileStorage</a></code> <var>$configFileStorage</var></span> )</code>
 
 		<div class="description short">
 			<p>Creates the configuration manager.</p>
@@ -546,8 +564,8 @@ Whenever you call methods in this class, the changes will be written to disk.</p
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$environment</var></dt>
-					<dd>The global environment.</dd>
+					<dt><var>$context</var></dt>
+					<dd>The global context.</dd>
 					<dt><var>$configFileStorage</var></dt>
 					<dd>The configuration file storage.</dd>
 				</dl></div>
@@ -595,39 +613,39 @@ Whenever you call methods in this class, the changes will be written to disk.</p
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getEnvironment" id="_getEnvironment">
+	<tr data-order="getContext" id="_getContext">
 
 		<td class="attributes"><code>
 			 public 
 
-			<code><a href="class-Puli.Manager.Api.Environment.GlobalEnvironment.html">Puli\Manager\Api\Environment\GlobalEnvironment</a></code>
+			<code><a href="class-Puli.Manager.Api.Context.Context.html">Puli\Manager\Api\Context\Context</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getEnvironment">#</a>
-		<code><a href="source-class-Puli.Manager.Config.ConfigFileManagerImpl.html#66-72" title="Go to source code">getEnvironment</a>( )</code>
+		<a class="anchor" href="#_getContext">#</a>
+		<code><a href="source-class-Puli.Manager.Config.ConfigFileManagerImpl.html#66-72" title="Go to source code">getContext</a>( )</code>
 
 		<div class="description short">
-			<p>Returns the global environment.</p>
+			<p>Returns the global context.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Returns the global environment.</p>
+			<p>Returns the global context.</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><a href="class-Puli.Manager.Api.Environment.GlobalEnvironment.html">Puli\Manager\Api\Environment\GlobalEnvironment</a></code><br>The global environment.
+					<code><a href="class-Puli.Manager.Api.Context.Context.html">Puli\Manager\Api\Context\Context</a></code><br>The global context.
 				</div>
 
 
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.Manager.Api.Config.ConfigFileManager.html#_getEnvironment">Puli\Manager\Api\Config\ConfigFileManager::getEnvironment()</a></code></div>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Config.ConfigFileManager.html#_getContext">Puli\Manager\Api\Config\ConfigFileManager::getContext()</a></code></div>
 		</div>
 		</div></td>
 	</tr>

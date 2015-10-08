@@ -49,26 +49,34 @@
 						<ul>
 				<li>
 					<a href="namespace-Puli.Discovery.Api.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
+							</ul></li>
 				<li>
-					<a href="namespace-Puli.Discovery.Api.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Discovery.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
 
-						</li>
+						<ul>
 				<li>
-					<a href="namespace-Puli.Discovery.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.Factory.html">
 						Factory					</a>
@@ -97,13 +105,13 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Discovery.html">
-						Discovery					</a>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Environment.html">
-						Environment					</a>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
 
 						</li>
 				<li>
@@ -140,6 +148,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Api.Package.html">
 						Package					</a>
@@ -244,6 +257,11 @@
 				<li>
 					<a href="namespace-Puli.Manager.Installer.html">
 						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
 
 						</li>
 				<li>
@@ -517,7 +535,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#120-139" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Environment.ProjectEnvironment.html">Puli\Manager\Api\Environment\ProjectEnvironment</a></code> <var>$environment</var></span>, <span><code><a href="class-Puli.Repository.Api.EditableRepository.html">Puli\Repository\Api\EditableRepository</a></code> <var>$repo</var></span>, <span><code><a href="class-Puli.Manager.Api.Package.PackageCollection.html">Puli\Manager\Api\Package\PackageCollection</a></code> <var>$packages</var></span>, <span><code><a href="class-Puli.Manager.Package.PackageFileStorage.html">Puli\Manager\Package\PackageFileStorage</a></code> <var>$packageFileStorage</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#120-139" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Context.ProjectContext.html">Puli\Manager\Api\Context\ProjectContext</a></code> <var>$context</var></span>, <span><code><a href="class-Puli.Repository.Api.EditableRepository.html">Puli\Repository\Api\EditableRepository</a></code> <var>$repo</var></span>, <span><code><a href="class-Puli.Manager.Api.Package.PackageCollection.html">Puli\Manager\Api\Package\PackageCollection</a></code> <var>$packages</var></span>, <span><code><a href="class-Puli.Manager.Package.PackageFileStorage.html">Puli\Manager\Package\PackageFileStorage</a></code> <var>$packageFileStorage</var></span> )</code>
 
 		<div class="description short">
 			<p>Creates a repository manager.</p>
@@ -529,7 +547,7 @@
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$environment</var></dt>
+					<dt><var>$context</var></dt>
 					<dd></dd>
 					<dt><var>$repo</var></dt>
 					<dd></dd>
@@ -546,39 +564,39 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getEnvironment" id="_getEnvironment">
+	<tr data-order="getContext" id="_getContext">
 
 		<td class="attributes"><code>
 			 public 
 
-			<code><a href="class-Puli.Manager.Api.Environment.ProjectEnvironment.html">Puli\Manager\Api\Environment\ProjectEnvironment</a></code>
+			<code><a href="class-Puli.Manager.Api.Context.ProjectContext.html">Puli\Manager\Api\Context\ProjectContext</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getEnvironment">#</a>
-		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#141-147" title="Go to source code">getEnvironment</a>( )</code>
+		<a class="anchor" href="#_getContext">#</a>
+		<code><a href="source-class-Puli.Manager.Repository.RepositoryManagerImpl.html#141-147" title="Go to source code">getContext</a>( )</code>
 
 		<div class="description short">
-			<p>Returns the manager's environment.</p>
+			<p>Returns the manager's context.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Returns the manager's environment.</p>
+			<p>Returns the manager's context.</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><a href="class-Puli.Manager.Api.Environment.ProjectEnvironment.html">Puli\Manager\Api\Environment\ProjectEnvironment</a></code><br>The project environment.
+					<code><a href="class-Puli.Manager.Api.Context.ProjectContext.html">Puli\Manager\Api\Context\ProjectContext</a></code><br>The project context.
 				</div>
 
 
 
 
 				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-Puli.Manager.Api.Repository.RepositoryManager.html#_getEnvironment">Puli\Manager\Api\Repository\RepositoryManager::getEnvironment()</a></code></div>
+				<div class="list"><code><a href="class-Puli.Manager.Api.Repository.RepositoryManager.html#_getContext">Puli\Manager\Api\Repository\RepositoryManager::getContext()</a></code></div>
 		</div>
 		</div></td>
 	</tr>

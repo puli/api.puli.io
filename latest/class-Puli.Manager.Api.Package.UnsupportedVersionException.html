@@ -49,26 +49,34 @@
 						<ul>
 				<li>
 					<a href="namespace-Puli.Discovery.Api.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
+							</ul></li>
 				<li>
-					<a href="namespace-Puli.Discovery.Api.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Discovery.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
 
-						</li>
+						<ul>
 				<li>
-					<a href="namespace-Puli.Discovery.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.Factory.html">
 						Factory					</a>
@@ -97,13 +105,13 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Discovery.html">
-						Discovery					</a>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Environment.html">
-						Environment					</a>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
 
 						</li>
 				<li>
@@ -140,6 +148,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
 				<li class="active">
 					<a href="namespace-Puli.Manager.Api.Package.html">
 						Package					</a>
@@ -244,6 +257,11 @@
 				<li>
 					<a href="namespace-Puli.Manager.Installer.html">
 						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
 
 						</li>
 				<li>
@@ -525,7 +543,7 @@ RuntimeException
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Package.UnsupportedVersionException.html#17-67" title="Go to source code">Api/Package/UnsupportedVersionException.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Package.UnsupportedVersionException.html#17-51" title="Go to source code">Api/Package/UnsupportedVersionException.php</a>
 		<br>
 	</div>
 
@@ -533,7 +551,7 @@ RuntimeException
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="versionTooHigh" id="_versionTooHigh">
+	<tr data-order="forVersion" id="_forVersion">
 
 		<td class="attributes"><code>
 			 public static
@@ -544,68 +562,23 @@ RuntimeException
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_versionTooHigh">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.UnsupportedVersionException.html#26-45" title="Go to source code">versionTooHigh</a>( <span>string <var>$version</var></span>, <span>string <var>$maxVersion</var></span>, <span>string <var>$path</var> = <span class="php-keyword1">null</span></span>, <span>Exception <var>$cause</var> = <span class="php-keyword1">null</span></span> )</code>
+		<a class="anchor" href="#_forVersion">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Package.UnsupportedVersionException.html#26-50" title="Go to source code">forVersion</a>( <span>string <var>$version</var></span>, <span>array <var>$knownVersions</var></span>, <span>string <var>$path</var> = <span class="php-keyword1">null</span></span>, <span>Exception <var>$cause</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
-			<p>Creates an exception when the read version was too high.</p>
+			<p>Creates an exception for an unknown version.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Creates an exception when the read version was too high.</p>
+			<p>Creates an exception for an unknown version.</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$version</var></dt>
 					<dd>The version that caused the exception.</dd>
-					<dt><var>$maxVersion</var></dt>
-					<dd>The highest readable version.</dd>
-					<dt><var>$path</var></dt>
-					<dd>The path of the read package file.</dd>
-					<dt><var>$cause</var></dt>
-					<dd>The exception that caused this exception.</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					static<br>The created exception.
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="versionTooLow" id="_versionTooLow">
-
-		<td class="attributes"><code>
-			 public static
-
-			static
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_versionTooLow">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Package.UnsupportedVersionException.html#47-66" title="Go to source code">versionTooLow</a>( <span>string <var>$version</var></span>, <span>string <var>$minVersion</var></span>, <span>string <var>$path</var> = <span class="php-keyword1">null</span></span>, <span>Exception <var>$cause</var> = <span class="php-keyword1">null</span></span> )</code>
-
-		<div class="description short">
-			<p>Creates an exception when the read version was too low.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Creates an exception when the read version was too low.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$version</var></dt>
-					<dd>The version that caused the exception.</dd>
-					<dt><var>$minVersion</var></dt>
-					<dd>The lowest readable version.</dd>
+					<dt><var>$knownVersions</var></dt>
+					<dd>The known versions.</dd>
 					<dt><var>$path</var></dt>
 					<dd>The path of the read package file.</dd>
 					<dt><var>$cause</var></dt>

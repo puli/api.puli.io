@@ -49,26 +49,34 @@
 						<ul>
 				<li>
 					<a href="namespace-Puli.Discovery.Api.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
+							</ul></li>
 				<li>
-					<a href="namespace-Puli.Discovery.Api.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Discovery.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
 
-						</li>
+						<ul>
 				<li>
-					<a href="namespace-Puli.Discovery.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.Factory.html">
 						Factory					</a>
@@ -96,14 +104,14 @@
 						Config					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
+
+						</li>
 				<li class="active">
 					<a href="namespace-Puli.Manager.Api.Discovery.html">
 						Discovery					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Puli.Manager.Api.Environment.html">
-						Environment					</a>
 
 						</li>
 				<li>
@@ -140,6 +148,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Api.Package.html">
 						Package					</a>
@@ -244,6 +257,11 @@
 				<li>
 					<a href="namespace-Puli.Manager.Installer.html">
 						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
 
 						</li>
 				<li>
@@ -425,7 +443,6 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-Puli.Manager.Api.Discovery.BindingDescriptor.html">BindingDescriptor</a></li>
-				<li><a href="class-Puli.Manager.Api.Discovery.BindingParameterDescriptor.html">BindingParameterDescriptor</a></li>
 				<li><a href="class-Puli.Manager.Api.Discovery.BindingState.html">BindingState</a></li>
 				<li><a href="class-Puli.Manager.Api.Discovery.BindingTypeDescriptor.html">BindingTypeDescriptor</a></li>
 				<li><a href="class-Puli.Manager.Api.Discovery.BindingTypeState.html">BindingTypeState</a></li>
@@ -517,32 +534,32 @@
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="getEnvironment" id="_getEnvironment">
+	<tr data-order="getContext" id="_getContext">
 
 		<td class="attributes"><code>
 			 public 
 
-			<code><a href="class-Puli.Manager.Api.Environment.ProjectEnvironment.html">Puli\Manager\Api\Environment\ProjectEnvironment</a></code>
+			<code><a href="class-Puli.Manager.Api.Context.ProjectContext.html">Puli\Manager\Api\Context\ProjectContext</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getEnvironment">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#44-49" title="Go to source code">getEnvironment</a>( )</code>
+		<a class="anchor" href="#_getContext">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#44-49" title="Go to source code">getContext</a>( )</code>
 
 		<div class="description short">
-			<p>Returns the manager's environment.</p>
+			<p>Returns the manager's context.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Returns the manager's environment.</p>
+			<p>Returns the manager's context.</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><a href="class-Puli.Manager.Api.Environment.ProjectEnvironment.html">Puli\Manager\Api\Environment\ProjectEnvironment</a></code><br>The project environment.
+					<code><a href="class-Puli.Manager.Api.Context.ProjectContext.html">Puli\Manager\Api\Context\ProjectContext</a></code><br>The project context.
 				</div>
 
 
@@ -551,7 +568,7 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="addRootBindingType" id="_addRootBindingType">
+	<tr data-order="addRootTypeDescriptor" id="_addRootTypeDescriptor">
 
 		<td class="attributes"><code>
 			 public 
@@ -562,8 +579,8 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_addRootBindingType">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#51-62" title="Go to source code">addRootBindingType</a>( <span><code><a href="class-Puli.Manager.Api.Discovery.BindingTypeDescriptor.html">Puli\Manager\Api\Discovery\BindingTypeDescriptor</a></code> <var>$typeDescriptor</var></span>, <span>integer <var>$flags</var> = <span class="php-num">0</span></span> )</code>
+		<a class="anchor" href="#_addRootTypeDescriptor">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#51-62" title="Go to source code">addRootTypeDescriptor</a>( <span><code><a href="class-Puli.Manager.Api.Discovery.BindingTypeDescriptor.html">Puli\Manager\Api\Discovery\BindingTypeDescriptor</a></code> <var>$typeDescriptor</var></span>, <span>integer <var>$flags</var> = <span class="php-num">0</span></span> )</code>
 
 		<div class="description short">
 			<p>Adds a new binding type.</p>
@@ -595,7 +612,7 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="removeRootBindingType" id="_removeRootBindingType">
+	<tr data-order="removeRootTypeDescriptor" id="_removeRootTypeDescriptor">
 
 		<td class="attributes"><code>
 			 public 
@@ -606,8 +623,8 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_removeRootBindingType">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#64-72" title="Go to source code">removeRootBindingType</a>( <span>string <var>$typeName</var></span> )</code>
+		<a class="anchor" href="#_removeRootTypeDescriptor">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#64-72" title="Go to source code">removeRootTypeDescriptor</a>( <span>string <var>$typeName</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a binding type from the root package.</p>
@@ -633,7 +650,7 @@ is not found, this method does nothing.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="removeRootBindingTypes" id="_removeRootBindingTypes">
+	<tr data-order="removeRootTypeDescriptors" id="_removeRootTypeDescriptors">
 
 		<td class="attributes"><code>
 			 public 
@@ -644,8 +661,8 @@ is not found, this method does nothing.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_removeRootBindingTypes">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#74-81" title="Go to source code">removeRootBindingTypes</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<a class="anchor" href="#_removeRootTypeDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#74-81" title="Go to source code">removeRootTypeDescriptors</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes all binding types matching the given expression.</p>
@@ -670,7 +687,7 @@ is not found, this method does nothing.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="clearRootBindingTypes" id="_clearRootBindingTypes">
+	<tr data-order="clearRootTypeDescriptors" id="_clearRootTypeDescriptors">
 
 		<td class="attributes"><code>
 			 public 
@@ -681,8 +698,8 @@ is not found, this method does nothing.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_clearRootBindingTypes">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#83-86" title="Go to source code">clearRootBindingTypes</a>( )</code>
+		<a class="anchor" href="#_clearRootTypeDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#83-86" title="Go to source code">clearRootTypeDescriptors</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all binding types from the root package.</p>
@@ -700,7 +717,7 @@ is not found, this method does nothing.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getRootBindingType" id="_getRootBindingType">
+	<tr data-order="getRootTypeDescriptor" id="_getRootTypeDescriptor">
 
 		<td class="attributes"><code>
 			 public 
@@ -711,8 +728,8 @@ is not found, this method does nothing.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getRootBindingType">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#88-97" title="Go to source code">getRootBindingType</a>( <span>string <var>$typeName</var></span> )</code>
+		<a class="anchor" href="#_getRootTypeDescriptor">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#88-97" title="Go to source code">getRootTypeDescriptor</a>( <span>string <var>$typeName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the binding type with the given name from the root package.</p>
@@ -743,7 +760,7 @@ is not found, this method does nothing.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getRootBindingTypes" id="_getRootBindingTypes">
+	<tr data-order="getRootTypeDescriptors" id="_getRootTypeDescriptors">
 
 		<td class="attributes"><code>
 			 public 
@@ -754,8 +771,8 @@ is not found, this method does nothing.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getRootBindingTypes">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#99-104" title="Go to source code">getRootBindingTypes</a>( )</code>
+		<a class="anchor" href="#_getRootTypeDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#99-104" title="Go to source code">getRootTypeDescriptors</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all binding types from the root package.</p>
@@ -777,7 +794,7 @@ is not found, this method does nothing.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="findRootBindingTypes" id="_findRootBindingTypes">
+	<tr data-order="findRootTypeDescriptors" id="_findRootTypeDescriptors">
 
 		<td class="attributes"><code>
 			 public 
@@ -788,8 +805,8 @@ is not found, this method does nothing.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_findRootBindingTypes">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#106-114" title="Go to source code">findRootBindingTypes</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<a class="anchor" href="#_findRootTypeDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#106-114" title="Go to source code">findRootTypeDescriptors</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns all binding types from the root package that match the given
@@ -818,7 +835,7 @@ expression.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="hasRootBindingType" id="_hasRootBindingType">
+	<tr data-order="hasRootTypeDescriptor" id="_hasRootTypeDescriptor">
 
 		<td class="attributes"><code>
 			 public 
@@ -829,8 +846,8 @@ expression.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_hasRootBindingType">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#116-123" title="Go to source code">hasRootBindingType</a>( <span>string <var>$typeName</var></span> )</code>
+		<a class="anchor" href="#_hasRootTypeDescriptor">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#116-123" title="Go to source code">hasRootTypeDescriptor</a>( <span>string <var>$typeName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the type with the given name exists in the root package.</p>
@@ -857,7 +874,7 @@ expression.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="hasRootBindingTypes" id="_hasRootBindingTypes">
+	<tr data-order="hasRootTypeDescriptors" id="_hasRootTypeDescriptors">
 
 		<td class="attributes"><code>
 			 public 
@@ -868,8 +885,8 @@ expression.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_hasRootBindingTypes">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#125-138" title="Go to source code">hasRootBindingTypes</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
+		<a class="anchor" href="#_hasRootTypeDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#125-138" title="Go to source code">hasRootTypeDescriptors</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the manager has any binding types in the root package.</p>
@@ -902,7 +919,7 @@ types matching the expression.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getBindingType" id="_getBindingType">
+	<tr data-order="getTypeDescriptor" id="_getTypeDescriptor">
 
 		<td class="attributes"><code>
 			 public 
@@ -913,8 +930,8 @@ types matching the expression.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getBindingType">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#140-150" title="Go to source code">getBindingType</a>( <span>string <var>$typeName</var></span>, <span>string <var>$packageName</var></span> )</code>
+		<a class="anchor" href="#_getTypeDescriptor">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#140-150" title="Go to source code">getTypeDescriptor</a>( <span>string <var>$typeName</var></span>, <span>string <var>$packageName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the binding type with the given name.</p>
@@ -947,7 +964,7 @@ types matching the expression.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getBindingTypes" id="_getBindingTypes">
+	<tr data-order="getTypeDescriptors" id="_getTypeDescriptors">
 
 		<td class="attributes"><code>
 			 public 
@@ -958,8 +975,8 @@ types matching the expression.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getBindingTypes">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#152-157" title="Go to source code">getBindingTypes</a>( )</code>
+		<a class="anchor" href="#_getTypeDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#152-157" title="Go to source code">getTypeDescriptors</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all binding types.</p>
@@ -981,7 +998,7 @@ types matching the expression.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="findBindingTypes" id="_findBindingTypes">
+	<tr data-order="findTypeDescriptors" id="_findTypeDescriptors">
 
 		<td class="attributes"><code>
 			 public 
@@ -992,8 +1009,8 @@ types matching the expression.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_findBindingTypes">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#159-166" title="Go to source code">findBindingTypes</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<a class="anchor" href="#_findTypeDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#159-166" title="Go to source code">findTypeDescriptors</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns all binding types matching the given expression.</p>
@@ -1020,7 +1037,7 @@ types matching the expression.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="hasBindingType" id="_hasBindingType">
+	<tr data-order="hasTypeDescriptor" id="_hasTypeDescriptor">
 
 		<td class="attributes"><code>
 			 public 
@@ -1031,8 +1048,8 @@ types matching the expression.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_hasBindingType">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#168-178" title="Go to source code">hasBindingType</a>( <span>string <var>$typeName</var></span>, <span>string <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
+		<a class="anchor" href="#_hasTypeDescriptor">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#168-178" title="Go to source code">hasTypeDescriptor</a>( <span>string <var>$typeName</var></span>, <span>string <var>$packageName</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the type with the given name exists.</p>
@@ -1063,7 +1080,7 @@ types matching the expression.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="hasBindingTypes" id="_hasBindingTypes">
+	<tr data-order="hasTypeDescriptors" id="_hasTypeDescriptors">
 
 		<td class="attributes"><code>
 			 public 
@@ -1074,8 +1091,8 @@ types matching the expression.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_hasBindingTypes">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#180-193" title="Go to source code">hasBindingTypes</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
+		<a class="anchor" href="#_hasTypeDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#180-193" title="Go to source code">hasTypeDescriptors</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the manager has any binding types.</p>
@@ -1108,7 +1125,7 @@ types matching the expression.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="addRootBinding" id="_addRootBinding">
+	<tr data-order="addRootBindingDescriptor" id="_addRootBindingDescriptor">
 
 		<td class="attributes"><code>
 			 public 
@@ -1119,8 +1136,8 @@ types matching the expression.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_addRootBinding">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#195-211" title="Go to source code">addRootBinding</a>( <span><code><a href="class-Puli.Manager.Api.Discovery.BindingDescriptor.html">Puli\Manager\Api\Discovery\BindingDescriptor</a></code> <var>$bindingDescriptor</var></span>, <span>integer <var>$flags</var> = <span class="php-num">0</span></span> )</code>
+		<a class="anchor" href="#_addRootBindingDescriptor">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#195-211" title="Go to source code">addRootBindingDescriptor</a>( <span><code><a href="class-Puli.Manager.Api.Discovery.BindingDescriptor.html">Puli\Manager\Api\Discovery\BindingDescriptor</a></code> <var>$bindingDescriptor</var></span>, <span>integer <var>$flags</var> = <span class="php-num">0</span></span> )</code>
 
 		<div class="description short">
 			<p>Adds a new binding.</p>
@@ -1157,7 +1174,7 @@ types matching the expression.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="removeRootBinding" id="_removeRootBinding">
+	<tr data-order="removeRootBindingDescriptor" id="_removeRootBindingDescriptor">
 
 		<td class="attributes"><code>
 			 public 
@@ -1168,8 +1185,8 @@ types matching the expression.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_removeRootBinding">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#213-221" title="Go to source code">removeRootBinding</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<a class="anchor" href="#_removeRootBindingDescriptor">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#213-221" title="Go to source code">removeRootBindingDescriptor</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes a binding from the root package.</p>
@@ -1195,7 +1212,7 @@ binding is not found, this method does nothing.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="removeRootBindings" id="_removeRootBindings">
+	<tr data-order="removeRootBindingDescriptors" id="_removeRootBindingDescriptors">
 
 		<td class="attributes"><code>
 			 public 
@@ -1206,8 +1223,8 @@ binding is not found, this method does nothing.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_removeRootBindings">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#223-230" title="Go to source code">removeRootBindings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<a class="anchor" href="#_removeRootBindingDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#223-230" title="Go to source code">removeRootBindingDescriptors</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes all bindings matching the given expression.</p>
@@ -1232,7 +1249,7 @@ binding is not found, this method does nothing.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="clearRootBindings" id="_clearRootBindings">
+	<tr data-order="clearRootBindingDescriptors" id="_clearRootBindingDescriptors">
 
 		<td class="attributes"><code>
 			 public 
@@ -1243,8 +1260,8 @@ binding is not found, this method does nothing.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_clearRootBindings">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#232-237" title="Go to source code">clearRootBindings</a>( )</code>
+		<a class="anchor" href="#_clearRootBindingDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#232-237" title="Go to source code">clearRootBindingDescriptors</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all bindings from the root package.</p>
@@ -1264,7 +1281,7 @@ binding is not found, this method does nothing.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getRootBinding" id="_getRootBinding">
+	<tr data-order="getRootBindingDescriptor" id="_getRootBindingDescriptor">
 
 		<td class="attributes"><code>
 			 public 
@@ -1275,8 +1292,8 @@ binding is not found, this method does nothing.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getRootBinding">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#239-248" title="Go to source code">getRootBinding</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<a class="anchor" href="#_getRootBindingDescriptor">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#239-248" title="Go to source code">getRootBindingDescriptor</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the binding with the given UUID in the root package.</p>
@@ -1307,7 +1324,7 @@ binding is not found, this method does nothing.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getRootBindings" id="_getRootBindings">
+	<tr data-order="getRootBindingDescriptors" id="_getRootBindingDescriptors">
 
 		<td class="attributes"><code>
 			 public 
@@ -1318,8 +1335,8 @@ binding is not found, this method does nothing.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getRootBindings">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#250-255" title="Go to source code">getRootBindings</a>( )</code>
+		<a class="anchor" href="#_getRootBindingDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#250-255" title="Go to source code">getRootBindingDescriptors</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all bindings in the root package.</p>
@@ -1341,7 +1358,7 @@ binding is not found, this method does nothing.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="findRootBindings" id="_findRootBindings">
+	<tr data-order="findRootBindingDescriptors" id="_findRootBindingDescriptors">
 
 		<td class="attributes"><code>
 			 public 
@@ -1352,8 +1369,8 @@ binding is not found, this method does nothing.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_findRootBindings">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#257-264" title="Go to source code">findRootBindings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<a class="anchor" href="#_findRootBindingDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#257-264" title="Go to source code">findRootBindingDescriptors</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns all bindings from the root package that match the given expression.</p>
@@ -1380,7 +1397,7 @@ binding is not found, this method does nothing.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="hasRootBinding" id="_hasRootBinding">
+	<tr data-order="hasRootBindingDescriptor" id="_hasRootBindingDescriptor">
 
 		<td class="attributes"><code>
 			 public 
@@ -1391,8 +1408,8 @@ binding is not found, this method does nothing.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_hasRootBinding">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#266-275" title="Go to source code">hasRootBinding</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<a class="anchor" href="#_hasRootBindingDescriptor">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#266-275" title="Go to source code">hasRootBindingDescriptor</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the binding with the given UUID exists in the root
@@ -1422,7 +1439,7 @@ package.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="hasRootBindings" id="_hasRootBindings">
+	<tr data-order="hasRootBindingDescriptors" id="_hasRootBindingDescriptors">
 
 		<td class="attributes"><code>
 			 public 
@@ -1433,8 +1450,8 @@ package.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_hasRootBindings">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#277-290" title="Go to source code">hasRootBindings</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
+		<a class="anchor" href="#_hasRootBindingDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#277-290" title="Go to source code">hasRootBindingDescriptors</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the manager has any bindings in the root package.</p>
@@ -1467,7 +1484,7 @@ bindings matching the expression.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="enableBinding" id="_enableBinding">
+	<tr data-order="enableBindingDescriptor" id="_enableBindingDescriptor">
 
 		<td class="attributes"><code>
 			 public 
@@ -1478,8 +1495,8 @@ bindings matching the expression.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_enableBinding">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#292-308" title="Go to source code">enableBinding</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<a class="anchor" href="#_enableBindingDescriptor">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#292-308" title="Go to source code">enableBindingDescriptor</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Enables a binding.</p>
@@ -1515,7 +1532,7 @@ bindings matching the expression.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="disableBinding" id="_disableBinding">
+	<tr data-order="disableBindingDescriptor" id="_disableBindingDescriptor">
 
 		<td class="attributes"><code>
 			 public 
@@ -1526,8 +1543,8 @@ bindings matching the expression.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_disableBinding">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#310-326" title="Go to source code">disableBinding</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<a class="anchor" href="#_disableBindingDescriptor">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#310-326" title="Go to source code">disableBindingDescriptor</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Disables a binding.</p>
@@ -1563,7 +1580,7 @@ bindings matching the expression.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getBinding" id="_getBinding">
+	<tr data-order="getBindingDescriptor" id="_getBindingDescriptor">
 
 		<td class="attributes"><code>
 			 public 
@@ -1574,8 +1591,8 @@ bindings matching the expression.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getBinding">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#328-337" title="Go to source code">getBinding</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<a class="anchor" href="#_getBindingDescriptor">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#328-337" title="Go to source code">getBindingDescriptor</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the binding with the given UUID.</p>
@@ -1606,7 +1623,7 @@ bindings matching the expression.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getBindings" id="_getBindings">
+	<tr data-order="getBindingDescriptors" id="_getBindingDescriptors">
 
 		<td class="attributes"><code>
 			 public 
@@ -1617,8 +1634,8 @@ bindings matching the expression.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getBindings">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#339-344" title="Go to source code">getBindings</a>( )</code>
+		<a class="anchor" href="#_getBindingDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#339-344" title="Go to source code">getBindingDescriptors</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all bindings.</p>
@@ -1640,7 +1657,7 @@ bindings matching the expression.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="findBindings" id="_findBindings">
+	<tr data-order="findBindingDescriptors" id="_findBindingDescriptors">
 
 		<td class="attributes"><code>
 			 public 
@@ -1651,8 +1668,8 @@ bindings matching the expression.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_findBindings">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#346-353" title="Go to source code">findBindings</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
+		<a class="anchor" href="#_findBindingDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#346-353" title="Go to source code">findBindingDescriptors</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns all bindings matching the given expression.</p>
@@ -1679,7 +1696,7 @@ bindings matching the expression.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="hasBinding" id="_hasBinding">
+	<tr data-order="hasBindingDescriptor" id="_hasBindingDescriptor">
 
 		<td class="attributes"><code>
 			 public 
@@ -1690,8 +1707,8 @@ bindings matching the expression.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_hasBinding">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#355-362" title="Go to source code">hasBinding</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
+		<a class="anchor" href="#_hasBindingDescriptor">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#355-362" title="Go to source code">hasBindingDescriptor</a>( <span>Rhumsaa\Uuid\Uuid <var>$uuid</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the binding with the given UUID exists.</p>
@@ -1718,7 +1735,7 @@ bindings matching the expression.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="hasBindings" id="_hasBindings">
+	<tr data-order="hasBindingDescriptors" id="_hasBindingDescriptors">
 
 		<td class="attributes"><code>
 			 public 
@@ -1729,8 +1746,8 @@ bindings matching the expression.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_hasBindings">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#364-377" title="Go to source code">hasBindings</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
+		<a class="anchor" href="#_hasBindingDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.DiscoveryManager.html#364-377" title="Go to source code">hasBindingDescriptors</a>( <span>Webmozart\Expression\Expression <var>$expr</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the manager has any bindings.</p>
@@ -1848,12 +1865,12 @@ bindings matching the expression.</p>
 
 			<div class="description short">
 				<p>Flag: Don't check whether the type exists already in
-addBindingType().</p>
+<code><a href="class-Puli.Manager.Api.Discovery.DiscoveryManager.html#_addRootTypeDescriptor">Puli\Manager\Api\Discovery\DiscoveryManager::addRootTypeDescriptor()</a></code>.</p>
 			</div>
 
 			<div class="description detailed hidden">
 				<p>Flag: Don't check whether the type exists already in
-addBindingType().</p>
+<code><a href="class-Puli.Manager.Api.Discovery.DiscoveryManager.html#_addRootTypeDescriptor">Puli\Manager\Api\Discovery\DiscoveryManager::addRootTypeDescriptor()</a></code>.</p>
 
 			</div>
 		</td>

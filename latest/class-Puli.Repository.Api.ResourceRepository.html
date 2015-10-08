@@ -49,26 +49,34 @@
 						<ul>
 				<li>
 					<a href="namespace-Puli.Discovery.Api.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
+							</ul></li>
 				<li>
-					<a href="namespace-Puli.Discovery.Api.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Discovery.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
 
-						</li>
+						<ul>
 				<li>
-					<a href="namespace-Puli.Discovery.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.Factory.html">
 						Factory					</a>
@@ -97,13 +105,13 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Discovery.html">
-						Discovery					</a>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Environment.html">
-						Environment					</a>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
 
 						</li>
 				<li>
@@ -140,6 +148,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Api.Package.html">
 						Package					</a>
@@ -244,6 +257,11 @@
 				<li>
 					<a href="namespace-Puli.Manager.Installer.html">
 						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
 
 						</li>
 				<li>
@@ -477,9 +495,9 @@
 
 
 	<div class="description">
-	<p>Stores Resource objects.</p>
+	<p>Stores <code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a></code> objects.</p>
 
-<p>A resource repository is similar to a filesystem. It stores Resource
+<p>A resource repository is similar to a filesystem. It stores <code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a></code>
 objects, each of which has a path in the repository:</p>
 
 <pre><span class="php-var">$resource</span> = <span class="php-var">$repo</span>-&gt;get(<span class="php-quote">'/css/style.css'</span>);</pre>
@@ -525,7 +543,7 @@ objects, each of which has a path in the repository:</p>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Repository.Api.ResourceRepository.html#16-112" title="Go to source code">Api/ResourceRepository.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Repository.Api.ResourceRepository.html#17-113" title="Go to source code">Api/ResourceRepository.php</a>
 		<br>
 	</div>
 
@@ -538,14 +556,14 @@ objects, each of which has a path in the repository:</p>
 		<td class="attributes"><code>
 			 public 
 
-			Resource
+			<code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#43-55" title="Go to source code">get</a>( <span>string <var>$path</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#44-56" title="Go to source code">get</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the resource at the given path.</p>
@@ -564,7 +582,7 @@ objects, each of which has a path in the repository:</p>
 
 				<h4>Returns</h4>
 				<div class="list">
-					Resource<br>The resource at this path.
+					<code><a href="class-Puli.Repository.Api.Resource.Resource.html">Puli\Repository\Api\Resource\Resource</a></code><br>The resource at this path.
 				</div>
 
 				<h4>Throws</h4>
@@ -591,7 +609,7 @@ objects, each of which has a path in the repository:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_find">#</a>
-		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#57-69" title="Go to source code">find</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
+		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#58-70" title="Go to source code">find</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the resources matching a query.</p>
@@ -638,7 +656,7 @@ objects, each of which has a path in the repository:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_contains">#</a>
-		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#71-83" title="Go to source code">contains</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
+		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#72-84" title="Go to source code">contains</a>( <span>string <var>$query</var></span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether any resources match a query.</p>
@@ -685,7 +703,7 @@ objects, each of which has a path in the repository:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasChildren">#</a>
-		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#85-97" title="Go to source code">hasChildren</a>( <span>string <var>$path</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#86-98" title="Go to source code">hasChildren</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether a resource has child resources.</p>
@@ -731,7 +749,7 @@ objects, each of which has a path in the repository:</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_listChildren">#</a>
-		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#99-111" title="Go to source code">listChildren</a>( <span>string <var>$path</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.Api.ResourceRepository.html#100-112" title="Go to source code">listChildren</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
 			<p>Lists the child resources of a resource.</p>

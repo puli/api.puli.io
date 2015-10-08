@@ -49,26 +49,34 @@
 						<ul>
 				<li>
 					<a href="namespace-Puli.Discovery.Api.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
+							</ul></li>
 				<li>
-					<a href="namespace-Puli.Discovery.Api.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Discovery.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
 
-						</li>
+						<ul>
 				<li>
-					<a href="namespace-Puli.Discovery.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.Factory.html">
 						Factory					</a>
@@ -97,13 +105,13 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Discovery.html">
-						Discovery					</a>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Environment.html">
-						Environment					</a>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
 
 						</li>
 				<li>
@@ -140,6 +148,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Api.Package.html">
 						Package					</a>
@@ -244,6 +257,11 @@
 				<li>
 					<a href="namespace-Puli.Manager.Installer.html">
 						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
 
 						</li>
 				<li>
@@ -513,13 +531,13 @@
 		<code><a href="source-class-Puli.Manager.Util.System.html#28-96" title="Go to source code">parseHomeDirectory</a>( )</code>
 
 		<div class="description short">
-			<p>Parses environment variables for Puli's home directory.</p>
+			<p>Parses context variables for Puli's home directory.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Parses environment variables for Puli's home directory.</p>
+			<p>Parses context variables for Puli's home directory.</p>
 
-<p>This method scans the environment variables "PULI_HOME", "HOME" and
+<p>This method scans the context variables "PULI_HOME", "HOME" and
 "APPDATA" to determine Puli's home directory:
  * If "PULI_HOME" is found, that directory is used. * If "HOME" is found, a directory ".puli" is created inside. This variable contains the path of the user's home directory by default on Unix based systems. * If "APPDATA" is found, a directory "Puli" is created inside. This variable contains the path of the application data by default on Windows.</p>
 
@@ -532,7 +550,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><a href="class-Puli.Manager.Api.InvalidConfigException.html">Puli\Manager\Api\InvalidConfigException</a></code><br><p>If no environment variable can be found to
+					<code><a href="class-Puli.Manager.Api.InvalidConfigException.html">Puli\Manager\Api\InvalidConfigException</a></code><br><p>If no context variable can be found to
                                determine the home directory.</p><br>
 					<code><a href="class-Puli.Manager.Api.FileNotFoundException.html">Puli\Manager\Api\FileNotFoundException</a></code><br>If the home directory is not found.<br>
 					<code><a href="class-Puli.Manager.Api.NoDirectoryException.html">Puli\Manager\Api\NoDirectoryException</a></code><br>If the home directory is not a directory.

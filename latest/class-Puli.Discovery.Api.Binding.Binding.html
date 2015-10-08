@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Interface Puli\Discovery\Api\Binding\Binding | Puli API</title>
+
+	<link rel="stylesheet" href="resources/style.css?95ada9fb523b6ab4fd1c47bb375f713f2cc65542">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-8282807-3"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Puli.html">
+						Puli<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Puli.Discovery.html">
+						Discovery<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Puli.Discovery.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Puli.Discovery.Api.Binding.html">
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Discovery.Binding.html">
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
+					<a href="namespace-Puli.Factory.html">
+						Factory					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.html">
+						Manager<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Asset.html">
+						Asset					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Event.html">
+						Event					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Factory.html">
+						Factory<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Factory.Generator.html">
+						Generator					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Installation.html">
+						Installation					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Installer.html">
+						Installer<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Installer.Validation.html">
+						Validation					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Package.html">
+						Package					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Php.html">
+						Php					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Repository.html">
+						Repository					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Server.html">
+						Server					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Storage.html">
+						Storage					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Assert.html">
+						Assert					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Asset.html">
+						Asset					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Conflict.html">
+						Conflict					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Discovery.html">
+						Discovery<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Discovery.Binding.html">
+						Binding					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Discovery.Type.html">
+						Type					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Factory.html">
+						Factory<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Factory.Generator.html">
+						Generator<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Factory.Generator.Discovery.html">
+						Discovery					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Factory.Generator.KeyValueStore.html">
+						KeyValueStore					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Factory.Generator.Repository.html">
+						Repository					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Installation.html">
+						Installation					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Installer.html">
+						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Package.html">
+						Package					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Php.html">
+						Php					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Repository.html">
+						Repository<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Manager.Repository.Mapping.html">
+						Mapping					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Server.html">
+						Server					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Transaction.html">
+						Transaction					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Util.html">
+						Util					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Repository.html">
+						Repository<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Api.html">
+						Api<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Api.Resource.html">
+						Resource					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.html">
+						Resource<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Collection.html">
+						Collection					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Iterator.html">
+						Iterator					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Resource.Metadata.html">
+						Metadata					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.Repository.StreamWrapper.html">
+						StreamWrapper					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Repository.Uri.html">
+						Uri					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.SymfonyBridge.html">
+						SymfonyBridge<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.SymfonyBridge.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.SymfonyBridge.HttpKernel.html">
+						HttpKernel					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.SymfonyBundle.html">
+						SymfonyBundle<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.SymfonyBundle.DependencyInjection.html">
+						DependencyInjection<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.SymfonyBundle.DependencyInjection.Compiler.html">
+						Compiler					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.SymfonyBundle.Tests.html">
+						Tests					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.TwigExtension.html">
+						TwigExtension<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.TwigExtension.CacheWarmer.html">
+						CacheWarmer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.TwigExtension.Node.html">
+						Node					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.TwigExtension.NodeVisitor.html">
+						NodeVisitor					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.TwigExtension.TokenParser.html">
+						TokenParser					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Puli.UrlGenerator.html">
+						UrlGenerator<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.UrlGenerator.Api.html">
+						Api					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li class="active"><a href="class-Puli.Discovery.Api.Binding.Binding.html">Binding</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Puli.Discovery.Api.Binding.NoSuchBindingException.html">NoSuchBindingException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Puli.Discovery.Api.Binding.html" title="Summary of Puli\Discovery\Api\Binding"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface Binding</h1>
+
+
+	<div class="description">
+	<p>Binds an artifact to a binding type.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Puli\Discovery\Api\Binding\Binding</span></b>			
+			 implements 
+<span>Serializable</span>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-Puli.Discovery.Binding.AbstractBinding.html">Puli\Discovery\Binding\AbstractBinding</a>
+	</div>
+
+	<div>
+		<h4>Indirect known implementers</h4>
+			<a href="class-Puli.Discovery.Binding.ClassBinding.html">Puli\Discovery\Binding\ClassBinding</a>, 
+			<a href="class-Puli.Discovery.Binding.ResourceBinding.html">Puli\Discovery\Binding\ResourceBinding</a>
+	</div>
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.Discovery.html">Discovery</a>\<a href="namespace-Puli.Discovery.Api.html">Api</a>\<a href="namespace-Puli.Discovery.Api.Binding.html">Binding</a><br>
+		
+
+				<b>Author:</b>
+				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
+				<b>Since:</b>
+				1.0<br>
+			<b>Located at</b> <a href="source-class-Puli.Discovery.Api.Binding.Binding.html#22-123" title="Go to source code">Api/Binding/Binding.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="initialize" id="_initialize">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initialize">#</a>
+		<code><a href="source-class-Puli.Discovery.Api.Binding.Binding.html#31-46" title="Go to source code">initialize</a>( <span><code><a href="class-Puli.Discovery.Api.Type.BindingType.html">Puli\Discovery\Api\Type\BindingType</a></code> <var>$type</var></span> )</code>
+
+		<div class="description short">
+			<p>Initializes the binding.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Initializes the binding.</p>
+
+<p>This method must be called after constructing or unserializing the
+binding.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd>The binding type.</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Puli.Discovery.Api.Type.NoSuchParameterException.html">Puli\Discovery\Api\Type\NoSuchParameterException</a></code><br><p>If a parameter is set that does not
+                                    exist on the loaded type.</p><br>
+					<code><a href="class-Puli.Discovery.Api.Type.MissingParameterException.html">Puli\Discovery\Api\Type\MissingParameterException</a></code><br><p>If a required parameter of the loaded
+                                    type is not set on the binding.</p><br>
+					<code><a href="class-Puli.Discovery.Api.Type.BindingNotAcceptedException.html">Puli\Discovery\Api\Type\BindingNotAcceptedException</a></code><br><p>If the passed type does not accept
+                                    the binding.</p>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isInitialized" id="_isInitialized">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isInitialized">#</a>
+		<code><a href="source-class-Puli.Discovery.Api.Binding.Binding.html#48-54" title="Go to source code">isInitialized</a>( )</code>
+
+		<div class="description short">
+			<p>Returns whether the binding is initialized.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether the binding is initialized.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br><p>Returns <code>true</code> if the binding is initialized and <code>false</code>
+             otherwise.</p>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUuid" id="_getUuid">
+
+		<td class="attributes"><code>
+			 public 
+
+			Rhumsaa\Uuid\Uuid
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUuid">#</a>
+		<code><a href="source-class-Puli.Discovery.Api.Binding.Binding.html#56-61" title="Go to source code">getUuid</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the UUID of the binding.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the UUID of the binding.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					Rhumsaa\Uuid\Uuid<br>The binding UUID.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTypeName" id="_getTypeName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTypeName">#</a>
+		<code><a href="source-class-Puli.Discovery.Api.Binding.Binding.html#63-68" title="Go to source code">getTypeName</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the name of the bound type.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the name of the bound type.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>The name of the bound type.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getType" id="_getType">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Puli.Discovery.Api.Type.BindingType.html">Puli\Discovery\Api\Type\BindingType</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getType">#</a>
+		<code><a href="source-class-Puli.Discovery.Api.Binding.Binding.html#70-78" title="Go to source code">getType</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the bound type.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the bound type.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Puli.Discovery.Api.Type.BindingType.html">Puli\Discovery\Api\Type\BindingType</a></code><br>The bound type.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Puli.Discovery.Api.Binding.Initializer.NotInitializedException.html">Puli\Discovery\Api\Binding\Initializer\NotInitializedException</a></code><br><p>If the binding has not yet been
+                                initialized.</p>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getParameterValues" id="_getParameterValues">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getParameterValues">#</a>
+		<code><a href="source-class-Puli.Discovery.Api.Binding.Binding.html#80-88" title="Go to source code">getParameterValues</a>( <span>boolean <var>$includeDefault</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns the parameters of the binding.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the parameters of the binding.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$includeDefault</var></dt>
+					<dd><p>Whether to include the default values set
+                            in the binding type.</p></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>The parameter values of the binding.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasParameterValues" id="_hasParameterValues">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasParameterValues">#</a>
+		<code><a href="source-class-Puli.Discovery.Api.Binding.Binding.html#90-98" title="Go to source code">hasParameterValues</a>( <span>boolean <var>$includeDefault</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns whether parameters are set.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether parameters are set.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$includeDefault</var></dt>
+					<dd><p>Whether to include the default values set
+                            in the binding type.</p></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>Returns whether the binding has any parameter values set.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getParameterValue" id="_getParameterValue">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getParameterValue">#</a>
+		<code><a href="source-class-Puli.Discovery.Api.Binding.Binding.html#100-111" title="Go to source code">getParameterValue</a>( <span>string <var>$parameterName</var></span>, <span>boolean <var>$includeDefault</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns a parameter with a given name.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns a parameter with a given name.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parameterName</var></dt>
+					<dd>The parameter name.</dd>
+					<dt><var>$includeDefault</var></dt>
+					<dd><p>Whether to include the default values set
+                              in the binding type.</p></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>The value of the parameter.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Puli.Discovery.Api.Type.NoSuchParameterException.html">Puli\Discovery\Api\Type\NoSuchParameterException</a></code><br>If the parameter does not exist.
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasParameterValue" id="_hasParameterValue">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasParameterValue">#</a>
+		<code><a href="source-class-Puli.Discovery.Api.Binding.Binding.html#113-122" title="Go to source code">hasParameterValue</a>( <span>string <var>$parameterName</var></span>, <span>boolean <var>$includeDefault</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns whether the parameter with the given name exists.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns whether the parameter with the given name exists.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parameterName</var></dt>
+					<dd>The parameter name.</dd>
+					<dt><var>$includeDefault</var></dt>
+					<dd><p>Whether to include the default values set
+                              in the binding type.</p></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>Whether that parameter exists.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from Serializable</caption>
+	<tr>
+		<td><code>
+serialize(), 
+unserialize()
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Puli API API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

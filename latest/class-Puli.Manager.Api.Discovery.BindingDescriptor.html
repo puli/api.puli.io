@@ -49,26 +49,34 @@
 						<ul>
 				<li>
 					<a href="namespace-Puli.Discovery.Api.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
+							</ul></li>
 				<li>
-					<a href="namespace-Puli.Discovery.Api.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Discovery.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
 
-						</li>
+						<ul>
 				<li>
-					<a href="namespace-Puli.Discovery.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.Factory.html">
 						Factory					</a>
@@ -96,14 +104,14 @@
 						Config					</a>
 
 						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
+
+						</li>
 				<li class="active">
 					<a href="namespace-Puli.Manager.Api.Discovery.html">
 						Discovery					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Puli.Manager.Api.Environment.html">
-						Environment					</a>
 
 						</li>
 				<li>
@@ -140,6 +148,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Api.Package.html">
 						Package					</a>
@@ -244,6 +257,11 @@
 				<li>
 					<a href="namespace-Puli.Manager.Installer.html">
 						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
 
 						</li>
 				<li>
@@ -425,7 +443,6 @@
 			<h3>Classes</h3>
 			<ul>
 				<li class="active"><a href="class-Puli.Manager.Api.Discovery.BindingDescriptor.html">BindingDescriptor</a></li>
-				<li><a href="class-Puli.Manager.Api.Discovery.BindingParameterDescriptor.html">BindingParameterDescriptor</a></li>
 				<li><a href="class-Puli.Manager.Api.Discovery.BindingState.html">BindingState</a></li>
 				<li><a href="class-Puli.Manager.Api.Discovery.BindingTypeDescriptor.html">BindingTypeDescriptor</a></li>
 				<li><a href="class-Puli.Manager.Api.Discovery.BindingTypeState.html">BindingTypeState</a></li>
@@ -486,7 +503,7 @@
 	<div class="description">
 	<p>Describes a resource binding.</p>
 
-<p>This class contains a high-level model of ResourceBinding as it is
+<p>This class contains a high-level model of <code><a href="class-Puli.Discovery.Binding.ResourceBinding.html">Puli\Discovery\Binding\ResourceBinding</a></code> as it is
 used in this package.</p>
 	</div>
 
@@ -509,8 +526,8 @@ used in this package.</p>
 				<b>Since:</b>
 				1.0<br>
 				<b>See:</b>
-				ResourceBinding<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#26-598" title="Go to source code">Api/Discovery/BindingDescriptor.php</a>
+				<code><a href="class-Puli.Discovery.Binding.ResourceBinding.html">Puli\Discovery\Binding\ResourceBinding</a></code><br>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#23-362" title="Go to source code">Api/Discovery/BindingDescriptor.php</a>
 		<br>
 	</div>
 
@@ -518,52 +535,6 @@ used in this package.</p>
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="compare" id="_compare">
-
-		<td class="attributes"><code>
-			 public static
-
-			integer
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_compare">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#120-142" title="Go to source code">compare</a>( <span><code><a href="class-Puli.Manager.Api.Discovery.BindingDescriptor.html">Puli\Manager\Api\Discovery\BindingDescriptor</a></code> <var>$a</var></span>, <span><code><a href="class-Puli.Manager.Api.Discovery.BindingDescriptor.html">Puli\Manager\Api\Discovery\BindingDescriptor</a></code> <var>$b</var></span> )</code>
-
-		<div class="description short">
-			<p>Compares two binding descriptors.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Compares two binding descriptors.</p>
-
-<p>One binding descriptor is sorted before another if:
- * its query is lexicographically smaller; * the queries are the same but the type is lexicographically smaller.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$a</var></dt>
-					<dd>The first descriptor to compare.</dd>
-					<dt><var>$b</var></dt>
-					<dd>The second descriptor to compare.</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					integer<br><p>Returns a negative value if <code>$a</code> is sorted before <code>$b</code> and
-            a positive value if <code>$b</code> is sorted before <code>$a</code>. If 0 is
-            returned, <code>$a</code> and <code>$b</code> are sorted to the same position.</p>
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
 	<tr data-order="__construct" id="___construct">
 
 		<td class="attributes"><code>
@@ -576,7 +547,7 @@ used in this package.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#144-175" title="Go to source code">__construct</a>( <span>string <var>$query</var></span>, <span>string <var>$typeName</var></span>, <span>array <var>$parameterValues</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$language</var> = <span class="php-quote">'glob'</span></span>, <span>Rhumsaa\Uuid\Uuid <var>$uuid</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#62-70" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Discovery.Api.Binding.Binding.html">Puli\Discovery\Api\Binding\Binding</a></code> <var>$binding</var></span> )</code>
 
 		<div class="description short">
 			<p>Creates a new binding descriptor.</p>
@@ -588,29 +559,12 @@ used in this package.</p>
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$query</var></dt>
-					<dd>The query for the resources of the binding.</dd>
-					<dt><var>$typeName</var></dt>
-					<dd>The name of the binding type.</dd>
-					<dt><var>$parameterValues</var></dt>
-					<dd>The values of the binding parameters.</dd>
-					<dt><var>$language</var></dt>
-					<dd>The language of the query.</dd>
-					<dt><var>$uuid</var></dt>
-					<dd><p>The UUID of the binding. If no UUID is
-                               passed, a UUID is generated.</p></dd>
+					<dt><var>$binding</var></dt>
+					<dd>The described binding.</dd>
 				</dl></div>
 
 
-				<h4>Throws</h4>
-				<div class="list">
-					InvalidArgumentException<br>If any of the arguments is invalid.
-				</div>
 
-				<h4>See</h4>
-				<div class="list">
-						ResourceBinding<br>
-				</div>
 
 
 		</div>
@@ -628,7 +582,7 @@ used in this package.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_load">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#177-213" title="Go to source code">load</a>( <span><code><a href="class-Puli.Manager.Api.Package.Package.html">Puli\Manager\Api\Package\Package</a></code> <var>$containingPackage</var></span>, <span><code><a href="class-Puli.Manager.Api.Discovery.BindingTypeDescriptor.html">Puli\Manager\Api\Discovery\BindingTypeDescriptor</a></code> <var>$typeDescriptor</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#72-101" title="Go to source code">load</a>( <span><code><a href="class-Puli.Manager.Api.Package.Package.html">Puli\Manager\Api\Package\Package</a></code> <var>$containingPackage</var></span>, <span><code><a href="class-Puli.Manager.Api.Discovery.BindingTypeDescriptor.html">Puli\Manager\Api\Discovery\BindingTypeDescriptor</a></code> <var>$typeDescriptor</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Loads the binding descriptor.</p>
@@ -670,7 +624,7 @@ used in this package.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_unload">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#215-232" title="Go to source code">unload</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#103-120" title="Go to source code">unload</a>( )</code>
 
 		<div class="description short">
 			<p>Unloads the binding descriptor.</p>
@@ -706,7 +660,7 @@ used in this package.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isLoaded">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#234-242" title="Go to source code">isLoaded</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#122-130" title="Go to source code">isLoaded</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the descriptor is loaded.</p>
@@ -740,88 +694,20 @@ used in this package.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getUuid">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#244-252" title="Go to source code">getUuid</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#132-140" title="Go to source code">getUuid</a>( )</code>
 
 		<div class="description short">
-			<p>Returns the UUID of the binding.</p>
+			<p>Returns the UUID of the described binding.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Returns the UUID of the binding.</p>
+			<p>Returns the UUID of the described binding.</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					Rhumsaa\Uuid\Uuid<br>The universally unique ID.
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getQuery" id="_getQuery">
-
-		<td class="attributes"><code>
-			 public 
-
-			string
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_getQuery">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#254-262" title="Go to source code">getQuery</a>( )</code>
-
-		<div class="description short">
-			<p>Returns the query for the resources of the binding.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Returns the query for the resources of the binding.</p>
-
-
-
-				<h4>Returns</h4>
-				<div class="list">
-					string<br>The resource query.
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getLanguage" id="_getLanguage">
-
-		<td class="attributes"><code>
-			 public 
-
-			string
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_getLanguage">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#264-272" title="Go to source code">getLanguage</a>( )</code>
-
-		<div class="description short">
-			<p>Returns the language of the query.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Returns the language of the query.</p>
-
-
-
-				<h4>Returns</h4>
-				<div class="list">
-					string<br>The query language.
+					Rhumsaa\Uuid\Uuid<br>The UUID.
 				</div>
 
 
@@ -842,14 +728,14 @@ used in this package.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTypeName">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#274-282" title="Go to source code">getTypeName</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#142-150" title="Go to source code">getTypeName</a>( )</code>
 
 		<div class="description short">
-			<p>Returns the name of the binding type.</p>
+			<p>Returns the name of the bound type.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Returns the name of the binding type.</p>
+			<p>Returns the name of the bound type.</p>
 
 
 
@@ -864,38 +750,32 @@ used in this package.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getParameterValues" id="_getParameterValues">
+	<tr data-order="getBinding" id="_getBinding">
 
 		<td class="attributes"><code>
 			 public 
 
-			array
+			<code><a href="class-Puli.Discovery.Api.Binding.Binding.html">Puli\Discovery\Api\Binding\Binding</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getParameterValues">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#284-301" title="Go to source code">getParameterValues</a>( <span>boolean <var>$includeDefault</var> = <span class="php-keyword1">true</span></span> )</code>
+		<a class="anchor" href="#_getBinding">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#152-160" title="Go to source code">getBinding</a>( )</code>
 
 		<div class="description short">
-			<p>Returns the values of the binding parameters.</p>
+			<p>Returns the described binding.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Returns the values of the binding parameters.</p>
+			<p>Returns the described binding.</p>
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$includeDefault</var></dt>
-					<dd><p>Whether to include the default values set
-                            in the binding type.</p></dd>
-				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					array<br>The parameter values.
+					<code><a href="class-Puli.Discovery.Api.Binding.Binding.html">Puli\Discovery\Api\Binding\Binding</a></code><br>The binding.
 				</div>
 
 
@@ -904,154 +784,26 @@ used in this package.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getParameterValue" id="_getParameterValue">
+	<tr data-order="getLoadErrors" id="_getLoadErrors">
 
 		<td class="attributes"><code>
 			 public 
 
-			mixed
+			Exception[]
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getParameterValue">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#303-329" title="Go to source code">getParameterValue</a>( <span>string <var>$parameterName</var></span>, <span>boolean <var>$includeDefault</var> = <span class="php-keyword1">true</span></span> )</code>
+		<a class="anchor" href="#_getLoadErrors">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#162-179" title="Go to source code">getLoadErrors</a>( )</code>
 
 		<div class="description short">
-			<p>Returns the value of a specific binding parameter.</p>
+			<p>Returns the errors that happened during loading.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Returns the value of a specific binding parameter.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$parameterName</var></dt>
-					<dd>The name of the binding parameter.</dd>
-					<dt><var>$includeDefault</var></dt>
-					<dd><p>Whether to return the default value set
-                              in the binding type if no value is set.</p></dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					mixed<br>The parameter value.
-				</div>
-
-				<h4>Throws</h4>
-				<div class="list">
-					<code><a href="class-Puli.Discovery.Api.Binding.NoSuchParameterException.html">Puli\Discovery\Api\Binding\NoSuchParameterException</a></code><br>If the parameter does not exist.
-				</div>
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="hasParameterValues" id="_hasParameterValues">
-
-		<td class="attributes"><code>
-			 public 
-
-			boolean
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_hasParameterValues">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#331-350" title="Go to source code">hasParameterValues</a>( <span>boolean <var>$includeDefault</var> = <span class="php-keyword1">true</span></span> )</code>
-
-		<div class="description short">
-			<p>Returns whether the descriptor has any parameter values set.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Returns whether the descriptor has any parameter values set.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$includeDefault</var></dt>
-					<dd><p>Whether to include the default values set
-                            in the binding type.</p></dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					boolean<br>Returns <code>true</code> if any parameter values are set.
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="hasParameterValue" id="_hasParameterValue">
-
-		<td class="attributes"><code>
-			 public 
-
-			boolean
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_hasParameterValue">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#352-372" title="Go to source code">hasParameterValue</a>( <span>string <var>$parameterName</var></span>, <span>boolean <var>$includeDefault</var> = <span class="php-keyword1">true</span></span> )</code>
-
-		<div class="description short">
-			<p>Returns whether the descriptor contains a value for a binding parameter.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Returns whether the descriptor contains a value for a binding parameter.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$parameterName</var></dt>
-					<dd>The name of the binding parameter.</dd>
-					<dt><var>$includeDefault</var></dt>
-					<dd><p>Whether to include the default values set
-                              in the binding type.</p></dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					boolean<br>Returns <code>true</code> if a value is set for the parameter.
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getViolations" id="_getViolations">
-
-		<td class="attributes"><code>
-			 public 
-
-			<code><a href="class-Puli.Discovery.Api.Validation.ConstraintViolation.html">Puli\Discovery\Api\Validation\ConstraintViolation</a>[]</code>
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_getViolations">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#374-391" title="Go to source code">getViolations</a>( )</code>
-
-		<div class="description short">
-			<p>Returns the violations of the binding parameters.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Returns the violations of the binding parameters.</p>
+			<p>Returns the errors that happened during loading.</p>
 
 <p>The method <code><a href="class-Puli.Manager.Api.Discovery.BindingDescriptor.html#_load">Puli\Manager\Api\Discovery\BindingDescriptor::load()</a></code> needs to be called before calling this method,
 otherwise an exception is thrown.</p>
@@ -1060,7 +812,7 @@ otherwise an exception is thrown.</p>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><a href="class-Puli.Discovery.Api.Validation.ConstraintViolation.html">Puli\Discovery\Api\Validation\ConstraintViolation</a>[]</code><br>The violations.
+					Exception[]<br>The load errors.
 				</div>
 
 				<h4>Throws</h4>
@@ -1085,7 +837,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getContainingPackage">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#393-410" title="Go to source code">getContainingPackage</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#181-198" title="Go to source code">getContainingPackage</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the package that contains the descriptor.</p>
@@ -1126,7 +878,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTypeDescriptor">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#412-432" title="Go to source code">getTypeDescriptor</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#200-220" title="Go to source code">getTypeDescriptor</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the type descriptor.</p>
@@ -1169,7 +921,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getState">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#434-451" title="Go to source code">getState</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#222-239" title="Go to source code">getState</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the state of the binding.</p>
@@ -1210,7 +962,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isEnabled">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#453-472" title="Go to source code">isEnabled</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#241-260" title="Go to source code">isEnabled</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the binding is enabled.</p>
@@ -1255,7 +1007,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isDisabled">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#474-493" title="Go to source code">isDisabled</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#262-281" title="Go to source code">isDisabled</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the binding is disabled.</p>
@@ -1300,7 +1052,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isTypeNotFound">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#495-514" title="Go to source code">isTypeNotFound</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#283-302" title="Go to source code">isTypeNotFound</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the type of the binding does not exist.</p>
@@ -1345,7 +1097,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isTypeNotEnabled">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#516-535" title="Go to source code">isTypeNotEnabled</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#304-323" title="Go to source code">isTypeNotEnabled</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the type of the binding is not enabled.</p>
@@ -1390,7 +1142,7 @@ otherwise an exception is thrown.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isInvalid">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#537-556" title="Go to source code">isInvalid</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#325-344" title="Go to source code">isInvalid</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the binding is invalid.</p>
@@ -1423,49 +1175,6 @@ otherwise an exception is thrown.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="match" id="_match">
-
-		<td class="attributes"><code>
-			 public 
-
-			boolean
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_match">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#558-580" title="Go to source code">match</a>( <span>Webmozart\Expression\Expression <var>$expr</var></span> )</code>
-
-		<div class="description short">
-			<p>Returns whether the binding matches the given expression.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Returns whether the binding matches the given expression.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$expr</var></dt>
-					<dd><p>The search criteria. You can use the fields
-                        <code><a href="class-Puli.Manager.Api.Discovery.BindingDescriptor.html#UUID">Puli\Manager\Api\Discovery\BindingDescriptor::<b>UUID</b></a></code>, <code><a href="class-Puli.Manager.Api.Discovery.BindingDescriptor.html#QUERY">Puli\Manager\Api\Discovery\BindingDescriptor::<b>QUERY</b></a></code>, <code><a href="class-Puli.Manager.Api.Discovery.BindingDescriptor.html#LANGUAGE">Puli\Manager\Api\Discovery\BindingDescriptor::<b>LANGUAGE</b></a></code>,
-                        <code><a href="class-Puli.Manager.Api.Discovery.BindingDescriptor.html#TYPE_NAME">Puli\Manager\Api\Discovery\BindingDescriptor::<b>TYPE_NAME</b></a></code>, <code><a href="class-Puli.Manager.Api.Discovery.BindingDescriptor.html#STATE">Puli\Manager\Api\Discovery\BindingDescriptor::<b>STATE</b></a></code> and
-                        <code><a href="class-Puli.Manager.Api.Discovery.BindingDescriptor.html#CONTAINING_PACKAGE">Puli\Manager\Api\Discovery\BindingDescriptor::<b>CONTAINING_PACKAGE</b></a></code> in the expression.</p></dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					boolean<br><p>Returns <code>true</code> if the binding matches the expression and
-             <code>false</code> otherwise.</p>
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
 	</table>
 
 
@@ -1475,177 +1184,6 @@ otherwise an exception is thrown.</p>
 
 
 
-	<table class="summary constants" id="constants">
-	<caption>Constants summary</caption>
-	<tr data-order="UUID" id="UUID">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#40-43" title="Go to source code"><b>UUID</b></a>
-			</code>
-
-			<div class="description short">
-				<p>The UUID field in Webmozart\Expression\Expression instances.</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>The UUID field in Webmozart\Expression\Expression instances.</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#UUID" class="anchor">#</a>
-				<code><span class="php-quote">'uuid'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="QUERY" id="QUERY">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#45-48" title="Go to source code"><b>QUERY</b></a>
-			</code>
-
-			<div class="description short">
-				<p>The query field in Webmozart\Expression\Expression instances.</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>The query field in Webmozart\Expression\Expression instances.</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#QUERY" class="anchor">#</a>
-				<code><span class="php-quote">'query'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="LANGUAGE" id="LANGUAGE">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#50-53" title="Go to source code"><b>LANGUAGE</b></a>
-			</code>
-
-			<div class="description short">
-				<p>The language field in Webmozart\Expression\Expression instances.</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>The language field in Webmozart\Expression\Expression instances.</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#LANGUAGE" class="anchor">#</a>
-				<code><span class="php-quote">'language'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="TYPE_NAME" id="TYPE_NAME">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#55-58" title="Go to source code"><b>TYPE_NAME</b></a>
-			</code>
-
-			<div class="description short">
-				<p>The type name field in Webmozart\Expression\Expression instances.</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>The type name field in Webmozart\Expression\Expression instances.</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#TYPE_NAME" class="anchor">#</a>
-				<code><span class="php-quote">'typeName'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="PARAMETER_VALUES" id="PARAMETER_VALUES">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#60-63" title="Go to source code"><b>PARAMETER_VALUES</b></a>
-			</code>
-
-			<div class="description short">
-				<p>The parameter values in Webmozart\Expression\Expression instances.</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>The parameter values in Webmozart\Expression\Expression instances.</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#PARAMETER_VALUES" class="anchor">#</a>
-				<code><span class="php-quote">'parameterValues'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="STATE" id="STATE">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#65-68" title="Go to source code"><b>STATE</b></a>
-			</code>
-
-			<div class="description short">
-				<p>The state field in Webmozart\Expression\Expression instances.</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>The state field in Webmozart\Expression\Expression instances.</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#STATE" class="anchor">#</a>
-				<code><span class="php-quote">'state'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="CONTAINING_PACKAGE" id="CONTAINING_PACKAGE">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Puli.Manager.Api.Discovery.BindingDescriptor.html#70-73" title="Go to source code"><b>CONTAINING_PACKAGE</b></a>
-			</code>
-
-			<div class="description short">
-				<p>The package field in Webmozart\Expression\Expression instances.</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>The package field in Webmozart\Expression\Expression instances.</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#CONTAINING_PACKAGE" class="anchor">#</a>
-				<code><span class="php-quote">'containingPackage'</span></code>
-			</div>
-		</td>
-	</tr>
-	</table>
 
 
 

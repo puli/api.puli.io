@@ -49,26 +49,34 @@
 						<ul>
 				<li>
 					<a href="namespace-Puli.Discovery.Api.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
+							</ul></li>
 				<li>
-					<a href="namespace-Puli.Discovery.Api.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Discovery.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
 
-						</li>
+						<ul>
 				<li>
-					<a href="namespace-Puli.Discovery.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.Factory.html">
 						Factory					</a>
@@ -97,13 +105,13 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Discovery.html">
-						Discovery					</a>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Environment.html">
-						Environment					</a>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
 
 						</li>
 				<li>
@@ -140,6 +148,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Api.Package.html">
 						Package					</a>
@@ -244,6 +257,11 @@
 				<li>
 					<a href="namespace-Puli.Manager.Installer.html">
 						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
 
 						</li>
 				<li>
@@ -521,7 +539,7 @@
 				Titouan Galopin <a href="mailto:ga&#108;&#111;&#112;&#105;&#110;&#116;&#105;&#116;&#111;&#117;&#97;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">ga&#108;&#111;&#112;&#105;&#110;&#116;&#105;&#116;&#111;&#117;&#97;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#27-248" title="Go to source code">AbstractPathMappingRepository.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#30-333" title="Go to source code">AbstractPathMappingRepository.php</a>
 		<br>
 	</div>
 
@@ -541,7 +559,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#42-52" title="Go to source code">__construct</a>( <span>Webmozart\KeyValueStore\Api\KeyValueStore <var>$store</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#50-62" title="Go to source code">__construct</a>( <span>Webmozart\KeyValueStore\Api\KeyValueStore <var>$store</var></span>, <span>string <var>$baseDirectory</var></span> )</code>
 
 		<div class="description short">
 			<p>Creates a new repository.</p>
@@ -555,43 +573,8 @@
 				<div class="list"><dl>
 					<dt><var>$store</var></dt>
 					<dd>The store of all the paths.</dd>
-				</dl></div>
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="addResource" id="_addResource">
-
-		<td class="attributes"><code>
-			abstract protected 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_addResource">#</a>
-		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#54-60" title="Go to source code">addResource</a>( <span>string <var>$path</var></span>, <span><code><a href="class-Puli.Repository.Api.Resource.FilesystemResource.html">Puli\Repository\Api\Resource\FilesystemResource</a></code> <var>$resource</var></span> )</code>
-
-		<div class="description short">
-			<p>Add the resource (internal method after checks of add()).</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Add the resource (internal method after checks of add()).</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$path</var></dt>
-					<dd></dd>
-					<dt><var>$resource</var></dt>
-					<dd></dd>
+					<dt><var>$baseDirectory</var></dt>
+					<dd>The store of all the paths.</dd>
 				</dl></div>
 
 
@@ -613,7 +596,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add">#</a>
-		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#62-93" title="Go to source code">add</a>( <span> <var>$path</var></span>, <span> <var>$resource</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#64-86" title="Go to source code">add</a>( <span> <var>$path</var></span>, <span> <var>$resource</var></span> )</code>
 
 		<div class="description short">
 			
@@ -623,6 +606,80 @@
 			
 
 
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addFilesystemResource" id="_addFilesystemResource">
+
+		<td class="attributes"><code>
+			abstract protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addFilesystemResource">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#121-127" title="Go to source code">addFilesystemResource</a>( <span>string <var>$path</var></span>, <span><code><a href="class-Puli.Repository.Api.Resource.FilesystemResource.html">Puli\Repository\Api\Resource\FilesystemResource</a></code> <var>$resource</var></span> )</code>
+
+		<div class="description short">
+			<p>Add the filesystem resource.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add the filesystem resource.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd></dd>
+					<dt><var>$resource</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addLinkResource" id="_addLinkResource">
+
+		<td class="attributes"><code>
+			abstract protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addLinkResource">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#129-135" title="Go to source code">addLinkResource</a>( <span>string <var>$path</var></span>, <span><code><a href="class-Puli.Repository.Resource.LinkResource.html">Puli\Repository\Resource\LinkResource</a></code> <var>$resource</var></span> )</code>
+
+		<div class="description short">
+			<p>Add the link resource.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add the link resource.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd></dd>
+					<dt><var>$resource</var></dt>
+					<dd></dd>
+				</dl></div>
 
 
 
@@ -643,7 +700,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#95-107" title="Go to source code">clear</a>( )</code>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#137-149" title="Go to source code">clear</a>( )</code>
 
 		<div class="description short">
 			
@@ -673,7 +730,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_ensureDirectoryExists">#</a>
-		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#109-126" title="Go to source code">ensureDirectoryExists</a>( <span>string <var>$path</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#151-168" title="Go to source code">ensureDirectoryExists</a>( <span>string <var>$path</var></span> )</code>
 
 		<div class="description short">
 			<p>Recursively creates a directory for a path.</p>
@@ -708,7 +765,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createRoot">#</a>
-		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#128-138" title="Go to source code">createRoot</a>( )</code>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#170-180" title="Go to source code">createRoot</a>( )</code>
 
 		<div class="description short">
 			<p>Create the repository root.</p>
@@ -738,7 +795,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_countStore">#</a>
-		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#140-152" title="Go to source code">countStore</a>( )</code>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#182-194" title="Go to source code">countStore</a>( )</code>
 
 		<div class="description short">
 			<p>Count the number of elements in the store.</p>
@@ -772,7 +829,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sortStore">#</a>
-		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#154-164" title="Go to source code">sortStore</a>( )</code>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#196-206" title="Go to source code">sortStore</a>( )</code>
 
 		<div class="description short">
 			<p>Sort the store by keys.</p>
@@ -802,7 +859,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createResource">#</a>
-		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#166-180" title="Go to source code">createResource</a>( <span>string <var>$filesystemPath</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#208-232" title="Go to source code">createResource</a>( <span>string <var>$filesystemPath</var></span>, <span> <var>$path</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Create a filesystem or generic resource.</p>
@@ -815,6 +872,8 @@
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$filesystemPath</var></dt>
+					<dd></dd>
+					<dt><var>$path</var></dt>
 					<dd></dd>
 				</dl></div>
 
@@ -829,42 +888,44 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="createResources" id="_createResources">
+	<tr data-order="createLinkResource" id="_createLinkResource">
 
 		<td class="attributes"><code>
 			 protected 
 
-			<code><a href="class-Puli.Repository.Resource.DirectoryResource.html">Puli\Repository\Resource\DirectoryResource</a>[]</code>|<code><a href="class-Puli.Repository.Resource.FileResource.html">Puli\Repository\Resource\FileResource</a>[]</code>|<code><a href="class-Puli.Repository.Resource.GenericResource.html">Puli\Repository\Resource\GenericResource</a>[]</code>
+			<code><a href="class-Puli.Repository.Resource.LinkResource.html">Puli\Repository\Resource\LinkResource</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_createResources">#</a>
-		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#182-203" title="Go to source code">createResources</a>( <span>array <var>$filesystemPaths</var></span> )</code>
+		<a class="anchor" href="#_createLinkResource">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#234-250" title="Go to source code">createLinkResource</a>( <span>string <var>$targetPath</var></span>, <span>string <var>$path</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
-			<p>Create a list of resources using their filesystem paths.</p>
+			<p>Create a link resource to another resource of the repository.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Create a list of resources using their filesystem paths.</p>
+			<p>Create a link resource to another resource of the repository.</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$filesystemPaths</var></dt>
-					<dd>The filesystem paths.</dd>
+					<dt><var>$targetPath</var></dt>
+					<dd>The target path.</dd>
+					<dt><var>$path</var></dt>
+					<dd>The repository path.</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><a href="class-Puli.Repository.Resource.DirectoryResource.html">Puli\Repository\Resource\DirectoryResource</a>[]</code>|<code><a href="class-Puli.Repository.Resource.FileResource.html">Puli\Repository\Resource\FileResource</a>[]</code>|<code><a href="class-Puli.Repository.Resource.GenericResource.html">Puli\Repository\Resource\GenericResource</a>[]</code><br>The created resources.
+					<code><a href="class-Puli.Repository.Resource.LinkResource.html">Puli\Repository\Resource\LinkResource</a></code><br>The link resource.
 				</div>
 
 				<h4>Throws</h4>
 				<div class="list">
-					RuntimeException<br>If one of the files / directories does not exist.
+					RuntimeException<br>If the targeted resource does not exist.
 				</div>
 
 
@@ -884,7 +945,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createFilesystemResource">#</a>
-		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#205-230" title="Go to source code">createFilesystemResource</a>( <span>string <var>$filesystemPath</var></span> )</code>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#252-286" title="Go to source code">createFilesystemResource</a>( <span>string <var>$filesystemPath</var></span>, <span>string <var>$path</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Create a resource using its filesystem path.</p>
@@ -902,6 +963,8 @@ If the filesystem does not exists, a GenericResource will be created.</p>
 				<div class="list"><dl>
 					<dt><var>$filesystemPath</var></dt>
 					<dd>The filesystem path.</dd>
+					<dt><var>$path</var></dt>
+					<dd>The repository path.</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -919,41 +982,115 @@ If the filesystem does not exists, a GenericResource will be created.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="createAndAttachResource" id="_createAndAttachResource">
+	<tr data-order="createVirtualResource" id="_createVirtualResource">
 
 		<td class="attributes"><code>
 			 protected 
 
-			<code><a href="class-Puli.Repository.Resource.DirectoryResource.html">Puli\Repository\Resource\DirectoryResource</a></code>|<code><a href="class-Puli.Repository.Resource.FileResource.html">Puli\Repository\Resource\FileResource</a></code>|<code><a href="class-Puli.Repository.Resource.GenericResource.html">Puli\Repository\Resource\GenericResource</a></code>
+			<code><a href="class-Puli.Repository.Resource.GenericResource.html">Puli\Repository\Resource\GenericResource</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_createAndAttachResource">#</a>
-		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#232-247" title="Go to source code">createAndAttachResource</a>( <span>string <var>$filesystemPath</var></span>, <span>string <var>$repositoryPath</var></span> )</code>
+		<a class="anchor" href="#_createVirtualResource">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#288-299" title="Go to source code">createVirtualResource</a>( <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
-			<p>Create a filesystem or generic resource and
-attach it to the given repository path.</p>
+			
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Create a filesystem or generic resource and
-attach it to the given repository path.</p>
+			
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$filesystemPath</var></dt>
-					<dd></dd>
-					<dt><var>$repositoryPath</var></dt>
+					<dt><var>$path</var></dt>
 					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><a href="class-Puli.Repository.Resource.DirectoryResource.html">Puli\Repository\Resource\DirectoryResource</a></code>|<code><a href="class-Puli.Repository.Resource.FileResource.html">Puli\Repository\Resource\FileResource</a></code>|<code><a href="class-Puli.Repository.Resource.GenericResource.html">Puli\Repository\Resource\GenericResource</a></code>
+					<code><a href="class-Puli.Repository.Resource.GenericResource.html">Puli\Repository\Resource\GenericResource</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="resolveRelativePath" id="_resolveRelativePath">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_resolveRelativePath">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#301-316" title="Go to source code">resolveRelativePath</a>( <span>string <var>$relativePath</var></span> )</code>
+
+		<div class="description short">
+			<p>Transform a relative path into an absolute path.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Transform a relative path into an absolute path.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$relativePath</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="resolveRelativePaths" id="_resolveRelativePaths">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string[]
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_resolveRelativePaths">#</a>
+		<code><a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#318-332" title="Go to source code">resolveRelativePaths</a>( <span>string[] <var>$relativePaths</var></span> )</code>
+
+		<div class="description short">
+			<p>Transform a collection of relative paths into a collection of absolute paths.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Transform a collection of relative paths into a collection of absolute paths.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$relativePaths</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string[]
 				</div>
 
 
@@ -1005,7 +1142,7 @@ attach it to the given repository path.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#37-40" title="Go to source code"><var>$store</var></a>
+				<a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#40-43" title="Go to source code"><var>$store</var></a>
 
 			<div class="description short">
 				
@@ -1019,6 +1156,31 @@ attach it to the given repository path.</p>
 		<td class="value">
 			<div>
 				<a href="#$store" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="baseDirectory" id="$baseDirectory">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Puli.Repository.AbstractPathMappingRepository.html#45-48" title="Go to source code"><var>$baseDirectory</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$baseDirectory" class="anchor">#</a>
 				<code></code>
 			</div>
 		</td>

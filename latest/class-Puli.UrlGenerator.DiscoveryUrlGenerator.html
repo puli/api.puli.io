@@ -49,26 +49,34 @@
 						<ul>
 				<li>
 					<a href="namespace-Puli.Discovery.Api.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
+							</ul></li>
 				<li>
-					<a href="namespace-Puli.Discovery.Api.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Discovery.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
 
-						</li>
+						<ul>
 				<li>
-					<a href="namespace-Puli.Discovery.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.Factory.html">
 						Factory					</a>
@@ -97,13 +105,13 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Discovery.html">
-						Discovery					</a>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Environment.html">
-						Environment					</a>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
 
 						</li>
 				<li>
@@ -140,6 +148,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Api.Package.html">
 						Package					</a>
@@ -244,6 +257,11 @@
 				<li>
 					<a href="namespace-Puli.Manager.Installer.html">
 						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
 
 						</li>
 				<li>
@@ -467,7 +485,7 @@
 
 
 	<div class="description">
-	<p>A resource URL generator that uses a <code><a href="class-Puli.Discovery.Api.ResourceDiscovery.html">Puli\Discovery\Api\ResourceDiscovery</a></code> as backend.</p>
+	<p>A resource URL generator that uses a ResourceDiscovery as backend.</p>
 	</div>
 
 	<dl class="tree">
@@ -497,7 +515,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.UrlGenerator.DiscoveryUrlGenerator.html#20-127" title="Go to source code">DiscoveryUrlGenerator.php</a>
+			<b>Located at</b> <a href="source-class-Puli.UrlGenerator.DiscoveryUrlGenerator.html#20-134" title="Go to source code">DiscoveryUrlGenerator.php</a>
 		<br>
 	</div>
 
@@ -517,7 +535,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.UrlGenerator.DiscoveryUrlGenerator.html#54-65" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Discovery.Api.ResourceDiscovery.html">Puli\Discovery\Api\ResourceDiscovery</a></code> <var>$discovery</var></span>, <span>array <var>$urlFormats</var></span> )</code>
+		<code><a href="source-class-Puli.UrlGenerator.DiscoveryUrlGenerator.html#54-64" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Discovery.Api.Discovery.html">Puli\Discovery\Api\Discovery</a></code> <var>$discovery</var></span>, <span>array <var>$urlFormats</var></span> )</code>
 
 		<div class="description short">
 			<p>Creates the URL generator.</p>
@@ -532,8 +550,7 @@
 					<dt><var>$discovery</var></dt>
 					<dd>The resource discovery.</dd>
 					<dt><var>$urlFormats</var></dt>
-					<dd><p>The URL formats indexed by the
-                                     server names.</p></dd>
+					<dd>The URL formats indexed by the server names.</dd>
 				</dl></div>
 
 
@@ -555,7 +572,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_generateUrl">#</a>
-		<code><a href="source-class-Puli.UrlGenerator.DiscoveryUrlGenerator.html#67-92" title="Go to source code">generateUrl</a>( <span>string <var>$repositoryPath</var></span>, <span>null <var>$currentUrl</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.UrlGenerator.DiscoveryUrlGenerator.html#66-99" title="Go to source code">generateUrl</a>( <span>string <var>$repositoryPath</var></span>, <span>null <var>$currentUrl</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Generates a URL for a Puli asset.</p>

@@ -49,26 +49,34 @@
 						<ul>
 				<li class="active">
 					<a href="namespace-Puli.Discovery.Api.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
+							</ul></li>
 				<li>
-					<a href="namespace-Puli.Discovery.Api.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Discovery.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
 
-						</li>
+						<ul>
 				<li>
-					<a href="namespace-Puli.Discovery.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.Factory.html">
 						Factory					</a>
@@ -97,13 +105,13 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Discovery.html">
-						Discovery					</a>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Environment.html">
-						Environment					</a>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
 
 						</li>
 				<li>
@@ -140,6 +148,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Api.Package.html">
 						Package					</a>
@@ -244,6 +257,11 @@
 				<li>
 					<a href="namespace-Puli.Manager.Installer.html">
 						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
 
 						</li>
 				<li>
@@ -422,22 +440,16 @@
 
 
 		<div id="elements">
-			<h3>Classes</h3>
-			<ul>
-				<li><a href="class-Puli.Discovery.Api.Binding.BindingParameter.html">BindingParameter</a></li>
-				<li><a href="class-Puli.Discovery.Api.Binding.BindingType.html">BindingType</a></li>
-			</ul>
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-Puli.Discovery.Api.Binding.ResourceBinding.html">ResourceBinding</a></li>
+				<li><a href="class-Puli.Discovery.Api.Binding.Binding.html">Binding</a></li>
 			</ul>
 
 
 			<h3>Exceptions</h3>
 			<ul>
-				<li><a href="class-Puli.Discovery.Api.Binding.MissingParameterException.html">MissingParameterException</a></li>
-				<li><a href="class-Puli.Discovery.Api.Binding.NoSuchParameterException.html">NoSuchParameterException</a></li>
+				<li><a href="class-Puli.Discovery.Api.Binding.NoSuchBindingException.html">NoSuchBindingException</a></li>
 			</ul>
 
 
@@ -474,25 +486,20 @@
 <div id="content" class="namespace">
 	<h1>Namespace <a href="namespace-Puli.html">Puli</a>\<a href="namespace-Puli.Discovery.html">Discovery</a>\<a href="namespace-Puli.Discovery.Api.html">Api</a>\Binding</h1>
 
+	<table class="summary" id="namespaces">
+	<caption>Namespaces summary</caption>
+	<tr>
+		<td class="name"><a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">Puli\Discovery\Api\Binding\Initializer</a></td>
+	</tr>
+	</table>
 
 
-<table class="summary" id="classes">
-<caption>Classes summary</caption>
-<tr>
-	<td class="name"><a href="class-Puli.Discovery.Api.Binding.BindingParameter.html">BindingParameter</a></td>
-	<td>A parameter that can be set during binding.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-Puli.Discovery.Api.Binding.BindingType.html">BindingType</a></td>
-	<td>A type that a resource can be bound to.</td>
-</tr>
-</table>
 
 <table class="summary" id="interfaces">
 <caption>Interfaces summary</caption>
 <tr>
-	<td class="name"><a href="class-Puli.Discovery.Api.Binding.ResourceBinding.html">ResourceBinding</a></td>
-	<td>Binds one or more resources to a binding type.</td>
+	<td class="name"><a href="class-Puli.Discovery.Api.Binding.Binding.html">Binding</a></td>
+	<td>Binds an artifact to a binding type.</td>
 </tr>
 </table>
 
@@ -500,12 +507,8 @@
 <table class="summary" id="exceptions">
 <caption>Exceptions summary</caption>
 <tr>
-	<td class="name"><a href="class-Puli.Discovery.Api.Binding.MissingParameterException.html">MissingParameterException</a></td>
-	<td>Thrown when a binding parameter is missing.</td>
-</tr>
-<tr>
-	<td class="name"><a href="class-Puli.Discovery.Api.Binding.NoSuchParameterException.html">NoSuchParameterException</a></td>
-	<td>Thrown when a binding parameter was not found.</td>
+	<td class="name"><a href="class-Puli.Discovery.Api.Binding.NoSuchBindingException.html">NoSuchBindingException</a></td>
+	<td>Thrown when a binding was not found.</td>
 </tr>
 </table>
 
@@ -518,6 +521,6 @@
 </div>
 </div>
 <script src="resources/combined.js?90a9ebc032fe484834129d90a6307c0552eea616"></script>
-<script src="elementlist.js?4f17497adfecd0429867f808f2fae8b1b1d1037a"></script>
+<script src="elementlist.js?211aae69484d393140150435d488ef41bcbe6df4"></script>
 </body>
 </html>

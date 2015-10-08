@@ -49,26 +49,34 @@
 						<ul>
 				<li>
 					<a href="namespace-Puli.Discovery.Api.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
+							</ul></li>
 				<li>
-					<a href="namespace-Puli.Discovery.Api.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Discovery.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
 
-						</li>
+						<ul>
 				<li>
-					<a href="namespace-Puli.Discovery.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.Factory.html">
 						Factory					</a>
@@ -97,13 +105,13 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Discovery.html">
-						Discovery					</a>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Environment.html">
-						Environment					</a>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
 
 						</li>
 				<li>
@@ -140,6 +148,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Api.Package.html">
 						Package					</a>
@@ -244,6 +257,11 @@
 				<li>
 					<a href="namespace-Puli.Manager.Installer.html">
 						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
 
 						</li>
 				<li class="active">
@@ -502,7 +520,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Package.PackageJsonSerializer.html#33-444" title="Go to source code">Package/PackageJsonSerializer.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Package.PackageJsonSerializer.html#38-576" title="Go to source code">Package/PackageJsonSerializer.php</a>
 		<br>
 	</div>
 
@@ -510,6 +528,79 @@
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
+	<tr data-order="compareBindingDescriptors" id="_compareBindingDescriptors">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_compareBindingDescriptors">#</a>
+		<code><a href="source-class-Puli.Manager.Package.PackageJsonSerializer.html#88-92" title="Go to source code">compareBindingDescriptors</a>( <span><code><a href="class-Puli.Manager.Api.Discovery.BindingDescriptor.html">Puli\Manager\Api\Discovery\BindingDescriptor</a></code> <var>$a</var></span>, <span><code><a href="class-Puli.Manager.Api.Discovery.BindingDescriptor.html">Puli\Manager\Api\Discovery\BindingDescriptor</a></code> <var>$b</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Puli.Manager.Package.PackageJsonSerializer.html#94-119" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Migration.MigrationManager.html">Puli\Manager\Migration\MigrationManager</a></code> <var>$migrationManager</var></span>, <span>string <var>$schemaDir</var></span>, <span>string <var>$targetVersion</var> = Puli\Manager\Package\PackageFile::DEFAULT_VERSION</span> )</code>
+
+		<div class="description short">
+			<p>Creates a new serializer.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a new serializer.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$migrationManager</var></dt>
+					<dd><p>The manager for migrating
+                                          puli.json files between
+                                          versions.</p></dd>
+					<dt><var>$schemaDir</var></dt>
+					<dd><p>The directory that contains the
+                                          schema files.</p></dd>
+					<dt><var>$targetVersion</var></dt>
+					<dd><p>The file version that this
+                                          serializer reads and produces.</p></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="serializePackageFile" id="_serializePackageFile">
 
 		<td class="attributes"><code>
@@ -522,7 +613,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_serializePackageFile">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageJsonSerializer.html#63-78" title="Go to source code">serializePackageFile</a>( <span><code><a href="class-Puli.Manager.Api.Package.PackageFile.html">Puli\Manager\Api\Package\PackageFile</a></code> <var>$packageFile</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageJsonSerializer.html#121-140" title="Go to source code">serializePackageFile</a>( <span><code><a href="class-Puli.Manager.Api.Package.PackageFile.html">Puli\Manager\Api\Package\PackageFile</a></code> <var>$packageFile</var></span> )</code>
 
 		<div class="description short">
 			<p>Serializes a package file.</p>
@@ -563,7 +654,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_serializeRootPackageFile">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageJsonSerializer.html#80-96" title="Go to source code">serializeRootPackageFile</a>( <span><code><a href="class-Puli.Manager.Api.Package.RootPackageFile.html">Puli\Manager\Api\Package\RootPackageFile</a></code> <var>$packageFile</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageJsonSerializer.html#142-162" title="Go to source code">serializeRootPackageFile</a>( <span><code><a href="class-Puli.Manager.Api.Package.RootPackageFile.html">Puli\Manager\Api\Package\RootPackageFile</a></code> <var>$packageFile</var></span> )</code>
 
 		<div class="description short">
 			<p>Serializes a root package file.</p>
@@ -604,7 +695,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_unserializePackageFile">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageJsonSerializer.html#98-110" title="Go to source code">unserializePackageFile</a>( <span>string <var>$serialized</var></span>, <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageJsonSerializer.html#164-182" title="Go to source code">unserializePackageFile</a>( <span>string <var>$serialized</var></span>, <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Unserializes a package file.</p>
@@ -654,7 +745,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_unserializeRootPackageFile">#</a>
-		<code><a href="source-class-Puli.Manager.Package.PackageJsonSerializer.html#112-125" title="Go to source code">unserializeRootPackageFile</a>( <span>string <var>$serialized</var></span>, <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-Puli.Manager.Api.Config.Config.html">Puli\Manager\Api\Config\Config</a></code> <var>$baseConfig</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Package.PackageJsonSerializer.html#184-203" title="Go to source code">unserializeRootPackageFile</a>( <span>string <var>$serialized</var></span>, <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-Puli.Manager.Api.Config.Config.html">Puli\Manager\Api\Config\Config</a></code> <var>$baseConfig</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Unserializes a root package file.</p>

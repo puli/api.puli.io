@@ -49,26 +49,34 @@
 						<ul>
 				<li>
 					<a href="namespace-Puli.Discovery.Api.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
+							</ul></li>
 				<li>
-					<a href="namespace-Puli.Discovery.Api.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Discovery.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
 
-						</li>
+						<ul>
 				<li>
-					<a href="namespace-Puli.Discovery.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.Factory.html">
 						Factory					</a>
@@ -97,13 +105,13 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Discovery.html">
-						Discovery					</a>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Environment.html">
-						Environment					</a>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
 
 						</li>
 				<li>
@@ -140,6 +148,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Api.Package.html">
 						Package					</a>
@@ -244,6 +257,11 @@
 				<li>
 					<a href="namespace-Puli.Manager.Installer.html">
 						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
 
 						</li>
 				<li>
@@ -497,7 +515,7 @@
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#30-428" title="Go to source code">Factory/FactoryManagerImpl.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#30-408" title="Go to source code">Factory/FactoryManagerImpl.php</a>
 		<br>
 	</div>
 
@@ -517,7 +535,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#94-118" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Environment.ProjectEnvironment.html">Puli\Manager\Api\Environment\ProjectEnvironment</a></code> <var>$environment</var></span>, <span><code><a href="class-Puli.Manager.Api.Factory.Generator.GeneratorRegistry.html">Puli\Manager\Api\Factory\Generator\GeneratorRegistry</a></code> <var>$generatorRegistry</var></span>, <span><code><a href="class-Puli.Manager.Php.ClassWriter.html">Puli\Manager\Php\ClassWriter</a></code> <var>$classWriter</var></span>, <span><code><a href="class-Puli.Manager.Api.Server.ServerCollection.html">Puli\Manager\Api\Server\ServerCollection</a></code> <var>$servers</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#79-98" title="Go to source code">__construct</a>( <span><code><a href="class-Puli.Manager.Api.Context.ProjectContext.html">Puli\Manager\Api\Context\ProjectContext</a></code> <var>$context</var></span>, <span><code><a href="class-Puli.Manager.Api.Factory.Generator.GeneratorRegistry.html">Puli\Manager\Api\Factory\Generator\GeneratorRegistry</a></code> <var>$generatorRegistry</var></span>, <span><code><a href="class-Puli.Manager.Php.ClassWriter.html">Puli\Manager\Php\ClassWriter</a></code> <var>$classWriter</var></span>, <span><code><a href="class-Puli.Manager.Api.Server.ServerCollection.html">Puli\Manager\Api\Server\ServerCollection</a></code> <var>$servers</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Creates a new factory generator.</p>
@@ -529,15 +547,15 @@
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$environment</var></dt>
-					<dd>The project environment.</dd>
+					<dt><var>$context</var></dt>
+					<dd>The project context.</dd>
 					<dt><var>$generatorRegistry</var></dt>
 					<dd><p>The registry providing the
-                                             generators for the services
-                                             returned by the factory.</p></dd>
+                                            generators for the services
+                                            returned by the factory.</p></dd>
 					<dt><var>$classWriter</var></dt>
 					<dd><p>The writer that writes the
-                                             class to a file.</p></dd>
+                                            class to a file.</p></dd>
 					<dt><var>$servers</var></dt>
 					<dd>The configured servers.</dd>
 				</dl></div>
@@ -561,7 +579,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setServers">#</a>
-		<code><a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#120-128" title="Go to source code">setServers</a>( <span><code><a href="class-Puli.Manager.Api.Server.ServerCollection.html">Puli\Manager\Api\Server\ServerCollection</a></code> <var>$servers</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#100-108" title="Go to source code">setServers</a>( <span><code><a href="class-Puli.Manager.Api.Server.ServerCollection.html">Puli\Manager\Api\Server\ServerCollection</a></code> <var>$servers</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the servers included in the createUrlGenerator() method.</p>
@@ -596,7 +614,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createFactory">#</a>
-		<code><a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#130-148" title="Go to source code">createFactory</a>( <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$className</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#110-128" title="Go to source code">createFactory</a>( <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$className</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Creates a factory instance.</p>
@@ -641,7 +659,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isFactoryClassAutoGenerated">#</a>
-		<code><a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#150-156" title="Go to source code">isFactoryClassAutoGenerated</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#130-136" title="Go to source code">isFactoryClassAutoGenerated</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the factory class should be generated automatically.</p>
@@ -678,7 +696,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_generateFactoryClass">#</a>
-		<code><a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#158-196" title="Go to source code">generateFactoryClass</a>( <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$className</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#138-176" title="Go to source code">generateFactoryClass</a>( <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$className</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Generates a factory class file.</p>
@@ -719,7 +737,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_autoGenerateFactoryClass">#</a>
-		<code><a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#198-208" title="Go to source code">autoGenerateFactoryClass</a>( <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$className</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#178-188" title="Go to source code">autoGenerateFactoryClass</a>( <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$className</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Auto-generates a factory class file.</p>
@@ -760,7 +778,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_refreshFactoryClass">#</a>
-		<code><a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#210-257" title="Go to source code">refreshFactoryClass</a>( <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$className</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#190-237" title="Go to source code">refreshFactoryClass</a>( <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$className</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Regenerates the factory class file if necessary.</p>
@@ -801,7 +819,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addCreateUrlGeneratorMethod">#</a>
-		<code><a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#343-393" title="Go to source code">addCreateUrlGeneratorMethod</a>( <span><code><a href="class-Puli.Manager.Api.Php.Clazz.html">Puli\Manager\Api\Php\Clazz</a></code> <var>$class</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Factory.FactoryManagerImpl.html#323-373" title="Go to source code">addCreateUrlGeneratorMethod</a>( <span><code><a href="class-Puli.Manager.Api.Php.Clazz.html">Puli\Manager\Api\Php\Clazz</a></code> <var>$class</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds the createUrlGenerator() method.</p>
@@ -868,11 +886,11 @@
 			</code>
 
 			<div class="description short">
-				<p>The name of the resource discovery variable.</p>
+				<p>The name of the discovery variable.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>The name of the resource discovery variable.</p>
+				<p>The name of the discovery variable.</p>
 
 			</div>
 		</td>

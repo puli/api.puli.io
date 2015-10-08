@@ -49,26 +49,34 @@
 						<ul>
 				<li>
 					<a href="namespace-Puli.Discovery.Api.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Puli.Discovery.Api.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
+							</ul></li>
 				<li>
-					<a href="namespace-Puli.Discovery.Api.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Api.Type.html">
+						Type					</a>
 
 						</li>
 							</ul></li>
 				<li>
 					<a href="namespace-Puli.Discovery.Binding.html">
-						Binding					</a>
+						Binding<span></span>
+					</a>
 
-						</li>
+						<ul>
 				<li>
-					<a href="namespace-Puli.Discovery.Validation.html">
-						Validation					</a>
+					<a href="namespace-Puli.Discovery.Binding.Initializer.html">
+						Initializer					</a>
 
 						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="namespace-Puli.Factory.html">
 						Factory					</a>
@@ -97,13 +105,13 @@
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Discovery.html">
-						Discovery					</a>
+					<a href="namespace-Puli.Manager.Api.Context.html">
+						Context					</a>
 
 						</li>
 				<li>
-					<a href="namespace-Puli.Manager.Api.Environment.html">
-						Environment					</a>
+					<a href="namespace-Puli.Manager.Api.Discovery.html">
+						Discovery					</a>
 
 						</li>
 				<li>
@@ -140,6 +148,11 @@
 
 						</li>
 							</ul></li>
+				<li>
+					<a href="namespace-Puli.Manager.Api.Migration.html">
+						Migration					</a>
+
+						</li>
 				<li>
 					<a href="namespace-Puli.Manager.Api.Package.html">
 						Package					</a>
@@ -244,6 +257,11 @@
 				<li>
 					<a href="namespace-Puli.Manager.Installer.html">
 						Installer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Puli.Manager.Migration.html">
+						Migration					</a>
 
 						</li>
 				<li>
@@ -424,6 +442,7 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
+				<li><a href="class-Puli.Manager.Api.Environment.html">Environment</a></li>
 				<li class="active"><a href="class-Puli.Manager.Api.Puli.html">Puli</a></li>
 			</ul>
 
@@ -489,15 +508,15 @@
 
 <span class="php-var">$packageManager</span> = <span class="php-var">$puli</span>-&gt;getPackageManager();</pre>
 
-<p>The <code>Puli</code> class either operates in the global or a project environment:
- * The "global environment" is not tied to a specific root package. A global environment only loads the settings of the "config.json" file in the home directory. The <code>Puli</code> class operates in the global environment if no project root directory is passed to the constructor. In the global environment, only the global config file manager is available. * The "project environment" is tied to a specific Puli project. You need to pass the path to the project's root directory to the constructor or to <code><a href="class-Puli.Manager.Api.Puli.html#_setRootDirectory">Puli\Manager\Api\Puli::setRootDirectory()</a></code>. The configuration of the "puli.json" file in the root directory is used to configure the managers.</p>
+<p>The <code>Puli</code> class either operates in the global or a project context:
+ * The "global context" is not tied to a specific root package. A global context only loads the settings of the "config.json" file in the home directory. The <code>Puli</code> class operates in the global context if no project root directory is passed to the constructor. In the global context, only the global config file manager is available. * The "project context" is tied to a specific Puli project. You need to pass the path to the project's root directory to the constructor or to <code><a href="class-Puli.Manager.Api.Puli.html#_setRootDirectory">Puli\Manager\Api\Puli::setRootDirectory()</a></code>. The configuration of the "puli.json" file in the root directory is used to configure the managers.</p>
 
 <p>The <code>Puli</code> class creates four kinds of managers:
  * The "config file manager" allows you to modify entries of the "config.json" file in the home directory. * The "package file manager" manages modifications to the "puli.json" file of a Puli project. * The "package manager" manages the package repository of a Puli project. * The "repository manager" manages the resource repository of a Puli project. * The "discovery manager" manages the resource discovery of a Puli project.</p>
 
-<p>The home directory is read from the environment variable "PULI_HOME".
+<p>The home directory is read from the context variable "PULI_HOME".
 If this variable is not set, the home directory defaults to:
- * <code>$HOME/.puli</code> on Linux, where <code>$HOME</code> is the environment variable "HOME". * <code>$APPDATA/Puli</code> on Windows, where <code>$APPDATA</code> is the environment variable "APPDATA".</p>
+ * <code>$HOME/.puli</code> on Linux, where <code>$HOME</code> is the context variable "HOME". * <code>$APPDATA/Puli</code> on Windows, where <code>$APPDATA</code> is the context variable "APPDATA".</p>
 
 <p>If none of these variables can be found, an exception is thrown.</p>
 
@@ -523,7 +542,7 @@ access.</p>
 				Bernhard Schussek <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;">&#x62;&#115;&#99;h&#x75;&#x73;&#115;&#101;&#107;&#x40;&#x67;&#x6d;&#97;&#105;l&#x2e;&#x63;&#111;&#109;</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Puli.html#65-931" title="Go to source code">Api/Puli.php</a>
+			<b>Located at</b> <a href="source-class-Puli.Manager.Api.Puli.html#64-984" title="Go to source code">Api/Puli.php</a>
 		<br>
 	</div>
 
@@ -543,7 +562,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#266-280" title="Go to source code">__construct</a>( <span>string <var>$rootDir</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#270-286" title="Go to source code">__construct</a>( <span>string <var>$rootDir</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$env</var> = <code><a href="class-Puli.Manager.Api.Environment.html#DEV">Puli\Manager\Api\Environment::<b>DEV</b></a></code></span> )</code>
 
 		<div class="description short">
 			<p>Creates a new instance for the given Puli project.</p>
@@ -558,9 +577,11 @@ access.</p>
 					<dt><var>$rootDir</var></dt>
 					<dd><p>The root directory of the Puli project. If none is
                        passed, the object operates in the global
-                       environment. You can set or switch the root
+                       context. You can set or switch the root
                        directories later on by calling
                        <code><a href="class-Puli.Manager.Api.Puli.html#_setRootDirectory">Puli\Manager\Api\Puli::setRootDirectory()</a></code>.</p></dd>
+					<dt><var>$env</var></dt>
+					<dd>One of the <code><a href="class-Puli.Manager.Api.Environment.html">Puli\Manager\Api\Environment</a></code> constants.</dd>
 				</dl></div>
 
 
@@ -586,7 +607,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_start">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#282-311" title="Go to source code">start</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#288-333" title="Go to source code">start</a>( )</code>
 
 		<div class="description short">
 			<p>Starts the service container.</p>
@@ -616,7 +637,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isStarted">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#313-322" title="Go to source code">isStarted</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#335-344" title="Go to source code">isStarted</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the service container is started.</p>
@@ -651,7 +672,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setRootDirectory">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#324-340" title="Go to source code">setRootDirectory</a>( <span>string|null <var>$rootDir</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#346-362" title="Go to source code">setRootDirectory</a>( <span>string|null <var>$rootDir</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the root directory of the managed Puli project.</p>
@@ -665,10 +686,79 @@ access.</p>
 				<div class="list"><dl>
 					<dt><var>$rootDir</var></dt>
 					<dd><p>The root directory of the managed Puli
-                            project or <code>null</code> to start Puli in the
-                            global environment.</p></dd>
+                            project or <code>null</code> to start Puli outside of a
+                            specific project.</p></dd>
 				</dl></div>
 
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setEnvironment" id="_setEnvironment">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setEnvironment">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#364-378" title="Go to source code">setEnvironment</a>( <span>string <var>$env</var></span> )</code>
+
+		<div class="description short">
+			<p>Sets the environment of the managed Puli project.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets the environment of the managed Puli project.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$env</var></dt>
+					<dd>One of the <code><a href="class-Puli.Manager.Api.Environment.html">Puli\Manager\Api\Environment</a></code> constants.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEnvironment" id="_getEnvironment">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEnvironment">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#380-388" title="Go to source code">getEnvironment</a>( )</code>
+
+		<div class="description short">
+			<p>Retturns the environment of the managed Puli project.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retturns the environment of the managed Puli project.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>One of the <code><a href="class-Puli.Manager.Api.Environment.html">Puli\Manager\Api\Environment</a></code> constants.
+				</div>
 
 
 
@@ -688,7 +778,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRootDirectory">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#342-353" title="Go to source code">getRootDirectory</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#390-401" title="Go to source code">getRootDirectory</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the root directory of the managed Puli project.</p>
@@ -725,7 +815,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setLogger">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#355-367" title="Go to source code">setLogger</a>( <span>Psr\Log\LoggerInterface <var>$logger</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#403-415" title="Go to source code">setLogger</a>( <span>Psr\Log\LoggerInterface <var>$logger</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the logger to use.</p>
@@ -760,7 +850,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getLogger">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#369-377" title="Go to source code">getLogger</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#417-425" title="Go to source code">getLogger</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the used logger.</p>
@@ -794,7 +884,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setEventDispatcher">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#379-391" title="Go to source code">setEventDispatcher</a>( <span>Symfony\Component\EventDispatcher\EventDispatcherInterface <var>$dispatcher</var></span> )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#427-439" title="Go to source code">setEventDispatcher</a>( <span>Symfony\Component\EventDispatcher\EventDispatcherInterface <var>$dispatcher</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the event dispatcher to use.</p>
@@ -829,7 +919,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEventDispatcher">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#393-401" title="Go to source code">getEventDispatcher</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#441-449" title="Go to source code">getEventDispatcher</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the used event dispatcher.</p>
@@ -863,7 +953,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_enablePlugins">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#403-409" title="Go to source code">enablePlugins</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#451-457" title="Go to source code">enablePlugins</a>( )</code>
 
 		<div class="description short">
 			<p>Enables all Puli plugins.</p>
@@ -893,7 +983,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_disablePlugins">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#411-417" title="Go to source code">disablePlugins</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#459-465" title="Go to source code">disablePlugins</a>( )</code>
 
 		<div class="description short">
 			<p>Disables all Puli plugins.</p>
@@ -923,7 +1013,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_arePluginsEnabled">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#419-428" title="Go to source code">arePluginsEnabled</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#467-476" title="Go to source code">arePluginsEnabled</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether Puli plugins are enabled.</p>
@@ -946,32 +1036,32 @@ access.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getEnvironment" id="_getEnvironment">
+	<tr data-order="getContext" id="_getContext">
 
 		<td class="attributes"><code>
 			 public 
 
-			<code><a href="class-Puli.Manager.Api.Environment.GlobalEnvironment.html">Puli\Manager\Api\Environment\GlobalEnvironment</a></code>|<code><a href="class-Puli.Manager.Api.Environment.ProjectEnvironment.html">Puli\Manager\Api\Environment\ProjectEnvironment</a></code>
+			<code><a href="class-Puli.Manager.Api.Context.Context.html">Puli\Manager\Api\Context\Context</a></code>|<code><a href="class-Puli.Manager.Api.Context.ProjectContext.html">Puli\Manager\Api\Context\ProjectContext</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getEnvironment">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#430-442" title="Go to source code">getEnvironment</a>( )</code>
+		<a class="anchor" href="#_getContext">#</a>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#478-490" title="Go to source code">getContext</a>( )</code>
 
 		<div class="description short">
-			<p>Returns the environment.</p>
+			<p>Returns the context.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Returns the environment.</p>
+			<p>Returns the context.</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code><a href="class-Puli.Manager.Api.Environment.GlobalEnvironment.html">Puli\Manager\Api\Environment\GlobalEnvironment</a></code>|<code><a href="class-Puli.Manager.Api.Environment.ProjectEnvironment.html">Puli\Manager\Api\Environment\ProjectEnvironment</a></code><br>The environment.
+					<code><a href="class-Puli.Manager.Api.Context.Context.html">Puli\Manager\Api\Context\Context</a></code>|<code><a href="class-Puli.Manager.Api.Context.ProjectContext.html">Puli\Manager\Api\Context\ProjectContext</a></code><br>The context.
 				</div>
 
 
@@ -992,7 +1082,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRepository">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#444-464" title="Go to source code">getRepository</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#492-512" title="Go to source code">getRepository</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the resource repository of the project.</p>
@@ -1026,7 +1116,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDiscovery">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#466-486" title="Go to source code">getDiscovery</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#514-534" title="Go to source code">getDiscovery</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the resource discovery of the project.</p>
@@ -1060,7 +1150,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFactory">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#488-502" title="Go to source code">getFactory</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#536-550" title="Go to source code">getFactory</a>( )</code>
 
 		<div class="description short">
 			
@@ -1094,7 +1184,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFactoryManager">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#504-525" title="Go to source code">getFactoryManager</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#552-573" title="Go to source code">getFactoryManager</a>( )</code>
 
 		<div class="description short">
 			
@@ -1128,7 +1218,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getConfigFileManager">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#527-547" title="Go to source code">getConfigFileManager</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#575-595" title="Go to source code">getConfigFileManager</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the configuration file manager.</p>
@@ -1162,7 +1252,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRootPackageFileManager">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#549-568" title="Go to source code">getRootPackageFileManager</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#597-616" title="Go to source code">getRootPackageFileManager</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the root package file manager.</p>
@@ -1196,7 +1286,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPackageManager">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#570-589" title="Go to source code">getPackageManager</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#618-637" title="Go to source code">getPackageManager</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the package manager.</p>
@@ -1230,7 +1320,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRepositoryManager">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#591-612" title="Go to source code">getRepositoryManager</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#639-660" title="Go to source code">getRepositoryManager</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the resource repository manager.</p>
@@ -1264,7 +1354,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDiscoveryManager">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#614-636" title="Go to source code">getDiscoveryManager</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#662-684" title="Go to source code">getDiscoveryManager</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the resource discovery manager.</p>
@@ -1298,7 +1388,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAssetManager">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#638-657" title="Go to source code">getAssetManager</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#686-705" title="Go to source code">getAssetManager</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the asset manager.</p>
@@ -1332,7 +1422,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInstallationManager">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#659-680" title="Go to source code">getInstallationManager</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#707-728" title="Go to source code">getInstallationManager</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the installation manager.</p>
@@ -1366,7 +1456,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInstallerManager">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#682-701" title="Go to source code">getInstallerManager</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#730-749" title="Go to source code">getInstallerManager</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the installer manager.</p>
@@ -1400,7 +1490,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getServerManager">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#703-722" title="Go to source code">getServerManager</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#751-770" title="Go to source code">getServerManager</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the server manager.</p>
@@ -1434,7 +1524,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getUrlGenerator">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#724-745" title="Go to source code">getUrlGenerator</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#772-793" title="Go to source code">getUrlGenerator</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the resource URL generator.</p>
@@ -1468,7 +1558,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getStorage">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#747-759" title="Go to source code">getStorage</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#795-807" title="Go to source code">getStorage</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the cached file storage.</p>
@@ -1502,7 +1592,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getConfigFileSerializer">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#761-773" title="Go to source code">getConfigFileSerializer</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#809-821" title="Go to source code">getConfigFileSerializer</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the cached configuration file serializer.</p>
@@ -1536,7 +1626,7 @@ access.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPackageFileSerializer">#</a>
-		<code><a href="source-class-Puli.Manager.Api.Puli.html#775-787" title="Go to source code">getPackageFileSerializer</a>( )</code>
+		<code><a href="source-class-Puli.Manager.Api.Puli.html#823-840" title="Go to source code">getPackageFileSerializer</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the cached package file serializer.</p>

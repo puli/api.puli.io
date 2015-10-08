@@ -16,13 +16,16 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.Discovery.Api.Binding.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Discovery.Api.Validation.html</loc>
+	<loc>http://api.puli.io/latest/namespace-Puli.Discovery.Api.Binding.Initializer.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.Discovery.Api.Type.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Discovery.Binding.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Discovery.Validation.html</loc>
+	<loc>http://api.puli.io/latest/namespace-Puli.Discovery.Binding.Initializer.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Factory.html</loc>
@@ -40,10 +43,10 @@
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Config.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Discovery.html</loc>
+	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Context.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Environment.html</loc>
+	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Discovery.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Event.html</loc>
@@ -62,6 +65,9 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Installer.Validation.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Migration.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Api.Package.html</loc>
@@ -122,6 +128,9 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Installer.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Migration.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/namespace-Puli.Manager.Package.html</loc>
@@ -219,22 +228,22 @@
 	<loc>http://api.puli.io/latest/class-Puli.Discovery.AbstractEditableDiscovery.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Binding.BindingParameter.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Type.BindingParameter.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Binding.BindingType.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Validation.ConstraintViolation.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Type.BindingType.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Discovery.Binding.AbstractBinding.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Discovery.Binding.EagerBinding.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Discovery.Binding.ClassBinding.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Discovery.Binding.LazyBinding.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Discovery.Binding.Initializer.ResourceBindingInitializer.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Discovery.Binding.ResourceBinding.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Discovery.InMemoryDiscovery.html</loc>
@@ -246,9 +255,6 @@
 	<loc>http://api.puli.io/latest/class-Puli.Discovery.NullDiscovery.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Discovery.Validation.SimpleParameterValidator.html</loc>
-</url>
-<url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Asset.AssetMapping.html</loc>
 </url>
 <url>
@@ -258,10 +264,13 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Config.ConfigFile.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Discovery.BindingDescriptor.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Context.Context.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Discovery.BindingParameterDescriptor.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Context.ProjectContext.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Discovery.BindingDescriptor.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Discovery.BindingState.html</loc>
@@ -273,16 +282,19 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Discovery.BindingTypeState.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Environment.GlobalEnvironment.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Environment.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Environment.ProjectEnvironment.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Event.AddAssetMappingEvent.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Event.BuildRepositoryEvent.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Event.GenerateFactoryEvent.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Event.RemoveAssetMappingEvent.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Installation.InstallationParams.html</loc>
@@ -390,10 +402,10 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Discovery.Binding.AbstractReloadBindingDescriptors.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Discovery.Binding.AddBindingDescriptorToPackageFile.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Discovery.Binding.AddBinding.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Discovery.Binding.Bind.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Discovery.Binding.AddBindingDescriptorToPackageFile.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Discovery.Binding.BindingDescriptorCollection.html</loc>
@@ -426,13 +438,13 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Discovery.DiscoveryManagerImpl.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Discovery.Type.AddBindingType.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Discovery.Type.AddTypeDescriptorToPackageFile.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Discovery.Type.BindingTypeDescriptorCollection.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.Manager.Discovery.Type.DefineType.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Discovery.Type.LoadTypeDescriptor.html</loc>
@@ -480,6 +492,9 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Factory.Generator.Repository.FilesystemRepositoryGenerator.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Factory.Generator.Repository.PathMappingRepositoryGenerator.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Filesystem.FilesystemStorage.html</loc>
 </url>
 <url>
@@ -493,6 +508,9 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Installer.SymlinkInstaller.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Migration.MigrationManager.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Package.PackageFileStorage.html</loc>
@@ -615,6 +633,9 @@
 	<loc>http://api.puli.io/latest/class-Puli.Repository.Resource.Iterator.ResourceFilterIterator.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.Repository.Resource.LinkResource.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Puli.Repository.Resource.Metadata.FilesystemMetadata.html</loc>
 </url>
 <url>
@@ -678,16 +699,16 @@
 	<loc>http://api.puli.io/latest/class-Puli.UrlGenerator.DiscoveryUrlGenerator.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Binding.ResourceBinding.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Binding.Binding.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Binding.Initializer.BindingInitializer.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Discovery.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.EditableDiscovery.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.ResourceDiscovery.html</loc>
-</url>
-<url>
-	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Validation.ParameterValidator.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Factory.PuliFactory.html</loc>
@@ -750,6 +771,9 @@
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Storage.Storage.html</loc>
 </url>
 <url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Migration.JsonMigration.html</loc>
+</url>
+<url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Transaction.AtomicOperation.html</loc>
 </url>
 <url>
@@ -789,16 +813,25 @@
 	<loc>http://api.puli.io/latest/class-Puli.UrlGenerator.Api.UrlGenerator.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Binding.MissingParameterException.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Binding.Initializer.NotInitializedException.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Binding.NoSuchParameterException.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Binding.NoSuchBindingException.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.DuplicateTypeException.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Type.BindingNotAcceptedException.html</loc>
 </url>
 <url>
-	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.NoSuchTypeException.html</loc>
+	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Type.DuplicateTypeException.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Type.MissingParameterException.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Type.NoSuchParameterException.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Discovery.Api.Type.NoSuchTypeException.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.AlreadyLoadedException.html</loc>
@@ -844,6 +877,9 @@
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.InvalidConfigException.html</loc>
+</url>
+<url>
+	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.Migration.MigrationException.html</loc>
 </url>
 <url>
 	<loc>http://api.puli.io/latest/class-Puli.Manager.Api.NoDirectoryException.html</loc>
